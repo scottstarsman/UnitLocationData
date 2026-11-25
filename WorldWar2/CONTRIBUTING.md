@@ -1,144 +1,265 @@
 # Contributing
 
-Thank you for helping. This project is only useful if every row can be checked, so the rules are strict.
+Thank you for helping. This dataset is only useful if every row can be checked, so the rules are strict — but the path from a fork to a pull request is straightforward.
+
+Work inside the `WorldWar2/` folder (the dataset, scripts and schema live there). Contributions are released under the same [CC BY-SA 4.0](../LICENSE) licence as the rest of the repository. Be kind: see the [code of conduct](CODE_OF_CONDUCT.md).
+
+## Open a pull request
+
+1. Fork [scottstarsman/UnitLocationData](https://github.com/scottstarsman/UnitLocationData) on GitHub, then clone your fork.
+2. Keep your `main` up to date with the upstream repository, and cut a branch from it:
+   ```bash
+   git remote add upstream https://github.com/scottstarsman/UnitLocationData.git   # once
+   git fetch upstream
+   git checkout main
+   git merge --ff-only upstream/main
+   git checkout -b a-short-name-for-your-change
+   ```
+3. Add or edit rows under `WorldWar2/` (see the worked example and the sections below).
+4. From `WorldWar2/`, run the full check set and regenerate the build:
+   ```bash
+   bash scripts/run_checks.sh
+   python scripts/build.py
+   git add data schema docs build
+   ```
+   Commit the data change and the regenerated `build/` files together. If `run_checks.sh` reports a problem, see [Run the checks](#run-the-checks).
+5. Push the branch to your fork and open a pull request against `scottstarsman/UnitLocationData`, branch `main`. Use the [pull request checklist](#pull-request-checklist). CI will run a subset of the same checks on the pull request, including from forks.
+
+If two open pull requests pick the same new identifiers, the one merged second will need those unpublished ids renumbered (see [Identifiers](#identifiers)). Maintainers may do that on merge; a helper script for it is planned.
 
 ## Rules
 
-1. **Every row needs a source.** The `source` column must hold at least one URL (separate several with ` | `; the coordinate source is not part of it: it belongs to the place, see "Places" below). Say in `notes` what the source says. Cite a page or chapter when you can. Then list the same sources in `reference_ids` (see "How to cite a new source").
-2. **Conflicting claims become separate rows.** If two sources disagree (date, place, commander, anything in the row), do not average or pick silently. Add one row per claim, give them the same `conflict_group_id` (next free `G###`), and set `claim_status`: one `preferred` and the others `alternate`, or all `disputed` if no source is better. Explain the disagreement in `notes` on each row.
-3. **Never invent.** If a value is not in a source, write `unknown` (for text fields such as `commander`; for a parent that is not verified leave `parent_unit_id` blank and record an `unknown` relationship entry) or leave the optional field blank. Do not guess numbers for `strength_json`. A gap is better than a plausible fabrication.
+1. **Every row needs a source.** The claim's `source` column must hold at least one URL (separate several with ` | `). The coordinate source belongs to the place, not this column (see [Add a place](#add-a-place)). In `notes`, say what the source supports, and cite a page or chapter when you can. List the same sources in `reference_ids` (see [How to cite a new source](#how-to-cite-a-new-source)).
+2. **Conflicting claims become separate rows.** If two sources disagree (date, place, commander, or anything else in the row), do not average or pick silently. Add one row per claim, give them the same `conflict_group_id` (next free `G###`), and set `claim_status`: one `preferred` and the others `alternate`, or all `disputed` if no source is better. Explain the disagreement in `notes` on each row.
+3. **Never invent.** If a value is not in a source, write `unknown` (for text fields such as `commander`; for a parent that is not verified, leave `parent_unit_id` blank and record an `unknown` relationship) or leave the optional field blank. Do not guess numbers for `strength_json`. A gap is better than a plausible fabrication.
 4. **One row is one claim** about one unit on one date. Rows are event-based; do not add filler rows for quiet days.
-5. **Use the vocabularies** in `schema/vocabularies.json`. If you need a new value (for example a new nationality or theater), add it there and in `schema/README.md` in the same pull request, with a one-line definition.
-6. **Keep ids stable.** `claim_id` and the command `relation_id` (CR0001...) are never reused or renumbered. New claims take the next free number (the highest id in use + 1; see "Claim ids" below). Do not delete a claim to "fix" it: correct it, or add a conflicting claim; a claim that has to go is retired in `data/retired_claims.csv`.
-7. **Command, strength and wording rules** (details in [docs/methodology.md](docs/methodology.md)): `parent_unit_id` is the operational parent *on the row's date* and the standing parent goes in the command relations (`data/command_relations.csv`) as `assigned` (or `unspecified_subordination` when the source combines assigned and attached, as the CMH ETO-OB tables do; never turn that into `attached` without a source); `organic` is only for constituted components such as a battle group's own division; the word "attached" (in any form) is rejected in `composing_text` (also in a qualifier) and `engaged_note`: record the link in `data/command_relations.csv`, or in `docs/deferred_relations.md` if the formation is not a unit of the table; a temporary link is `attached` with the date it took effect (`valid_from`, optionally `valid_to` and `date_basis`; the claim's own statement goes in the `stated_*` columns of `data/command_relation_claims.csv`); other authority is `operational_control`, `administrative_control`, `supporting` or `coordinating`; a coordinate taken from another date needs `location_date`, `location_basis` and `location_temporal_offset_days`; a landing row's point is the landing area, not a headquarters; every `personnel` figure needs a `scope` (the validator errors without one), and a figure for a task force, line or sector gets `sub_force` or `sector`, not `whole_unit`; if no source says what a figure covers, leave it out; one row describes one documented action, in the sources' words, with no inferred direction or result.
-8. **Licensing.** Do not copy text from copyrighted sources. Facts and short quotations with attribution are fine. Contributions are released under the same CC BY-SA 4.0 licence as the rest of this repository.
-9. **Note labels are a closed set.** A sentence of `notes` that starts with `Label: ` uses one of the 19 labels of the vocabulary `note_label` (`Event date`, `Event definition`, `Event support`, `Location`, `Location support`, `Relationship`, `Coordinates`, ...; the list and what each means is in [schema/README.md](schema/README.md), "Note labels"). The validator rejects any other label of that shape. Lead-ins that name a source or batch (`Breakout-28 p577:`, `CMH ETO-OB chronology:`, `Wikipedia:`) are prose. To add a label, change `schema/vocabularies.json`, the table in `schema/README.md` and `docs/changelog.md` in the same commit, and use the label in a row.
-10. **Keep notes from copyrighted sources out of the repository.** Research notes or quote extracts taken from a copyrighted source are kept privately by the project owner, never committed; `.gitignore` excludes `**/sources/*_notes.md`, `docs/sources/` and `private_notes/`. Cite the source in claims by reference and page with short quotes only.
+5. **Use the vocabularies** in `schema/vocabularies.json`. If you need a new value (for example a new country code), add it there and in `schema/README.md` in the same pull request, with a one-line definition. Theater values already cover the main fronts; see [How to add a new theater](#how-to-add-a-new-theater) before inventing a code.
+6. **Keep ids stable.** Once an id has been on `main` it is never reused or renumbered. New rows take the next free number (the highest id in use, including retired ids, plus one). Do not delete a claim to "fix" it: correct it, or add a conflicting claim. A claim that has to leave the data is retired in `data/retired_claims.csv`.
+7. **Command, strength and wording** are spelled out in [docs/methodology.md](docs/methodology.md). In short: `parent_unit_id` is the operational parent *on the row's date*; the standing parent goes in `data/command_relations.csv` as `assigned` (or `unspecified_subordination` when the source combines assigned and attached, as the CMH ETO-OB tables do — never turn that into `attached` without a source). `organic` is only for constituted components such as a battle group's own division. Do not write "attached" in `composing_text` or `engaged_note`; record the link as a command relation (or in `docs/deferred_relations.md` if the formation is not a unit of the table). A temporary link is `attached`, with `valid_from` and the claim's own statement in the `stated_*` columns of `data/command_relation_claims.csv`. A coordinate taken from another date needs `location_date` and `location_basis`. Every `personnel` figure needs a `scope`. One row describes one documented action, in the sources' words, with no inferred direction or result.
+8. **Licensing.** Do not copy text from copyrighted sources. Facts and short quotations with attribution are fine.
+9. **Note labels are a closed set.** A sentence of `notes` that starts with `Label: ` must use a label from the vocabulary `note_label` (`Event date`, `Event definition`, `Location`, `Relationship`, `Coordinates`, and the others listed in [schema/README.md](schema/README.md), "Note labels"). Lead-ins that name a source (`CMH ETO-OB chronology:`, `Wikipedia:`) are ordinary prose.
+10. **Keep notes from copyrighted sources out of the repository.** Research notes or quote extracts stay private and are never committed. `.gitignore` already excludes `**/sources/*_notes.md`, `docs/sources/` and `private_notes/`. Cite the source by reference and page, with short quotes only.
 
-## Claim identity
+## Sources and confidence
 
-### The duplicate guard: unit, date and event type
+Prefer free, original-language sources (official histories, contemporary documents, published primary material) over later summaries. Wikipedia is useful for leads and coordinates, but **it is not a source family of its own** in the sense of "two families agree": every Wikipedia language counts as one family, and a Wikipedia page that summarises another work is not a second family next to that work.
 
-**The identity of a claim is its `claim_id`** (`C0001` ...), and nothing else: a claim keeps its id when it is corrected. The combination `(unit_id, date, event_type)` is a guard against entering the same claim twice, not a statement that a unit cannot do two things of one kind in a day (a legitimate repeat is recorded in the exception table below). A unit has at most one claim per `date` and `event_type`: `(unit_id, date, event_type)` is unique, and `python scripts/validate.py` fails with both claim ids when a new row repeats it. Before you add a row, search the unit's file for the same date and event type. If it exists, correct that row (a source gives a better place, a source adds a fact) instead of adding a second one. A repeat is allowed in two cases:
+Confidence is a 0–1 score for how well the sources support the date and the place, not a verdict on whether the event happened. Only four values are used; the full rubric is in [docs/methodology.md](docs/methodology.md):
 
-- **The sources disagree**: put both claims in one conflict group (rule 2). That is the only thing needed.
-- **Different actions of one kind on one day** (two attacks at different places, one row per action, see "One row, one action" in `docs/methodology.md`): add the pair to `data/claim_key_exceptions.csv` (`claim_id,other_claim_id,reason`, lower id first) and say in the reason what differs. The validator rejects a pair that does not need the exception.
+| value | when to use it |
+|---|---|
+| 0.3 | A single source is enough to add a row, especially if the position is inferred or representative, or the date itself is approximate. A single source is also enough to create a unit. |
+| 0.5 | An exact place with one secondary source, or an approximate place with one source family. A day-level date from one solid source often sits here when the place is exact. |
+| 0.7 | An exact place with one authoritative source (for example a US Army official history), or an approximate place with two source families. The preferred claim of a conflict group is at most 0.7. |
+| 0.9 | An exact place, and two independent source families agree. Alternate and disputed claims are at most 0.5, so they never reach 0.9. |
 
-A different `event_type` is the right fix only when the row really is a different event (a landing and an arrival, see "Event definition" in `docs/methodology.md`); do not change it to get past the check.
+A gazetteer or geocoder (Nominatim, Wikipedia coordinates) does not make a claim independently sourced.
 
-### Claim ids
+If you infer, extrapolate or change a value, say so in `notes`: the old value, the new value, and the reason (and record the same in the pull request or in `docs/changelog.md` when the change is structural). Do not leave an inferred start date or parent looking like a sourced fact.
 
-- **Format.** `C` and four digits (`C0001` ...; more digits after `C9999`), unique across all claim files. The id says nothing about the unit or the date.
-- **Next id.** A new claim takes the highest id in use plus one: the highest of every `claim_id` in `data/claims/` and every id in `data/retired_claims.csv` (`python scripts/check_claim_ids.py` prints it as "next free id"). Add several claims in a row from that number up. If two branches both took the same number, the one merged second renumbers its own *new* claims before merging (its ids were never published); renumber only ids that are not on `main` yet.
-- **Never reuse, never renumber a published id.** An id that has been on `main` stays attached to the same claim for ever: correct the row in place (the id stays), do not move the id to another unit, and do not hand it out again.
-- **Gaps are allowed.** An id that was never used (a branch that was abandoned before it was merged) is simply skipped; nobody fills it later.
-- **Retiring a claim.** A claim that has to leave the data (entered by mistake, or a duplicate of another claim) is removed from its claim file in the same change that adds a row to `data/retired_claims.csv` (`claim_id,replaced_by_claim_id,reason`; sorted by id). A claim that is only wrong is corrected, or contradicted by a conflicting claim (rules 2 and 6), not retired. If the unit's file would be left empty, the unit stays in `data/units.csv` as before (see "Placeholder units" in `docs/methodology.md`).
-- **Checks.** `python scripts/validate.py` fails on a duplicate id, a retired id that is a claim again, and a bad `data/retired_claims.csv`; it prints a NOTE for a gap that is not retired. Run `python scripts/check_claim_ids.py` before a pull request: it compares with `origin/main` and fails when a claim id disappeared without a retired row or now belongs to another unit.
+## Identifiers
 
-### Mission ids (missions table)
+Public ids are unique, never reused, and not renumbered once they have been on `main`. New ids are the highest number already in use (including retired ids) plus one. Gaps left by an abandoned branch are skipped; nobody fills them later.
 
-A mission of a flying unit is a row of `data/missions/<nationality>/<unit_id>.csv` (decision J1, 17 November 2026; columns in `schema/README.md`, "missions columns"), never a claim. When the source names a single squadron as the unit that flew the mission, `unit_id` is that squadron (Scott, 17 November 2026); otherwise it is the group, and an unnamed squadron is not guessed. A "missions by group" count rolls squadron rows up through the squadron's organic parent relation. Ids are `MSN` and four or more digits (`MSN0001` ...), with the same rules as claim ids: the next id is the highest in use or retired plus one (`python scripts/check_mission_ids.py` prints it), never reuse or renumber a published id, and a removed row goes to `data/retired_missions.csv` with a reason. Figures (aircraft dispatched, effective, lost) and supported or attacked units are entered only as a source gives them; otherwise the cell is blank. A target place is entered only when the source names a place that can be located.
+| Kind | Pattern | Next free |
+|---|---|---|
+| Claim | `C####` | `python scripts/check_claim_ids.py` |
+| Mission | `MSN####` | `python scripts/check_mission_ids.py` |
+| Person / tenure | `PE####` / `UC####` | `python scripts/check_commander_ids.py` |
+| Reference | `R###` | `python scripts/build_references.py --add URL` assigns it |
+| Command relation | `CR####` | Highest in `data/command_relations.csv` plus one |
+| Place | `PL####` | Highest in `data/places.csv` plus one |
+| Conflict group | `G###` | Highest in use plus one |
+| Operation | `OP-` plus upper-case words | Choose a unique name; never rename or reuse one |
+
+`python scripts/check_claim_ids.py` (and the mission and commander scripts) compare your branch with `origin/main`. Run them before you open a pull request. If two branches took the same new numbers, the one merged second renumbers only its *unpublished* ids — never an id already on `main`. Maintainers may do that renumbering when they merge; a script to do it safely is planned.
+
+**The identity of a claim is its `claim_id`.** A claim keeps its id when it is corrected. The combination `(unit_id, date, event_type)` is a guard against entering the same claim twice. A unit has at most one claim per date and event type, unless the sources disagree (put both rows in one conflict group) or the unit really did two actions of the same kind on the same day (list the pair with a reason in `data/claim_key_exceptions.csv`). The validator names both claim ids when this fails.
+
+A claim that has to leave the data is removed from its file in the same change that adds a row to `data/retired_claims.csv`. Correct a wrong claim, or contradict it with a conflicting claim; do not retire it only because it is incomplete.
+
+## Worked example
+
+The rows below are a **teaching example**. They show the shape of a new unit, a place, a source, a command relation and a claim. **Do not add these rows to the dataset.** The identifiers (`Cxxxx`, `PLxxxx`, `Rxxxx`, `CRxxxx`, `IT-INF-EXAMD`) are not real and must not be copied. When you add a real unit, take the next free ids from the scripts above, and use the exact column headers already in the files (leave unused optional columns blank).
+
+Suppose a source places an Italian infantry division at a named town in Sicily on 10 July 1943, under a named corps. The claim belongs in theater `mediterranean`, under the existing umbrella `OP-FRONT-MEDITERRANEAN` until a more specific Sicily operation exists.
+
+1. **Source.** Add a reference (or reuse one that is already in `data/references_meta.csv`):
+
+   ```bash
+   python scripts/build_references.py --add https://example.example/official-history
+   ```
+
+   Then edit the new skeleton in `data/references_meta.csv`: `short_title`, `full_citation`, `source_type`, `publisher`, `license_or_status`, `used_for`. Keep `source_family` equal to an existing family when the work republishes one; otherwise leave the host name.
+
+2. **Unit.** Append a row to `data/units.csv` (kept sorted by `unit_id`) and create an empty claim file with the standard header:
+
+   - `unit_id`: `IT-INF-EXAMD` (nation code `IT`, type `INF`, a number, echelon letter `D` for division — see [schema/README.md](schema/README.md#unit_id-pattern))
+   - `unit_name`, `nationality` `Italy`, `echelon` `division`, `branch`, primary `theater` `mediterranean`, `domain` `ground`, `scope` `in_scope`, `record_status` `active`
+   - File: `data/claims/italy/IT-INF-EXAMD.csv`
+
+   If the parent corps is not in the table yet, add it first as a `placeholder` unit (no claim file).
+
+3. **Place.** If the town is not already in `data/places.csv`, append a place (`PLxxxx`), with coordinates from a gazetteer, `coord_reference_id` (often `R002` for Nominatim), `country` `IT`, and a `kind` of `point`.
+
+4. **Command relation.** Add an interval to `data/command_relations.csv` (`CRxxxx`: subject `IT-INF-EXAMD`, higher unit the parent corps, `relationship` `assigned`, `valid_from` the sourced date, `valid_from_basis` as the source supports, `valid_to` blank if the end is not sourced). Link it to the claim in `data/command_relation_claims.csv` (`relation_id`, `claim_id`, `seq` `1`, `role`).
+
+5. **Claim.** Add one row to the unit's claim file, sorted by `date` then `claim_id`. The important fields look like this (every other header column is present and may be blank):
+
+   | field | example value |
+   |---|---|
+   | `claim_id` | `Cxxxx` (next free, not this token) |
+   | `claim_status` | `preferred` |
+   | `unit_id` | `IT-INF-EXAMD` |
+   | `date` | `1943-07-10` |
+   | `theater` | `mediterranean` (the theater of *this row*, which must match the operation; it may differ from the unit's primary theater) |
+   | `nationality` / `unit_name` / `echelon` / `branch` | same as `data/units.csv` |
+   | `parent_unit_id` | the corps, which must be the higher unit of a relation listed on this claim |
+   | `place_id` / `latitude` / `longitude` | the place's id and its exact coordinates |
+   | `location_represents` | `headquarters` or whatever the source actually describes |
+   | `precision_km` | a radius the source supports |
+   | `operation_id` | `OP-FRONT-MEDITERRANEAN` |
+   | `confidence` | `0.5` or `0.3` for a single source, following the rubric above |
+   | `source` | the source URL |
+   | `reference_ids` / `source_locator` | `Rxxxx` and a page, for example `Rxxxx: p. 12` |
+   | `event_type` / `current_activity` | only what the source says happened |
+   | `notes` | what the source supports, labelled where useful (`Event date:`, `Location:`, …) |
+
+6. **Checks.** From `WorldWar2/`:
+
+   ```bash
+   bash scripts/run_checks.sh
+   python scripts/build.py
+   ```
+
+   Commit the new and edited files under `data/` together with the regenerated `build/` outputs. Then push and open the pull request.
 
 ## Add a claim to an existing unit
 
 1. Open `data/claims/<nationality>/<unit_id>.csv`.
 2. Add a row with the next free `claim_id`, all columns filled as described in [schema/README.md](schema/README.md), and insert it in order (sorted by `date`, then `claim_id`).
-3. Place: find the place in `data/places.csv` (search the name and the `alt_names`) and put its `place_id` in the row; put the claim-specific words ("vicinity", "division HQ", "point = Cheux") in `location_qualifier`, not in a new name. Use the place's `latitude` and `longitude` exactly. If the place is not in the table, add it (see "Add a place"). Never write a free-text place name in a claim.
-4. Run `python scripts/validate.py`, then `python scripts/build.py`.
-5. Commit both the data change and the regenerated `build/` files.
+3. Place: find the place in `data/places.csv` (search the name and the `alt_names`) and put its `place_id` in the row; put the claim-specific words ("vicinity", "division HQ") in `location_qualifier`, not in a new name. Use the place's `latitude` and `longitude` exactly. If the place is not in the table, add it (see below). Never write a free-text place name in a claim.
+4. Run `bash scripts/run_checks.sh`, then `python scripts/build.py`. Commit both the data change and the regenerated `build/` files.
 
 ## Add a place
 
-1. Append a row to `data/places.csv` with the next free `place_id` (PL####, sorted; ids are never reused). `name` is the canonical name, unique ignoring case ("Name, administrative area" for a settlement); other spellings and names go in `alt_names` separated by `; ` (an alias must not be another place's name).
-2. `kind`: `point` for a named settlement or site; `area` for a named area, sector, beach, zone or bridgehead; `line` for a front, axis or route. A sector or front represented by the centre of a town is its own place, not an alias of the town: places that merely share a geocoded point are separate rows.
-3. `latitude` and `longitude` are the point every claim at the place uses. Read them from the coordinate service and set `coord_reference_id` to it (R001 Wikipedia article coordinates, R002 OpenStreetMap Nominatim) with the article or query in `coord_source_note`. A point worked out by hand (the midpoint of two towns, a commune centroid) has a blank `coord_reference_id` and says how in `coord_source_note`. `precision_km` is the finest radius you would use at the place; `country` and `region` come from where the point lies (see the vocabulary `country`; add a code there for a new country).
-4. A claim whose own point differs from the place's (another geocoder read, an approximate point) keeps its point and gives the reason in `coord_override` (the source of its point and the distance); the validator requires the point to equal the place's exactly when `coord_override` is blank, and to be within 5 km when it is set. Farther than that is a different place.
-5. Run `python scripts/validate.py` and `python scripts/check_coordinates.py` (its `--duplicates` option lists places of kind point within 1 km of each other), then `python scripts/build.py`.
+1. Append a row to `data/places.csv` with the next free `place_id` (`PL####`, sorted; ids are never reused). `name` is the canonical name, unique ignoring case ("Name, administrative area" for a settlement); other spellings go in `alt_names` separated by `; ` (an alias must not be another place's name).
+2. `kind`: `point` for a named settlement or site; `area` for a named area, sector, beach, zone or bridgehead; `line` for a front, axis or route. A sector represented by the centre of a town is its own place, not an alias of the town.
+3. `latitude` and `longitude` are the point every claim at the place uses. Read them from the coordinate service and set `coord_reference_id` to it (`R001` Wikipedia article coordinates, `R002` OpenStreetMap Nominatim) with the article or query in `coord_source_note`. A point worked out by hand has a blank `coord_reference_id` and says how in `coord_source_note`. `country` and `region` come from where the point lies (vocabulary `country`; add a code there when you add a place in a new country).
+4. A claim whose own point differs from the place's keeps its point and gives the reason in `coord_override`. The validator requires the point to equal the place's exactly when `coord_override` is blank, and to be within 5 km when it is set. Farther than that is a different place.
+5. Run `python scripts/validate.py` and `python scripts/check_coordinates.py` (its `--duplicates` option lists point-places within 1 km of each other), then `python scripts/build.py`.
 
 ## Add a new unit
 
-Flak units and coastal artillery are domain `ground` whatever service owned them (Luftwaffe flak, Kriegsmarine coastal batteries); the `branch` column records the service. Set `domain` to `ground` for them; use `air` only for flying units and air commands and `naval` only for ships and naval commands.
+Flak units and coastal artillery are domain `ground` whatever service owned them (Luftwaffe flak, Kriegsmarine coastal batteries); the `branch` column records the service. Use `air` only for flying units and air commands, and `naval` only for ships and naval commands. Air and naval id patterns, echelons and class/type tables are in [schema/README.md](schema/README.md) and [docs/air_naval_pilot.md](docs/air_naval_pilot.md) section 8.
 
-A claim for a unit outside the current surveyed scope (any domain, front or period) is still recorded when a source gives it, because it will help as coverage grows. Such claims follow every normal claim rule and stay in the unified `build/` files. If the unit itself is outside the surveyed scope it may be marked `scope` `out_of_scope` in `data/units.csv`. In this release every unit is `in_scope`; incidental other-front rows are distinguished by `theater` (and sometimes `operation_id`). The who_controls grid still defaults to in-scope ground subjects. Any coverage or balance figure for out-of-scope or incidental rows is labelled incidental, not surveyed. The unit `scope` marker and the unit `domain` separate them.
+A claim for a unit outside the current surveyed focus (any domain, front or period) is still recorded when a source gives it. It follows every normal claim rule and stays in the unified `build/` files. In this release every unit is `scope` `in_scope`; incidental other-front rows are distinguished by the claim's `theater` (and sometimes `operation_id`), not by marking the unit `out_of_scope`. A later pass may mark a unit `out_of_scope` if the unit itself lies outside the surveyed set; the who_controls grid still defaults to in-scope ground subjects. Coverage figures for incidental rows should be labelled incidental, not surveyed.
 
-Units outside the current scope can be marked `scope` `out_of_scope` in `data/units.csv`; the unit, its claims and its command relations stay in the unified `build/` files with that scope, and the who_controls grid still defaults to in-scope ground subjects (air-naval schema pass, 13 November 2026; folded in Task 4, 24 November 2026; `docs/air_naval_pilot.md` section 8).
+Resistance groups, partisan bands and other irregular forces get unit entries only once they are organised into formal military units with a command chain. Loose cells and networks are not entered as units. Formal units still follow the small-unit rule in [schema/README.md](schema/README.md) (units below regiment size need a traced parent).
 
-Ships and naval formations (air-naval schema pass, 13 November 2026; `docs/air_naval_pilot.md` section 8): domain `naval`; echelon `naval_unit` for a ship, `naval_division`, `naval_squadron`, `task_group` or `fleet` above it (no echelon letter in the id, a task organisation is a placeholder with relations and no claims). A ship gets `ship_type` (US hull code), `hull_number` as the source gives it and `ship_class_id` when its class is in `data/ship_classes.csv`. Add a class as a new `SC###` row (the next free number, never reused) with a reference for every figure in `capabilities_json`; enter a figure only where a source gives it. A refit is a `strength_json` record with `basis` `refit`, `as_of` and `capabilities`; a reclassification is a `redesignation` claim ("Reclassified from X to Y" in the notes). Id patterns for air and naval units: `docs/air_naval_pilot.md` section 8.1. Air units (air schema pass, 13 November 2026; section 9): echelon `air_squadron`, `air_group`, `air_wing`, `air_division`, `air_corps` or `air_force` (the level counts, not the national name: a RAF wing is `air_group`, a RAF group `air_wing`; no id letter; never a ground echelon). Add an aircraft type as a new `AT###` row (next free number, never reused) in `data/aircraft_types.csv` with a reference for every figure in `performance_json`, in its own commit. A unit's aircraft are an `aircraft` object in the `strength_json` of a dated claim (`on_hand`, `serviceable`, `by_type` keyed by type id, `scope`, a source's own numbers). Record an air unit's administrative parent as `assigned` or `administrative_control` and its operational parent as `attached` or `operational_control`; both can be held at once. A position at sea is a place of kind `sea_position` (confidence at most 0.5); an airfield or port a unit operates from is `location_represents` `base`.
-
-Resistance groups, partisan bands and other irregular forces get unit entries only once they are organised into formal military units with a command chain. Loose cells and networks are not entered as units. Formal units still follow the small-unit rule in `schema/README.md` (units below regiment size need a traced parent).
-
-1. Add a row to `data/units.csv` (kept sorted by `unit_id`). Choose the `unit_id` as `NATION-TYPE-NUMBER+ECHELONLETTER`, for example `US-INF-029D` (see [schema/README.md](schema/README.md)). Regiments, battle groups and battalions have no echelon letter (`GER-FJR-006`, `GER-SSHPZ-101`, `echelon` `battalion` for a battalion); the validator rejects an id that ends in an echelon letter that does not match the echelon. For a battle group use `NATION-KG-NAME` (for example `GER-KG-FREY`) or a similar descriptive id, `echelon` `regiment/battle_group`, and set `parent_unit_id` to its parent division (the organic parent; each claim row then lists it as an `organic` relation in `data/command_relation_claims.csv`).
-2. If the unit has claims, set `record_status` to `active` and create `data/claims/<nationality>/<unit_id>.csv` with the exact header used by the other files. If the unit already exists as a placeholder, create the claim file and run `python scripts/promote_placeholders.py`. If the unit exists only so others can point to it (a placeholder), set `record_status` to `placeholder`, create no file, and add `formed_date` and `formed_date_source` only if a source states it (see "Placeholder units" in [docs/methodology.md](docs/methodology.md)).
-3. Parents: a claim's `parent_unit_id` must be a unit in `units.csv` (blank for a top-level headquarters, or when no parent was verified: then the claim lists one `unknown` placeholder relation, a row of `data/command_relations.csv` with a blank `higher_unit_id` and a note; never the text `unknown`) and it must be the higher unit of one of the relations the claim lists. Command relations are rows of `data/command_relations.csv` (one interval per relation: subject, higher unit, relationship, `valid_from`, `valid_to`, bases) linked to the claim by `data/command_relation_claims.csv` (`relation_id, claim_id, seq, role` and what the claim itself stated about the dates in the `stated_*` columns); the formation's name comes from `units.csv`, never from the table (see [schema/README.md](schema/README.md#command-relations)). A claim file has no `command_relationships` column; `build/all_claims.csv` rebuilds it. Re-use an existing relation when the claim restates it (extend its link rows), add a new one when it starts a new interval, give an end only when a source dates it, and run `python scripts/validate.py` and `python scripts/build.py`. If a parent formation is not in the table yet, add it as a placeholder unit first (`record_status` `placeholder`).
-4. A unit's `unit_name`, `nationality`, `echelon`, `branch` and `theater` in every claim row must equal the values in `units.csv`, and `nationality` must be the `name` of a row of `data/nationalities.csv` (a new nation is added to that table first, with its unit id code and adjective, and its dated sides in `data/nation_allegiance.csv`).
-5. Add a claim row (above) and validate.
+1. Add a row to `data/units.csv` (kept sorted by `unit_id`). Choose the `unit_id` as `NATION-TYPE-NUMBER+ECHELONLETTER`, for example `US-INF-029D` (see [schema/README.md](schema/README.md#unit_id-pattern)). Regiments, battle groups and battalions have no echelon letter. The validator rejects an id that ends in an echelon letter that does not match the echelon. For a battle group use `NATION-KG-NAME` (for example `GER-KG-FREY`), `echelon` `regiment/battle_group`, and set `parent_unit_id` to its parent division (the organic parent).
+2. If the unit has claims, set `record_status` to `active` and create `data/claims/<nationality>/<unit_id>.csv` with the exact header used by the other files. If the unit already exists as a placeholder, create the claim file and run `python scripts/promote_placeholders.py`. If the unit exists only so others can point to it, set `record_status` to `placeholder`, create no file, and add `formed_date` only if a source states it.
+3. Parents: a claim's `parent_unit_id` must be a unit in `units.csv` (blank for a top-level headquarters, or when no parent was verified: then the claim lists one `unknown` relation — a row of `data/command_relations.csv` with a blank `higher_unit_id` and a note). It must be the higher unit of one of the relations the claim lists. Command relations are rows of `data/command_relations.csv`, linked to the claim by `data/command_relation_claims.csv`. The formation's name comes from `units.csv`. A claim file has no `command_relationships` column; `build/all_claims.csv` rebuilds it. If a parent formation is not in the table yet, add it as a placeholder first.
+4. On every claim row, `unit_name`, `nationality`, `echelon` and `branch` must equal the values in `units.csv`. `nationality` must be the `name` of a row of `data/nationalities.csv` (add a new nation to that table first, with its unit-id code and adjective, and its dated sides in `data/nation_allegiance.csv`). **`theater` is per claim:** it is the front of that row's place and date, and it must equal the `theater` of the row's `operation_id`. It may differ from the unit's primary `theater` in `units.csv`.
+5. Add a claim row (above) and run the checks.
 
 ## Add an operation
 
 1. Check `data/operations.csv` first: the operation may exist under another name (`alt_names`) or as a parent you can use.
-2. Add a row (kept sorted by `operation_id`). `operation_id` is `OP-` plus upper-case words and is never renamed or reused. Set `op_type`, the `parent_operation_id` (the smallest enclosing row: a battle goes under its operation, an operation under its CMH campaign; leave blank for a row that spans two campaigns, such as Lorraine), inclusive `start_date` and `end_date`, `date_basis`, `theater`, and `nationality_scope` (a German codename is its own row with scope `German`).
-3. Cite where the dates come from in `reference_ids` (add the URL to `data/references_meta.csv`: `python scripts/build_references.py --add URL`, then edit the skeleton row; see the pull request checklist below) and use the CMH campaign streamer dates or an official history for `date_basis` where one exists. Where sources disagree on a boundary, pick one, say so in `notes` and cite both. A row with no source needs a note saying why (`date_basis derived`).
-4. If the dates fall outside the parent's, fill `parent_date_exception` with the reason. Add the non-parent links to `data/operation_relations.csv` (`follows`, `concurrent_with`, `supports`, `succeeded_by`, `related`).
-5. Point claims at the new row (`operation_id` in the claim files). A claim dated just outside the operation's dates that you want to keep goes in `data/operation_exceptions.csv` with a reason.
-6. Run `python scripts/validate.py` and `python scripts/build.py`, and commit the data and the regenerated `build/` files. Only add operations that a claim needs, plus their parent chain.
+2. Add a row (kept sorted by `operation_id`). `operation_id` is `OP-` plus upper-case words and is never renamed or reused. Set `op_type`, the `parent_operation_id` (the smallest enclosing row: a battle goes under its operation, an operation under its campaign; leave blank for a row that spans two campaigns, such as Lorraine), inclusive `start_date` and `end_date`, `date_basis`, `theater`, and `nationality_scope`. `nationality_scope` is a `name` from `data/nationalities.csv` (for example `Germany`, `Allied`) or `All`. A German codename is its own row with scope `Germany`.
+3. Cite where the dates come from in `reference_ids` (add the URL with `python scripts/build_references.py --add URL`, then edit the skeleton). Use official campaign dates or an official history for `date_basis` where one exists. Where sources disagree on a boundary, pick one, say so in `notes` and cite both. A row with no source needs a note saying why (`date_basis derived`).
+4. If the dates fall outside the parent's, fill `parent_date_exception` with the reason. Add non-parent links to `data/operation_relations.csv` (`follows`, `concurrent_with`, `supports`, `succeeded_by`, `related`).
+5. Point claims at the new row. A claim dated just outside the operation's dates that you want to keep goes in `data/operation_exceptions.csv` with a reason.
+6. Run the checks and commit the data and the regenerated `build/` files. Only add operations that a claim needs, plus their parent chain.
+
+## How to add a new theater
+
+The surveyed focus of this release is the Western Front, 6 June 1944 to 8 May 1945, but other fronts are welcome. A new theater is mostly a matter of using (or, rarely, extending) the vocabulary, filing claims under the right operation, and adding nation codes and places as you need them. **Do not invent a new theater code until you have checked the list below.** A later change will expand this into a two-level list (theater and sub-theater, with map bounds). Until that lands, use the existing values.
+
+**Theater field.** Each claim row has its own `theater`: the front or rear area where the unit was on that date. The unit table also has a `theater`, which is only the unit's primary theater and may differ from a given claim. The claim's `operation_id` must have the same `theater` as the claim (the validator errors otherwise).
+
+**Current values** (vocabulary `theater` in `schema/vocabularies.json`, with short definitions in [schema/README.md](schema/README.md)): `western_europe`, `mediterranean`, `north_africa`, `eastern_front`, `balkans`, `scandinavia`, `home_germany`, `pacific`, `cbi`, `atlantic`, `other`. Use `other` only when nothing else fits, and explain in `notes`.
+
+**Operations.** Claims on a front go under the most specific operation whose dates contain the row, or under that front's holding umbrella when no named operation applies:
+
+- `OP-PRE-INVASION` and `OP-POST-SURRENDER` are `western_europe` only.
+- Per-front umbrellas already exist for `eastern_front`, `mediterranean`, `balkans`, `scandinavia`, `north_africa` and `home_germany` (`OP-FRONT-EASTERN`, `OP-FRONT-MEDITERRANEAN`, and so on).
+- `pacific`, `cbi`, `atlantic` and `other` do not yet have a holding umbrella; if you add the first claims there, add a matching umbrella operation in the same pull request (and only then consider a new `theater` value, if one of the existing names truly does not fit).
+
+A child operation keeps its parent's theater. Official campaign streamers in this release are Western Front campaigns; rows of other theaters do not need one.
+
+**Nation codes.** `data/nationalities.csv` is the list of nations. The `name` is used on units and claims and as the lowercase folder under `data/claims/` (for example `Italy` → `data/claims/italy/`). The `code` is the prefix of every `unit_id` of that nation (`IT`, `GER`, `US`, …). Many nation rows already exist with no units yet (including `IT` and `RSI`). Add a nation to this table, and its dated sides to `data/nation_allegiance.csv`, before adding its first unit. The id pattern is in [schema/README.md](schema/README.md#unit_id-pattern).
+
+**Identifiers** are global, not per theater: take the next free `C####`, `PL####`, `CR####` and so on, as in [Identifiers](#identifiers). There is no theater-specific number range. If your pull request lands after another that used the same new numbers, maintainers may renumber your unpublished ids.
+
+**Files.** Units go in `data/units.csv`; claims in `data/claims/<nationality>/<unit_id>.csv`; places in `data/places.csv` (add a `country` vocabulary code if the point lies in a country not yet listed); operations in `data/operations.csv`; command relations in `data/command_relations.csv` and `data/command_relation_claims.csv`; sources in `data/references_meta.csv`. Then run the checks and commit `build/`.
+
+**Checks and tests.** `scripts/check_coordinates.py` has a loose bounding box for most theaters; `atlantic` and `other` are not boxed yet, and the `pacific` box is only the western Pacific. A later change will tighten this. The validator currently rejects a claim dated before 1 September 1939 (the outbreak of the war in Europe). `scripts/semantic_tests.py` pins the expected answers for many existing units; adding a new theater's rows should not fail it unless you also change a unit those tests already cover. If you change such a unit on purpose, change the expectation in the same commit and say why.
+
+## How to cite a new source
+
+1. Put its URL in the claim's `source` (` | ` between URLs) and say in `notes` what it supports.
+2. Find its row in `data/references.csv` (search the URL). If it has none, add one: `python scripts/build_references.py --add URL` appends a skeleton row to `data/references_meta.csv` with the next `R###` id and a `source_family`. Edit the skeleton as in the worked example.
+3. Add the id to the claim's `reference_ids` (`R398;R407`). If the source gives a page, chapter or section, add it to `source_locator` (`R398: p. 285, 289`). A page in the URL fragment (`#page285`) is not enough on its own.
+4. If the source supports one part of the claim only (the date, the place, the command relationship, a strength figure), add a row to `data/claim_reference_roles.csv`. Leave it out when the source supports the claim as a whole. Do not add a row for a coordinate service (`R001`, `R002`): its `location` role is derived.
+5. A claim at `confidence` 0.9 needs references from at least two source families. The validator ignores `gazetteer_geocoder` references when it counts families.
+6. Run the checks, then `python scripts/build.py`.
+
+## Run the checks
+
+From `WorldWar2/`, start with the one-command set:
+
+```bash
+bash scripts/run_checks.sh
+```
+
+That is the set to run before you open a pull request. It is read-only aside from writing to `/tmp`. It stops with `CHECKS FAILED` and a list of steps if something is wrong, or prints `ALL CHECKS PASSED`.
+
+| Step | What it does | If it fails |
+|---|---|---|
+| `python scripts/validate.py` | Schema, vocabularies, foreign keys, claim identity, sources, operations, and many consistency rules. Errors fail the check. `WARNING` lines are prompts to re-check a row, not automatic failures. Some warnings are already open on `main`; do not add a new warning for a row you touched unless the pull request explains why. | Read the `ERROR` line: it usually names the file, the id and what to fix (for example two claims with the same unit, date and event type). |
+| `python scripts/check_json_fields.py` | JSON-in-cell fields (`strength_json` and others) match the schemas in `schema/json/`. | Fix the JSON in that cell so it matches the schema. |
+| `python scripts/semantic_tests.py` | Pins expected answers of `who_controls.py` and other fixtures for a large set of existing units (not just a handful of scenarios). Fails CI. | If you did not mean to change that unit, revert the accidental edit. If you changed it on purpose, update the expectation in the same commit and say why. |
+| `python scripts/build.py --check` | The committed `build/` files match a fresh build. | Run `python scripts/build.py` and commit the result (including `docs/coverage.md` and `data/references.csv` when they change). |
+| `python scripts/build_references.py --check` | Reference rows are complete and consistent. | Fill the missing citation fields, or add the reference the claim cites. |
+| `python scripts/review_sample.py --check` | The committed review sample is up to date. | Only relevant if you changed the review-sample inputs; regenerate it as the script says. |
+| `python scripts/check_coordinates.py` | Offline coordinate sanity (theater bounding box, speed, and others). Warnings only; it does not fail `run_checks.sh` on warnings. | Re-check the point or date. A known, sourced exception goes in `data/coordinate_exceptions.csv` with a reason. `--geocode` (network) is optional and should not be run in CI. |
+| `python scripts/audit_command_location.py` and `python scripts/audit_temporal_relationships.py` | Read-only review prompts (command patterns, overlaps, undated transfers). | A finding is a prompt, not an error. In the pull request, say which findings on rows you touched are real and which are expected. |
+| `python scripts/check_claim_ids.py`, `check_mission_ids.py`, `check_commander_ids.py` | Ids were not reused or dropped since `origin/main`. Skipped if `origin/main` is not available. They also print the next free id. | You dropped or reused a published id: restore or retire it. If the only problem is a collision with `main`, rebase and take new unused ids (or wait for the planned renumber script). |
+
+After the script passes, run `python scripts/build.py` if you have not already, and commit `build/`. Optional, needs network: `python scripts/build_references.py --check-links` re-checks reference URLs (then run `build.py` again).
+
+GitHub Actions runs a slightly smaller set on every pull request (`validate.py`, `check_json_fields.py`, `build.py --check`, `semantic_tests.py`; coordinate and temporal audits run but do not fail the job). It does not yet run the id-collision checks, so please run `run_checks.sh` locally when `origin/main` is available.
 
 ## Per-row review checklist
 
 Use this for every new row, and for each row in a spot check (the reviewer should check against a source the author did not use). Answer each point from the source, not from the existing row.
 
 1. **Date.** Does the source put this unit at this place and in this action on this date (not the day before or after, not the day an order was given or a transfer took effect)?
-2. **Place.** Is the point the place the source names, within `precision_km`? If it stands for a line, sector or route, is it a midpoint with a radius that covers it? Is `location_represents` honest (headquarters, main body, front-line point, objective, ...)?
-3. **Action.** Does `current_activity` say only what the source says (no inferred direction, aim or result)? Is it one action? If several were documented, did you split the row or say in `notes` what is not documented?
-4. **Opponent.** Is every unit in `engaged_with` placed in this fight by a source (and not in a different action the same day)? Use unit ids; an opponent that is a named unit and not in `data/units.csv` is added there as a placeholder first, and one that cannot be a unit (an air force, an unnamed formation) goes in `engaged_note`. For the composition, `composing_units` holds ids of units of the table and `composing_text` the rest; never write `attached:` (add a relation to `data/command_relations.csv` instead).
-5. **Parent and relationships.** Is `parent_unit_id` the operational parent on this date? Is the standing parent listed as `assigned`, `unspecified_subordination` or `unknown` (not `organic` for a division, corps or army under a higher headquarters), and does every named higher headquarters have a `unit_id`? Is an `attached` entry dated by `effective_from` when a source gives the day, and is it in force on the row's date? Is an independent brigade or battle group not recorded as an organic part of the formation it fought under?
-5a. **Location and date.** Is the coordinate documented for the row's date? If it comes from a CP list or source dated otherwise, are `location_date` and `location_basis` set (the offset in days is derived) (and the precision and confidence wide enough)? Is a headquarters coordinate really the headquarters (not the sector or objective), a landing point the landing area, and a corps or army sector not an exact front-line point? Do the rows of a conflict group describe the same event, and if not does each carry an `Event definition:` sentence in `notes`? Are the sources for event date, relationship, location and coordinates kept apart in `notes` (`Event date:`, `Relationship:`, `Location:`, `Coordinates:`)?
-6. **Strength.** Does each figure cover what `scope` says (whole unit, sub-force, sector)? Is `basis` right (reported count, establishment, estimate)? Are conflicting figures from other sources in `note`? Is a `status` in `strength_json` justified for the whole unit (or absent)?
-7. **Source, confidence and conflicts.** Does every cited source support this row's own claim? Does `confidence` follow the rubric after any change? If a source disagrees on date or place, is it a conflict group, and are the group's rows consistent with each other (including their coordinates)?
-8. **Record the result.** Note what was checked, what changed (before and after) and what was left alone and why, in the pull request or a review note. Change only what a source supports.
+2. **Place.** Is the point the place the source names, within `precision_km`? If it stands for a line, sector or route, is it a midpoint with a radius that covers it? Is `location_represents` honest (headquarters, main body, front-line point, objective, …)?
+3. **Action.** Does `current_activity` say only what the source says (no inferred direction, aim or result)? Is it one action?
+4. **Opponent.** Is every unit in `engaged_with` placed in this fight by a source? Use unit ids; a named unit that is not in `data/units.csv` is added there as a placeholder first. Formations that cannot be a unit go in `engaged_note`.
+5. **Parent and relationships.** Is `parent_unit_id` the operational parent on this date? Is the standing parent listed as `assigned`, `unspecified_subordination` or `unknown` (not `organic` for a division, corps or army under a higher headquarters)?
+5a. **Location and date.** Is the coordinate documented for the row's date? If it comes from a list dated otherwise, are `location_date` and `location_basis` set? Do the rows of a conflict group describe the same event?
+6. **Strength.** Does each figure cover what `scope` says? Are conflicting figures from other sources noted?
+7. **Source, confidence and conflicts.** Does every cited source support this row? Does `confidence` follow the rubric? If a source disagrees, is it a conflict group?
+8. **Record the result.** Note what was checked, what changed (old value, new value, reason) and what was left alone and why, in the pull request. Change only what a source supports.
 
-## Run the checks
-
-```bash
-python scripts/validate.py              # errors fail the check; WARNING lines are prompts to re-check a row
-python scripts/check_coordinates.py    # warnings only; add --geocode (network, 1 request/second) before a release
-python scripts/build.py
-git diff --stat build/        # build outputs must be committed with your change
-python scripts/build.py --check
-python scripts/check_mission_ids.py   # needs git history: mission ids not reused or dropped since origin/main (run_checks.sh runs it)
-python scripts/semantic_tests.py   # expected answers of who_controls.py for four command scenarios (fails CI); if you change the data on purpose, change the expectation in the same commit and say why
-python scripts/build_references.py --check-links   # optional, network: re-check reference URLs (writes link_status into data/references_meta.csv; rerun build.py after)
-python scripts/audit_command_location.py   # review prompts: command and location-date patterns
-python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim temporal checks (overlaps, undated transfers, sequences recorded as conflicts); add --out FILE for a markdown report
-```
-
-## How to cite a new source
-
-Each claim lists the references behind it in `reference_ids`; the `source` text stays as the human-readable citation. For every source a row relies on:
-
-1. Put its URL in the claim's `source` (` | ` between URLs) and say in `notes` what it supports.
-2. Find its row in `data/references.csv` (search the URL). If it has none, add one: `python scripts/build_references.py --add URL` appends a skeleton row to `data/references_meta.csv` with the next `R###` id and a `source_family`. Edit the skeleton: `short_title`, `full_citation`, `source_type`, `publisher`, `license_or_status`, `reliability_note`, `used_for`. Keep `source_family` equal to the family of an existing reference when the new source republishes it or is Wikipedia (see `schema/vocabularies.json`); otherwise leave the host name.
-3. Add the id to the claim's `reference_ids` (`R398;R407`). If the source gives a page, chapter or section, add it to `source_locator` (`R398: p. 285, 289; R407: p. 36`). A page in the URL fragment (`#page285`) is not enough on its own; write the locator.
-4. If the source supports one part of the claim only (the date, the place, the command relationship, a strength figure), add a row to `data/claim_reference_roles.csv` (`claim_id,reference_id,role,basis`; role `event`, `date`, `location`, `command_relationship` or `strength`; `basis` says why). Leave it out when the source supports the claim as a whole. Do not add a row for a coordinate service (R001 Wikipedia, R002 Nominatim): its `location` role is derived.
-5. A claim at `confidence` 0.9 needs references from at least two source families (Wikipedia, in any language, counts as one; so does everything republished from a CMH publication). A coordinate service such as Nominatim does not make a claim independently sourced; the validator ignores `gazetteer_geocoder` references when it counts families.
-6. Run `python scripts/validate.py` (errors: an unknown id, a claim without a reference, a URL in `source` whose reference is not in `reference_ids`), then `python scripts/build.py`.
+A second person should check 15 rows, or 10% of a large batch, chosen by risk as described in `docs/methodology.md`.
 
 ## Pull request checklist
 
 - [ ] Every new or changed row has a source URL and a `notes` entry saying what the source supports.
 - [ ] Conflicting information is kept as separate rows with a shared `conflict_group_id`; exactly one `preferred` or all `disputed`.
-- [ ] Nothing is invented; unknowns are `unknown` or blank.
-- [ ] New `claim_id`s are unique and follow the highest id in use (claims and `data/retired_claims.csv`); none were reused; a claim that was removed has a row in `data/retired_claims.csv`; `python scripts/check_claim_ids.py` passes.
+- [ ] Nothing is invented; unknowns are `unknown` or blank. Inferred or changed values give the old value, the new value and the reason.
+- [ ] New ids are unique and follow the highest id in use (including retired ids); none were reused; a removed claim has a row in `data/retired_claims.csv`; `python scripts/check_claim_ids.py` passes.
 - [ ] No new row repeats a unit's date and event type unless it is in a conflict group with the existing claim or listed with a reason in `data/claim_key_exceptions.csv`.
-- [ ] Every sentence of `notes` that starts with `Label: ` uses a label of the vocabulary `note_label` (the validator checks it).
-- [ ] New units are in `data/units.csv` and the file name matches `unit_id`.
-- [ ] `python scripts/validate.py` passes, and any WARNING lines for rows you touched are fixed or explained in `notes`.
-- [ ] `python scripts/audit_command_location.py` was run and its counts for the new rows were reviewed.
-- [ ] `python scripts/audit_temporal_relationships.py` was run and any finding that involves a new or changed row was checked against the source (a finding is a prompt, not an error; say in the pull request which are real and which are expected patterns).
-- [ ] Every new row has an `operation_id` that exists in `data/operations.csv` (the most specific operation whose dates contain the row's date; the campaign row when no named operation applies). A new operation has its own row, dates, a source or a note, and a reference row (see "Add an operation").
-- [ ] The per-row review checklist above was applied to every new or changed row (a second person checks 15 rows or 10% of a large batch, chosen by risk as described in `docs/methodology.md`).
-- [ ] Every new source URL has a row in `data/references_meta.csv` (`python scripts/build_references.py --add URL` adds a skeleton to edit; `validate.py` fails without it), and every new row lists its references in `reference_ids` (with `source_locator` where a page is known; a 0.9 row cites two source families).
-- [ ] `python scripts/build.py` was run and the `build/` changes (including `data/references.csv`) are committed.
+- [ ] Every sentence of `notes` that starts with `Label: ` uses a label of the vocabulary `note_label`.
+- [ ] New units are in `data/units.csv` and the file name matches `unit_id`. Claim `theater` matches the row's operation (and may differ from the unit's primary theater).
+- [ ] `bash scripts/run_checks.sh` passes, and any `WARNING` lines for rows you touched are fixed or explained in `notes` or the pull request.
+- [ ] The command-location and temporal audits were looked at for new or changed rows (a finding is a prompt; say in the pull request which are real).
+- [ ] Every new row has an `operation_id` that exists in `data/operations.csv`. A new operation has dates, a source or a note, and a reference row.
+- [ ] Every new source URL has a row in `data/references_meta.csv`, and every new row lists its references in `reference_ids`.
+- [ ] `python scripts/build.py` was run and the `build/` changes are committed.
 - [ ] New vocabulary values (if any) are documented in `schema/vocabularies.json` and `schema/README.md`.
-- [ ] Confidence and precision follow the rubric in `docs/methodology.md`.
-
-Be kind: see the [code of conduct](CODE_OF_CONDUCT.md).
+- [ ] Confidence and precision follow the rubric above and in `docs/methodology.md`.

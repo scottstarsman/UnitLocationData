@@ -1,0 +1,39 @@
+name: Data correction
+description: A unit or claim that looks wrong, incomplete, or needs a better source.
+title: "[data] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Please cite a source and a page so the row can be checked. See the [contributor guide](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/CONTRIBUTING.md).
+  - type: input
+    id: unit_id
+    attributes:
+      label: Unit id
+      description: For example `US-INF-029D`. Leave blank if you are not sure.
+      placeholder: US-INF-029D
+  - type: input
+    id: claim_id
+    attributes:
+      label: Claim id
+      description: For example `C0123`. Leave blank if the issue is about the unit, not one row.
+      placeholder: C0123
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong or missing?
+      description: Date, place, parent, commander, strength, or something else. Say what the file has now, if you know.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source and page
+      description: A URL and a page, chapter or section that supports the correction. Official histories and original-language sources are preferred. Wikipedia is useful, but it is not a second source family.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested correction
+      description: Optional. The value you think the row should have, and why.

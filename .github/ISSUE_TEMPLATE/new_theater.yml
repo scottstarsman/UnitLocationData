@@ -1,0 +1,36 @@
+name: New theater proposal
+description: Propose work on a front other than the surveyed Western Front, or a gap in the theater list.
+title: "[theater] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The dataset already has theater values for the main fronts. Please read [How to add a new theater](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/CONTRIBUTING.md#how-to-add-a-new-theater) before proposing a new code. A later change will add a two-level list (theater and sub-theater).
+  - type: input
+    id: theater
+    attributes:
+      label: Theater
+      description: An existing value (`mediterranean`, `pacific`, `cbi`, `eastern_front`, …) or a name you think is missing, with a short reason why the current list does not fit.
+    validations:
+      required: true
+  - type: input
+    id: period
+    attributes:
+      label: Period and region
+      description: For example Sicily, July–August 1943, or the Central Pacific, 1944–1945.
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: What would you add?
+      description: Units, operations or a first set of claims you have in mind. A small, sourced first batch is better than a full order of battle.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: The histories or documents you would use, with URLs if you have them.
+    validations:
+      required: true

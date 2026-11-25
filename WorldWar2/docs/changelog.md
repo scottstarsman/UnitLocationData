@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Renumber colliding unpublished ids (branch `renumber-new-ids`)
+
+`scripts/renumber_new_ids.py` remaps unpublished ids on a branch that collide with `origin/main` (or `--base`) after a rebase: claims, missions, people, tenures, command relations, places, references, conflict groups, TO&E, aircraft types, ship classes, lineage, and colliding scenario and roadmap numbers. Dry-run is the default; `--apply` writes the mapping and rewrites references in the new or changed data rows and in lines the branch adds to docs, the changelog and tests. Ids already on `main` are never changed. A new conflict group that reused a `G###` already on `main` is split so it does not silently join the published group (`--keep-group` opts out). Fixture tests simulate two branches taking the same next-free ids; `run_checks.sh` and CI run them. No claim, unit, or other data row was changed.
+
 ## 25 November 2026 — Issue and pull-request templates, and id checks in CI (branch `templates-and-ci`)
 
 Issue forms (data correction, new source, new theater, script or viewer bug) and a pull-request checklist are in `.github/`. The validate workflow now fetches the pull request's base `main` (or `origin/main` on a push) and runs `check_claim_ids.py`, `check_mission_ids.py`, `check_commander_ids.py` and the new `scripts/check_other_ids.py` (command relations, places, references, conflict groups, TO&E, aircraft types, ship classes). It stays on the `pull_request` event, with a read-only token and no secrets, so it is safe for forks. After a rebase, a second pull request that reused the same new ids fails those checks. `run_checks.sh` and the contributor and maintainer docs are updated. No claim, unit, or other data row was changed.

@@ -19,6 +19,7 @@ step check_json_fields 'tail -1' python3 scripts/check_json_fields.py
 step semantic_tests 'tail -1' python3 scripts/semantic_tests.py
 step test_renumber_new_ids 'tail -1' python3 scripts/test_renumber_new_ids.py
 step test_renumber_new_ids_stress 'tail -1' python3 scripts/test_renumber_new_ids_stress.py
+step test_check_other_ids 'tail -1' python3 scripts/test_check_other_ids.py
 step build_check 'tail -1' python3 scripts/build.py --check   # includes build/oob/ flagship snapshots and other generated files
 step build_references_check 'tail -1' python3 scripts/build_references.py --check
 step review_sample_check 'cat' python3 scripts/review_sample.py --check

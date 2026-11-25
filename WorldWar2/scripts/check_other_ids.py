@@ -8,7 +8,7 @@ or silently dropped since a base revision.
 scripts/validate.py already rejects a duplicate id inside one checkout. This script is the
 history half: it compares the working tree with <rev> (default origin/main) so two pull
 requests that took the same next-free id fail on the second branch once it is rebased.
-It covers command relations (CR), places (PL), references (R), conflict groups (G),
+It covers command relations (CR), places (PL), references (R), conflict groups (G, from claims, missions and commander tenures),
 TO&E templates and assignments (TT, UT), aircraft types (AT) and ship classes (SC).
 Claim, mission, person and tenure ids are checked by check_claim_ids.py,
 check_mission_ids.py and check_commander_ids.py.
@@ -69,25 +69,80 @@ def file_map(path, id_col, value_cols):
     return out
 
 
-def claim_groups_from_text(txt):
+def groups_from_rows(rows, member_col):
+    """conflict_group_id -> set of member ids (claim_id, mission_id or tenure_id)."""
     groups = {}
-    if not txt:
-        return groups
-    for r in csv.DictReader(io.StringIO(txt)):
+    for r in rows:
         g = (r.get('conflict_group_id') or '').strip()
-        if g:
-            groups.setdefault(g, set()).add(r['claim_id'])
+        mid = (r.get(member_col) or '').strip()
+        if g and mid:
+            groups.setdefault(g, set()).add(mid)
     return groups
 
 
-def claim_groups_from_files():
+def groups_from_text(txt, member_col):
+    if not txt:
+        return {}
+    return groups_from_rows(csv.DictReader(io.StringIO(txt)), member_col)
+
+
+def merge_groups(*dicts):
+    out = {}
+    for d in dicts:
+        for g, members in d.items():
+            out.setdefault(g, set()).update(members)
+    return out
+
+
+def groups_from_glob(pattern, member_col):
     groups = {}
-    pattern = os.path.join(common.ROOT, 'data', 'claims', '*', '*.csv')
     for path in sorted(glob.glob(pattern)):
-        for r in common.read_dicts(path)[1]:
-            g = (r.get('conflict_group_id') or '').strip()
-            if g:
-                groups.setdefault(g, set()).add(r['claim_id'])
+        groups = merge_groups(groups, groups_from_rows(common.read_dicts(path)[1], member_col))
+    return groups
+
+
+def claim_groups_from_text(txt):
+    """Claim members only (kept for the disjoint-set reuse check)."""
+    return groups_from_text(txt, 'claim_id')
+
+
+def claim_groups_from_files():
+    pattern = os.path.join(common.ROOT, 'data', 'claims', '*', '*.csv')
+    return groups_from_glob(pattern, 'claim_id')
+
+
+def all_conflict_groups_from_files():
+    """Every G#### used on claims, missions or commander tenures in the working tree."""
+    return merge_groups(
+        claim_groups_from_files(),
+        groups_from_glob(os.path.join(common.ROOT, 'data', 'missions', '*', '*.csv'), 'mission_id'),
+        groups_from_rows(common.read_dicts(os.path.join(common.ROOT, 'data', 'unit_commanders.csv'))[1], 'tenure_id')
+        if os.path.isfile(os.path.join(common.ROOT, 'data', 'unit_commanders.csv')) else {},
+    )
+
+
+def next_free_group_id(groups):
+    """First unused G#### after the highest id in the map (G001 if the map is empty)."""
+    top = max([num(i) for i in groups] or [0])
+    return 'G%03d' % (top + 1)
+
+
+def all_conflict_groups_from_base(rev, prefix):
+    """Every G#### used on claims, missions or commander tenures at <rev>."""
+    old_claims = show(rev, prefix, os.path.join('build', 'all_claims.csv'), optional=True)
+    if old_claims is None:
+        old_claims = show(rev, prefix, os.path.join('build', 'other_domains', 'claims.csv'), optional=True)
+    groups = groups_from_text(old_claims or '', 'claim_id')
+    tens = show(rev, prefix, os.path.join('data', 'unit_commanders.csv'), optional=True)
+    groups = merge_groups(groups, groups_from_text(tens or '', 'tenure_id'))
+    # cwd is WorldWar2/; ls-tree of a revision lists paths relative to this prefix, so
+    # "data/missions/..." (not "WorldWar2/data/missions/..."). The pathspec -- form is
+    # reliable; "rev:WorldWar2/data/missions" is empty from this cwd.
+    rc, listing, err = git('ls-tree', '-r', '--name-only', rev, '--', 'data/missions')
+    if rc == 0 and listing.strip():
+        for rel in listing.strip().splitlines():
+            txt = show(rev, prefix, rel, optional=True)
+            groups = merge_groups(groups, groups_from_text(txt or '', 'mission_id'))
     return groups
 
 
@@ -149,19 +204,20 @@ def main():
     old_claims = show(a.base, prefix, os.path.join('build', 'all_claims.csv'), optional=True)
     if old_claims is None:
         old_claims = show(a.base, prefix, os.path.join('build', 'other_domains', 'claims.csv'), optional=True)
-    old_g = claim_groups_from_text(old_claims or '')
-    new_g = claim_groups_from_files()
-    for g in sorted(old_g, key=num):
-        if g not in new_g:
+    old_claim_g = claim_groups_from_text(old_claims or '')
+    new_claim_g = claim_groups_from_files()
+    for g in sorted(old_claim_g, key=num):
+        if g not in new_claim_g:
             # A group may be dissolved when a conflict is withdrawn; that is allowed.
             continue
-        if old_g[g].isdisjoint(new_g[g]):
+        if old_claim_g[g].isdisjoint(new_claim_g[g]):
             problems.append('conflict group %s was claims %s at %s and is now a disjoint set %s: an id is never reused' % (
-                g, ','.join(sorted(old_g[g], key=num)), a.base, ','.join(sorted(new_g[g], key=num))))
+                g, ','.join(sorted(old_claim_g[g], key=num)), a.base, ','.join(sorted(new_claim_g[g], key=num))))
+    old_g = all_conflict_groups_from_base(a.base, prefix)
+    new_g = all_conflict_groups_from_files()
     added_g = sorted(set(new_g) - set(old_g), key=num)
-    top_g = max([num(i) for i in new_g] or [0])
-    print('conflict groups at %s: %d; now: %d; new ids: %s; next free id: G%03d' % (
-        a.base, len(old_g), len(new_g), span(added_g), top_g + 1))
+    print('conflict groups at %s: %d; now: %d; new ids: %s; next free id: %s' % (
+        a.base, len(old_g), len(new_g), span(added_g), next_free_group_id(new_g)))
 
     for p in problems:
         print('PROBLEM:', p)

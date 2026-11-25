@@ -193,7 +193,14 @@ def test_collision_and_apply():
         after = open(os.path.join(root, 'data', 'claims', 'us', 'US-INF-002D.csv'), 'rb').read()
         assert after == before, 'dry-run wrote files'
 
-        # --apply remaps B's rows and leaves A's published ids alone
+        # --apply remaps B's rows and leaves A's published ids alone.
+        # Refuse a dirty tree first, then commit the collisions so --apply can run.
+        rc_dirty = rn.main(['--root', root, '--base', main_sha, '--apply'])
+        assert rc_dirty == 1, 'expected --apply to refuse a dirty work tree'
+        after_refuse = open(os.path.join(root, 'data', 'claims', 'us', 'US-INF-002D.csv'), 'rb').read()
+        assert after_refuse == before, '--apply on a dirty tree changed files'
+        git(root, 'add', '.')
+        git(root, 'commit', '-m', 'branch B collisions')
         rc = rn.main(['--root', root, '--base', main_sha, '--apply'])
         assert rc == 0
 
@@ -290,8 +297,44 @@ def test_no_collision():
         shutil.rmtree(root)
 
 
+
+def test_token_word_boundaries():
+    tmap = {'C1234': 'C9999', 'C10873': 'C20000'}
+    assert rn.replace_tokens('see C1234 and C12345', tmap) == 'see C9999 and C12345'
+    assert rn.replace_tokens('C10873-C10982', tmap) == 'C20000-C10982'
+    assert rn.replace_tokens('C10873–C10982', tmap) == 'C20000–C10982'
+    assert rn.replace_tokens('CR1234 and C1234', tmap) == 'CR1234 and C9999'
+    assert rn.replace_tokens('SC1234 UC1234 C1234', tmap) == 'SC1234 UC1234 C9999'
+
+
+def test_verify_detects_duplicate():
+    root = init_repo()
+    try:
+        seed_main(root)
+        sha = git(root, 'rev-parse', 'HEAD').stdout.strip()
+        # Corrupt: two different claims share C0001
+        h, rows = common.read_dicts(os.path.join(root, 'data', 'claims', 'us', 'US-INF-002D.csv'))
+        rows.append({
+            'claim_id': 'C0001', 'conflict_group_id': '', 'unit_id': 'US-INF-002D',
+            'date': '1944-06-09', 'event_type': 'located_at', 'reference_ids': 'R001',
+            'notes': 'corrupt',
+        })
+        write_csv(os.path.join(root, 'data', 'claims', 'us', 'US-INF-002D.csv'), h,
+                  [[r[c] for c in h] for r in rows])
+        errors = rn.verify_renumber(root, sha, [])
+        assert any('duplicate' in e for e in errors), errors
+    finally:
+        shutil.rmtree(root)
+
+
 def main():
-    tests = [test_collision_and_apply, test_keep_group, test_no_collision]
+    tests = [
+        test_collision_and_apply,
+        test_keep_group,
+        test_no_collision,
+        test_token_word_boundaries,
+        test_verify_detects_duplicate,
+    ]
     failed = 0
     for fn in tests:
         try:

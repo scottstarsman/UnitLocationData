@@ -17,10 +17,12 @@ branch adds to docs, the changelog, and tests. Ids already on main are never
 changed.
 
 Dry-run is the default: it prints a mapping table and writes nothing. --apply
-writes the files. Run python scripts/build.py afterwards and commit build/.
-If this branch meant to add members to a group that already exists on main,
-pass --keep-group <id> (repeatable) so that group is not split. Standard
-library only.
+refuses a dirty work tree, remaps on a temporary copy, runs id and foreign-key
+checks, and only then replaces files in the work tree. If a check fails, the
+work tree is left unchanged. Ids already on main are never changed. Run
+python scripts/build.py afterwards and commit build/. If this branch meant to
+add members to a group that already exists on main, pass --keep-group <id>
+(repeatable) so that group is not split. Standard library only.
 """
 from __future__ import print_function
 
@@ -30,8 +32,10 @@ import csv
 import io
 import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
@@ -122,6 +126,25 @@ def git_prefix(root):
     if rc:
         raise SystemExit('not inside a git work tree: %s' % (err or '').strip())
     return out.strip()
+
+
+def resolve_base(root, explicit=None):
+    """Return a revision SHA to compare with.
+
+    If explicit is set, that name must resolve. Otherwise try origin/main,
+    then main, then HEAD, so a shallow CI checkout that only has origin/main
+    (and no local main) still works, as do fixture repos that have only HEAD.
+    """
+    names = (explicit,) if explicit else ('origin/main', 'main', 'HEAD')
+    err = ''
+    for name in names:
+        if not name:
+            continue
+        rc, out, e = git(root, 'rev-parse', '--verify', name)
+        if rc == 0 and out.strip():
+            return out.strip()
+        err = (e or out or '').strip()
+    raise SystemExit('cannot resolve a base revision (tried %s): %s' % (', '.join(n for n in names if n), err))
 
 
 def git_show(root, rev, rel_path, optional=False):
@@ -556,15 +579,17 @@ def plan_roadmap_collisions(root, rev):
 
 def added_line_numbers(root, rev, rel):
     """1-based line numbers in the working tree that this branch adds versus <rev>."""
-    prefix = git_prefix(root)
-    path_for_git = (prefix + rel.replace(os.sep, '/')) if not rel.startswith(prefix) else rel.replace(os.sep, '/')
-    rc, out, err = git(root, 'diff', '-U0', rev, '--', path_for_git)
+    # git() uses cwd=root, so pathspecs must be relative to the dataset root,
+    # not prefixed with the path from the repository root (that form is only
+    # valid in 'git show rev:WorldWar2/...' object names).
+    pathspec = rel.replace(os.sep, '/')
+    rc, out, err = git(root, 'diff', '-U0', rev, '--', pathspec)
     if rc and not out:
         # Untracked file: every line is added.
         path = os.path.join(root, rel)
         if os.path.isfile(path):
             # Check whether git knows the file
-            rc2, out2, _ = git(root, 'ls-files', '--', path_for_git)
+            rc2, out2, _ = git(root, 'ls-files', '--', pathspec)
             if not (out2 or '').strip():
                 n = read_text(path).count('\n')
                 # If file does not end with newline, last line still counts
@@ -753,58 +778,46 @@ def working_and_base_csv_paths(root, rev):
     return sorted(out)
 
 
+def is_text_rewrite_target(rel):
+    """Only docs, dataset READMEs/CONTRIBUTING, and semantic_tests.py get token rewrites.
+
+    Other Python (this script, tests, tools) may mention ids as examples; rewriting
+    them would corrupt the tools. Data CSVs are handled row by row, not here.
+    """
+    rel = rel.replace(os.sep, '/')
+    if rel.startswith('docs/'):
+        return True
+    if rel in ('CONTRIBUTING.md', 'README.md'):
+        return True
+    if rel == 'scripts/semantic_tests.py':
+        return True
+    return False
+
+
 def changed_text_files(root, rev):
-    """Docs, scripts, and other text files this branch adds or edits (not data CSVs, not build/)."""
+    """Docs, CONTRIBUTING/README, and semantic_tests.py this branch adds or edits."""
     prefix = git_prefix(root)
     rc, out, _ = git(root, 'diff', '--name-only', '--diff-filter=ACMR', rev)
-    names = []
-    for line in (out or '').splitlines():
-        if not line:
-            continue
-        rel = line
-        if prefix and rel.startswith(prefix):
-            rel = rel[len(prefix):]
-        rel = rel.replace('/', os.sep)
-        if rel.split(os.sep)[0] in SKIP_DIR_PARTS:
-            continue
-        if rel.startswith('data' + os.sep) and rel.endswith('.csv'):
-            continue
-        ext = os.path.splitext(rel)[1].lower()
-        if ext not in {'.md', '.py', '.txt', '.yml', '.yaml', '.rst', '.json', ''}:
-            # allow extensionless such as LICENSE? skip
-            if ext != '':
-                continue
-            continue
-        path = os.path.join(root, rel)
-        if os.path.isfile(path):
-            names.append(rel)
-    # Untracked text files under root (e.g. a new doc)
+    candidates = list((out or '').splitlines())
     rc, out, _ = git(root, 'ls-files', '--others', '--exclude-standard')
-    for line in (out or '').splitlines():
+    candidates.extend((out or '').splitlines())
+    names = []
+    seen = set()
+    for line in candidates:
         if not line:
             continue
         rel = line
         if prefix and rel.startswith(prefix):
             rel = rel[len(prefix):]
         rel = rel.replace('/', os.sep)
-        if rel.split(os.sep)[0] in SKIP_DIR_PARTS:
+        if rel in seen or rel.split(os.sep)[0] in SKIP_DIR_PARTS:
             continue
-        if rel.startswith('data' + os.sep) and rel.endswith('.csv'):
+        if not is_text_rewrite_target(rel):
             continue
-        ext = os.path.splitext(rel)[1].lower()
-        if ext not in {'.md', '.py', '.txt', '.yml', '.yaml', '.rst', '.json'}:
-            continue
-        path = os.path.join(root, rel)
-        if os.path.isfile(path):
+        if os.path.isfile(os.path.join(root, rel)):
+            seen.add(rel)
             names.append(rel)
-    # unique, stable
-    seen = set()
-    uniq = []
-    for n in names:
-        if n not in seen:
-            seen.add(n)
-            uniq.append(n)
-    return uniq
+    return names
 
 
 def collect_base_members(root, rev):
@@ -870,10 +883,350 @@ def print_table(mappings, problems, apply=False):
         print('Dry-run only; rerun with --apply to write these remappings. Then run python scripts/build.py and commit build/.')
 
 
+FK_SINGLE_COLS = {
+    'claim_id': 'C', 'other_claim_id': 'C', 'replaced_by_claim_id': 'C', 'first_claim_id': 'C',
+    'mission_id': 'MSN', 'replaced_by_mission_id': 'MSN',
+    'relation_id': 'CR', 'relation_id_a': 'CR', 'relation_id_b': 'CR',
+    'reference_id': 'R', 'coord_reference_id': 'R',
+    'place_id': 'PL', 'primary_place_id': 'PL', 'target_place_id': 'PL',
+    'retired_place_id': 'PL', 'merged_into_place_id': 'PL',
+    'person_id': 'PE', 'tenure_id': 'UC',
+    'template_id': 'TT', 'parent_template_id': 'TT', 'assignment_id': 'UT',
+    'type_id': 'AT', 'parent_type_id': 'AT', 'aircraft_type_id': 'AT',
+    'class_id': 'SC', 'parent_class_id': 'SC', 'ship_class_id': 'SC',
+    'lineage_id': 'UL',
+}
+FK_LIST_COLS = {'reference_ids': 'R'}
+
+
+def repo_toplevel(root):
+    rc, out, err = git(root, 'rev-parse', '--show-toplevel')
+    if rc:
+        raise SystemExit('not inside a git work tree: %s' % (err or '').strip())
+    return out.strip()
+
+
+def tree_is_clean(root):
+    top = repo_toplevel(root)
+    rc, out, err = git(top, 'status', '--porcelain')
+    if rc:
+        raise SystemExit('git status failed: %s' % (err or '').strip())
+    return not (out or '').strip()
+
+
+def collect_working_ids(root):
+    """{prefix: {id, ...}} for every table family in the working tree, including retired ids."""
+    out = {}
+    for kind, prefix, width, pattern, id_col, ident_cols in TABLES:
+        s = out.setdefault(prefix, set())
+        for _rel, row in iter_table_rows(root, 'HEAD', pattern, from_working=True):
+            i = (row.get(id_col) or '').strip()
+            if i:
+                s.add(i)
+    for rel, col, pfx, _w in RETIRED:
+        path = os.path.join(root, rel)
+        if not os.path.isfile(path):
+            continue
+        s = out.setdefault(pfx, set())
+        for row in read_csv_path(path)[1]:
+            i = (row.get(col) or '').strip()
+            if i:
+                s.add(i)
+    out.setdefault('G', set()).update(collect_groups(root, working=True).keys())
+    return out
+
+
+def collect_base_ids(root, rev):
+    out = {}
+    for kind, prefix, width, pattern, id_col, ident_cols in TABLES:
+        s = out.setdefault(prefix, set())
+        for _rel, row in iter_table_rows(root, rev, pattern, from_working=False):
+            i = (row.get(id_col) or '').strip()
+            if i:
+                s.add(i)
+    for rel, col, pfx, _w in RETIRED:
+        s = out.setdefault(pfx, set())
+        for row in load_base_rows(root, rev, rel)[1]:
+            i = (row.get(col) or '').strip()
+            if i:
+                s.add(i)
+    out.setdefault('G', set()).update(collect_groups_from_base(root, rev).keys())
+    return out
+
+
+def prefix_of_token(tok):
+    i = 0
+    while i < len(tok) and tok[i].isalpha():
+        i += 1
+    return tok[:i]
+
+
+def verify_renumber(root, rev, mappings, before_root=None):
+    """Return a list of problem strings; empty means the remapping is safe.
+
+    If before_root is set (the tree before --apply), published rows must be
+    byte-for-byte the same as they were then.
+    """
+    errors = []
+    base_ids = collect_base_ids(root, rev)
+    work_ids = collect_working_ids(root)
+    tmap = token_map(mappings)
+    new_ids = {m['new'] for m in mappings if m.get('prefix') not in ('scenario', 'roadmap')}
+    old_ids = {m['old'] for m in mappings if m.get('prefix') not in ('scenario', 'roadmap')}
+
+    # New ids must not already have been on the base revision.
+    for m in mappings:
+        if m.get('prefix') in ('scenario', 'roadmap'):
+            continue
+        pfx = m['prefix']
+        if m['new'] in base_ids.get(pfx, ()):
+            errors.append('new id %s is already present on %s' % (m['new'], rev))
+        if m['new'] == m['old']:
+            errors.append('mapping leaves %s unchanged' % m['old'])
+
+    # Duplicate primary ids in the working tree.
+    for kind, prefix, width, pattern, id_col, ident_cols in TABLES:
+        seen = {}
+        for rel, row in iter_table_rows(root, rev, pattern, from_working=True):
+            i = (row.get(id_col) or '').strip()
+            if not i:
+                continue
+            ident = identity_of(row, ident_cols)
+            if i in seen and seen[i] != ident:
+                errors.append('duplicate %s %s in the working tree (%s and %s)' % (kind, i, seen[i], ident))
+            seen[i] = ident
+
+    # Every published id still exists and still identifies the same row.
+    for kind, prefix, width, pattern, id_col, ident_cols in TABLES:
+        base = {}
+        for _rel, row in iter_table_rows(root, rev, pattern, from_working=False):
+            i = (row.get(id_col) or '').strip()
+            if i:
+                base[i] = (identity_of(row, ident_cols), row)
+        work = {}
+        work_rows = {}
+        for _rel, row in iter_table_rows(root, rev, pattern, from_working=True):
+            i = (row.get(id_col) or '').strip()
+            if i:
+                work[i] = identity_of(row, ident_cols)
+                work_rows.setdefault(i, []).append(row)
+        for i, (ident, brow) in base.items():
+            if i not in work:
+                # Places may leave the table with a merge row; claims/missions may be retired.
+                if prefix == 'PL':
+                    merges = os.path.join(root, 'data', 'place_merges.csv')
+                    retired = set()
+                    if os.path.isfile(merges):
+                        retired = {r.get('retired_place_id') for r in read_csv_path(merges)[1]}
+                    if i in retired:
+                        continue
+                if prefix == 'C':
+                    rp = os.path.join(root, 'data', 'retired_claims.csv')
+                    if os.path.isfile(rp) and any(r.get('claim_id') == i for r in read_csv_path(rp)[1]):
+                        continue
+                if prefix == 'MSN':
+                    rp = os.path.join(root, 'data', 'retired_missions.csv')
+                    if os.path.isfile(rp) and any(r.get('mission_id') == i for r in read_csv_path(rp)[1]):
+                        continue
+                errors.append('published %s %s is missing after remapping' % (kind, i))
+                continue
+            if work[i] != ident:
+                errors.append('published %s %s changed identity from %s to %s' % (kind, i, ident, work[i]))
+                continue
+            matching = [r for r in work_rows[i] if identity_of(r, ident_cols) == ident]
+            if not matching:
+                errors.append('published %s %s has no matching row after remapping' % (kind, i))
+
+    # Foreign keys in data CSVs resolve to a working-tree id (or a retired id).
+    valid = {pfx: set(ids) for pfx, ids in work_ids.items()}
+    for rel in working_and_base_csv_paths(root, rev):
+        header, rows = read_csv_path(os.path.join(root, rel))
+        if not header:
+            continue
+        for row in rows:
+            for col in header:
+                raw = (row.get(col) or '').strip()
+                if not raw:
+                    continue
+                if col in FK_LIST_COLS:
+                    pfx = FK_LIST_COLS[col]
+                    for tok in (p.strip() for p in raw.split(';')):
+                        if tok and tok not in valid.get(pfx, ()):
+                            errors.append('%s: %s %s does not resolve' % (rel, col, tok))
+                elif col in FK_SINGLE_COLS:
+                    pfx = FK_SINGLE_COLS[col]
+                    if raw not in valid.get(pfx, ()):
+                        errors.append('%s: %s %s does not resolve' % (rel, col, raw))
+
+    # No published id was rewritten as a token on a published row (belt and braces:
+    # the mapping may reuse a published token as 'old', but the published row keeps it).
+    for m in mappings:
+        pfx = m.get('prefix')
+        if pfx in ('scenario', 'roadmap', None):
+            continue
+        if m['old'] in base_ids.get(pfx, ()) and m['old'] not in work_ids.get(pfx, ()):
+            errors.append('published id %s was removed' % m['old'])
+
+    if before_root:
+        errors.extend(published_rows_match(before_root, root, rev))
+
+    return errors
+
+
+def published_rows_match(before_root, after_root, rev):
+    """Every published row in after_root must match the same row in before_root."""
+    errors = []
+    for kind, prefix, width, pattern, id_col, ident_cols in TABLES:
+        base_ids = {}
+        for _rel, row in iter_table_rows(after_root, rev, pattern, from_working=False):
+            i = (row.get(id_col) or '').strip()
+            if i:
+                base_ids[i] = identity_of(row, ident_cols)
+        before = {}
+        for rel, row in iter_table_rows(before_root, rev, pattern, from_working=True):
+            i = (row.get(id_col) or '').strip()
+            if i not in base_ids or identity_of(row, ident_cols) != base_ids[i]:
+                continue
+            before[(rel, i, base_ids[i])] = row
+        after = {}
+        for rel, row in iter_table_rows(after_root, rev, pattern, from_working=True):
+            i = (row.get(id_col) or '').strip()
+            if i not in base_ids or identity_of(row, ident_cols) != base_ids[i]:
+                continue
+            after[(rel, i, base_ids[i])] = row
+        for key, brow in before.items():
+            arow = after.get(key)
+            if arow is None:
+                errors.append('published %s %s missing after remapping' % (kind, key[1]))
+                continue
+            # Compare as CSV records (all columns of the before row).
+            cols = list(brow.keys())
+            if row_tuple(cols, brow) != row_tuple(cols, arow):
+                errors.append('published %s %s was altered by remapping' % (kind, key[1]))
+    return errors
+
+
+def refresh_id_check_inputs(root):
+    """Rewrite the slim build tables that check_*_ids.py read from the working tree."""
+    claims = []
+    for _rel, row in iter_table_rows(root, 'HEAD', os.path.join('data', 'claims', '*', '*.csv'), from_working=True):
+        cid = (row.get('claim_id') or '').strip()
+        if cid:
+            claims.append({'claim_id': cid, 'unit_id': (row.get('unit_id') or '').strip()})
+    missions = []
+    for _rel, row in iter_table_rows(root, 'HEAD', os.path.join('data', 'missions', '*', '*.csv'), from_working=True):
+        mid = (row.get('mission_id') or '').strip()
+        if mid:
+            missions.append({'mission_id': mid, 'unit_id': (row.get('unit_id') or '').strip()})
+    bdir = os.path.join(root, 'build')
+    os.makedirs(bdir, exist_ok=True)
+    if claims:
+        write_csv(os.path.join(bdir, 'all_claims.csv'), ['claim_id', 'unit_id'], claims)
+    if missions:
+        write_csv(os.path.join(bdir, 'missions.csv'), ['mission_id', 'unit_id'], missions)
+
+
+def run_id_check_scripts(root, rev):
+    """Run the four history id-check scripts against <rev>. Skip any that are absent."""
+    errors = []
+    names = [
+        'check_claim_ids.py',
+        'check_mission_ids.py',
+        'check_commander_ids.py',
+        'check_other_ids.py',
+    ]
+    refresh_id_check_inputs(root)
+    for name in names:
+        path = os.path.join(root, 'scripts', name)
+        if not os.path.isfile(path):
+            continue
+        p = subprocess.run(
+            [sys.executable, path, '--base', rev],
+            cwd=root, capture_output=True, text=True,
+        )
+        if p.returncode != 0:
+            tail = ((p.stdout or '') + (p.stderr or '')).strip().splitlines()
+            detail = tail[-3:] if tail else ['exit %d' % p.returncode]
+            errors.append('%s failed: %s' % (name, ' | '.join(detail)))
+    return errors
+
+
+def overlay_working_tree(root, tmp_root):
+    """Copy the working tree under root onto tmp_root, including uncommitted files."""
+    skip = {'.git', '__pycache__'}
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if d not in skip]
+        rel_dir = os.path.relpath(dirpath, root)
+        dest_dir = tmp_root if rel_dir == '.' else os.path.join(tmp_root, rel_dir)
+        os.makedirs(dest_dir, exist_ok=True)
+        for fn in filenames:
+            src = os.path.join(dirpath, fn)
+            dest = os.path.join(dest_dir, fn)
+            if os.path.islink(src) or not os.path.isfile(src):
+                continue
+            shutil.copy2(src, dest)
+
+
+def make_temp_worktree(root):
+    """Create a detached worktree at HEAD. Returns (tmp_top, tmp_root, cleanup_fn)."""
+    top = repo_toplevel(root)
+    rel = os.path.relpath(os.path.abspath(root), top)
+    parent = tempfile.mkdtemp(prefix='renumber-apply-')
+    tmp_top = os.path.join(parent, 'wt')
+    rc, out, err = git(top, 'worktree', 'add', '--detach', '--no-checkout', tmp_top, 'HEAD')
+    # --no-checkout may not exist on older git; retry without it.
+    if rc:
+        rc, out, err = git(top, 'worktree', 'add', '--detach', tmp_top, 'HEAD')
+        if rc:
+            shutil.rmtree(parent, ignore_errors=True)
+            raise SystemExit('cannot create a temporary worktree: %s' % (err or out or '').strip())
+    else:
+        rc2, out2, err2 = git(tmp_top, 'checkout', '--force', 'HEAD')
+        if rc2:
+            git(top, 'worktree', 'remove', '--force', tmp_top)
+            shutil.rmtree(parent, ignore_errors=True)
+            raise SystemExit('cannot checkout the temporary worktree: %s' % (err2 or out2 or '').strip())
+    tmp_root = tmp_top if rel == '.' else os.path.join(tmp_top, rel)
+
+    def cleanup():
+        git(top, 'worktree', 'remove', '--force', tmp_top)
+        shutil.rmtree(parent, ignore_errors=True)
+
+    return tmp_top, tmp_root, cleanup
+
+
+def apply_safely(root, rev, mappings, allow_dirty=False):
+    """Remap on a temp copy, verify, then copy files back. Returns (exit_code, written, errors)."""
+    if not allow_dirty and not tree_is_clean(root):
+        return 1, [], ['Refusing --apply: the work tree is dirty. Commit or stash first so a failed remapping can be discarded with git.']
+    tmp_top, tmp_root, cleanup = make_temp_worktree(root)
+    written = []
+    errors = []
+    try:
+        overlay_working_tree(root, tmp_root)
+        written = apply_all(tmp_root, rev, mappings)
+        errors = verify_renumber(tmp_root, rev, mappings, before_root=root)
+        errors.extend(run_id_check_scripts(tmp_root, rev))
+        if errors:
+            return 1, [], errors
+        for rel in written:
+            src = os.path.join(tmp_root, rel)
+            dest = os.path.join(root, rel)
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            shutil.copy2(src, dest)
+        return 0, written, []
+    finally:
+        cleanup()
+
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--base', default='origin/main', help='revision to compare with (default origin/main)')
+    ap.add_argument('--base', default=None,
+                    help='revision to compare with (default: origin/main, then main, then HEAD)')
     ap.add_argument('--apply', action='store_true', help='write the remapping (default is dry-run)')
+    ap.add_argument('--allow-dirty', action='store_true',
+                    help='with --apply, allow a dirty work tree (not recommended)')
     ap.add_argument('--keep-group', action='append', default=[], metavar='G###',
                     help='do not split this conflict group (repeatable)')
     ap.add_argument('--root', default=common.ROOT, help='dataset root (default: WorldWar2/ next to this script)')
@@ -882,18 +1235,28 @@ def main(argv=None):
     if not os.path.isdir(root):
         raise SystemExit('root does not exist: %s' % root)
     git_prefix(root)  # fail early if not a work tree
-    mappings, problems = plan(root, a.base, keep_groups=a.keep_group)
+    base = resolve_base(root, a.base)
+    mappings, problems = plan(root, base, keep_groups=a.keep_group)
     print_table(mappings, problems, apply=a.apply)
-    if problems and not mappings:
+    if problems:
+        if a.apply:
+            print('Aborted: problems were found; the work tree was not changed.')
         return 1
     if a.apply and mappings:
-        written = apply_all(root, a.base, mappings)
+        rc, written, errors = apply_safely(root, base, mappings, allow_dirty=a.allow_dirty)
+        if errors:
+            for e in errors:
+                print('ERROR:', e)
+            print('Aborted: the work tree was not changed.')
+            return 1
         print('Wrote %d file(s):' % len(written))
         for rel in written:
             print('  %s' % rel)
         if not written:
             print('  (no file changes — check the mapping)')
-    return 1 if problems else 0
+        print('Id and foreign-key checks passed. Run python scripts/build.py and commit build/.')
+        return rc
+    return 0
 
 
 if __name__ == '__main__':

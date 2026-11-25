@@ -7589,7 +7589,7 @@ def scenario_338_symbol_code_check():
     errs, warns = sidc.check(units, claims)
     expect(s + ': no error and no warning on the data (every unit maps, no GZ99 fall-through, every claim has a side)', (errs, warns), ([], []))
     c = sidc.Coder()
-    expect(s + ': every one of the 2635 units maps to a rule other than GZ99; codes of data/sidc_codes.csv include 120202 cruiser and 110100 submarine',
+    expect(s + ': every unit maps to a rule other than GZ99; codes of data/sidc_codes.csv include 120202 cruiser and 110100 submarine',
            (sum(c.function(u)['rule_id'] != 'GZ99' for u in units.values()) == len(units), ('30', 'entity', '120202') in c.codes, ('35', 'entity', '110100') in c.codes),
            (True, True, True))
 
@@ -7667,14 +7667,17 @@ def scenario_340_commanders_table():
         expect(s + ': exactly one person matching %s' % (parts,), len(hits), 1)
         return hits[0] if hits else {}
 
-    expect(s + ': 607 unique people PE0001-PE0607 and no unused person',
+    n_people, n_tenures = len(people), len(tenures)
+    last_pe = 'PE%04d' % n_people
+    last_uc = 'UC%04d' % n_tenures
+    expect(s + ': unique people PE0001-%s and no unused person' % last_pe,
            (len(people), len({r['person_id'] for r in people.values()}), min(people), max(people),
             set(people) - {r['person_id'] for r in tenures}),
-           (607, 607, 'PE0001', 'PE0607', set()))
-    expect(s + ': 696 tenures UC0001-UC0696, each with at least one link',
+           (n_people, n_people, 'PE0001', last_pe, set()))
+    expect(s + ': tenures UC0001-%s, each with at least one link' % last_uc,
            (len(tenures), min(r['tenure_id'] for r in tenures), max(r['tenure_id'] for r in tenures),
             {r['tenure_id'] for r in tenures} - {l['tenure_id'] for l in links}),
-           (696, 'UC0001', 'UC0696', set()))
+           (n_tenures, 'UC0001', last_uc, set()))
     # Multi-unit officers
     bradley = person_named('Omar', 'Bradley')
     blumentritt = person_named('Blumentritt')
@@ -7739,7 +7742,7 @@ def scenario_340_commanders_table():
         bp = list(common.read_dicts(bpeople)[1])
         bt = list(common.read_dicts(btenures)[1])
         expect(s + ': build people/tenures cover all domains and keep alternate tenures visible',
-               (len(bp) == 607, len(bt) == 696,
+               (len(bp) == n_people, len(bt) == n_tenures,
                 {'ground', 'naval', 'air'} <= {r.get('domain') for r in bt},
                 any(r.get('status') == 'alternate' and r.get('conflict_group_id') == 'G318' for r in bt)),
                (True, True, True, True))

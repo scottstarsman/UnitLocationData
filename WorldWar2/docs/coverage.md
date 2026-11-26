@@ -8,8 +8,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 |---|---:|---:|---:|---:|---:|---:|
 | ground | 29 | 2 | 563 | 594 | 274 | 9726 |
 | air | 16 | 0 | 1319 | 1335 | 608 | 2423 |
-| naval | 59 | 0 | 756 | 815 | 342 | 920 |
-| **All** | **104** | **2** | **2638** | **2744** | **1224** | **13069** |
+| naval | 64 | 0 | 894 | 958 | 342 | 1118 |
+| **All** | **109** | **2** | **2776** | **2887** | **1224** | **13267** |
 
 | Domain | Nationality | Echelon | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---|---|---:|---:|---:|---:|---:|---:|
@@ -90,6 +90,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | air | US | air_group | 0 | 0 | 107 | 107 | 103 | 201 |
 | air | US | air_squadron | 0 | 0 | 412 | 412 | 390 | 650 |
 | air | US | air_wing | 0 | 0 | 32 | 32 | 30 | 59 |
+| naval | Australia | naval_unit | 0 | 0 | 3 | 3 | 0 | 3 |
 | naval | Canada | naval_unit | 0 | 0 | 17 | 17 | 17 | 18 |
 | naval | Canada | naval_division | 1 | 0 | 5 | 6 | 0 | 6 |
 | naval | France | naval_unit | 0 | 0 | 9 | 9 | 9 | 10 |
@@ -100,6 +101,10 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | Germany | naval_squadron | 0 | 0 | 12 | 12 | 0 | 12 |
 | naval | Germany | fleet | 0 | 0 | 1 | 1 | 0 | 1 |
 | naval | Greece | naval_unit | 0 | 0 | 2 | 2 | 2 | 2 |
+| naval | Japan | naval_unit | 4 | 0 | 43 | 47 | 0 | 53 |
+| naval | Japan | naval_division | 0 | 0 | 10 | 10 | 0 | 14 |
+| naval | Japan | naval_squadron | 0 | 0 | 4 | 4 | 0 | 5 |
+| naval | Japan | fleet | 1 | 0 | 0 | 1 | 0 | 0 |
 | naval | Netherlands | naval_unit | 0 | 0 | 2 | 2 | 2 | 2 |
 | naval | Norway | naval_unit | 0 | 0 | 3 | 3 | 3 | 5 |
 | naval | Poland | naval_unit | 0 | 0 | 5 | 5 | 5 | 8 |
@@ -107,11 +112,11 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | UK | naval_unit | 0 | 0 | 205 | 205 | 179 | 248 |
 | naval | UK | naval_division | 27 | 0 | 240 | 267 | 0 | 241 |
 | naval | UK | naval_squadron | 0 | 0 | 32 | 32 | 0 | 32 |
-| naval | US | naval_unit | 5 | 0 | 55 | 60 | 59 | 85 |
-| naval | US | naval_squadron | 4 | 0 | 0 | 4 | 0 | 0 |
+| naval | US | naval_unit | 5 | 0 | 123 | 128 | 59 | 193 |
+| naval | US | naval_squadron | 4 | 0 | 1 | 5 | 0 | 1 |
 | naval | US | naval_division | 0 | 0 | 21 | 21 | 0 | 21 |
-| naval | US | task_group | 14 | 0 | 11 | 25 | 0 | 11 |
-| **All** | | | **104** | **2** | **2638** | **2744** | **1224** | **13069** |
+| naval | US | task_group | 14 | 0 | 20 | 34 | 0 | 25 |
+| **All** | | | **109** | **2** | **2776** | **2887** | **1224** | **13267** |
 
 ## Operations
 
@@ -120,24 +125,24 @@ Generated from `data/operations.csv` and every claim's `operation_id` (all domai
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 15 | 8 | 710 |
-| campaign | 10 | 10 | 8515 |
-| operation | 33 | 33 | 2912 |
-| battle | 20 | 20 | 609 |
+| campaign | 10 | 10 | 8526 |
+| operation | 34 | 34 | 2935 |
+| battle | 27 | 27 | 773 |
 | phase | 4 | 4 | 323 |
-| **All** | **82** | **75** | **13069** |
+| **All** | **90** | **83** | **13267** |
 
-Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 52, compact 3, broad 16, none 11. A map pin (`primary_place_id`) is a sourced place, not this centroid.
+Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 60, compact 3, broad 16, none 11. A map pin (`primary_place_id`) is a sourced place, not this centroid.
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4930 places and 1458 alias names for 13069 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4940 places and 1462 alias names for 13267 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4743 | 12084 |
-| area | 116 | 862 |
+| point | 4744 | 12090 |
+| area | 117 | 1001 |
 | line | 28 | 64 |
-| sea_position | 43 | 59 |
+| sea_position | 51 | 112 |
 
 | country | Places | Claims |
 |---|---:|---:|
@@ -146,16 +151,17 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | United Kingdom (GB) | 435 | 1646 |
 | Netherlands (NL) | 537 | 1570 |
 | Belgium (BE) | 385 | 890 |
-| Solomon Islands (SB) | 44 | 292 |
+| Solomon Islands (SB) | 52 | 465 |
 | Luxembourg (LU) | 90 | 234 |
 | Austria (AT) | 31 | 49 |
+| Micronesia (Federated States of) (FM) | 1 | 23 |
 | Czechia (CZ) | 14 | 22 |
 | Poland (PL) | 10 | 12 |
 | Russia (RU) | 11 | 12 |
+| Vanuatu (VU) | 3 | 7 |
 | Belarus (BY) | 5 | 5 |
 | Italy (IT) | 5 | 5 |
 | Ukraine (UA) | 4 | 5 |
-| Vanuatu (VU) | 2 | 5 |
 | Norway (NO) | 2 | 4 |
 | Denmark (DK) | 1 | 2 |
 | Moldova (MD) | 1 | 2 |

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { CSSProperties, KeyboardEvent as ReactKeyboardEvent } from 'react';
 import type { Atlas, Claim, Filters, Mode } from './types';
-import { adjacentEvent, buildIndex, dayNumber, daysBetween, echelonMark, formatDate, histories, historyColors, humanize, isCalendarDate, isoDay, matches, operationSet, situation } from './engine';
+import { adjacentEvent, buildIndex, dayNumber, daysBetween, echelonMark, formatDate, histories, historyColors, humanize, initialMapBounds, isCalendarDate, isoDay, matches, operationSet, situation } from './engine';
 import { MapView } from './MapView';
 
 function Icon({ name, size = 18 }: { name: string; size?: number }) {
@@ -107,18 +107,13 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
   const [includePlaceholders, setIncludePlaceholders] = useState(false);
   const [mobilePanel, setMobilePanel] = useState(false);
   const [timelineTab, setTimelineTab] = useState<'observation' | 'chronology'>('observation');
-  const dataBounds = useMemo(() => {
-    const pts = atlas.claims.filter(c => Number.isFinite(c.longitude) && Number.isFinite(c.latitude));
-    if (!pts.length) return null;
-    let west = pts[0].longitude, east = pts[0].longitude, south = pts[0].latitude, north = pts[0].latitude;
-    for (const c of pts) {
-      if (c.longitude < west) west = c.longitude;
-      if (c.longitude > east) east = c.longitude;
-      if (c.latitude < south) south = c.latitude;
-      if (c.latitude > north) north = c.latitude;
-    }
-    return [west, south, east, north] as [number, number, number, number];
-  }, [atlas]);
+  const dataBounds = useMemo(() => initialMapBounds(atlas.claims), [atlas]);
+  const atlasYears = useMemo(() => {
+    const a = firstDate.slice(0, 4);
+    const b = lastDate.slice(0, 4);
+    return a === b ? a : `${a}–${b.slice(-2)}`;
+  }, [firstDate, lastDate]);
+  const headingTheater = filters.theater ? humanize(filters.theater).toUpperCase() : 'WESTERN EUROPE';
   const theaters = useMemo(() => [...new Set(atlas.claims.map(c => c.theater).filter(Boolean))].sort(), [atlas]);
   const dateCaption = useMemo(() => {
     const a = formatDate(firstDate).toUpperCase();
@@ -221,7 +216,7 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
         <div className="map-toolbar"><div className="mode-switch" role="group" aria-label="Map mode"><button aria-pressed={mode === 'situation'} className={mode === 'situation' ? 'active' : ''} onClick={() => switchMode('situation')}><span className="tiny-cross">⊞</span> Situation</button><button aria-pressed={mode === 'history'} className={mode === 'history' ? 'active' : ''} onClick={() => switchMode('history')}><Icon name="route" size={16}/> Movement history</button></div><div className="toolbar-options"><button className="mobile-formations text-button" onClick={() => setMobilePanel(true)}>Formations</button><label className="check-label"><input type="checkbox" checked={showLabels} onChange={e => setShowLabels(e.target.checked)}/> Labels</label><button className="icon-button" title="Fit visible observations" aria-label="Fit visible observations" onClick={() => setFitRequest(n => n + 1)}><Icon name="locate"/></button></div></div>
         <div className="situation-strip"><div><span className="eyebrow">{mode === 'situation' ? 'SITUATION AS OF' : 'MOVEMENT RECORD'}</span><h2>{formatDate(date)}</h2></div><div className="situation-stats"><strong>{mode === 'situation' ? visibleUnits.size : tracks.reduce((n, t) => n + t.points.length, 0)}</strong><span>{mode === 'situation' ? 'formations shown' : 'observations in range'}</span><i/><strong>{mode === 'situation' ? sameDayCount : selected.length}</strong><span>{mode === 'situation' ? 'observed this day' : 'units selected'}</span></div></div>
         {mode === 'history' && <div className="history-controls"><label>From<DateField label="History start date" min={firstDate} max={rangeEnd} value={rangeStart} onCommit={v => { setRangeStart(v); setFocusedId(''); setPlaying(false); }}/></label><span>—</span><label>To<DateField label="History end date" min={rangeStart} max={lastDate} value={rangeEnd} onCommit={v => { setRangeEnd(v); setFocusedId(''); setPlaying(false); }}/></label><label className="check-label whole-range"><input type="checkbox" checked={wholeRange} onChange={e => setWholeRange(e.target.checked)}/> Show entire range</label></div>}
-        <div className="map-area"><MapView initialBounds={dataBounds} positions={mapPositions} tracks={tracks} selected={selected} focused={focused} date={date} mode={mode} showPrecision={showPrecision} showLabels={showLabels} fitRequest={fitRequest} onClaim={focusClaim}/>
+        <div className="map-area"><MapView initialBounds={dataBounds} headingTheater={headingTheater} headingYears={atlasYears} positions={mapPositions} tracks={tracks} selected={selected} focused={focused} date={date} mode={mode} showPrecision={showPrecision} showLabels={showLabels} fitRequest={fitRequest} onClaim={focusClaim}/>
           {mode === 'history' && selected.length === 0 && <div className="map-empty"><Icon name="route" size={30}/><h3>Trace a formation’s history</h3><p>Check one or more formations in the list to compare their recorded locations.</p><button onClick={() => setMobilePanel(true)} className="mobile-formations">Choose formations</button></div>}
           {!(mode === 'history' && !selected.length) && mapPositions.length === 0 && (mode === 'situation' || !tracks.some(t => t.points.length)) && <div className="map-empty"><h3>No observations to show</h3><p>Try a later date, a wider history range, or a different filter.</p></div>}
         </div>

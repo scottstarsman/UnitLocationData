@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — The viewer opens on Western Europe when more than one theater is present (branch `contrib-friction-fixes`)
+
+The map no longer uses the bounding box of every claim as its first viewport, which after the Guadalcanal increment stretched from Europe to the Solomons. It now opens on `western_europe` claims (or the selected theater, or the theater with the most points). The default filter stays “All theaters,” so other-front markers may sit off-screen until the user fits the map or chooses a theater. The heading follows the selected theater, or says Western Europe, and the year range comes from the atlas dates. Date-line wrapping is still not handled.
+
 ## 25 November 2026 — BSIP district officers and scouts map as reconnaissance, not a District command (branch `contrib-friction-fixes`)
 
 `UK-BSIP-000H` (“British Solomon Islands Protectorate district officers and scouts”) matched SIDC rule HQ03 (`District`) and was coded as a territorial command. A more specific function rule `GC00` (`district officers and scouts`) now sits above HQ03 and maps the unit as reconnaissance, like coastwatchers. `UK-DIST-NETH` and the Luftgau “Air District Command” units still match HQ03. No claim or unit name was changed.

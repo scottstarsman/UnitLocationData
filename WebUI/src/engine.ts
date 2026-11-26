@@ -100,3 +100,50 @@ export function precisionRing(c: Claim): Feature<Polygon> {
   }
   return { type: 'Feature', properties: {}, geometry: { type: 'Polygon', coordinates: [coordinates] } };
 }
+
+export type MapBounds = [number, number, number, number];
+
+/** Axis-aligned lon/lat box of claims that have coordinates. Does not wrap the date line. */
+export function claimBounds(claims: { longitude: number; latitude: number }[]): MapBounds | null {
+  const pts = claims.filter(c => Number.isFinite(c.longitude) && Number.isFinite(c.latitude));
+  if (!pts.length) return null;
+  let west = pts[0].longitude, east = pts[0].longitude, south = pts[0].latitude, north = pts[0].latitude;
+  for (const c of pts) {
+    if (c.longitude < west) west = c.longitude;
+    if (c.longitude > east) east = c.longitude;
+    if (c.latitude < south) south = c.latitude;
+    if (c.latitude > north) north = c.latitude;
+  }
+  return [west, south, east, north];
+}
+
+/**
+ * Opening map extent when more than one theater is in the atlas.
+ * Uses the selected theater when one is set; otherwise `western_europe` if that
+ * theater has points; otherwise the theater with the most points. This keeps the
+ * first view on a campaign area instead of a world box spanning Europe and the Pacific.
+ * The "All theaters" filter is unchanged, so other-front markers may sit off-screen
+ * until the user fits the map or chooses a theater.
+ */
+export function initialMapBounds(
+  claims: { longitude: number; latitude: number; theater?: string }[],
+  selectedTheater = '',
+  primaryTheater = 'western_europe',
+): MapBounds | null {
+  const pts = claims.filter(c => Number.isFinite(c.longitude) && Number.isFinite(c.latitude));
+  if (!pts.length) return null;
+  const theater = selectedTheater || primaryTheater;
+  const inTheater = pts.filter(c => c.theater === theater);
+  if (inTheater.length) return claimBounds(inTheater);
+  const counts = new Map<string, number>();
+  for (const c of pts) {
+    const t = c.theater || '';
+    counts.set(t, (counts.get(t) || 0) + 1);
+  }
+  let best = '';
+  let n = -1;
+  for (const [t, k] of counts) {
+    if (k > n) { best = t; n = k; }
+  }
+  return claimBounds(pts.filter(c => c.theater === best)) ?? claimBounds(pts);
+}

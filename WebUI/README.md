@@ -1,6 +1,6 @@
 # WWII Unit Locations
 
-A local React / TypeScript / MapLibre web app for the WWII Unit Locations dataset. The surveyed focus of the current data is the Western Front, June 1944 to May 1945, but the atlas is not limited to that front. The visual design takes its warm paper, muted blue water, subdued geography and compact military symbols from Scott's June 23, 1944 situation-map reference. The scan itself is not copied into the app.
+A local React / TypeScript / MapLibre web app for the WWII Unit Locations dataset. The surveyed focus of the current data is the Western Front, June 1944 to May 1945, but the atlas is not limited to that front. The map still *opens* on Western Europe when more than one theater is present, so a Pacific increment does not stretch the first view across the globe. Choose a theater (or fit visible observations) to move the viewport; the default filter stays “All theaters,” and off-screen markers remain in the data. The visual design takes its warm paper, muted blue water, subdued geography and compact military symbols from Scott's June 23, 1944 situation-map reference. The scan itself is not copied into the app.
 
 ## Run
 
@@ -25,6 +25,7 @@ npm run preview     # serve the built application locally
 ## Using the atlas
 
 - **Situation:** scrub the daily slider, type/pick a date, step one day, jump to the next/previous observation date, or play at 1–10 days per second. Playback stops at the end. Next/previous observation dates respect active filters and, in history mode, the selected formations/range.
+- **Opening view:** the first map extent is the `western_europe` claims, not the bounding box of every theater. Selecting a theater fits that theater. The heading follows the selected theater, or says Western Europe while the filter is All theaters.
 - **Formation list:** search names or IDs; filter by nation, echelon and operation. Operation filters include descendants. The list is a catalogue, so it can include units without a visible observation on the selected date. Enable the catalogue's placeholder checkbox to include units with no claims.
 - **Observation age:** the default map includes the latest observations within 30 days. Choose same-day-only, 7 days, 14 days, 30 days, or any earlier observation. Dashed symbols and `−Nd` labels distinguish older observations. This is a display of last recorded positions, not a claim that the units stayed there.
 - **History:** check formations in the list or add them from their detail panel. Switch to Movement history, choose the date range, and optionally fit the map. By default, points are revealed only up to the slider date. “Show entire range” also displays later points in the chosen range. Each selected unit has a color; points are inspectable and labels show dates where space permits. The observation-age limit applies to current symbols, not the past points in a selected history range.

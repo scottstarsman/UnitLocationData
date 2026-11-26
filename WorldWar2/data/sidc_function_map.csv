@@ -1,6 +1,7 @@
 rule_id,kind,domain,echelon,ship_type,name_pattern,symbol_set,entity,modifier1,modifier2,hq_tf_dummy,amplifier_override,entity_label,case,note
 HQ01,function,,,,Oberkommando der Wehrmacht,10,110000,,,2,26,Command and Control,no-exact,"National high command: C2 with the HQ staff, echelon Command (26)."
 HQ02,function,,,,Supreme Headquarters|Allied Force Headquarters|Oberbefehlshaber|Wehrmachtbefehlshaber|Strategic Air Forces|Allied Expeditionary Air Force,10,110000,,,2,25,Command and Control,no-exact,"Theater headquarters: C2 with the HQ staff, echelon Region/Theater (25)."
+GC00,function,,,,district officers and scouts,10,121300,,,0,,Reconnaissance/Cavalry/Scout,exact,British Solomon Islands Protectorate district officers and scouts (UK-BSIP-000H). Must sit above HQ03 so "district" is not taken as a territorial command.
 HQ03,function,,,,Luftgau|Wehrkreis|District,10,110000,,,2,,Command and Control,no-exact,Territorial or administrative command; amplifier from the echelon map (other = 25 Region).
 SH-BB,function,naval,naval_unit,BB,,30,120201,,,0,,Battleship,exact,
 SH-BC,function,naval,naval_unit,BC,,30,120201,,,0,,Battleship,nearest,No battlecruiser entity in 2525D; no unit has this type today.

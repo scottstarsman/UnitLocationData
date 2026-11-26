@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — BSIP district officers and scouts map as reconnaissance, not a District command (branch `contrib-friction-fixes`)
+
+`UK-BSIP-000H` (“British Solomon Islands Protectorate district officers and scouts”) matched SIDC rule HQ03 (`District`) and was coded as a territorial command. A more specific function rule `GC00` (`district officers and scouts`) now sits above HQ03 and maps the unit as reconnaissance, like coastwatchers. `UK-DIST-NETH` and the Luftgau “Air District Command” units still match HQ03. No claim or unit name was changed.
+
 ## 25 November 2026 — review_sample and claim-id checks tell you to rebuild first (branch `contrib-friction-fixes`)
 
 `scripts/review_sample.py --check` now tells you to run `build.py` after regenerating the sample, because the manifest source-tree hash includes those files. `scripts/check_claim_ids.py` prints that its next-free id comes from `build/all_claims.csv`. `run_checks.sh` notes the `review_sample.py` then `build.py` order in its header.

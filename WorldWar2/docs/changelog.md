@@ -2,6 +2,21 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Guadalcanal JACAR 8th Fleet Ke-Go (February 1943) reading (branch `guadalcanal-jacar-8th-fleet-2`)
+
+The February 1943 8th Fleet wartime log (C08030022900, 35 pages) was read. The three Ke-Go evacuation runs are in 麾下及友軍ノ行動概要 (イ) ソロモン方面, PDF pp. 21–24, dated 二―一, 二―四 and 二―七, at エスペ (Cape Esperance). January (C08030022800) was opened for 人員 and headquarters claims; no 人員 table naming 三川軍一 and no 司令部位置 were found, so **UC0736 and CR3899 were not extended**, and no new Eighth Fleet HQ claim was added.
+
+- **New reference R2250** (JACAR C08030022900). C08030022700 and C08030022800 were read and are described in the private notes; they are not cited on a claim row, so they were not added as unused reference records.
+- **New destroyers (17), scope blank:** Shirayuki, Maikaze, Fumizuki, Satsuki, Nagatsuki, Oshio, Arashio, Asagumo, Harusame, Makigumo, Kazagumo, Akigumo, Tokitsukaze, Yukikaze, Isokaze, Urakaze, Tanikaze.
+- **1 February 1943, Cape Esperance (PL4912), `OP-CAMP-GUADALCANAL`, withdrawal:** Makinami (C13302) and Kawakaze (C13303) at 0.7, where Cressman independently names them in Hashimoto’s first Operation KE run (Makinami, the flagship, damaged; Kawakaze sinking PT-111 and PT-37). Shirayuki (C13304, flag after Makinami was damaged), Kuroshio, Maikaze, Fumizuki, Satsuki, Nagatsuki, Oshio and Arashio (C13305–C13311) at 0.5 (JACAR only).
+- **2 February, Makigumo sunk (C13312, 0.7, `destroyed=true`):** mined during the first lift (JACAR, 巻雲揚陸作業中觸雷沈没 in the 1 February table, tow abandoned on the next page) and scuttled (Cressman, 2 February, off Cape Esperance at 09°10'S, 159°45'E, by Yugumo). Dated 2 February, Cressman’s calendar date for the scuttling (night of 1–2). Place is Ironbottom Sound (area) with qualifier off Cape Esperance, so two families can reach 0.7. Yugumo was not clearly named as the scuttling ship in the JACAR pages read and was not added.
+- **4 February, Cape Esperance:** Shirayuki (C13313), Maikaze (C13314), Kuroshio (C13315) and Kawakaze (C13316) at 0.7 (Cressman: Hashimoto’s flagship Shirayuki, and Maikaze, Kuroshio and Kawakaze, damaged). Asagumo, Harusame, Oshio, Arashio, Satsuki, Nagatsuki and Fumizuki (C13317–C13323) at 0.5.
+- **7 February, Cape Esperance:** Isokaze (C13324) and Urakaze (C13325) at 0.7 (Cressman: Isokaze damaged, Urakaze near-missed; Cressman dates completion of the lift on 8 February, the night of 7–8). Destroyer Squadron 2 (C13326) at 0.5, from the table header 第二水雷戦隊司令 (Cressman names Hashimoto but not DesRon 2 by that title; commander left unknown; no organic ship-to-squadron relations from a lift table). Shirayuki, Kuroshio, Asagumo, Harusame, Tokitsukaze, Yukikaze, Satsuki, Fumizuki, Oshio, Arashio, Kazagumo, Akigumo, Nagatsuki, Tanikaze and Suzukaze (C13327–C13341) at 0.5. One accompanying name was left unread (夕雲 vs 夕風).
+- JACAR recovered-personnel figures were not treated as campaign totals (they do not match Cressman’s 4,935 / 3,921 / 1,796). Existing 0.5 claims C13223 (Hatsuyuki, Cape Esperance) and C13270 (Suzukaze, Tassafaronga) were not raised. CombinedFleet was not used.
+
+Next free after this increment: `C13342`, `R2248`, `CR3900`, `PL4959`, `PE0645`, `UC0737`, `UL031`.
+
+
 ## 26 November 2026 — Guadalcanal JACAR 8th Fleet September–October 1942 reading (branch `guadalcanal-jacar-8th-fleet-2`)
 
 The remaining handwritten JACAR 8th Fleet wartime-log images already on disk were read, beginning with C08030022600 (48 pages). **October 1942 is in this item**, from a second title page at PDF p. 19 (自昭和十七年十月一日 至十月三十一日). It is not missing from the reel. C08030022700 (November monthly diary plus 外南洋部隊戦闘詳報第七號, 6 September–5 December, カ号作戦) was also opened; its catalog title “1 Nov–15 Dec” does not describe a December monthly log.

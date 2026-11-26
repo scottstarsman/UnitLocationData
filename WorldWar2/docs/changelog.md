@@ -2,6 +2,21 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Guadalcanal Japanese ground JACAR cross-check (branch `guadalcanal-jacar-ground`)
+
+Images of the 17th Army operations record (R2228 / R2230) and of 南太平洋作戦 第７編, chs. 1–3 (new R2251, parent C25080306400, item C25080307000) were read on JACAR. Private English notes are in `/workspace/ww2-locations/sources/jacar_guadalcanal_ground_notes.md` (not committed). Two JACAR works remain one official family; 0.7 is used only where Miller independently agrees on the same unit, date and place.
+
+- **Reference.** R2251 is the 第７編 parent volume (URL `https://www.jacar.archives.go.jp/das/meta/C25080306400`, no trailing slash, family `jacar`). R2228 and R2230 reliability notes now record that the Solomons and withdrawal-chapter images cited below were read on 26 November 2026. R2248 and R2249 remain unused.
+- **Claims promoted 0.5 to 0.7** (Miller already on the row; JACAR now independently confirms the same date and place; R2228 and a page/stamp locator added; annotation in the claim notes): C12827 and C12829 (Kawaguchi Force and the 124th Infantry, 29 August 1942, Taivu Point; landing window 29 August–2 September, with the 124th HQ and 3rd Battalion dated the night of 30 August); C12855 (Sumiyoshi Force, 23 October, Matanikau right-bank Inu position from 14:00); C12857 and C12858 (Nasu Force, 24 and 25 October inland assaults); C12852, C12853 and C12862 (16th Infantry, 29th Infantry, and 2nd Division, night of 25 October). The Japanese text describes the inland assault toward the airfield from the south and does not use the English name Bloody Ridge.
+- **Locators tightened, confidence unchanged:** C12822 and C12823 (Ichiki, 18 and 21 August; first echelon 916 men, Taivu assembly at 23:00, fight on the 中川, tank counterattack on the afternoon of the 21st). C12832 notes now point to the new 24 July Rabaul claim and explain why the mid-October Matanikau assembly is not promoted.
+- **New claims.** C13342 and C13343: 11th and 13th Construction Units (`JPN-NCU-011`, `JPN-NCU-013`) at Henderson Field / the lower Lunga River area on 7 August 1942, confidence 0.5 (R2251 + GeoNames; Miller/Zimmerman pages naming the unit numbers on that date were not copied). C13344: 17th Army headquarters at Rabaul on 24 July 1942, confidence 0.5 (R2228), `southwest_pacific`, `OP-FRONT-PACIFIC`, event `hq_move`.
+- **Units.** `JPN-NCU-011` and `JPN-NCU-013` record_status is raised from placeholder to active (old value: placeholder, because the unit numbers had not been copied from a page read; new value: active, because C25080307000 p. 2, stamp 1308, names both units at Lunga on 7 August). `JPN-INF-229` and `JPN-SNLF-SASEBO5` stay placeholder (Rabaul / Evrenata dates for the 229th, but no Guadalcanal landing; no Sasebo 5th Guadalcanal page found). `JPN-ARTBN-020` and `JPN-ENG-038` stay partial (named in the October tables and the withdrawal annex, but still without a sourced island landing day). Kure 3 Tulagi claims stay at 0.5; the pages read describe a Tulagi naval guard but do not name 呉三特.
+- **Commander.** PE0645 Monzen (門前, surname only) and tenure UC0737 on the 11th Construction Unit from 7 August (open at last claim). UC0703 (Hyakutake) is left at its published 15 October 1942 on-island claim_date key.
+
+Eight Japanese ground claims go from 0.5 to 0.7; three new claims are added (C13342–C13344). Next free after this increment: `C13345`, `R2248`, `CR3901`, `PL4959`, `PE0646`, `UC0738`, `UL031`, `MSN0106`, `G319`.
+
+`review_sample.py` was run before `build.py`. `build.py --check` is clean.
+
 ## 26 November 2026 — Contributor-friction cleanup after the Guadalcanal air, naval and JACAR passes (branch `air-naval-friction-fixes`)
 
 - **Naval ladder.** Added echelon `task_force` at rank 14 and bumped `fleet` from 14 to 15 (`schema/vocabularies.json`, `validate.naval_hierarchy_problem`, `data/sidc_echelon_map.csv`, scenario 252). Scenarios 255 and 324 now expect `fleet` at rank 15. A Task Group may now sit under a Task Force. A task organisation may be a placeholder that holds relations only, or active with dated claims when a source places the force at a place. Western Front Task Forces still stored as `US-TG-122` and similar ids remain echelon `task_group` until a later pass.

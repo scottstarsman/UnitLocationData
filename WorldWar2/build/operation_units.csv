@@ -566,6 +566,8 @@ OP-CAMP-GUADALCANAL,JPN-INF-038D,IJA 38th Division (Nagoya),ground,Japan,Axis,,d
 OP-CAMP-GUADALCANAL,JPN-INF-124,IJA 124th Infantry Regiment,ground,Japan,Axis,,regiment/battle_group,Army,active,direct,campaign,7,7,7,7,0,0,1942-08-29,1943-01-23,UC0706,PE0616,Akinosuka Oka
 OP-CAMP-GUADALCANAL,JPN-INF-228,IJA 228th Infantry Regiment,ground,Japan,Axis,,regiment/battle_group,Army,active,direct,campaign,4,4,4,4,0,0,1942-10-28,1943-01-23,,,
 OP-CAMP-GUADALCANAL,JPN-INF-230,IJA 230th Infantry Regiment,ground,Japan,Axis,,regiment/battle_group,Army,active,direct,campaign,1,1,1,1,0,0,1942-11-03,1942-11-03,,,
+OP-CAMP-GUADALCANAL,JPN-NCU-011,11th Construction Unit,ground,Japan,Axis,,battalion,Navy,active,direct,campaign,1,1,1,1,0,0,1942-08-07,1942-08-07,UC0737,PE0645,Monzen
+OP-CAMP-GUADALCANAL,JPN-NCU-013,13th Construction Unit,ground,Japan,Axis,,battalion,Navy,active,direct,campaign,1,1,1,1,0,0,1942-08-07,1942-08-07,,,
 OP-CAMP-GUADALCANAL,JPN-SNLF-KURE3,3rd Kure Special Naval Landing Force,ground,Japan,Axis,,battalion,Navy,active,direct,campaign,2,2,2,2,0,0,1942-08-07,1942-08-08,,,
 OP-CAMP-GUADALCANAL,JPN-SNLF-YOKOSUKA5,5th Yokosuka Special Naval Landing Force,ground,Japan,Axis,,battalion,Navy,active,direct,campaign,1,1,1,1,0,0,1942-08-18,1942-08-18,,,
 OP-CAMP-GUADALCANAL,US-AMER-001D,Americal Division,ground,US,Allied,,division,Army,active,direct,campaign,2,2,2,2,0,0,1942-12-09,1943-01-02,UC0698;UC0699,PE0609;PE0611,Alexander M. Patch;Edmund B. Sebree
@@ -3608,7 +3610,7 @@ OP-FRONT-MEDITERRANEAN,FR-ARMY-001A,French First Army (Army B until 25 September
 OP-FRONT-MEDITERRANEAN,FR-INF-009D,French 9th Colonial Infantry Division,ground,France,Allied,,division,Army,active,direct,umbrella,2,2,2,2,0,0,1944-06-18,1944-06-19,UC0045;UC0046,PE0329;PE0553,Magnan;Jean Valluy
 OP-FRONT-MEDITERRANEAN,GER-GEB-157D,157th Mountain Division (157. Gebirgs-Division),ground,Germany,Axis,,division,Army,active,direct,umbrella,1,1,1,1,0,0,1944-12-18,1944-12-18,,,
 OP-FRONT-PACIFIC,JPN-ARMY-008A,8th Area Army,ground,Japan,Axis,,army,Army,active,direct,umbrella,1,1,1,1,0,0,1942-12-02,1942-12-02,,,
-OP-FRONT-PACIFIC,JPN-ARMY-017A,17th Army,ground,Japan,Axis,,army,Army,active,rolled_only,campaign,0,0,6,6,0,0,1942-10-15,1943-02-08,UC0703,PE0613,Harukichi Hyakutake
+OP-FRONT-PACIFIC,JPN-ARMY-017A,17th Army,ground,Japan,Axis,,army,Army,active,direct,campaign,1,1,7,7,0,0,1942-07-24,1943-02-08,UC0703,PE0613,Harukichi Hyakutake
 OP-FRONT-PACIFIC,JPN-ART-010,10th Independent Mountain Artillery Regiment,ground,Japan,Axis,,regiment/battle_group,Army,active,rolled_only,campaign,0,0,2,2,0,0,1942-12-16,1943-02-08,,,
 OP-FRONT-PACIFIC,JPN-ARTBN-020,20th Independent Mountain Artillery Battalion,ground,Japan,Axis,,battalion,Army,partial,rolled_only,campaign,0,0,1,1,0,0,1943-02-08,1943-02-08,,,
 OP-FRONT-PACIFIC,JPN-BDE-035B,35th Infantry Brigade (Kawaguchi Force),ground,Japan,Axis,,brigade,Army,active,rolled_only,campaign,0,0,5,5,0,0,1942-08-29,1943-01-23,UC0705,PE0615,Kiyotake Kawaguchi
@@ -3625,6 +3627,8 @@ OP-FRONT-PACIFIC,JPN-INF-038D,IJA 38th Division (Nagoya),ground,Japan,Axis,,divi
 OP-FRONT-PACIFIC,JPN-INF-124,IJA 124th Infantry Regiment,ground,Japan,Axis,,regiment/battle_group,Army,active,rolled_only,campaign,0,0,7,7,0,0,1942-08-29,1943-01-23,UC0706,PE0616,Akinosuka Oka
 OP-FRONT-PACIFIC,JPN-INF-228,IJA 228th Infantry Regiment,ground,Japan,Axis,,regiment/battle_group,Army,active,rolled_only,campaign,0,0,4,4,0,0,1942-10-28,1943-01-23,,,
 OP-FRONT-PACIFIC,JPN-INF-230,IJA 230th Infantry Regiment,ground,Japan,Axis,,regiment/battle_group,Army,active,rolled_only,campaign,0,0,1,1,0,0,1942-11-03,1942-11-03,,,
+OP-FRONT-PACIFIC,JPN-NCU-011,11th Construction Unit,ground,Japan,Axis,,battalion,Navy,active,rolled_only,campaign,0,0,1,1,0,0,1942-08-07,1942-08-07,UC0737,PE0645,Monzen
+OP-FRONT-PACIFIC,JPN-NCU-013,13th Construction Unit,ground,Japan,Axis,,battalion,Navy,active,rolled_only,campaign,0,0,1,1,0,0,1942-08-07,1942-08-07,,,
 OP-FRONT-PACIFIC,JPN-SNLF-KURE3,3rd Kure Special Naval Landing Force,ground,Japan,Axis,,battalion,Navy,active,rolled_only,campaign,0,0,2,2,0,0,1942-08-07,1942-08-08,,,
 OP-FRONT-PACIFIC,JPN-SNLF-YOKOSUKA5,5th Yokosuka Special Naval Landing Force,ground,Japan,Axis,,battalion,Navy,active,rolled_only,campaign,0,0,1,1,0,0,1942-08-18,1942-08-18,,,
 OP-FRONT-PACIFIC,US-AMER-001D,Americal Division,ground,US,neutral,"side on start_date is neutral, on end_date is Allied",division,Army,active,rolled_only,campaign,0,0,2,2,0,0,1942-12-09,1943-01-02,UC0698;UC0699,PE0609;PE0611,Alexander M. Patch;Edmund B. Sebree

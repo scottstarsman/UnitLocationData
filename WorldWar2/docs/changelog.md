@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — C0039 lists US First Army by id (branch `contrib-friction-fixes`)
+
+C0039 (21st Army Group, 7 June 1944) had `composing_units` `UK-ARMY-002A` and `composing_text` “First Army”. After trailing-parenthesis names stopped clashing across nations, “First Army” uniquely names `US-ARMY-001A`, and the validator required the id. `composing_units` is now `UK-ARMY-002A; US-ARMY-001A` (old value: `UK-ARMY-002A` only) and `composing_text` is blank (old value: First Army), because 21st Army Group already commanded US First Army in Normandy on that date. Annotated on the claim.
+
 ## 25 November 2026 — The viewer opens on Western Europe when more than one theater is present (branch `contrib-friction-fixes`)
 
 The map no longer uses the bounding box of every claim as its first viewport, which after the Guadalcanal increment stretched from Europe to the Solomons. It now opens on `western_europe` claims (or the selected theater, or the theater with the most points). The default filter stays “All theaters,” so other-front markers may sit off-screen until the user fits the map or chooses a theater. The heading follows the selected theater, or says Western Europe, and the year range comes from the atlas dates. Date-line wrapping is still not handled.

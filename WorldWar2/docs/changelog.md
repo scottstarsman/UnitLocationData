@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Trailing-parenthesis unit names no longer clash across nations (branch `contrib-friction-fixes`)
+
+`unit_refs` indexes each unit name and the same name with a trailing parenthesis stripped, so a same-nation claim can use the short form. The last-resort, unique-across-nations lookup also used the stripped form, so a name such as “16th Infantry Regiment (IJA)” was treated as “16th Infantry Regiment” and rejected a published US composing_text entry (C0025). The last-resort path now matches the exact `unit_name` only. The Guadalcanal Japanese regiments already use an “IJA …” prefix and are unchanged. `scripts/test_unit_refs.py` covers the C0025 case, same-nation short forms, and ambiguous exact names.
+
 ## 25 November 2026 — Source-tree hash in the manifest must match the committed tree (branch `guadalcanal-pilot`)
 
 `build/manifest.json` `source_tree_sha256` is the SHA-256 of tracked, non-generated WorldWar2 files (`git ls-files`, excluding `build/`, `docs/coverage.md` and `data/references.csv`). On this branch `build.py` was run and then hashed files were changed before commit (including the `docs/review` sample written by `review_sample.py`), so a clean checkout hashed differently from the committed manifest. CI runs `build.py` and then `git status`, which failed on that one line even though a following `--check` compared the just-written tree to itself. The hash already ignored untracked and gitignored files. The manifest is rebuilt from the committed tree; `scripts/test_source_tree_sha256.py` checks that untracked and ignored files do not change the hash and that the committed manifest matches the current tree. After `review_sample.py`, run `build.py` again before committing.

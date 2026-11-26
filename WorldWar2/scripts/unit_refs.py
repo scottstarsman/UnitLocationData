@@ -107,7 +107,7 @@ def trailing_paren(s):
 
 def resolve_name(base, claimer_nationality='', claimer_name=''):
     """unit_ids whose name is exactly `base`: with an explicit adjective ('US 82nd Airborne Division') in that nation; else in the claiming
-    unit's nation (also `<base>, <claiming unit name>` for combat commands); else, as a last resort, when the name is unique across all nations.
+    unit's nation (also `<base>, <claiming unit name>` for combat commands); else, as a last resort, when the exact unit_name is unique across all nations (stripped parenthetical aliases are same-nation only).
     More than one id = ambiguous; none = not a unit of units.csv."""
     idx = index()
     adj = adjective_nations()
@@ -124,10 +124,16 @@ def resolve_name(base, claimer_nationality='', claimer_name=''):
             r = idx.get((claimer_nationality, base + ', ' + claimer_name)) or idx.get((claimer_nationality, base + ', ' + re.sub(r'^\w+ ', '', claimer_name)))
             if r:
                 return list(r)
+    # Last resort is unique exact names only. The index also stores a form with a
+    # trailing parenthesis stripped, so that a same-nation claim can write the short
+    # name. That stripped form must not be unique-across-nations: "16th Infantry
+    # Regiment (IJA)" would otherwise clash with a US composing_text entry
+    # "16th Infantry Regiment" (C0025).
+    units = load_units()
     out = []
     for (_n, f), v in idx.items():
         if f == base:
-            out.extend(v)
+            out.extend(uid for uid in v if units[uid]['unit_name'] == base)
     return list(dict.fromkeys(out))
 
 

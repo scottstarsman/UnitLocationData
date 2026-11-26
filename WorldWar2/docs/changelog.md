@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Contributor guide covers the Guadalcanal friction points (branch `contrib-friction-fixes`)
+
+`CONTRIBUTING.md` now has a Pacific (Guadalcanal) worked example alongside the Italy one, with `sub_theater`, Seabee and Japanese regiment rows, nationality as the nation *name*, echelon `regiment/battle_group`, `listing_source`, `composing_units` / `listed_by_higher_unit`, and SIDC name patterns. New short sections cover the people / tenure / link triple for a named commander and the command-relation flags (`end_unknown`, inferred ends, `seq` per claim). The rules now say not to start a note with `Reason:`, that `current_activity` is required and should stay at or under 120 characters, that citation URLs must already be in `references_meta.csv` (HyperWar index URL, `www.ibiblio.org`, no semicolon inside a `source_locator` part), that a landing window is not a landing log, and that `check_claim_ids.py` reads `build/all_claims.csv`. The recommended order is `review_sample.py`, then `build.py`, then `run_checks.sh`. `docs/methodology.md` states that the who_controls grid is a Western Front week grid only.
+
 ## 25 November 2026 — Trailing-parenthesis unit names no longer clash across nations (branch `contrib-friction-fixes`)
 
 `unit_refs` indexes each unit name and the same name with a trailing parenthesis stripped, so a same-nation claim can use the short form. The last-resort, unique-across-nations lookup also used the stripped form, so a name such as “16th Infantry Regiment (IJA)” was treated as “16th Infantry Regiment” and rejected a published US composing_text entry (C0025). The last-resort path now matches the exact `unit_name` only. The Guadalcanal Japanese regiments already use an “IJA …” prefix and are unchanged. `scripts/test_unit_refs.py` covers the C0025 case, same-nation short forms, and ambiguous exact names.

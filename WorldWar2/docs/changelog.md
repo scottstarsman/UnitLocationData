@@ -1,5 +1,9 @@
 # Changelog of the data structures
 
+## 26 November 2026 — Pacific air and naval ID and sea-place conventions (branch `guadalcanal-air-pilot`)
+
+Documented the conventions Scott approved on 26 November 2026 for the Guadalcanal air (and later naval) pilot, in `schema/README.md` (unit_id pattern and places `kind`) and `CONTRIBUTING.md` (Pacific teaching notes and Add a place). Named straits and enclosed battlegrounds are place kind `area` (0.7 allowed when two source families agree); open-ocean coordinate-only pins stay `sea_position` (confidence capped at 0.5). New id patterns: `US-TF-` for Task Forces and `US-TG-` for Task Groups on new rows; `US-MAW-` / `US-MAG-` / `US-VMF-` / `US-VMSB-` / `US-VMO-` / `US-VMB-` / `US-VMJ-` for Marine aviation; `US-NAV-<ship_type>-<hull>` for new US warships so they cannot collide with coast-artillery `US-CA-`; `JPN-FLT-`, `JPN-AIRFLOT-`, `JPN-KOKUTAI-`, `JPN-DESRON-`, and `JPN-<ship_type>-<NAME>` for Japanese fleets, air flotillas, kōkūtai, destroyer squadrons and named ships. Existing Western Front ship and task-group ids are not renamed. Embarked carrier air is deferred. "Cactus Air Force" is a composite, not a unit id. No data rows in this conventions commit. Next free ids unchanged: `C13002`, `CR3818`, `R2232`, `PL4938`, `PE0621`, `UC0711`, `MSN0099`, `G319`.
+
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
 ## 25 November 2026 — Guadalcanal unit fill-out: artillery, engineers, 10th Marines, 18th NCB, 9th Defense, and 8th Area Army (branch `guadalcanal-fillout`)

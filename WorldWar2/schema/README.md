@@ -139,7 +139,7 @@ One row per place; claims point at it with `place_id`. Primary key `place_id`; r
 | `place_id` | string | yes | Stable key PL0001 onward. Never reused. |
 | `name` | string | yes | Canonical name, unique (ignoring case) across the table. Settlements are written 'Name, administrative area' as the sources give them. |
 | `alt_names` | string | no | Other spellings and names under which claims named the place, separated by '; '. No alias may equal another place's name. |
-| `kind` | string | yes | point (a named settlement or site), area (a named area, sector, beach, zone or bridgehead, represented by one point) or line (a front, axis or route, represented by one point on it); `sea_position` (a point at sea, stated by a source or worked from an anchor place, a distance and a bearing; claims at it are capped at confidence 0.5 and `coord_source_note` says how the point was worked). |
+| `kind` | string | yes | point (a named settlement or site), area (a named area, sector, beach, zone, bridgehead, or named strait or enclosed battleground such as Ironbottom Sound, represented by one point) or line (a front, axis or route, represented by one point on it); `sea_position` (a point at sea that is not a named body of water: a stated or worked coordinate in open ocean, from an anchor place, a distance and a bearing; claims and mission targets at it are capped at confidence 0.5 and `coord_source_note` says how the point was worked). Named waters use `area` and may reach confidence 0.7 when two source families agree; open-ocean pins stay `sea_position`. Approved 26 November 2026 (Guadalcanal air/naval pilot). |
 | `latitude` | number | yes | Decimal degrees WGS84 of the place's point. |
 | `longitude` | number | yes | Decimal degrees WGS84 of the place's point. |
 | `precision_km` | number | yes | The finest radius (banded, vocabulary precision_km) with which any claim has used this point when the place was created; a guide for new claims, not a measured error. A claim keeps its own precision_km. |
@@ -546,7 +546,26 @@ Coastwatchers of the RAN / Allied Intelligence Bureau (Organisation Ferdinand) u
 | Named 1920s torpedo boats | `GER-TB-<NAME>` in ASCII, umlaut as OE (H2) | `GER-TB-MOEWE`, `GER-TB-JAGUAR` |
 | Numbered destroyers and T-boats | `GER-DD-Z023`, `GER-TB-T028` (three digits; already approved family) | `GER-DD-Z024`, `GER-TB-T024` |
 
-Ships keep the pilot's patterns (`US-DD-<hull>`, `UK-CL-<NAME>`, `GER-DD-Z<nnn>`, flotilla `GER-TBF-<nnn>`; `docs/air_naval_pilot.md` 8.1). Where a source gives a ship's class differently from the ship's own class page, the class page decides and the other source is recorded as a conflict in the unit note.
+Ships already published under the Western Front pilot keep those patterns (`US-DD-<hull>`, `US-CA-031` USS Augusta, `US-BB-033`, `UK-CL-<NAME>`, `GER-DD-Z<nnn>`, flotilla `GER-TBF-<nnn>`; `docs/air_naval_pilot.md` 8.1). Those ids are never renamed. **New US warship ids** take the `US-NAV-` prefix (`US-NAV-<ship_type>-<hull>`, for example `US-NAV-CA-036`) so a heavy cruiser cannot collide with a coast-artillery regiment (`US-CA-214` is already the 214th Coast Artillery, domain `ground`). See the Pacific air and naval patterns below. Where a source gives a ship's class differently from the ship's own class page, the class page decides and the other source is recorded as a conflict in the unit note.
+
+**Pacific air and naval ids (Guadalcanal air/naval pilot, 26 November 2026, branch `guadalcanal-air-pilot`).** These are additions, not a renaming of any existing id. Scott approved the conventions on 26 November 2026. Domain `air` for flying units and air commands (including a Japanese air fleet); domain `naval` for ships and naval commands. Shore-based aviation uses a base claim (`location_represents=base`). A mission is not a location claim; it lives in `data/missions/` and needs a base claim in force that day. Embarked carrier air groups are deferred (the moving-base question is left open). "Cactus Air Force" is a composite of the units on Guadalcanal, not a unit id (the same rule as the CAM Division on the ground). Destroyers in the later naval pass are named battle participants and DesRon commands only, not a full Tokyo Express log.
+
+| Unit | Pattern | Example |
+|---|---|---|
+| US Task Force | `US-TF-<nnn>` (new; the Western Front pass stored some numbered task *forces* as `US-TG-<n>`, and those ids stay) | `US-TF-061` (Task Force 61) |
+| US Task Group | `US-TG-<nnn>` (existing pattern, now used for groups only on new rows) | `US-TG-0621` is the form if a source names TG 62.1; do not invent a group number |
+| US Marine Aircraft Wing | `US-MAW-<nnn>` (`air_wing`, branch `Marines`) | `US-MAW-001` (1st Marine Aircraft Wing) |
+| US Marine Aircraft Group | `US-MAG-<nnn>` (`air_group`, branch `Marines`) | `US-MAG-023` (MAG-23) |
+| US Marine fighter, scout-bomber, observation, bomber, or utility squadron | `US-VMF-<nnn>`, `US-VMSB-<nnn>`, `US-VMO-<nnn>`, `US-VMB-<nnn>`, `US-VMJ-<nnn>` (`air_squadron`, branch `Marines`) | `US-VMF-223`, `US-VMSB-232`, `US-VMO-251` |
+| US Army Air Forces units | existing `US-AF-<nnn>`, `US-FG-<nnn>`, `US-FS-<nnn>`, `US-BG-<nnn>`, `US-BS-<nnn>` | `US-AF-013` (Thirteenth Air Force), `US-FS-067` (67th Fighter Squadron), `US-BG-011` (11th Bombardment Group). Do not reuse `US-FW-067` (already the 67th Fighter Wing, Western Front) |
+| New US warship | `US-NAV-<ship_type>-<hull>` (`naval_unit`) | `US-NAV-CA-036`, `US-NAV-CV-006`. Existing `US-BB-033`, `US-CA-031`, `US-DD-<hull>` stay |
+| Japanese fleet or air fleet | `JPN-FLT-<nnn>` | `JPN-FLT-008` (8th Fleet, domain `naval`, echelon `fleet`); `JPN-FLT-011` (11th Air Fleet, domain `air`, echelon `air_force`). Naval echelons still require domain `naval`, so an air fleet cannot use echelon `fleet` |
+| Japanese air flotilla (Kōkū Sentai) | `JPN-AIRFLOT-<nnn>` (`air_division`, domain `air`). Documented as the rung between `JPN-FLT-` and `JPN-KOKUTAI-` | `JPN-AIRFLOT-025` (25th Air Flotilla) |
+| Japanese kōkūtai (air group) | `JPN-KOKUTAI-<nnn>` or `JPN-KOKUTAI-<NAME>` for a named group (`air_group`, domain `air`) | `JPN-KOKUTAI-002`, `JPN-KOKUTAI-TAINAN` |
+| Japanese destroyer squadron | `JPN-DESRON-<nnn>` (`naval_squadron`, domain `naval`) | `JPN-DESRON-002` |
+| Japanese named warship | `JPN-<ship_type>-<NAME>` in ASCII (`naval_unit`) | `JPN-BB-HIEI`, `JPN-CV-SHOKAKU`, `JPN-CA-CHOKAI` |
+
+
 
 ## Free-text conventions
 

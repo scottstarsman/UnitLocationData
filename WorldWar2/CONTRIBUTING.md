@@ -147,6 +147,8 @@ The same shape on another front, with the fields the Italy example leaves implic
 
 Western Front sources often name regiments only in `composing_text`. On a new front, if the cutoff is regiment or independent-battalion, those formations still need their own *unit* rows and claim files, not only a mention in a division's `composing_text`.
 
+6. **Air and naval (Guadalcanal conventions, 26 November 2026).** Flying-unit positions are base claims (`location_represents=base`). Sorties go in `data/missions/<nationality>/<unit_id>.csv` and are not location claims; a mission is valid only if the unit has a base claim in force that day. Pacific air and naval `unit_id` patterns (`US-MAW-`, `US-MAG-`, `US-VMF-`, `US-TF-`, `US-NAV-` for new US warships, `JPN-FLT-`, `JPN-AIRFLOT-`, `JPN-KOKUTAI-`, `JPN-DESRON-`) are in [schema/README.md](schema/README.md). Existing Western Front ship ids (`US-CA-031`, `US-DD-<hull>`) are never reused or renamed; `US-CA-` is already also a coast-artillery regiment prefix. "Cactus Air Force" is a composite, not a unit id. Named straits and enclosed battlegrounds (Ironbottom Sound) are place kind `area` and may reach confidence 0.7; open-ocean coordinate-only pins are `sea_position` and stay capped at 0.5. Embarked carrier air is deferred.
+
 ## Add a claim to an existing unit
 
 1. Open `data/claims/<nationality>/<unit_id>.csv`.
@@ -157,7 +159,7 @@ Western Front sources often name regiments only in `composing_text`. On a new fr
 ## Add a place
 
 1. Append a row to `data/places.csv` with the next free `place_id` (`PL####`, sorted; ids are never reused). `name` is the canonical name, unique ignoring case ("Name, administrative area" for a settlement); other spellings go in `alt_names` separated by `; ` (an alias must not be another place's name).
-2. `kind`: `point` for a named settlement or site; `area` for a named area, sector, beach, zone or bridgehead; `line` for a front, axis or route. A sector represented by the centre of a town is its own place, not an alias of the town.
+2. `kind`: `point` for a named settlement or site; `area` for a named area, sector, beach, zone, bridgehead, or named strait or enclosed battleground (Ironbottom Sound); `line` for a front, axis or route; `sea_position` for an open-ocean point that is not a named body of water (claims there cannot exceed confidence 0.5). A sector represented by the centre of a town is its own place, not an alias of the town.
 3. `latitude` and `longitude` are the point every claim at the place uses. Read them from the coordinate service and set `coord_reference_id` to it (`R001` Wikipedia article coordinates, `R002` OpenStreetMap Nominatim) with the article or query in `coord_source_note`. A point worked out by hand has a blank `coord_reference_id` and says how in `coord_source_note`. `country` and `region` come from where the point lies (vocabulary `country`; add a code there when you add a place in a new country).
 4. A claim whose own point differs from the place's keeps its point and gives the reason in `coord_override`. The validator requires the point to equal the place's exactly when `coord_override` is blank, and to be within 5 km when it is set. Farther than that is a different place.
 5. Run `python scripts/validate.py` and `python scripts/check_coordinates.py` (its `--duplicates` option lists point-places within 1 km of each other), then `python scripts/build.py`.

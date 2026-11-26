@@ -117,7 +117,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | US | naval_unit | 5 | 0 | 123 | 128 | 59 | 193 |
 | naval | US | naval_squadron | 4 | 0 | 1 | 5 | 0 | 1 |
 | naval | US | naval_division | 0 | 0 | 21 | 21 | 0 | 21 |
-| naval | US | task_group | 14 | 0 | 20 | 34 | 0 | 25 |
+| naval | US | task_force | 0 | 0 | 6 | 6 | 0 | 10 |
+| naval | US | task_group | 14 | 0 | 14 | 28 | 0 | 15 |
 | **All** | | | **115** | **2** | **2804** | **2921** | **1225** | **13329** |
 
 ## Operations

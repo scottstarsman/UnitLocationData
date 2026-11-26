@@ -776,12 +776,12 @@ OP-CAMP-GUADALCANAL,US-NAV-DD-488,USS McCalla (DD-488),naval,US,Allied,,naval_un
 OP-CAMP-GUADALCANAL,US-NAV-DD-491,USS Farenholt (DD-491),naval,US,Allied,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
 OP-CAMP-GUADALCANAL,US-NAV-DD-599,USS Barton (DD-599),naval,US,Allied,,naval_unit,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-10-26,1942-11-13,,,
 OP-CAMP-GUADALCANAL,US-NAV-DD-602,USS Meade (DD-602),naval,US,Allied,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-15,1942-11-15,,,
-OP-CAMP-GUADALCANAL,US-TF-016,Task Force 16,naval,US,Allied,,task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-26,1942-10-26,UC0723,PE0632,Thomas C. Kinkaid
-OP-CAMP-GUADALCANAL,US-TF-017,Task Force 17,naval,US,Allied,,task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-26,1942-10-26,UC0724,PE0633,George D. Murray
-OP-CAMP-GUADALCANAL,US-TF-018,Task Force 18,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,3,3,0,0,1942-09-15,1943-01-30,UC0725;UC0726,PE0634;PE0635,Leigh Noyes;Robert C. Giffen
-OP-CAMP-GUADALCANAL,US-TF-061,Task Force 61,naval,US,Allied,,task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-24,1942-08-24,UC0722,PE0631,Frank Jack Fletcher
-OP-CAMP-GUADALCANAL,US-TF-064,Task Force 64,naval,US,Allied,,task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-14,1942-11-14,UC0729,PE0638,Willis A. Lee Jr.
-OP-CAMP-GUADALCANAL,US-TF-067,Task Force 67,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,3,3,0,0,1942-11-12,1942-11-30,UC0730;UC0731,PE0640;PE0639,Richmond K. Turner;Carleton H. Wright
+OP-CAMP-GUADALCANAL,US-TF-016,Task Force 16,naval,US,Allied,,task_force,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-26,1942-10-26,UC0723,PE0632,Thomas C. Kinkaid
+OP-CAMP-GUADALCANAL,US-TF-017,Task Force 17,naval,US,Allied,,task_force,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-26,1942-10-26,UC0724,PE0633,George D. Murray
+OP-CAMP-GUADALCANAL,US-TF-018,Task Force 18,naval,US,Allied,,task_force,Navy,active,direct,battle,1,1,3,3,0,0,1942-09-15,1943-01-30,UC0725;UC0726,PE0634;PE0635,Leigh Noyes;Robert C. Giffen
+OP-CAMP-GUADALCANAL,US-TF-061,Task Force 61,naval,US,Allied,,task_force,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-24,1942-08-24,UC0722,PE0631,Frank Jack Fletcher
+OP-CAMP-GUADALCANAL,US-TF-064,Task Force 64,naval,US,Allied,,task_force,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-14,1942-11-14,UC0729,PE0638,Willis A. Lee Jr.
+OP-CAMP-GUADALCANAL,US-TF-067,Task Force 67,naval,US,Allied,,task_force,Navy,active,direct,battle,1,1,3,3,0,0,1942-11-12,1942-11-30,UC0730;UC0731,PE0640;PE0639,Richmond K. Turner;Carleton H. Wright
 OP-CAMP-GUADALCANAL,US-TG-0628,Task Group 62.8,naval,US,Allied,,task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1943-01-29,1943-01-29,,,
 OP-CAMP-GUADALCANAL,US-TG-0642,Task Group 64.2,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,2,2,0,0,1942-10-07,1942-10-11,UC0727,PE0636,Norman Scott
 OP-CAMP-GUADALCANAL,US-TG-0674,Task Group 67.4,naval,US,Allied,,task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-13,1942-11-13,UC0728,PE0637,Daniel J. Callaghan
@@ -3533,7 +3533,7 @@ OP-EASTERN-SOLOMONS,US-NAV-DD-397,USS Benham (DD-397),naval,US,Allied,,naval_uni
 OP-EASTERN-SOLOMONS,US-NAV-DD-401,USS Maury (DD-401),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-08-24,1942-08-24,,,
 OP-EASTERN-SOLOMONS,US-NAV-DD-435,USS Grayson (DD-435),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-08-24,1942-08-24,,,
 OP-EASTERN-SOLOMONS,US-NAV-DD-436,USS Monssen (DD-436),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-08-24,1942-08-24,,,
-OP-EASTERN-SOLOMONS,US-TF-061,Task Force 61,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,1,1,0,0,1942-08-24,1942-08-24,UC0722,PE0631,Frank Jack Fletcher
+OP-EASTERN-SOLOMONS,US-TF-061,Task Force 61,naval,US,Allied,,task_force,Navy,active,direct,battle,1,1,1,1,0,0,1942-08-24,1942-08-24,UC0722,PE0631,Frank Jack Fletcher
 OP-ELEPHANT,CAN-ARM-004D,4th Canadian Armoured Division,ground,Canada,Allied,,division,Armoured,active,direct,operation,2,2,2,2,0,0,1945-01-26,1945-01-31,UC0007,PE0561,Christopher Vokes
 OP-EPSOM,GER-AG-00BG,Army Group B,ground,Germany,Axis,,army_group,Army,active,direct,operation,1,1,1,1,0,0,1944-06-29,1944-06-29,UC0054,PE0457,Erwin Rommel
 OP-EPSOM,GER-ARMY-007A,Seventh Army,ground,Germany,Axis,,army,Army,active,direct,operation,2,1,2,1,0,0,1944-06-28,1944-06-29,UC0071;UC0072,PE0130;PE0214,Friedrich Dollmann;Paul Hausser
@@ -3860,12 +3860,12 @@ OP-FRONT-PACIFIC,US-NAV-DD-488,USS McCalla (DD-488),naval,US,neutral,"side on st
 OP-FRONT-PACIFIC,US-NAV-DD-491,USS Farenholt (DD-491),naval,US,neutral,"side on start_date is neutral, on end_date is Allied",naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
 OP-FRONT-PACIFIC,US-NAV-DD-599,USS Barton (DD-599),naval,US,neutral,"side on start_date is neutral, on end_date is Allied",naval_unit,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-10-26,1942-11-13,,,
 OP-FRONT-PACIFIC,US-NAV-DD-602,USS Meade (DD-602),naval,US,neutral,"side on start_date is neutral, on end_date is Allied",naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-15,1942-11-15,,,
-OP-FRONT-PACIFIC,US-TF-016,Task Force 16,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-26,1942-10-26,UC0723,PE0632,Thomas C. Kinkaid
-OP-FRONT-PACIFIC,US-TF-017,Task Force 17,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-26,1942-10-26,UC0724,PE0633,George D. Murray
-OP-FRONT-PACIFIC,US-TF-018,Task Force 18,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,3,3,0,0,1942-09-15,1943-01-30,UC0725;UC0726,PE0634;PE0635,Leigh Noyes;Robert C. Giffen
-OP-FRONT-PACIFIC,US-TF-061,Task Force 61,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-24,1942-08-24,UC0722,PE0631,Frank Jack Fletcher
-OP-FRONT-PACIFIC,US-TF-064,Task Force 64,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-14,1942-11-14,UC0729,PE0638,Willis A. Lee Jr.
-OP-FRONT-PACIFIC,US-TF-067,Task Force 67,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,3,3,0,0,1942-11-12,1942-11-30,UC0730;UC0731,PE0640;PE0639,Richmond K. Turner;Carleton H. Wright
+OP-FRONT-PACIFIC,US-TF-016,Task Force 16,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_force,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-26,1942-10-26,UC0723,PE0632,Thomas C. Kinkaid
+OP-FRONT-PACIFIC,US-TF-017,Task Force 17,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_force,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-10-26,1942-10-26,UC0724,PE0633,George D. Murray
+OP-FRONT-PACIFIC,US-TF-018,Task Force 18,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_force,Navy,active,rolled_only,battle,0,0,3,3,0,0,1942-09-15,1943-01-30,UC0725;UC0726,PE0634;PE0635,Leigh Noyes;Robert C. Giffen
+OP-FRONT-PACIFIC,US-TF-061,Task Force 61,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_force,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-24,1942-08-24,UC0722,PE0631,Frank Jack Fletcher
+OP-FRONT-PACIFIC,US-TF-064,Task Force 64,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_force,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-14,1942-11-14,UC0729,PE0638,Willis A. Lee Jr.
+OP-FRONT-PACIFIC,US-TF-067,Task Force 67,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_force,Navy,active,rolled_only,battle,0,0,3,3,0,0,1942-11-12,1942-11-30,UC0730;UC0731,PE0640;PE0639,Richmond K. Turner;Carleton H. Wright
 OP-FRONT-PACIFIC,US-TG-0628,Task Group 62.8,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1943-01-29,1943-01-29,,,
 OP-FRONT-PACIFIC,US-TG-0642,Task Group 64.2,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-10-07,1942-10-11,UC0727,PE0636,Norman Scott
 OP-FRONT-PACIFIC,US-TG-0674,Task Group 67.4,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",task_group,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-13,1942-11-13,UC0728,PE0637,Daniel J. Callaghan
@@ -4056,8 +4056,8 @@ OP-NAVAL-GUADALCANAL,US-NAV-DD-483,USS Aaron Ward (DD-483),naval,US,Allied,,nava
 OP-NAVAL-GUADALCANAL,US-NAV-DD-484,USS Buchanan (DD-484),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-12,1942-11-12,,,
 OP-NAVAL-GUADALCANAL,US-NAV-DD-599,USS Barton (DD-599),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-13,1942-11-13,,,
 OP-NAVAL-GUADALCANAL,US-NAV-DD-602,USS Meade (DD-602),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-15,1942-11-15,,,
-OP-NAVAL-GUADALCANAL,US-TF-064,Task Force 64,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-14,1942-11-14,UC0729,PE0638,Willis A. Lee Jr.
-OP-NAVAL-GUADALCANAL,US-TF-067,Task Force 67,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-12,1942-11-12,UC0730,PE0640,Richmond K. Turner
+OP-NAVAL-GUADALCANAL,US-TF-064,Task Force 64,naval,US,Allied,,task_force,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-14,1942-11-14,UC0729,PE0638,Willis A. Lee Jr.
+OP-NAVAL-GUADALCANAL,US-TF-067,Task Force 67,naval,US,Allied,,task_force,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-12,1942-11-12,UC0730,PE0640,Richmond K. Turner
 OP-NAVAL-GUADALCANAL,US-TG-0674,Task Group 67.4,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-13,1942-11-13,UC0728,PE0637,Daniel J. Callaghan
 OP-NEPTUNE,CAN-ARM-002B,2nd Canadian Armoured Brigade,ground,Canada,Allied,,brigade,Armoured,active,direct,operation,1,1,1,1,0,0,1944-06-11,1944-06-11,UC0003,PE0598,Robert A. Wyman
 OP-NEPTUNE,CAN-INF-003D,3rd Canadian Infantry Division,ground,Canada,Allied,,division,Army,active,direct,operation,1,1,1,1,0,0,1944-06-06,1944-06-06,UC0020,PE0261,Rodney F.L. Keller
@@ -8216,7 +8216,7 @@ OP-REMAGEN,US-INF-099D,99th Infantry Division,ground,US,Allied,,division,Army,ac
 OP-RENNELL-ISLAND,US-NAV-CA-028,USS Louisville (CA-28),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1943-01-29,1943-01-29,,,
 OP-RENNELL-ISLAND,US-NAV-CA-029,USS Chicago (CA-29),naval,US,Allied,,naval_unit,Navy,active,direct,battle,2,2,2,2,0,0,1943-01-29,1943-01-30,,,
 OP-RENNELL-ISLAND,US-NAV-DD-448,USS LaVallette (DD-448),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1943-01-30,1943-01-30,,,
-OP-RENNELL-ISLAND,US-TF-018,Task Force 18,naval,US,Allied,,task_group,Navy,active,direct,battle,2,2,2,2,0,0,1943-01-29,1943-01-30,UC0726,PE0635,Robert C. Giffen
+OP-RENNELL-ISLAND,US-TF-018,Task Force 18,naval,US,Allied,,task_force,Navy,active,direct,battle,2,2,2,2,0,0,1943-01-29,1943-01-30,UC0726,PE0635,Robert C. Giffen
 OP-RENNELL-ISLAND,US-TG-0628,Task Group 62.8,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,1,1,0,0,1943-01-29,1943-01-29,,,
 OP-ROER-PLAIN,GER-PG-003D,3rd Panzergrenadier Division,ground,Germany,Axis,,division,Armoured,active,direct,battle,1,1,1,1,0,0,1944-11-17,1944-11-17,UC0243;UC0244,PE0218;PE0120,Hans Hecker;Walter Denkert
 OP-ROER-PLAIN,GER-PG-015D,15th Panzergrenadier Division,ground,Germany,Axis,,division,Armoured,active,direct,battle,6,6,6,6,0,0,1944-11-17,1944-12-03,,,
@@ -8282,8 +8282,8 @@ OP-SANTA-CRUZ,US-NAV-DD-410,USS Hughes (DD-410),naval,US,Allied,,naval_unit,Navy
 OP-SANTA-CRUZ,US-NAV-DD-411,USS Anderson (DD-411),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-10-26,1942-10-26,,,
 OP-SANTA-CRUZ,US-NAV-DD-413,USS Mustin (DD-413),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-10-26,1942-10-26,,,
 OP-SANTA-CRUZ,US-NAV-DD-599,USS Barton (DD-599),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-10-26,1942-10-26,,,
-OP-SANTA-CRUZ,US-TF-016,Task Force 16,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,1,1,0,0,1942-10-26,1942-10-26,UC0723,PE0632,Thomas C. Kinkaid
-OP-SANTA-CRUZ,US-TF-017,Task Force 17,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,1,1,0,0,1942-10-26,1942-10-26,UC0724,PE0633,George D. Murray
+OP-SANTA-CRUZ,US-TF-016,Task Force 16,naval,US,Allied,,task_force,Navy,active,direct,battle,1,1,1,1,0,0,1942-10-26,1942-10-26,UC0723,PE0632,Thomas C. Kinkaid
+OP-SANTA-CRUZ,US-TF-017,Task Force 17,naval,US,Allied,,task_force,Navy,active,direct,battle,1,1,1,1,0,0,1942-10-26,1942-10-26,UC0724,PE0633,George D. Murray
 OP-SAVO-ISLAND,AUS-CA-AUSTRALIA,HMAS Australia,naval,Australia,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-08-09,1942-08-09,,,
 OP-SAVO-ISLAND,AUS-CA-CANBERRA,HMAS Canberra,naval,Australia,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-08-09,1942-08-09,,,
 OP-SAVO-ISLAND,AUS-CL-HOBART,HMAS Hobart,naval,Australia,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-08-09,1942-08-09,,,
@@ -8394,7 +8394,7 @@ OP-TASSAFARONGA,US-NAV-DD-377,USS Perkins (DD-377),naval,US,Allied,,naval_unit,N
 OP-TASSAFARONGA,US-NAV-DD-401,USS Maury (DD-401),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-30,1942-11-30,,,
 OP-TASSAFARONGA,US-NAV-DD-445,USS Fletcher (DD-445),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-30,1942-11-30,,,
 OP-TASSAFARONGA,US-NAV-DD-487,USS Lardner (DD-487),naval,US,Allied,,naval_unit,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-30,1942-11-30,,,
-OP-TASSAFARONGA,US-TF-067,Task Force 67,naval,US,Allied,,task_group,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-30,1942-11-30,UC0731,PE0639,Carleton H. Wright
+OP-TASSAFARONGA,US-TF-067,Task Force 67,naval,US,Allied,,task_force,Navy,active,direct,battle,1,1,1,1,0,0,1942-11-30,1942-11-30,UC0731,PE0639,Carleton H. Wright
 OP-TONGA,UK-ABN-006D,6th Airborne Division,ground,UK,Allied,,division,Airborne,active,direct,operation,2,2,2,2,0,0,1944-06-06,1944-06-07,UC0405,PE0175,Richard Gale
 OP-TOTALIZE,CAN-ARM-002B,2nd Canadian Armoured Brigade,ground,Canada,Allied,,brigade,Armoured,active,direct,operation,1,1,1,1,0,0,1944-08-07,1944-08-07,UC0003,PE0598,Robert A. Wyman
 OP-TOTALIZE,CAN-ARM-004D,4th Canadian Armoured Division,ground,Canada,Allied,,division,Armoured,active,direct,operation,2,2,2,2,0,0,1944-08-08,1944-08-10,UC0005,PE0269,G. Kitching

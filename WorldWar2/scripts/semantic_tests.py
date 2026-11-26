@@ -4171,10 +4171,10 @@ def scenario_251_refit_and_reclassification():
 
 
 def scenario_252_naval_echelon_ladder():
-    """Naval echelon ladder: ranks 10-14, no id letter, the hierarchy applies within the ladder only; the five pilot units are re-echeloned."""
+    """Naval echelon ladder: ranks 10-15, no id letter, the hierarchy applies within the ladder only; the five pilot units are re-echeloned; a Task Group may sit under a Task Force."""
     s = 'scenario 252'
     rank = common.echelon_rank()
-    expect(s + ': ranks', [rank[e] for e in ('naval_unit', 'naval_division', 'naval_squadron', 'task_group', 'fleet')], [10, 11, 12, 13, 14])
+    expect(s + ': ranks', [rank[e] for e in ('naval_unit', 'naval_division', 'naval_squadron', 'task_group', 'task_force', 'fleet')], [10, 11, 12, 13, 14, 15])
     expect(s + ': ground ranks are unchanged', (rank['squad'], rank['army_group'], rank['other']), (0, 7, 8))
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
     expect(s + ': the five pilot units', [(u, units[u]['echelon']) for u in ('GER-TBF-005', 'UK-BF-D', 'UK-TF-S', 'US-TG-124-9', 'GER-MGW-000H')],
@@ -4183,13 +4183,23 @@ def scenario_252_naval_echelon_ladder():
     prob = lambda a, b, r='assigned': validate.naval_hierarchy_problem(a, b, r)  # noqa: E731
     expect(s + ': a ship under a task group is fine', prob(mk('S', 'naval_unit'), mk('T', 'task_group')), '')
     expect(s + ': a task group under a fleet is fine', prob(mk('T', 'task_group'), mk('F', 'fleet')), '')
+    expect(s + ': a task group under a task force is fine', prob(mk('G', 'task_group'), mk('F', 'task_force')), '')
+    expect(s + ': a task force under a fleet is fine', prob(mk('F', 'task_force'), mk('L', 'fleet')), '')
     expect_in(s + ': a ship under a ship is an error', prob(mk('S', 'naval_unit'), mk('T', 'naval_unit')), 'naval hierarchy')
     expect_in(s + ': a fleet under a division is an error', prob(mk('F', 'fleet'), mk('D', 'naval_division')), 'naval hierarchy')
+    expect_in(s + ': a task group under a task group is an error', prob(mk('G', 'task_group'), mk('H', 'task_group')), 'naval hierarchy')
+    expect_in(s + ': a task force under a task group is an error', prob(mk('F', 'task_force'), mk('G', 'task_group')), 'naval hierarchy')
     expect(s + ': across ladders is not checked', (prob(mk('S', 'naval_unit'), mk('A', 'army')), prob(mk('B', 'battalion'), mk('F', 'fleet'))), ('', ''))
     expect(s + ': an unknown relation is not checked', prob(mk('S', 'naval_unit'), mk('T', 'naval_unit'), 'unknown'), '')
     expect(s + ': a final letter on a naval-ladder id is not an echelon letter (GER-MGW-000H is a fleet)', 'fleet' in validate.NAVAL_LADDER and units['GER-MGW-000H']['unit_id'].endswith('H'), True)
     placeholders = [(u, units[u]['record_status']) for u in ('UK-BF-D', 'UK-TF-S', 'US-TG-124-9')]
     expect(s + ': task organisations are placeholders with no claim file', placeholders, [(u, 'placeholder') for u in ('UK-BF-D', 'UK-TF-S', 'US-TG-124-9')])
+    expect(s + ': Pacific Task Forces use echelon task_force', [units[u]['echelon'] for u in ('US-TF-016', 'US-TF-017', 'US-TF-018', 'US-TF-061', 'US-TF-064', 'US-TF-067')], ['task_force'] * 6)
+    expect(s + ': TG 67.4 stays task_group', units['US-TG-0674']['echelon'], 'task_group')
+    rels = [r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relations.csv'))[1]
+            if r['subject_unit_id'] == 'US-TG-0674' and r['higher_unit_id'] == 'US-TF-067']
+    expect(s + ': TG 67.4 is assigned to TF 67', [(r['relation_id'], r['relationship'], r['valid_from'], r['valid_to']) for r in rels],
+           [('CR3900', 'assigned', '1942-11-13', '1942-11-13')])
     relations = [r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relations.csv'))[1] if r['higher_unit_id'] in ('UK-BF-D', 'UK-TF-S', 'US-TG-124-9')]
     expect(s + ': a placeholder task organisation holds relations (as the higher unit) without claims of its own', len(relations), 81)  # was 4, then 9, then 20 in chunk 1, 32 after chunk 2 commit 2, 51 after commit 3a; twenty-four more in commit 3b under UK-TF-S (1st, 15th and 40th Minesweeping Flotillas); two more in chunk 3a commit 1 under UK-TF-S (132nd MMS and 165th BYMS); one more in chunk 3a commit 2 (19th ML); three more in chunk 3c commit 1 under UK-TF-S (C and D Build-up and U Landing Barge Squadrons) (16 November 2026)
 

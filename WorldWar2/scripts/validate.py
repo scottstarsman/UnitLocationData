@@ -332,7 +332,7 @@ STANDING_RELS = common.relationship_group('standing')
 ACTIVE_RELS = common.relationship_group('active')
 ECH_RANK = common.echelon_rank()
 _LETTERS, NO_ID_LETTER, _CC = common.echelon_id_letters()
-NAVAL_LADDER = frozenset(common.load_vocabularies()['echelon_id_letter']['naval_exempt'])   # naval_unit .. fleet: ranks 10-14, no id letter
+NAVAL_LADDER = frozenset(common.load_vocabularies()['echelon_id_letter']['naval_exempt'])   # naval_unit .. fleet: ranks 10-15, no id letter
 AIR_LADDER = frozenset(common.load_vocabularies()['echelon_id_letter']['air_exempt'])   # air_flight .. air_force: ranks 19-25, no id letter
 ID_LETTER_ECHELON = {letter: echelon for echelon, letter in _LETTERS.items()}   # 'D' -> 'division'
 COMBAT_COMMAND_ID = re.compile(_CC)
@@ -1202,10 +1202,10 @@ def check_foreign_keys(tables):
 
 
 def naval_hierarchy_problem(su, hu, relationship):
-    """Message when a command relation between two units of the naval ladder (naval_unit < naval_division < naval_squadron < task_group < fleet) puts a
+    """Message when a command relation between two units of the naval ladder (naval_unit < naval_division < naval_squadron < task_group < task_force < fleet) puts a
     higher unit that does not outrank the subject; '' otherwise. A relation across ladders (a ship under an army, a battalion under a navy command) is not checked."""
     if su and hu and su['echelon'] in NAVAL_LADDER and hu['echelon'] in NAVAL_LADDER and ECH_RANK[hu['echelon']] <= ECH_RANK[su['echelon']] and relationship != 'unknown':
-        return ('naval hierarchy: %s (%s) is under %s (%s); within the naval ladder (naval_unit < naval_division < naval_squadron < task_group < fleet) '
+        return ('naval hierarchy: %s (%s) is under %s (%s); within the naval ladder (naval_unit < naval_division < naval_squadron < task_group < task_force < fleet) '
                 'the higher unit must have the higher echelon rank' % (su['unit_id'], su['echelon'], hu['unit_id'], hu['echelon']))
     return ''
 

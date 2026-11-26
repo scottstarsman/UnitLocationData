@@ -100,8 +100,9 @@
       "naval_unit": "Ship: one vessel, a commissioned combatant of destroyer-escort size or larger, or a single small craft that a source singles out and that traces to a parent (docs/air_naval_pilot.md section 6.1). Naval ladder, rank 10, no id letter.",
       "naval_division": "Naval division or flotilla: a destroyer division, a minesweeping, S-boat or U-boat flotilla, a landing-craft flotilla or LST group. Naval ladder, rank 11, no id letter.",
       "naval_squadron": "Naval squadron: a destroyer or cruiser squadron. Naval ladder, rank 12, no id letter.",
-      "task_group": "Task unit, task group or task force (US task organisation; Royal Navy forces such as Force S and Bombarding Force D map here); the sub-label goes in the unit note. A task organisation holds command relations only and normally has no claims (record_status placeholder). Naval ladder, rank 13, no id letter.",
-      "fleet": "Numbered fleet or naval command (Home Fleet, Seventh Fleet, Marinegruppe West). Naval ladder, rank 14, no id letter."
+      "task_group": "Task unit or task group (US task organisation; Royal Navy forces such as Force S and Bombarding Force D map here; Western Front Task Forces still stored as US-TG- ids also remain here until a later pass); the sub-label goes in the unit note. A task organisation may be a placeholder that holds command relations only, or active with dated claims when a source places the force at a place. Naval ladder, rank 13, no id letter.",
+      "task_force": "Numbered task force (US Task Force 16, 17, 61, 67 and the like). Outranks a task group and is outranked by a fleet. A task force may be a placeholder that holds command relations only, or active with dated claims when a source places the force at a place. Naval ladder, rank 14, no id letter.",
+      "fleet": "Numbered fleet or naval command (Home Fleet, Seventh Fleet, Marinegruppe West). Naval ladder, rank 15, no id letter."
     }
   },
   "branch": {
@@ -387,7 +388,7 @@
     }
   },
   "echelon_rank": {
-    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour). The naval ladder (naval_unit 10, naval_division 11, naval_squadron 12, task_group 13, fleet 14) has its own range so naval ranks never collide with ground ranks; the hierarchy check applies within the naval ladder only (scripts/validate.py check_command_relation_tables). The air ladder (air_flight 19, added 19 November 2026; air_squadron 20, air_group 21, air_wing 22, air_division 23, air_corps 24, air_force 25) has its own range too, so air ranks never collide with ground (0-8) or naval (10-14) ranks; ranks are by level, so the RAF wing (air_group) and RAF group (air_wing) rank like the US group and combat wing; the hierarchy check applies within the air ladder only (scripts/validate.py air_hierarchy_problem). display_order lists ground echelons only (the main outputs are ground).",
+    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour). The naval ladder (naval_unit 10, naval_division 11, naval_squadron 12, task_group 13, task_force 14, fleet 15) has its own range so naval ranks never collide with ground ranks; the hierarchy check applies within the naval ladder only (scripts/validate.py check_command_relation_tables). The air ladder (air_flight 19, added 19 November 2026; air_squadron 20, air_group 21, air_wing 22, air_division 23, air_corps 24, air_force 25) has its own range too, so air ranks never collide with ground (0-8) or naval (10-15) ranks; ranks are by level, so the RAF wing (air_group) and RAF group (air_wing) rank like the US group and combat wing; the hierarchy check applies within the air ladder only (scripts/validate.py air_hierarchy_problem). display_order lists ground echelons only (the main outputs are ground).",
     "values": {
       "squad": 0,
       "platoon": 0,
@@ -404,7 +405,8 @@
       "naval_division": 11,
       "naval_squadron": 12,
       "task_group": 13,
-      "fleet": 14,
+      "task_force": 14,
+      "fleet": 15,
       "air_flight": 19,
       "air_squadron": 20,
       "air_group": 21,
@@ -446,6 +448,7 @@
       "naval_division",
       "naval_squadron",
       "task_group",
+      "task_force",
       "fleet"
     ],
     "air_exempt": [

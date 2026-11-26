@@ -617,6 +617,7 @@ OP-CAMP-GUADALCANAL,US-MARSW-001,1st Special Weapons Battalion,ground,US,Allied,
 OP-CAMP-GUADALCANAL,US-MARTK-001,1st Tank Battalion,ground,US,Allied,,battalion,Marines,active,direct,campaign,1,1,1,1,0,0,1942-08-07,1942-08-07,,,
 OP-CAMP-GUADALCANAL,US-NCB-006,6th Naval Construction Battalion,ground,US,Allied,,battalion,Navy,active,direct,campaign,1,1,1,1,0,0,1942-09-01,1942-09-01,,,
 OP-CAMP-GUADALCANAL,US-NCB-018,18th Naval Construction Battalion,ground,US,Allied,,battalion,Navy,active,direct,campaign,1,1,1,1,0,0,1942-12-12,1942-12-12,,,
+OP-CAMP-GUADALCANAL,JPN-KOKUTAI-YOKOHAMA,Yokohama Air Group,air,Japan,Axis,,air_group,Navy,active,direct,campaign,2,2,2,2,0,0,1942-09-01,1942-09-13,,,
 OP-CAMP-GUADALCANAL,US-AF-013,Thirteenth Air Force,air,US,Allied,,air_force,Air Force,active,direct,campaign,1,1,1,1,0,0,1943-01-13,1943-01-13,UC0719,PE0628,Nathan F. Twining
 OP-CAMP-GUADALCANAL,US-BG-011,11th Bombardment Group,air,US,Allied,,air_group,Air Force,active,direct,campaign,3,3,3,3,2,2,1942-10-14,1943-01-13,UC0718,PE0627,LaVerne G. Saunders
 OP-CAMP-GUADALCANAL,US-BS-070,70th Bombardment Squadron,air,US,Allied,,air_squadron,Air Force,active,direct,campaign,1,1,1,1,1,1,1942-11-14,1942-11-14,,,
@@ -3652,6 +3653,13 @@ OP-FRONT-PACIFIC,US-MARSW-001,1st Special Weapons Battalion,ground,US,neutral,"s
 OP-FRONT-PACIFIC,US-MARTK-001,1st Tank Battalion,ground,US,neutral,"side on start_date is neutral, on end_date is Allied",battalion,Marines,active,rolled_only,campaign,0,0,1,1,0,0,1942-08-07,1942-08-07,,,
 OP-FRONT-PACIFIC,US-NCB-006,6th Naval Construction Battalion,ground,US,neutral,"side on start_date is neutral, on end_date is Allied",battalion,Navy,active,rolled_only,campaign,0,0,1,1,0,0,1942-09-01,1942-09-01,,,
 OP-FRONT-PACIFIC,US-NCB-018,18th Naval Construction Battalion,ground,US,neutral,"side on start_date is neutral, on end_date is Allied",battalion,Navy,active,rolled_only,campaign,0,0,1,1,0,0,1942-12-12,1942-12-12,,,
+OP-FRONT-PACIFIC,JPN-KOKUTAI-002,2nd Air Group,air,Japan,Axis,,air_group,Navy,active,direct,umbrella,2,2,2,2,0,0,1942-09-01,1942-09-13,,,
+OP-FRONT-PACIFIC,JPN-KOKUTAI-004,4th Air Group,air,Japan,Axis,,air_group,Navy,active,direct,umbrella,2,2,2,2,0,0,1942-09-01,1942-09-13,,,
+OP-FRONT-PACIFIC,JPN-KOKUTAI-006,6th Air Group,air,Japan,Axis,,air_group,Navy,active,direct,umbrella,1,1,1,1,0,0,1942-09-01,1942-09-01,,,
+OP-FRONT-PACIFIC,JPN-KOKUTAI-KISARAZU,Kisarazu Air Group,air,Japan,Axis,,air_group,Navy,active,direct,umbrella,2,2,2,2,0,0,1942-09-01,1942-09-13,,,
+OP-FRONT-PACIFIC,JPN-KOKUTAI-MISAWA,Misawa Air Group,air,Japan,Axis,,air_group,Navy,active,direct,umbrella,2,2,2,2,0,0,1942-09-01,1942-09-13,,,
+OP-FRONT-PACIFIC,JPN-KOKUTAI-TAINAN,Tainan Air Group,air,Japan,Axis,,air_group,Navy,active,direct,umbrella,4,4,4,4,0,0,1942-09-01,1942-10-31,,,
+OP-FRONT-PACIFIC,JPN-KOKUTAI-YOKOHAMA,Yokohama Air Group,air,Japan,Axis,,air_group,Navy,active,rolled_only,campaign,0,0,2,2,0,0,1942-09-01,1942-09-13,,,
 OP-FRONT-PACIFIC,US-AF-013,Thirteenth Air Force,air,US,neutral,"side on start_date is neutral, on end_date is Allied",air_force,Air Force,active,rolled_only,campaign,0,0,1,1,0,0,1943-01-13,1943-01-13,UC0719,PE0628,Nathan F. Twining
 OP-FRONT-PACIFIC,US-BG-011,11th Bombardment Group,air,US,neutral,"side on start_date is neutral, on end_date is Allied",air_group,Air Force,active,rolled_only,campaign,0,0,4,4,0,2,1942-08-06,1943-01-13,UC0718,PE0627,LaVerne G. Saunders
 OP-FRONT-PACIFIC,US-BS-070,70th Bombardment Squadron,air,US,neutral,"side on start_date is neutral, on end_date is Allied",air_squadron,Air Force,active,rolled_only,campaign,0,0,1,1,0,1,1942-11-14,1942-11-14,,,
@@ -3739,6 +3747,7 @@ OP-FRONT-PACIFIC,JPN-DESRON-002,Destroyer Squadron 2,naval,Japan,Axis,,naval_squ
 OP-FRONT-PACIFIC,JPN-DESRON-003,Destroyer Squadron 3,naval,Japan,Axis,,naval_squadron,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-15,1942-11-15,,,
 OP-FRONT-PACIFIC,JPN-DESRON-004,Destroyer Squadron 4,naval,Japan,Axis,,naval_squadron,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-13,1942-11-13,,,
 OP-FRONT-PACIFIC,JPN-DESRON-010,Destroyer Squadron 10,naval,Japan,Axis,,naval_squadron,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-11-13,1942-11-15,,,
+OP-FRONT-PACIFIC,JPN-FLT-008,Eighth Fleet,naval,Japan,Axis,,fleet,Navy,active,direct,umbrella,1,1,1,1,0,0,1942-08-07,1942-08-07,UC0736,PE0641,Mikawa Gunichi
 OP-FRONT-PACIFIC,US-DESRON-004,Destroyer Squadron 4,naval,US,neutral,"side on start_date is neutral, on end_date is Allied",naval_squadron,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-09,1942-08-09,,,
 OP-FRONT-PACIFIC,US-NAV-BB-055,USS North Carolina (BB-55),naval,US,neutral,"side on start_date is neutral, on end_date is Allied",naval_unit,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-08-24,1942-09-15,,,
 OP-FRONT-PACIFIC,US-NAV-BB-056,USS Washington (BB-56),naval,US,neutral,"side on start_date is neutral, on end_date is Allied",naval_unit,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-11-14,1942-11-15,,,

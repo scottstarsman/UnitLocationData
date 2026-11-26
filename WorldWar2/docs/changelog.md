@@ -2,6 +2,31 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Build refresh after the Guadalcanal JACAR air and naval reading (branch `guadalcanal-jacar-air-naval`)
+
+`review_sample.py` and `build.py` refreshed after the 11th Air Fleet and 8th Fleet increments and the validator fixes. Citation counts on R2224, R2245 and R2246 were recomputed.
+
+## 26 November 2026 — Guadalcanal Japanese 8th Fleet JACAR diary reading (branch `guadalcanal-jacar-air-naval`)
+
+Second increment on this branch: the handwritten JACAR 8th Fleet wartime-log images were read, beginning with C08030022500 (61 pages, **14 July–31 August 1942**; the parent catalog title C08030022300 starts mid-September and does not describe this child). Items C08030022600–22900 (September 1942–February 1943, through the evacuation) were downloaded and rendered; they were not fully mined for additional ship claims in this increment.
+
+- Added **JPN-FLT-008** (Eighth Fleet / 外南洋部隊), domain `naval`, echelon `fleet`, `formed_date` 14 July 1942, from the 記事 第八艦隊七月十四日編成、第六戦隊加入、外南洋部隊トナル (C08030022500, PDF p. 8). One headquarters claim at Rabaul (C13295, 7 August 1942, PL4937, `southwest_pacific`, `OP-FRONT-PACIFIC`, confidence 0.5). The claim lists Cruiser Division 6 in `composing_units`.
+- Vice Admiral **Mikawa Gunichi** (三川軍一) is named 司令長官 on the July–August 人員ノ現状 table (PDF p. 23). New tenure UC0736 on JPN-FLT-008, 14 July–31 August 1942 (dated to that monthly diary only). The people note for PE0641 now records that JPN-FLT-008 is entered from the diary images (the USSBS and Cressman passages read in the naval pilot did not name that fleet number).
+- Cruiser Division 6 is assigned to the 8th Fleet from 14 July through 31 August 1942 (CR3899), from the same formation 記事, evidenced by C13295 (`listed_by_higher_unit`).
+- **Yubari** (C13216) is raised from confidence 0.5 to 0.7. The earlier confidence was 0.5, from Cressman only, because USSBS appendix 39 lists Tatsuta, not Yubari, in Cruiser Division 18. The updated confidence is 0.7, because Cressman (`us_navy_nhhc`) and the JACAR 8th Fleet log (`jacar`) agree on Yubari in the 7–9 August night action (Cressman: Ironbottom Sound, 9 August; JACAR: 夕張 in the ツラギ海峡夜戦 after the 1600 7 August sortie). USSBS still lists Tatsuta, not Yubari; that disagreement is kept in the claim note.
+- New reference R2246 (C08030022500).
+- `location_basis` on the new JACAR claims of this branch (C13280–C13295) is `documented_on_date`.
+
+## 26 November 2026 — Guadalcanal Japanese 11th Air Fleet JACAR diary reading (branch `guadalcanal-jacar-air-naval`)
+
+First increment on this branch: the handwritten JACAR 11th Air Fleet wartime-log images were read (C08030024700, 54 pages, March–May 1942 monthly diaries; C08030024800, 36 pages, September, October and November 1942 monthly diaries). June–August 1942 kōkūtai movement tables are not in those two items.
+
+- **JPN-FLT-011** (Eleventh Air Fleet) remains a `placeholder`. The diary page images were read, but they do not state a 司令部位置, and an active unit requires a claim file. No Guadalcanal-window commander tenure is entered (Tsukahara is named 司令長官 only on the April 人員ノ現状 page in C08030024700).
+- Added four air flotillas (`JPN-AIRFLOT-022`, `-024`, `-025`, `-026`; echelon `air_division`, domain `air`) as placeholders. The October 1 and November 1 艦隊編制 charts and the movement-table headings name them under the 11th Air Fleet, but no flotilla-headquarters location was stated, so flotilla-under-fleet relations are not entered (a relation needs a location-claim row in `command_relation_claims.csv`).
+- Added ten kōkūtai (`JPN-KOKUTAI-TAINAN`, `-YOKOHAMA`, `-004`, `-002`, `-006`, `-MISAWA`, `-KISARAZU`, `-251`, `-702`, `-582`). Seven of them are `active`, with fifteen base claims (C13280–C13294), all confidence 0.5 (JACAR only, family `jacar`): Tainan Air Group at Rabaul (PL4937) on 1 and 30 September and 1 and 31 October; Yokohama Air Group at Shortland Harbour (PL4947) on 1 and 13 September; 4th Air Group at Rabaul on 1 and 13 September; Misawa, Kisarazu and 2nd Air Groups at Rabaul on 1 and 13 September; 6th Air Group at Rabaul on 1 September only (the same row later marks 雲鷹). The Yokohama claims also cite R2224 (GeoNames Shortland Harbour) so the place's `coord_reference_id` is among the claims at that place. Rabaul claims use `OP-FRONT-PACIFIC` and `southwest_pacific` (a claim's sub_theater must match its operation; `OP-CAMP-GUADALCANAL` is `south_pacific`). Shortland claims use `OP-CAMP-GUADALCANAL` and `south_pacific`. Named commanders were not read on the movement-table rows, so the claim `commander` is `unknown`.
+- Seven organic kōkūtai-to-flotilla relations (CR3892–CR3898) for the units with dated base claims. `JPN-KOKUTAI-251`, `-702` and `-582` remain placeholders (no November base claim is entered); successor-under-flotilla relations are not entered, for the same evidence rule. Three `redesignation` lineage rows (UL028–UL030) for Tainan→251, 4th→702 and 2nd→582, from the mid-November 兵力部署 table writing 二五一空（台南空）, 七〇二空（四空） and 五八二空（二空）, effective 1 November 1942.
+- New reference R2245 (C08030024800). Scope left blank on all new in-scope units.
+
 ## 26 November 2026 — Build refresh after the Guadalcanal naval pilot (branch `guadalcanal-naval-pilot`)
 
 Regenerated `docs/review/` and `build/` after the Allied and Japanese naval increments (`review_sample.py` before `build.py`, then both again after reference citation counts changed). Added three `coordinate_exceptions.csv` speed rows for checked naval transits: Jarvis 8–9 August 1942 (C13102 / C13101, 113 km, a damaged destroyer leaving the transport area); TG 64.2 Espiritu Santo to Ironbottom Sound, 7–11 October (C13120 / C13132, about 1,050 km in four days); TF 67 departure from Segond Channel on 29 November and Tassafaronga on 30 November (C13185 / C13198, consecutive dates for a departure and a battle). Unexplained coordinate warnings remain 428.

@@ -1606,6 +1606,56 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     152.16297,
+     -4.20037
+    ]
+   },
+   "properties": {
+    "claim_id": "C13344",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "JPN-ARMY-017A",
+    "unit_name": "17th Army",
+    "nationality": "Japan",
+    "domain": "ground",
+    "theater": "pacific",
+    "sub_theater": "southwest_pacific",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1942-07-24",
+    "commander": "Lieutenant General Harukichi Hyakutake",
+    "commander_person_id": "PE0613",
+    "commander_on_date": "Lieutenant General Harukichi Hyakutake",
+    "commander_on_date_person_id": "PE0613",
+    "commander_on_date_source": "claim",
+    "commander_on_date_basis": "stated",
+    "place_id": "PL4937",
+    "location_name": "Rabaul (Rabaul, New Britain)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army commander arrived at Rabaul",
+    "operation_id": "OP-FRONT-PACIFIC",
+    "operation": "Pacific",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R2228;R2231",
+    "source_locator": "R2228: C25080232800 p. 3 (stamp 0442), 第十七軍司令官は七月二十四日ラバウルに進出せり",
+    "sidc": "10061000231210000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      167.21974,
      -15.50503
     ]
@@ -2549,6 +2599,106 @@
     "reference_ids": "R2246",
     "source_locator": "R2246: C08030022500, 經過, 7 August 1942 (PDF pp. 13–14)",
     "sidc": "10063000001210000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13342",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "JPN-NCU-011",
+    "unit_name": "11th Construction Unit",
+    "nationality": "Japan",
+    "domain": "ground",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "battalion",
+    "branch": "Navy",
+    "date": "1942-08-07",
+    "commander": "Colonel Monzen",
+    "commander_person_id": "PE0645",
+    "commander_on_date": "Colonel Monzen",
+    "commander_on_date_person_id": "PE0645",
+    "commander_on_date_source": "claim",
+    "commander_on_date_basis": "stated",
+    "place_id": "PL4898",
+    "location_name": "Henderson Field (lower Lunga River / Lunga Road airfield area)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "at the Lunga airfield when the US landing began",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R2251;R2224",
+    "source_locator": "R2251: C25080307000 p. 2 (stamp 1308), 11th and 13th Construction Units in the lower Lunga River area on the morning of 7 August, and p. 3 (stamp 1309), withdrawal that night to a naval headquarters about 3 km west of the Matanikau",
+    "sidc": "10061000161407000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13343",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "JPN-NCU-013",
+    "unit_name": "13th Construction Unit",
+    "nationality": "Japan",
+    "domain": "ground",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "battalion",
+    "branch": "Navy",
+    "date": "1942-08-07",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field (lower Lunga River / Lunga Road airfield area)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "at the Lunga airfield when the US landing began",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R2251;R2224",
+    "source_locator": "R2251: C25080307000 p. 2 (stamp 1308), 11th and 13th Construction Units in the lower Lunga River area on the morning of 7 August, and p. 3 (stamp 1309), withdrawal that night",
+    "sidc": "10061000161407000000"
    }
   },
   {
@@ -4097,7 +4247,7 @@
     "location_basis": null,
     "location_temporal_offset_days": null,
     "reference_ids": "R2225;R2228;R2226;R2224",
-    "source_locator": "R2225: ch. IV, citing 17th Army Operations, I; R2228: the Japanese compilation Miller cites (JACAR C25080231800); R2226: Appendix A lists the Ichiki Unit",
+    "source_locator": "R2225: ch. IV, citing 17th Army Operations, I; R2228: C25080232800 pp. 21–23 (stamps 0459–0461), first echelon of 916 men left Truk at 05:00 on 16 August on six destroyers, landed near Taivu Point in the middle of the night of 18 August, assembly complete at 23:00; R2226: Appendix A lists the Ichiki Unit",
     "sidc": "10061000161211000000"
    }
   },
@@ -4496,8 +4646,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2226;R2224",
-    "source_locator": "R2225: ch. IV; R2226: the Ilu / Tenaru narrative",
+    "reference_ids": "R2225;R2226;R2228;R2224",
+    "source_locator": "R2225: ch. IV; R2226: the Ilu / Tenaru narrative; R2228: C25080232800 pp. 23–24 (stamps 0461–0462), the lead reached the east bank of the 中川 (Ilu / Tenaru) on the night of 20 August, and the first echelon was destroyed on the afternoon of 21 August under a counterattack with six tanks",
     "sidc": "10061040161211000000"
    }
   },
@@ -5583,7 +5733,7 @@
     "location_name": "Taivu Point (Taivu / Tasimboko coast; first echelons of 29 August–11 September landings)",
     "location_represents": "main_body",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "beginning of the Kawaguchi Force landings",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -5596,8 +5746,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2224",
-    "source_locator": "R2225: ch. V (echelons arrived 29 August–11 September)",
+    "reference_ids": "R2225;R2228;R2224",
+    "source_locator": "R2225: ch. V (echelons arrived 29 August–11 September); R2228: C25080232800 p. 26 (stamp 0464), landing from the night of 29 August through 2 September at the Kawaguchi landing, without enemy resistance, and HQ and 3rd Battalion, 124th Infantry, at Taivu the night of 30 August and the destroyer-borne main body at 21:30 on 31 August (pp. 36–37, stamps 0474–0475)",
     "sidc": "10061000181211000000"
    }
   },
@@ -5633,7 +5783,7 @@
     "location_name": "Taivu Point (Taivu / Tasimboko coast, with the Kawaguchi Force)",
     "location_represents": "main_body",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "landing with the Kawaguchi Force",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -5646,8 +5796,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2224",
-    "source_locator": "R2225: ch. V",
+    "reference_ids": "R2225;R2228;R2224",
+    "source_locator": "R2225: ch. V; R2228: C25080232800 p. 26 (stamp 0464), Kawaguchi landing 29 August–2 September, the 124th Infantry being the core of the force (p. 27, stamp 0465), and HQ and 3rd Battalion landed at Taivu the night of 30 August, destroyer-borne main body at 21:30 on 31 August (p. 36, stamp 0474)",
     "sidc": "10061000171211000000"
    }
   },
@@ -12483,7 +12633,7 @@
     "location_name": "Matanikau River (west bank of the Matanikau and the sand bar)",
     "location_represents": "front_line_point",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "attacking across the Matanikau sand bar ahead of the inland assault",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -12496,8 +12646,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2224",
-    "source_locator": "R2225: ch. VI (Sumiyoshi’s coast force attacked across the Matanikau sand bar, 23 October)",
+    "reference_ids": "R2225;R2228;R2224",
+    "source_locator": "R2225: ch. VI (Sumiyoshi’s coast force attacked across the Matanikau sand bar, 23 October); R2228: C25080233000 p. 22 (stamp 0572), Sumiyoshi Force attacked the Inu position on the Matanikau right bank from 14:00 on 23 October, Oka Force from the flank and another force from the front, with artillery cooperating",
     "sidc": "10061000171303000000"
    }
   },
@@ -12933,7 +13083,7 @@
     "location_name": "Bloody Ridge (south of Bloody Ridge, left wing of the 2nd Division envelopment)",
     "location_represents": "front_line_point",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "assaulting the southern perimeter with the 29th Infantry",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -12946,8 +13096,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2224",
-    "source_locator": "R2225: ch. VI (Nasu’s left wing, the 29th Infantry, delivered the 24–25 October assault east of Bloody Ridge)",
+    "reference_ids": "R2225;R2228;R2224",
+    "source_locator": "R2225: ch. VI (Nasu’s left wing, the 29th Infantry, delivered the 24–25 October assault east of Bloody Ridge); R2228: C25080233000 pp. 24–25 (stamps 0574–0575), 2nd Division order 24 October 11:00, both wings to assault at 17:00 toward the airfield, and the left wing (29th Infantry named) penetrated around 22:30",
     "sidc": "10061000171211000000"
    }
   },
@@ -13133,7 +13283,7 @@
     "location_name": "Bloody Ridge (south of Bloody Ridge and the Lunga perimeter, second night of the inland assault)",
     "location_represents": "front_line_point",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "attacking the southern perimeter on the second night",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -13146,8 +13296,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2224",
-    "source_locator": "R2225: ch. VI (the 16th and 29th Regiments pressed their attacks until daylight on 26 October)",
+    "reference_ids": "R2225;R2228;R2224",
+    "source_locator": "R2225: ch. VI (the 16th and 29th Regiments pressed their attacks until daylight on 26 October); R2228: C25080233000 p. 28 (stamp 0578), the left wing on the night of the 25th was reinforced with the 16th Infantry, and part of the regiment was stopped by wire and did not succeed by dawn",
     "sidc": "10061000171211000000"
    }
   },
@@ -13183,7 +13333,7 @@
     "location_name": "Bloody Ridge (south of Bloody Ridge, second night of the inland assault)",
     "location_represents": "front_line_point",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "renewing the assault on the southern perimeter",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -13196,8 +13346,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2224",
-    "source_locator": "R2225: ch. VI (the 16th and 29th Regiments pressed their attacks until daylight on 26 October)",
+    "reference_ids": "R2225;R2228;R2224",
+    "source_locator": "R2225: ch. VI (the 16th and 29th Regiments pressed their attacks until daylight on 26 October); R2228: C25080233000 p. 25 (stamp 0575), 29th Infantry in the left-wing assault of the night of 24 October, then both wings prepared to renew the attack on the night of the 25th, and p. 28 (stamp 0578) continues that second night",
     "sidc": "10061000171211000000"
    }
   },
@@ -13283,7 +13433,7 @@
     "location_name": "Bloody Ridge (south of Bloody Ridge, second night)",
     "location_represents": "front_line_point",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "renewing the inland assault on the second night",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -13296,8 +13446,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2224",
-    "source_locator": "R2225: ch. VI (the 16th and 29th Regiments pressed their attacks until daylight on 26 October, and General Nasu was among the dead of the counter-offensive)",
+    "reference_ids": "R2225;R2228;R2224",
+    "source_locator": "R2225: ch. VI (the 16th and 29th Regiments pressed their attacks until daylight on 26 October, and General Nasu was among the dead of the counter-offensive); R2228: C25080233000 p. 28 (stamp 0578), left-wing commander Maj. Gen. Nasu at the front decided on a night assault on the 25th, and part of the 16th Infantry was stopped by wire and the penetration did not succeed by dawn",
     "sidc": "10061000171211000000"
    }
   },
@@ -13333,7 +13483,7 @@
     "location_name": "Bloody Ridge (south of Bloody Ridge, second night of the inland assault)",
     "location_represents": "front_line_point",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "renewing the inland assault on the southern perimeter",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -13346,8 +13496,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2225;R2224",
-    "source_locator": "R2225: ch. VI (the 16th and 29th Regiments pressed their attacks until daylight on 26 October)",
+    "reference_ids": "R2225;R2228;R2224",
+    "source_locator": "R2225: ch. VI (the 16th and 29th Regiments pressed their attacks until daylight on 26 October); R2228: C25080233000 pp. 25 and 28 (stamps 0575, 0578), both wings reorganized after the failed night of 24 October and prepared to renew the attack on the night of the 25th, and the left wing’s 25 October assault did not succeed by dawn",
     "sidc": "10061000211211000000"
    }
   },

@@ -6,10 +6,10 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 
 | Domain | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---:|---:|---:|---:|---:|---:|
-| ground | 29 | 2 | 563 | 594 | 274 | 9726 |
+| ground | 27 | 2 | 565 | 594 | 274 | 9729 |
 | air | 23 | 0 | 1326 | 1349 | 608 | 2438 |
 | naval | 63 | 0 | 915 | 978 | 343 | 1165 |
-| **All** | **115** | **2** | **2804** | **2921** | **1225** | **13329** |
+| **All** | **113** | **2** | **2806** | **2921** | **1225** | **13332** |
 
 | Domain | Nationality | Echelon | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---|---|---:|---:|---:|---:|---:|---:|
@@ -33,11 +33,11 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | ground | Germany | regiment/battle_group | 3 | 0 | 38 | 41 | 3 | 90 |
 | ground | Germany | battalion | 3 | 0 | 20 | 23 | 0 | 29 |
 | ground | Germany | other | 0 | 0 | 8 | 8 | 0 | 38 |
-| ground | Japan | army | 0 | 0 | 2 | 2 | 0 | 7 |
+| ground | Japan | army | 0 | 0 | 2 | 2 | 0 | 8 |
 | ground | Japan | division | 0 | 0 | 2 | 2 | 0 | 7 |
 | ground | Japan | brigade | 0 | 0 | 1 | 1 | 0 | 5 |
 | ground | Japan | regiment/battle_group | 1 | 1 | 9 | 11 | 0 | 26 |
-| ground | Japan | battalion | 3 | 1 | 4 | 8 | 0 | 9 |
+| ground | Japan | battalion | 1 | 1 | 6 | 8 | 0 | 11 |
 | ground | Netherlands | brigade | 0 | 0 | 1 | 1 | 0 | 23 |
 | ground | Netherlands | regiment/battle_group | 0 | 0 | 5 | 5 | 5 | 17 |
 | ground | Netherlands | battalion | 0 | 0 | 3 | 3 | 3 | 4 |
@@ -119,7 +119,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | US | naval_division | 0 | 0 | 21 | 21 | 0 | 21 |
 | naval | US | task_force | 0 | 0 | 6 | 6 | 0 | 10 |
 | naval | US | task_group | 14 | 0 | 14 | 28 | 0 | 15 |
-| **All** | | | **115** | **2** | **2804** | **2921** | **1225** | **13329** |
+| **All** | | | **113** | **2** | **2806** | **2921** | **1225** | **13332** |
 
 ## Operations
 
@@ -127,22 +127,22 @@ Generated from `data/operations.csv` and every claim's `operation_id` (all domai
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 15 | 8 | 724 |
-| campaign | 10 | 10 | 8571 |
+| umbrella | 15 | 8 | 725 |
+| campaign | 10 | 10 | 8573 |
 | operation | 34 | 34 | 2935 |
 | battle | 27 | 27 | 776 |
 | phase | 4 | 4 | 323 |
-| **All** | **90** | **83** | **13329** |
+| **All** | **90** | **83** | **13332** |
 
 Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 60, compact 3, broad 17, none 10. A map pin (`primary_place_id`) is a sourced place, not this centroid.
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4940 places and 1462 alias names for 13329 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4940 places and 1462 alias names for 13332 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4744 | 12150 |
+| point | 4744 | 12153 |
 | area | 117 | 1003 |
 | line | 28 | 64 |
 | sea_position | 51 | 112 |
@@ -154,12 +154,12 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | United Kingdom (GB) | 435 | 1646 |
 | Netherlands (NL) | 537 | 1570 |
 | Belgium (BE) | 385 | 890 |
-| Solomon Islands (SB) | 52 | 513 |
+| Solomon Islands (SB) | 52 | 515 |
 | Luxembourg (LU) | 90 | 234 |
 | Austria (AT) | 31 | 49 |
 | Micronesia (Federated States of) (FM) | 1 | 23 |
 | Czechia (CZ) | 14 | 22 |
-| Papua New Guinea (PG) | 4 | 15 |
+| Papua New Guinea (PG) | 4 | 16 |
 | Poland (PL) | 10 | 12 |
 | Russia (RU) | 11 | 12 |
 | Vanuatu (VU) | 3 | 7 |

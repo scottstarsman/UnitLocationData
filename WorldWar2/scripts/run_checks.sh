@@ -2,6 +2,8 @@
 # Full verification set for the WWII unit-locations dataset. Read-only (writes only /tmp).
 # Usage: scripts/run_checks.sh [WORKING_COPY_DIR]   (default: the WorldWar2 directory holding this script)
 # Exit status: 0 only if every step passes; otherwise 1, with the failing steps listed at the end.
+# Before this script, if you changed data: python scripts/review_sample.py && python scripts/build.py
+# (review_sample.py must run first — the source-tree hash in build/manifest.json includes those files).
 set -u -o pipefail
 D=${1:-$(cd "$(dirname "$0")/.." && pwd)}
 cd "$D" || exit 1

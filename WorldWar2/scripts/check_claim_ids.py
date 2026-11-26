@@ -6,7 +6,7 @@
 
 scripts/validate.py checks what a single checkout can show (ids are unique and well formed, data/retired_claims.csv is consistent, no retired id is a claim).
 This script needs git history, which a shallow CI checkout does not have, so it is run by hand before a pull request (and by whoever merges one). It reads
-build/all_claims.csv (every domain; older revisions may still have a separate build/other_domains/claims.csv, which is also read at <rev>
+build/all_claims.csv (every domain; the next-free id is only current after python scripts/build.py; older revisions may still have a separate build/other_domains/claims.csv, which is also read at <rev>
 so an id there cannot be reused unseen) and data/retired_claims.csv at <rev> and the working tree, and fails (exit 1) when
   * a claim id of <rev> is no longer a claim and is not listed in data/retired_claims.csv (a claim was deleted without a record);
   * a claim id of <rev> now belongs to a different unit (the id was reused for another claim);
@@ -77,6 +77,7 @@ def main():
     top = max([int(c[1:]) for c in list(new) + list(new_ret)] or [0])
     print('claims at %s: %d; now: %d; new ids: %s; retired now: %d; next free id: C%04d' % (
         a.base, len(old), len(new), (added[0] + '..' + added[-1] + ' (%d)' % len(added)) if added else 'none', len(new_ret), top + 1))
+    print('next-free claim id is from build/all_claims.csv; run python scripts/build.py after adding claims before relying on it')
     for p in problems:
         print('PROBLEM:', p)
     if not problems:

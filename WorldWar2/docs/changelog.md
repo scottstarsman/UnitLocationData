@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — review_sample and claim-id checks tell you to rebuild first (branch `contrib-friction-fixes`)
+
+`scripts/review_sample.py --check` now tells you to run `build.py` after regenerating the sample, because the manifest source-tree hash includes those files. `scripts/check_claim_ids.py` prints that its next-free id comes from `build/all_claims.csv`. `run_checks.sh` notes the `review_sample.py` then `build.py` order in its header.
+
 ## 25 November 2026 — Contributor guide covers the Guadalcanal friction points (branch `contrib-friction-fixes`)
 
 `CONTRIBUTING.md` now has a Pacific (Guadalcanal) worked example alongside the Italy one, with `sub_theater`, Seabee and Japanese regiment rows, nationality as the nation *name*, echelon `regiment/battle_group`, `listing_source`, `composing_units` / `listed_by_higher_unit`, and SIDC name patterns. New short sections cover the people / tenure / link triple for a named commander and the command-relation flags (`end_unknown`, inferred ends, `seq` per claim). The rules now say not to start a note with `Reason:`, that `current_activity` is required and should stay at or under 120 characters, that citation URLs must already be in `references_meta.csv` (HyperWar index URL, `www.ibiblio.org`, no semicolon inside a `source_locator` part), that a landing window is not a landing log, and that `check_claim_ids.py` reads `build/all_claims.csv`. The recommended order is `review_sample.py`, then `build.py`, then `run_checks.sh`. `docs/methodology.md` states that the who_controls grid is a Western Front week grid only.

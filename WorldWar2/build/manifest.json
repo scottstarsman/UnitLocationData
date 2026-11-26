@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "data_version": "1.1.0-rc1",
   "generated_at": "2026-11-24T00:00:00Z",
-  "source_tree_sha256": "57aba9eb323a8468e7ef82cab0cca29f6e72501de82e50768c5cfde708861f3b",
+  "source_tree_sha256": "718194633a7890cbddc1699e4c26cdb96c5a9a3f9eb1fbc6d948fd27b0f501f1",
   "license": "CC-BY-SA-4.0",
   "citation": {
     "file": "CITATION.cff",
@@ -13,14 +13,14 @@
   "files": [
     {
       "path": "data/references.csv",
-      "bytes": 1392643,
-      "sha256": "c5a5a7e14d4d238afe136a4c11bedc334e26b8cd72ac2c697a9f5811b04a4ca1",
-      "rows": 2238
+      "bytes": 1395551,
+      "sha256": "6171185009c55d516d43c00325dfbac61b5c03f985addb170311951816fe64dc",
+      "rows": 2240
     },
     {
       "path": "docs/coverage.md",
       "bytes": 9496,
-      "sha256": "cccad1453cf35b874d84baffa884c16edeeb409527e0a4116b126ebac2239812"
+      "sha256": "8156a201df2df35f2047decb5a0c296a433bed64f028180403eeb3c241beb68c"
     },
     {
       "path": "build/aircraft_types.csv",
@@ -30,27 +30,27 @@
     },
     {
       "path": "build/all_claims.csv",
-      "bytes": 28295509,
-      "sha256": "c26514fcd92fe7d0b887e2708ad804494c0572e4d8f6c479671145411aa1f232",
-      "rows": 13283
+      "bytes": 28360893,
+      "sha256": "53f8e8961453858df7aa75859630752973fb6b04e199c64f40319ec4347a4e03",
+      "rows": 13329
     },
     {
       "path": "build/all_claims.json",
-      "bytes": 43674063,
-      "sha256": "1b90870816d3ef9b04343814cb52db2b04a64ce866ec17e2ec6f1faab81b2d81",
-      "rows": 13283
+      "bytes": 43792671,
+      "sha256": "fb8dd0313328098da13c65c9108e7514cfe96917275f8f214e5c4ae3b66ec57d",
+      "rows": 13329
     },
     {
       "path": "build/claim_references.csv",
-      "bytes": 1464026,
-      "sha256": "8241ee9bd19fda046c97619c09801527b22034e35579a8010bbaae1ea0d8e4fe",
-      "rows": 30743
+      "bytes": 1469538,
+      "sha256": "e483f7ee03a0d0a9bf188668169a0050f4945ba7bc4732d86bdf4bd31c9fce3a",
+      "rows": 30804
     },
     {
       "path": "build/claims.geojson",
-      "bytes": 20769052,
-      "sha256": "d5a90b2a29bef094c83bfe6d2b0c00b63eb61fcf64caac63de14b91d2bd5aae9",
-      "features": 13283
+      "bytes": 20841747,
+      "sha256": "987cc20c088c01edfbc9c0498e7e7d7f3d66fe0c345c8f617e2d716bb28d0a2e",
+      "features": 13329
     },
     {
       "path": "build/command_relations.csv",
@@ -60,21 +60,21 @@
     },
     {
       "path": "build/coverage.csv",
-      "bytes": 317332,
-      "sha256": "425747296e94c0e599e068ce717d6d701d64d242aa49b524ffba734ff2fd7fd9",
-      "rows": 2902
+      "bytes": 319065,
+      "sha256": "f6c905628b9bf72e20a77c01156fd0cd6bdcc4bd163983987b77cf26ad4eff62",
+      "rows": 2921
     },
     {
       "path": "build/coverage_by_month.csv",
-      "bytes": 10998,
-      "sha256": "a04ecc55fcb299089facbad008f81c714f8a21c4f70a30898d981003286a0448",
-      "rows": 290
+      "bytes": 11104,
+      "sha256": "4a30c9b250ef164382c494dccfad7b72480900c7501b46f6bfacffff74085e15",
+      "rows": 293
     },
     {
       "path": "build/coverage_by_unit.csv",
-      "bytes": 452359,
-      "sha256": "2f1935a98dbb9c2f832aa7b662990e2704b202c71d2f79dd95b1cfa6691c7c56",
-      "rows": 2786
+      "bytes": 455137,
+      "sha256": "55ce124c3eec985324f62fe3d81ee02652550c836392b0a2827b80557977225b",
+      "rows": 2806
     },
     {
       "path": "build/missions.csv",
@@ -233,20 +233,20 @@
     },
     {
       "path": "build/operation_units.csv",
-      "bytes": 1378728,
-      "sha256": "088f8141b2fb142e5bc0bc90c7230ed9ef59dccbc3e0faafd2ccccd430c747c6",
-      "rows": 8544
+      "bytes": 1384670,
+      "sha256": "7185e5d687cda710b1d792a214a90e7c4b2262407f6c6f06758d8c93e4996dbd",
+      "rows": 8587
     },
     {
       "path": "build/operations.csv",
       "bytes": 29449,
-      "sha256": "5244a03ab33267d16bb83eda0c95eefbdebeaf213998ab94e04ee27a401c68ab",
+      "sha256": "02b50afa03359fc1767d60105180e512a955d374f69d40de7f941e1ff8299acb",
       "rows": 90
     },
     {
       "path": "build/operations.geojson",
       "bytes": 135746,
-      "sha256": "a0bea935f2941d55c70678ac85aa874f4569f8a7028a591e7796b9bcada19646",
+      "sha256": "d37ad90beb84ce49d4fb581c57a3a647e8d90f1fcf3069801bc377f5345c78b6",
       "features": 90
     },
     {
@@ -263,21 +263,21 @@
     },
     {
       "path": "build/places.csv",
-      "bytes": 1201747,
-      "sha256": "1fb40fccc58cb3f78d175732913c4c59f53070d760f8458c66d8190b2d034c5f",
+      "bytes": 1201750,
+      "sha256": "6cbc748ab6898e0161b799678c762bb5b10ccde8a5028f26a1bc896b8687bf0a",
       "rows": 4940
     },
     {
       "path": "build/places.geojson",
-      "bytes": 2138487,
-      "sha256": "16abde24e5f183404af21e1530a6021ce232f28c3cdd17017bdc6794cdb2e0dd",
+      "bytes": 2138489,
+      "sha256": "15e2feddc2d5bc8af127e0b810c234442361879d0c44870cbc46bd96b2408fd6",
       "features": 4940
     },
     {
       "path": "build/review_queue.csv",
-      "bytes": 795428,
-      "sha256": "16ee447443cff35adfe5b7ede16358fddc72716f42f2fdabf2d59b572e8a5e38",
-      "rows": 2786
+      "bytes": 799944,
+      "sha256": "0fdd75a5086502ef05abcd0f4f91d17852efd8331019b7b464569db8ea55cf9a",
+      "rows": 2806
     },
     {
       "path": "build/ship_classes.csv",
@@ -305,9 +305,9 @@
     },
     {
       "path": "build/unit_symbols.csv",
-      "bytes": 478988,
-      "sha256": "9cedc1ae2795de8711d01c2bfae84d29dca3ff3d198e252e79a91ccafee4acf4",
-      "rows": 3832
+      "bytes": 480959,
+      "sha256": "9629d718d7ef19321288282d9ed2e32d09982f7fe136a8153b147aaef1a06a6c",
+      "rows": 3851
     },
     {
       "path": "build/unit_toe.csv",
@@ -317,15 +317,15 @@
     },
     {
       "path": "build/units.csv",
-      "bytes": 2186713,
-      "sha256": "915944ab93851c2fe5fe19cdc9a3a96e5737574b122d3b1de3957a0eb3fac8cb",
-      "rows": 2902
+      "bytes": 2197221,
+      "sha256": "38c5e6ea80f3762203d30fd123337acd0a49f6dbe03559af69daf9e7b7b6566f",
+      "rows": 2921
     },
     {
       "path": "build/units.json",
-      "bytes": 3405748,
-      "sha256": "9d37d20762ddc90ddfa455963737cd66ab20230d253d6af482f6d95f823c2fd5",
-      "rows": 2902
+      "bytes": 3424236,
+      "sha256": "7dc53c63492682bd2b259836a389fce31735a5831a1840b06d020512469bce65",
+      "rows": 2921
     },
     {
       "path": "build/who_controls_overrides.csv",

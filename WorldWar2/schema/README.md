@@ -563,6 +563,7 @@ Ships already published under the Western Front pilot keep those patterns (`US-D
 | Japanese air flotilla (Kōkū Sentai) | `JPN-AIRFLOT-<nnn>` (`air_division`, domain `air`). Documented as the rung between `JPN-FLT-` and `JPN-KOKUTAI-` | `JPN-AIRFLOT-025` (25th Air Flotilla) |
 | Japanese kōkūtai (air group) | `JPN-KOKUTAI-<nnn>` or `JPN-KOKUTAI-<NAME>` for a named group (`air_group`, domain `air`) | `JPN-KOKUTAI-002`, `JPN-KOKUTAI-TAINAN` |
 | Japanese destroyer squadron | `JPN-DESRON-<nnn>` (`naval_squadron`, domain `naval`) | `JPN-DESRON-002` |
+| Japanese carrier, cruiser or battleship division (new Pacific use) | `JPN-CARDIV-<nnn>`, `JPN-CRUDIV-<nnn>`, `JPN-BATDIV-<nnn>` (`naval_division`, domain `naval`) | `JPN-CARDIV-001`, `JPN-CRUDIV-006`, `JPN-BATDIV-011` |
 | Japanese named warship | `JPN-<ship_type>-<NAME>` in ASCII (`naval_unit`) | `JPN-BB-HIEI`, `JPN-CV-SHOKAKU`, `JPN-CA-CHOKAI` |
 | Australian warship (new) | `AUS-<ship_type>-<NAME>` in ASCII (`naval_unit`), same nation-prefix-plus-type-plus-name pattern as `UK-CA-FROBISHER` and `UK-CL-AJAX` | `AUS-CA-AUSTRALIA`, `AUS-CA-CANBERRA`, `AUS-CL-HOBART` |
 | US destroyer squadron (new Pacific use) | `US-DESRON-<nnn>` (`naval_squadron`, domain `naval`) | `US-DESRON-004` (Destroyer Squadron 4) |

@@ -2,6 +2,8 @@
 # Full verification set for the WWII unit-locations dataset. Read-only (writes only /tmp).
 # Usage: scripts/run_checks.sh [WORKING_COPY_DIR]   (default: the WorldWar2 directory holding this script)
 # Exit status: 0 only if every step passes; otherwise 1, with the failing steps listed at the end.
+# Before this script, if you changed data: python scripts/review_sample.py && python scripts/build.py
+# (review_sample.py must run first — the source-tree hash in build/manifest.json includes those files).
 set -u -o pipefail
 D=${1:-$(cd "$(dirname "$0")/.." && pwd)}
 cd "$D" || exit 1
@@ -21,6 +23,7 @@ step test_renumber_new_ids 'tail -1' python3 scripts/test_renumber_new_ids.py
 step test_renumber_new_ids_stress 'tail -1' python3 scripts/test_renumber_new_ids_stress.py
 step test_check_other_ids 'tail -1' python3 scripts/test_check_other_ids.py
 step test_source_tree_sha256 'tail -1' python3 scripts/test_source_tree_sha256.py
+step test_unit_refs 'tail -1' python3 scripts/test_unit_refs.py
 step build_check 'tail -1' python3 scripts/build.py --check   # includes build/oob/ flagship snapshots and other generated files
 step build_references_check 'tail -1' python3 scripts/build_references.py --check
 step review_sample_check 'cat' python3 scripts/review_sample.py --check

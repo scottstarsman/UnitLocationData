@@ -24,6 +24,8 @@ interface Props {
   positions: Claim[]; tracks: Track[]; selected: string[]; focused: Claim | null;
   date: string; mode: Mode; showPrecision: boolean; showLabels: boolean; fitRequest: number;
   initialBounds?: [number, number, number, number] | null;
+  headingTheater?: string;
+  headingYears?: string;
   onClaim: (claim: Claim) => void;
 }
 
@@ -212,7 +214,7 @@ export function MapView(props: Props) {
   return <div className="map-stage">
     <div ref={container} className="map-canvas" aria-label="Interactive situation map" />
     <div className="map-grain" />
-    <div className="map-sheet-heading"><span>WESTERN EUROPE</span><small>OBSERVATION ATLAS · 1944–45</small></div>
+    <div className="map-sheet-heading"><span>{props.headingTheater ?? 'WESTERN EUROPE'}</span><small>OBSERVATION ATLAS · {props.headingYears ?? '1944–45'}</small></div>
     <div className="compass" aria-hidden="true"><span>N</span><svg viewBox="0 0 30 44"><path d="M15 2 25 36 15 29 5 36Z" fill="none" stroke="currentColor"/><path d="m15 2 0 27-10 7Z" fill="currentColor"/></svg></div>
     <div className="map-legend"><strong>FIELD KEY</strong><span><i className="legend-box"/> Observed on selected date</span><span><i className="legend-box dashed"/> Earlier observation</span><span><i className="legend-route"/> Sequence, not verified route</span><span className="legend-muted">? Alternate or disputed claim</span></div>
     {base === 'outline' && <div className="basemap-note">Outline basemap · detailed tiles unavailable</div>}

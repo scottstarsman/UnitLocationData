@@ -2,6 +2,30 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — C0039 lists US First Army by id (branch `contrib-friction-fixes`)
+
+C0039 (21st Army Group, 7 June 1944) had `composing_units` `UK-ARMY-002A` and `composing_text` “First Army”. After trailing-parenthesis names stopped clashing across nations, “First Army” uniquely names `US-ARMY-001A`, and the validator required the id. `composing_units` is now `UK-ARMY-002A; US-ARMY-001A` (old value: `UK-ARMY-002A` only) and `composing_text` is blank (old value: First Army), because 21st Army Group already commanded US First Army in Normandy on that date. Annotated on the claim.
+
+## 25 November 2026 — The viewer opens on Western Europe when more than one theater is present (branch `contrib-friction-fixes`)
+
+The map no longer uses the bounding box of every claim as its first viewport, which after the Guadalcanal increment stretched from Europe to the Solomons. It now opens on `western_europe` claims (or the selected theater, or the theater with the most points). The default filter stays “All theaters,” so other-front markers may sit off-screen until the user fits the map or chooses a theater. The heading follows the selected theater, or says Western Europe, and the year range comes from the atlas dates. Date-line wrapping is still not handled.
+
+## 25 November 2026 — BSIP district officers and scouts map as reconnaissance, not a District command (branch `contrib-friction-fixes`)
+
+`UK-BSIP-000H` (“British Solomon Islands Protectorate district officers and scouts”) matched SIDC rule HQ03 (`District`) and was coded as a territorial command. A more specific function rule `GC00` (`district officers and scouts`) now sits above HQ03 and maps the unit as reconnaissance, like coastwatchers. `UK-DIST-NETH` and the Luftgau “Air District Command” units still match HQ03. No claim or unit name was changed.
+
+## 25 November 2026 — review_sample and claim-id checks tell you to rebuild first (branch `contrib-friction-fixes`)
+
+`scripts/review_sample.py --check` now tells you to run `build.py` after regenerating the sample, because the manifest source-tree hash includes those files. `scripts/check_claim_ids.py` prints that its next-free id comes from `build/all_claims.csv`. `run_checks.sh` notes the `review_sample.py` then `build.py` order in its header.
+
+## 25 November 2026 — Contributor guide covers the Guadalcanal friction points (branch `contrib-friction-fixes`)
+
+`CONTRIBUTING.md` now has a Pacific (Guadalcanal) worked example alongside the Italy one, with `sub_theater`, Seabee and Japanese regiment rows, nationality as the nation *name*, echelon `regiment/battle_group`, `listing_source`, `composing_units` / `listed_by_higher_unit`, and SIDC name patterns. New short sections cover the people / tenure / link triple for a named commander and the command-relation flags (`end_unknown`, inferred ends, `seq` per claim). The rules now say not to start a note with `Reason:`, that `current_activity` is required and should stay at or under 120 characters, that citation URLs must already be in `references_meta.csv` (HyperWar index URL, `www.ibiblio.org`, no semicolon inside a `source_locator` part), that a landing window is not a landing log, and that `check_claim_ids.py` reads `build/all_claims.csv`. The recommended order is `review_sample.py`, then `build.py`, then `run_checks.sh`. `docs/methodology.md` states that the who_controls grid is a Western Front week grid only.
+
+## 25 November 2026 — Trailing-parenthesis unit names no longer clash across nations (branch `contrib-friction-fixes`)
+
+`unit_refs` indexes each unit name and the same name with a trailing parenthesis stripped, so a same-nation claim can use the short form. The last-resort, unique-across-nations lookup also used the stripped form, so a name such as “16th Infantry Regiment (IJA)” was treated as “16th Infantry Regiment” and rejected a published US composing_text entry (C0025). The last-resort path now matches the exact `unit_name` only. The Guadalcanal Japanese regiments already use an “IJA …” prefix and are unchanged. `scripts/test_unit_refs.py` covers the C0025 case, same-nation short forms, and ambiguous exact names.
+
 ## 25 November 2026 — Source-tree hash in the manifest must match the committed tree (branch `guadalcanal-pilot`)
 
 `build/manifest.json` `source_tree_sha256` is the SHA-256 of tracked, non-generated WorldWar2 files (`git ls-files`, excluding `build/`, `docs/coverage.md` and `data/references.csv`). On this branch `build.py` was run and then hashed files were changed before commit (including the `docs/review` sample written by `review_sample.py`), so a clean checkout hashed differently from the committed manifest. CI runs `build.py` and then `git status`, which failed on that one line even though a following `--check` compared the just-written tree to itself. The hash already ignored untracked and gitignored files. The manifest is rebuilt from the committed tree; `scripts/test_source_tree_sha256.py` checks that untracked and ignored files do not change the hash and that the committed manifest matches the current tree. After `review_sample.py`, run `build.py` again before committing.

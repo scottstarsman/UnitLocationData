@@ -353,7 +353,7 @@ def main():
             print('wrote docs/review/' + name)
     if a.check:
         if stale:
-            print('docs/review is stale (%s); run python scripts/review_sample.py and commit the result' % ', '.join(stale))
+            print('docs/review is stale (%s); run python scripts/review_sample.py, then python scripts/build.py, and commit both' % ', '.join(stale))
             return 1
         print('OK: docs/review sample and counts are up to date')
     return 0

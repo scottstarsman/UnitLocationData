@@ -460,7 +460,7 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 | Barrage balloon squadron | `US-MARBBS-<nnn>` | `US-MARBBS-003` (echelon `other`) |
 | An organic battalion located apart from its regiment | `US-MARBN-<reg>-<bn>` | `US-MARBN-7-1` (1st Battalion, 7th Marines), only when a source locates that battalion separately |
 
-The Americal Division (not yet numbered 23rd Infantry in this campaign) is `US-AMER-001D`, type `AMER`, not `US-INF-023D`. Army infantry regiments follow the existing letterless pattern: `US-INF-164` (164th Infantry). Independent Army field-artillery, engineer and coast-artillery units use `US-FA-<nnn>`, `US-ENG-<nnn>`, `US-CA-<nnn>`. Naval Construction Battalions (Seabees) ashore are `US-NCB-<nnn>`, domain `ground`, branch `Navy` (the same “ashore even if naval” rule as German coastal artillery).
+The Americal Division (not yet numbered 23rd Infantry in this campaign) is `US-AMER-001D`, type `AMER`, not `US-INF-023D`. Army infantry regiments follow the existing letterless pattern: `US-INF-164` (164th Infantry). Independent Army field-artillery, engineer and coast-artillery units use `US-FA-<nnn>`, `US-ENG-<nnn>`, `US-CA-<nnn>`. Naval Construction Battalions (Seabees) ashore are `US-NCB-<nnn>`, domain `ground`, branch `Navy` (the same “ashore even if naval” rule as German coastal artillery). Divisional Army field-artillery, engineer combat, and cavalry reconnaissance units use the same `US-FA-<nnn>`, `US-ENG-<nnn>` and `US-CAV-<nnn>` patterns. The Americal Division’s Mobile Combat Reconnaissance Squadron (later 21st Cavalry Reconnaissance Troop) is `US-CAV-021`; the 25th Division’s Cavalry Reconnaissance Troop is `US-CAV-025`.
 
 **Japanese Army and Navy ground ids (same pilot).** The nation prefix is `JPN` (the code already in `data/nationalities.csv`; folder `japan`). Domain for units ashore is `ground`.
 
@@ -473,6 +473,9 @@ The Americal Division (not yet numbered 23rd Infantry in this campaign) is `US-A
 | Named detachment or *shitai* | `JPN-DET-<NAME>` | `JPN-DET-ICHIKI` (Ichiki Detachment). Do not invent a division for a detachment. |
 | Special Naval Landing Force ashore | `JPN-SNLF-<NAME>` | Taken from a Japanese official source, not guessed |
 | Naval construction or guard unit ashore | `JPN-NCU-<nnn>`, `JPN-NGU-<nnn>` | e.g. `JPN-NCU-011` (11th Construction Unit), domain `ground`, branch `Navy` |
+| Independent mountain artillery regiment (no echelon letter) | `JPN-ART-<nnn>` | `JPN-ART-010` (10th Independent Mountain Artillery Regiment) |
+| Independent mountain artillery battalion | `JPN-ARTBN-<nnn>` | `JPN-ARTBN-020` |
+| Engineer regiment (no echelon letter) | `JPN-ENG-<nnn>` | `JPN-ENG-038` (38th Engineer Regiment) |
 
 Coastwatchers of the RAN / Allied Intelligence Bureau (Organisation Ferdinand) use `AUS-CW-000H` (echelon `other`). British Solomon Islands Protectorate district officers and scouts use `UK-BSIP-000H` (nationality `UK`; there is no separate Solomon Islands nationality).
 

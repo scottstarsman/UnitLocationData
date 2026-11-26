@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Guadalcanal Japanese 11th Air Fleet JACAR diary reading (branch `guadalcanal-jacar-air-naval`)
+
+First increment on this branch: the handwritten JACAR 11th Air Fleet wartime-log images were read (C08030024700, 54 pages, March–May 1942 monthly diaries; C08030024800, 36 pages, September, October and November 1942 monthly diaries). June–August 1942 kōkūtai movement tables are not in those two items.
+
+- **JPN-FLT-011** (Eleventh Air Fleet) is upgraded from `placeholder` to `active`. Previous state: placeholder, no claims, flotillas and kōkūtai not entered because only a catalog excerpt had been seen. Current state: active. Reason: the diary page images were read. No headquarters base claim is entered (the pages read do not state a 司令部位置). No Guadalcanal-window commander tenure is entered (Tsukahara is named 司令長官 only on the April 人員ノ現状 page in C08030024700).
+- Added four air flotillas (`JPN-AIRFLOT-022`, `-024`, `-025`, `-026`; echelon `air_division`, domain `air`) as organic subordinates of the 11th Air Fleet from 1 September through 30 November 1942 (CR3892–CR3895), from the movement-table headings and the October 1 and November 1 艦隊編制 charts.
+- Added ten kōkūtai (`JPN-KOKUTAI-TAINAN`, `-YOKOHAMA`, `-004`, `-002`, `-006`, `-MISAWA`, `-KISARAZU`, `-251`, `-702`, `-582`). Fifteen base claims (C13280–C13294), all confidence 0.5 (JACAR only, family `jacar`): Tainan Air Group at Rabaul (PL4937) on 1 and 30 September and 1 and 31 October; Yokohama Air Group at Shortland Harbour (PL4947) on 1 and 13 September; 4th Air Group at Rabaul on 1 and 13 September; Misawa, Kisarazu and 2nd Air Groups at Rabaul on 1 and 13 September; 6th Air Group at Rabaul on 1 September only (the same row later marks 雲鷹). Rabaul claims use `OP-FRONT-PACIFIC` and `southwest_pacific` (a claim's sub_theater must match its operation; `OP-CAMP-GUADALCANAL` is `south_pacific`). Shortland claims use `OP-CAMP-GUADALCANAL` and `south_pacific`.
+- Ten organic kōkūtai-to-flotilla relations (CR3896–CR3905). Three `redesignation` lineage rows (UL028–UL030) for Tainan→251, 4th→702 and 2nd→582, from the mid-November 兵力部署 table writing 二五一空（台南空）, 七〇二空（四空） and 五八二空（二空）, effective 1 November 1942.
+- New reference R2245 (C08030024800). Scope left blank on all new in-scope units.
+
 ## 26 November 2026 — Build refresh after the Guadalcanal naval pilot (branch `guadalcanal-naval-pilot`)
 
 Regenerated `docs/review/` and `build/` after the Allied and Japanese naval increments (`review_sample.py` before `build.py`, then both again after reference citation counts changed). Added three `coordinate_exceptions.csv` speed rows for checked naval transits: Jarvis 8–9 August 1942 (C13102 / C13101, 113 km, a damaged destroyer leaving the transport area); TG 64.2 Espiritu Santo to Ironbottom Sound, 7–11 October (C13120 / C13132, about 1,050 km in four days); TF 67 departure from Segond Channel on 29 November and Tassafaronga on 30 November (C13185 / C13198, consecutive dates for a departure and a battle). Unexplained coordinate warnings remain 428.

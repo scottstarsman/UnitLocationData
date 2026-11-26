@@ -282,6 +282,20 @@ def load_release():
         return json.load(f)
 
 
+def source_tree_paths():
+    """Tracked WorldWar2 paths included in source_tree_sha256 (git ls-files, minus generated outputs).
+
+    Untracked and gitignored files are not listed. docs/review sample files are still included:
+    sample_claims.csv and sample_relations.csv hold hand-entered reviewer verdicts. After running
+    scripts/review_sample.py, run this script again so the manifest hash matches the tree.
+    """
+    repo = os.path.dirname(common.ROOT)
+    proc = subprocess.run(['git', 'ls-files', '-z', 'WorldWar2'], cwd=repo, capture_output=True, check=True)
+    paths = [p.decode() for p in proc.stdout.split(b'\0') if p]
+    return [rel for rel in sorted(paths)
+            if not rel.startswith(GENERATED_SKIP_PREFIX) and rel not in GENERATED_SKIP]
+
+
 def source_tree_sha256():
     """SHA-256 of tracked WorldWar2 files excluding generated build outputs (and coverage.md / references.csv).
 
@@ -290,12 +304,8 @@ def source_tree_sha256():
     that adds it.
     """
     repo = os.path.dirname(common.ROOT)
-    proc = subprocess.run(['git', 'ls-files', '-z', 'WorldWar2'], cwd=repo, capture_output=True, check=True)
-    paths = [p.decode() for p in proc.stdout.split(b'\0') if p]
     h = hashlib.sha256()
-    for rel in sorted(paths):
-        if rel.startswith(GENERATED_SKIP_PREFIX) or rel in GENERATED_SKIP:
-            continue
+    for rel in source_tree_paths():
         h.update(rel.encode('utf-8'))
         h.update(b'\0')
         with open(os.path.join(repo, rel), 'rb') as f:

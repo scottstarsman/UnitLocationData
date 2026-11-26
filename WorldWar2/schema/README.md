@@ -473,6 +473,9 @@ The Americal Division (not yet numbered 23rd Infantry in this campaign) is `US-A
 | Named detachment or *shitai* | `JPN-DET-<NAME>` | `JPN-DET-ICHIKI` (Ichiki Detachment). Do not invent a division for a detachment. |
 | Special Naval Landing Force ashore | `JPN-SNLF-<NAME>` | Taken from a Japanese official source, not guessed |
 | Naval construction or guard unit ashore | `JPN-NCU-<nnn>`, `JPN-NGU-<nnn>` | e.g. `JPN-NCU-011` (11th Construction Unit), domain `ground`, branch `Navy` |
+| Independent mountain artillery regiment (no echelon letter) | `JPN-ART-<nnn>` | `JPN-ART-010` (10th Independent Mountain Artillery Regiment) |
+| Independent mountain artillery battalion | `JPN-ARTBN-<nnn>` | `JPN-ARTBN-020` |
+| Engineer regiment (no echelon letter) | `JPN-ENG-<nnn>` | `JPN-ENG-038` (38th Engineer Regiment) |
 
 Coastwatchers of the RAN / Allied Intelligence Bureau (Organisation Ferdinand) use `AUS-CW-000H` (echelon `other`). British Solomon Islands Protectorate district officers and scouts use `UK-BSIP-000H` (nationality `UK`; there is no separate Solomon Islands nationality).
 

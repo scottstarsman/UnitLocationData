@@ -6,10 +6,10 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 
 | Domain | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---:|---:|---:|---:|---:|---:|
-| ground | 33 | 2 | 545 | 580 | 274 | 9696 |
+| ground | 29 | 2 | 563 | 594 | 274 | 9726 |
 | air | 15 | 0 | 1292 | 1307 | 607 | 2343 |
 | naval | 59 | 0 | 756 | 815 | 342 | 920 |
-| **All** | **107** | **2** | **2593** | **2702** | **1223** | **12959** |
+| **All** | **103** | **2** | **2611** | **2716** | **1223** | **12989** |
 
 | Domain | Nationality | Echelon | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---|---|---:|---:|---:|---:|---:|---:|
@@ -33,7 +33,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | ground | Germany | regiment/battle_group | 3 | 0 | 38 | 41 | 3 | 90 |
 | ground | Germany | battalion | 3 | 0 | 20 | 23 | 0 | 29 |
 | ground | Germany | other | 0 | 0 | 8 | 8 | 0 | 38 |
-| ground | Japan | army | 1 | 0 | 1 | 2 | 0 | 6 |
+| ground | Japan | army | 0 | 0 | 2 | 2 | 0 | 7 |
 | ground | Japan | division | 0 | 0 | 2 | 2 | 0 | 7 |
 | ground | Japan | brigade | 0 | 0 | 1 | 1 | 0 | 5 |
 | ground | Japan | regiment/battle_group | 1 | 1 | 9 | 11 | 0 | 26 |
@@ -56,8 +56,9 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | ground | US | corps | 1 | 0 | 16 | 17 | 8 | 575 |
 | ground | US | division | 0 | 0 | 65 | 65 | 25 | 2250 |
 | ground | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
-| ground | US | regiment/battle_group | 2 | 0 | 17 | 19 | 0 | 109 |
-| ground | US | battalion | 7 | 0 | 15 | 22 | 0 | 31 |
+| ground | US | regiment/battle_group | 1 | 0 | 18 | 19 | 0 | 111 |
+| ground | US | battalion | 5 | 0 | 30 | 35 | 0 | 55 |
+| ground | US | company | 0 | 0 | 1 | 1 | 0 | 3 |
 | ground | US | other | 1 | 0 | 0 | 1 | 0 | 0 |
 | air | Allied | other | 0 | 0 | 1 | 1 | 0 | 1 |
 | air | Australia | air_squadron | 0 | 0 | 10 | 10 | 0 | 14 |
@@ -109,7 +110,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | US | naval_squadron | 4 | 0 | 0 | 4 | 0 | 0 |
 | naval | US | naval_division | 0 | 0 | 21 | 21 | 0 | 21 |
 | naval | US | task_group | 14 | 0 | 11 | 25 | 0 | 11 |
-| **All** | | | **107** | **2** | **2593** | **2702** | **1223** | **12959** |
+| **All** | | | **103** | **2** | **2611** | **2716** | **1223** | **12989** |
 
 ## Operations
 
@@ -117,24 +118,24 @@ Generated from `data/operations.csv` and every claim's `operation_id` (all domai
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 15 | 7 | 709 |
-| campaign | 10 | 10 | 8406 |
+| umbrella | 15 | 8 | 710 |
+| campaign | 10 | 10 | 8435 |
 | operation | 33 | 33 | 2912 |
 | battle | 20 | 20 | 609 |
 | phase | 4 | 4 | 323 |
-| **All** | **82** | **74** | **12959** |
+| **All** | **82** | **75** | **12989** |
 
 Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 52, compact 3, broad 16, none 11. A map pin (`primary_place_id`) is a sourced place, not this centroid.
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4918 places and 1439 alias names for 12959 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4919 places and 1439 alias names for 12989 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4732 | 11980 |
-| area | 115 | 859 |
-| line | 28 | 61 |
+| point | 4733 | 12004 |
+| area | 115 | 862 |
+| line | 28 | 64 |
 | sea_position | 43 | 59 |
 
 | country | Places | Claims |
@@ -145,7 +146,7 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | Netherlands (NL) | 537 | 1570 |
 | Belgium (BE) | 385 | 890 |
 | Luxembourg (LU) | 90 | 234 |
-| Solomon Islands (SB) | 40 | 189 |
+| Solomon Islands (SB) | 40 | 218 |
 | Austria (AT) | 31 | 49 |
 | Czechia (CZ) | 14 | 22 |
 | Poland (PL) | 10 | 12 |
@@ -160,4 +161,5 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | Isle of Man (IM) | 1 | 1 |
 | Lithuania (LT) | 1 | 1 |
 | Latvia (LV) | 1 | 1 |
+| Papua New Guinea (PG) | 1 | 1 |
 | Slovakia (SK) | 1 | 1 |

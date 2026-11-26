@@ -2622,6 +2622,10 @@ US-CA-071,USS Quincy (CA-71),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4
 US-CA-071,USS Quincy (CA-71),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
 US-CA-214,214th Coast Artillery Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171303004600,GA02,Field Artillery
 US-CA-214,214th Coast Artillery Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171303004600,GA02,Field Artillery
+US-CAV-021,Mobile Combat Reconnaissance Squadron (Americal Division),US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161213000000,GC01,Reconnaissance/Cavalry/Scout
+US-CAV-021,Mobile Combat Reconnaissance Squadron (Americal Division),US,ground,battalion,1941-12-08,,Allied,3,10031000161213000000,GC01,Reconnaissance/Cavalry/Scout
+US-CAV-025,25th Cavalry Reconnaissance Troop,US,ground,company,1939-09-01,1941-12-07,neutral,4,10041000151213000000,GC01,Reconnaissance/Cavalry/Scout
+US-CAV-025,25th Cavalry Reconnaissance Troop,US,ground,company,1941-12-08,,Allied,3,10031000151213000000,GC01,Reconnaissance/Cavalry/Scout
 US-CCA-002D,"Combat Command A, 2nd Armored Division",US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041004171210000000,GK01,Combined Arms
 US-CCA-002D,"Combat Command A, 2nd Armored Division",US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031004171210000000,GK01,Combined Arms
 US-CCR-004D,"Combat Command Reserve, 4th Armored Division",US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041004171210000000,GK01,Combined Arms
@@ -2748,8 +2752,26 @@ US-DESRON-018,Destroyer Squadron 18,US,naval,naval_squadron,1939-09-01,1941-12-0
 US-DESRON-018,Destroyer Squadron 18,US,naval,naval_squadron,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
 US-DESRON-060,Destroyer Squadron 60,US,naval,naval_squadron,1939-09-01,1941-12-07,neutral,4,10043000001210000000,NF99,Navy Task Organization
 US-DESRON-060,Destroyer Squadron 60,US,naval,naval_squadron,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
+US-ENG-057,57th Engineer Combat Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161407000000,GE02,Engineer
+US-ENG-057,57th Engineer Combat Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161407000000,GE02,Engineer
+US-FA-008,8th Field Artillery Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-008,8th Field Artillery Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
+US-FA-064,64th Field Artillery Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-064,64th Field Artillery Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
+US-FA-089,89th Field Artillery Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-089,89th Field Artillery Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
+US-FA-090,90th Field Artillery Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-090,90th Field Artillery Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
 US-FA-097,97th Field Artillery Battalion (75-mm Howitzer Pack),US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
 US-FA-097,97th Field Artillery Battalion (75-mm Howitzer Pack),US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
+US-FA-221,221st Field Artillery Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-221,221st Field Artillery Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
+US-FA-245,245th Field Artillery Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-245,245th Field Artillery Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
+US-FA-246,246th Field Artillery Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-246,246th Field Artillery Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
+US-FA-247,247th Field Artillery Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-247,247th Field Artillery Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
 US-FAW-007,Fleet Air Wing 7,US,air,air_wing,1939-09-01,1941-12-07,neutral,4,10041000181208004600,AN02,Aviation Fixed Wing
 US-FAW-007,Fleet Air Wing 7,US,air,air_wing,1941-12-08,,Allied,3,10031000181208004600,AN02,Aviation Fixed Wing
 US-FG-004,4th Fighter Group,US,air,air_group,1939-09-01,1941-12-07,neutral,4,10041000171208000000,AF99,Aviation Fixed Wing
@@ -3212,6 +3234,12 @@ US-MARAMTR-002,2nd Amphibian Tractor Battalion,US,ground,battalion,1939-09-01,19
 US-MARAMTR-002,2nd Amphibian Tractor Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
 US-MARBBS-003,3rd Barrage Balloon Squadron,US,ground,other,1939-09-01,1941-12-07,neutral,4,10041000251301000000,AD02,Air Defense
 US-MARBBS-003,3rd Barrage Balloon Squadron,US,ground,other,1941-12-08,,Allied,3,10031000251301000000,AD02,Air Defense
+US-MARBN-10-1,"1st Battalion, 10th Marines",US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI01,Infantry
+US-MARBN-10-1,"1st Battalion, 10th Marines",US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI01,Infantry
+US-MARBN-10-2,"2nd Battalion, 10th Marines",US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI01,Infantry
+US-MARBN-10-2,"2nd Battalion, 10th Marines",US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI01,Infantry
+US-MARBN-10-3,"3rd Battalion, 10th Marines",US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI01,Infantry
+US-MARBN-10-3,"3rd Battalion, 10th Marines",US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI01,Infantry
 US-MARDEF-003,3rd Defense Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
 US-MARDEF-003,3rd Defense Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
 US-MARDEF-009,9th Defense Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry

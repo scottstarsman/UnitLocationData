@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Build refresh after the Guadalcanal JACAR air and naval reading (branch `guadalcanal-jacar-air-naval`)
+
+`review_sample.py` and `build.py` refreshed after the 11th Air Fleet and 8th Fleet increments and the validator fixes. Citation counts on R2224, R2245 and R2246 were recomputed.
+
 ## 26 November 2026 — Guadalcanal Japanese 8th Fleet JACAR diary reading (branch `guadalcanal-jacar-air-naval`)
 
 Second increment on this branch: the handwritten JACAR 8th Fleet wartime-log images were read, beginning with C08030022500 (61 pages, **14 July–31 August 1942**; the parent catalog title C08030022300 starts mid-September and does not describe this child). Items C08030022600–22900 (September 1942–February 1943, through the evacuation) were downloaded and rendered; they were not fully mined for additional ship claims in this increment.

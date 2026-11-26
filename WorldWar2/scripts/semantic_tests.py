@@ -4239,7 +4239,7 @@ def scenario_255_air_echelon_ladder():
     rank = common.echelon_rank()
     ladder = ('air_squadron', 'air_group', 'air_wing', 'air_division', 'air_corps', 'air_force')
     expect(s + ': ranks', [rank[e] for e in ladder], [20, 21, 22, 23, 24, 25])
-    expect(s + ': ground and naval ranks are unchanged', (rank['squad'], rank['army_group'], rank['other'], rank['naval_unit'], rank['fleet']), (0, 7, 8, 10, 14))
+    expect(s + ': ground ranks are unchanged and the naval ladder ends at fleet 15', (rank['squad'], rank['army_group'], rank['other'], rank['naval_unit'], rank['task_force'], rank['fleet']), (0, 7, 8, 10, 14, 15))
     expect(s + ': the reserved air_formation is retired', 'air_formation' in common.vocab_values('echelon'), False)
     # Changed 19 November 2026 (chunk 8a, air_flight added below air_squadron): old expected value sorted(ladder), new value sorted(ladder + ('air_flight',)).
     expect(s + ': every ladder echelon is exempt from the id letter (air_flight added in 8a, scenario 324)', sorted(validate.AIR_LADDER), sorted(ladder + ('air_flight',)))
@@ -7076,7 +7076,7 @@ def scenario_324_air_flight_echelon():
     """Chunk 8a schema change (M5 widened to rule 26, Scott, 19 November 2026): air_flight is the air-ladder level below air_squadron (rank 19, no id letter)."""
     s = 'scenario 324 (air_flight echelon)'
     rank = common.echelon_rank()
-    expect(s + ': rank 19, below air_squadron and above the naval and ground ranges', (rank['air_flight'], rank['air_squadron'], rank['fleet'], rank['other']), (19, 20, 14, 8))
+    expect(s + ': rank 19, below air_squadron and above the naval and ground ranges', (rank['air_flight'], rank['air_squadron'], rank['fleet'], rank['other']), (19, 20, 15, 8))
     expect(s + ': in the echelon vocabulary and exempt from the id letter', ('air_flight' in common.vocab_values('echelon'), 'air_flight' in validate.AIR_LADDER), (True, True))
     mk = lambda uid, e: {'unit_id': uid, 'echelon': e}  # noqa: E731
     prob = lambda a, b, r='assigned': validate.air_hierarchy_problem(a, b, r)  # noqa: E731

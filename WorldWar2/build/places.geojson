@@ -112212,10 +112212,10 @@
     "precision_km": 1,
     "country": "SB",
     "region": "Guadalcanal Province",
-    "claims_count": 25,
+    "claims_count": 29,
     "claims_ground": 25,
     "claims_air": 0,
-    "claims_naval": 0
+    "claims_naval": 4
    }
   },
   {
@@ -113293,10 +113293,10 @@
     "precision_km": 25,
     "country": "SB",
     "region": "Central Province",
-    "claims_count": 0,
+    "claims_count": 116,
     "claims_ground": 0,
     "claims_air": 0,
-    "claims_naval": 0
+    "claims_naval": 116
    }
   },
   {
@@ -113389,6 +113389,236 @@
     "claims_ground": 0,
     "claims_air": 0,
     "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     151.808,
+     7.454
+    ]
+   },
+   "properties": {
+    "place_id": "PL4949",
+    "name": "Chuuk Lagoon (Truk)",
+    "alt_names": "Truk Lagoon; Truk; Chuuk Islands",
+    "kind": "area",
+    "precision_km": 25,
+    "country": "FM",
+    "region": "State of Chuuk",
+    "claims_count": 23,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 23
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     167.15375,
+     -15.55075
+    ]
+   },
+   "properties": {
+    "place_id": "PL4950",
+    "name": "Segond Channel, Espiritu Santo",
+    "alt_names": "Segond Channel",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "VU",
+    "region": "Sanma Province",
+    "claims_count": 2,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     163.5,
+     -8.63333
+    ]
+   },
+   "properties": {
+    "place_id": "PL4951",
+    "name": "Eastern Solomons (sea position)",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 50,
+    "country": "SB",
+    "region": "Solomon Islands",
+    "claims_count": 12,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 12
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     166.71667,
+     -8.63333
+    ]
+   },
+   "properties": {
+    "place_id": "PL4952",
+    "name": "Santa Cruz Islands (sea position)",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 50,
+    "country": "SB",
+    "region": "Temotu Province",
+    "claims_count": 25,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 25
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.93333,
+     -11.43333
+    ]
+   },
+   "properties": {
+    "place_id": "PL4953",
+    "name": "East of Rennell Island (sea position)",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 25,
+    "country": "SB",
+    "region": "Rennell and Bellona",
+    "claims_count": 7,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 7
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     164.13333,
+     -12.41667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4954",
+    "name": "Wasp sinking position, 15 September 1942",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 25,
+    "country": "SB",
+    "region": "Solomon Islands",
+    "claims_count": 5,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 5
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     161.73333,
+     -10.56667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4955",
+    "name": "Juneau sinking position, 13 November 1942",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 25,
+    "country": "SB",
+    "region": "Solomon Islands",
+    "claims_count": 1,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     158.98333,
+     -9.7
+    ]
+   },
+   "properties": {
+    "place_id": "PL4956",
+    "name": "Jarvis sinking position, 9 August 1942",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 25,
+    "country": "SB",
+    "region": "Solomon Islands",
+    "claims_count": 1,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.83333,
+     -6.16667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4957",
+    "name": "Ryujo sinking position, 24 August 1942",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 25,
+    "country": "SB",
+    "region": "Solomon Islands",
+    "claims_count": 1,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     157.0,
+     -8.75
+    ]
+   },
+   "properties": {
+    "place_id": "PL4958",
+    "name": "Kinugasa sinking position, 14 November 1942",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 25,
+    "country": "SB",
+    "region": "Western Province",
+    "claims_count": 1,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 1
    }
   }
  ]

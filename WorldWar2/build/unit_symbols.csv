@@ -3,6 +3,9 @@ ALL-AEAF-000H,Allied Expeditionary Air Force (AEAF),Allied,air,other,1939-09-03,
 ALL-AFHQ-000H,Allied Force Headquarters (AFHQ),Allied,ground,other,1939-09-03,,Allied,3,10031002251100000000,HQ02,Command and Control
 ALL-FAAA-001A,First Allied Airborne Army,Allied,ground,army,1939-09-03,,Allied,3,10031000231211000001,GP01,Infantry
 ALL-SHAEF-000H,Supreme Headquarters Allied Expeditionary Force (SHAEF),Allied,ground,other,1939-09-03,,Allied,3,10031002251100000000,HQ02,Command and Control
+AUS-CA-AUSTRALIA,HMAS Australia,Australia,naval,naval_unit,1939-09-03,,Allied,3,10033000001202020002,SH-CA,Cruiser
+AUS-CA-CANBERRA,HMAS Canberra,Australia,naval,naval_unit,1939-09-03,,Allied,3,10033000001202020002,SH-CA,Cruiser
+AUS-CL-HOBART,HMAS Hobart,Australia,naval,naval_unit,1939-09-03,,Allied,3,10033000001202020003,SH-CL,Cruiser
 AUS-CW-000H,Coastwatchers (Organisation Ferdinand),Australia,ground,other,1939-09-03,,Allied,3,10031000251213000000,GC01,Reconnaissance/Cavalry/Scout
 AUS-SQN-010,No. 10 Squadron RAAF,Australia,air,air_squadron,1939-09-03,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 AUS-SQN-453,No. 453 Squadron RAAF,Australia,air,air_squadron,1939-09-03,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
@@ -710,12 +713,74 @@ JPN-ARMY-008A,8th Area Army,Japan,ground,army,1939-09-01,,Axis,6,100610002312100
 JPN-ARMY-017A,17th Army,Japan,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
 JPN-ART-010,10th Independent Mountain Artillery Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171303000000,GA03,Field Artillery
 JPN-ARTBN-020,20th Independent Mountain Artillery Battalion,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161303000000,GA03,Field Artillery
+JPN-AV-CHITOSE,Chitose,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001301000000,SH-AV,Auxiliary Ship
+JPN-BATDIV-003,Battleship Division 3,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-BATDIV-011,Battleship Division 11,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-BB-HARUNA,Haruna,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202010000,SH-BB,Battleship
+JPN-BB-HIEI,Hiei,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202010000,SH-BB,Battleship
+JPN-BB-KIRISHIMA,Kirishima,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202010000,SH-BB,Battleship
+JPN-BB-KONGO,Kongo,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202010000,SH-BB,Battleship
 JPN-BDE-035B,35th Infantry Brigade (Kawaguchi Force),Japan,ground,brigade,1939-09-01,,Axis,6,10061000181211000000,GI01,Infantry
+JPN-CA-AOBA,Aoba,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-ATAGO,Atago,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-CHIKUMA,Chikuma,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-CHOKAI,Chokai,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-FURUTAKA,Furutaka,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-KAKO,Kako,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-KINUGASA,Kinugasa,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-KUMANO,Kumano,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-MAYA,Maya,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-MYOKO,Myoko,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-SUZUYA,Suzuya,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-TAKAO,Takao,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CA-TONE,Tone,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020002,SH-CA,Cruiser
+JPN-CARDIV-001,Carrier Division 1,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-CARDIV-002,Carrier Division 2,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-CL-ISUZU,Isuzu,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020003,SH-CL,Cruiser
+JPN-CL-JINTSU,Jintsu,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020003,SH-CL,Cruiser
+JPN-CL-NAGARA,Nagara,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020003,SH-CL,Cruiser
+JPN-CL-SENDAI,Sendai,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020003,SH-CL,Cruiser
+JPN-CL-TENRYU,Tenryu,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020003,SH-CL,Cruiser
+JPN-CL-YUBARI,Yubari,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202020003,SH-CL,Cruiser
+JPN-CRUDIV-004,Cruiser Division 4,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-CRUDIV-005,Cruiser Division 5,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-CRUDIV-006,Cruiser Division 6,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-CRUDIV-007,Cruiser Division 7,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-CRUDIV-008,Cruiser Division 8,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-CRUDIV-018,Cruiser Division 18,Japan,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-CV-JUNYO,Junyo,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001201000000,SH-CV,Carrier
+JPN-CV-SHOKAKU,Shokaku,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001201000000,SH-CV,Carrier
+JPN-CV-ZUIKAKU,Zuikaku,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001201000000,SH-CV,Carrier
+JPN-CVL-RYUJO,Ryujo,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001201000003,SH-CVL,Carrier
+JPN-CVL-ZUIHO,Zuiho,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001201000003,SH-CVL,Carrier
+JPN-DD-AKATSUKI,Akatsuki,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-AMATSUKAZE,Amatsukaze,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-AYANAMI,Ayanami,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-FUBUKI,Fubuki,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-HATSUYUKI,Hatsuyuki,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-IKAZUCHI,Ikazuchi,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-KAGERO,Kagero,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-KAWAKAZE,Kawakaze,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-KUROSHIO,Kuroshio,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-MAKINAMI,Makinami,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-MURAKUMO,Murakumo,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-MURASAME,Murasame,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-MUTSUKI,Mutsuki,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-NAGANAMI,Naganami,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-OYASHIO,Oyashio,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-SUZUKAZE,Suzukaze,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-TAKANAMI,Takanami,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DD-YUDACHI,Yudachi,Japan,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
+JPN-DESRON-002,Destroyer Squadron 2,Japan,naval,naval_squadron,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-DESRON-003,Destroyer Squadron 3,Japan,naval,naval_squadron,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-DESRON-004,Destroyer Squadron 4,Japan,naval,naval_squadron,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+JPN-DESRON-010,Destroyer Squadron 10,Japan,naval,naval_squadron,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
 JPN-DET-ICHIKI,Ichiki Detachment,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161211000000,GI01,Infantry
 JPN-DET-NASU,Nasu Force,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
 JPN-DET-SUMIYOSHI,Sumiyoshi Artillery Group,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171303000000,GA03,Field Artillery
 JPN-DET-YANO,Yano Detachment,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161211000000,GI01,Infantry
 JPN-ENG-038,38th Engineer Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171407000000,GE02,Engineer
+JPN-FLT-003,Third Fleet,Japan,naval,fleet,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
 JPN-FLT-011,11th Air Fleet,Japan,air,air_force,1939-09-01,,Axis,6,10061000231208000000,AF99,Aviation Fixed Wing
 JPN-INF-002D,IJA 2nd Division (Sendai),Japan,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI02,Infantry
 JPN-INF-004,IJA 4th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
@@ -2751,6 +2816,8 @@ US-DE-790,USS Borum (DE-790),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4
 US-DE-790,USS Borum (DE-790),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030400,SH-DE,Destroyer
 US-DE-791,USS Maloy (DE-791),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030400,SH-DE,Destroyer
 US-DE-791,USS Maloy (DE-791),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030400,SH-DE,Destroyer
+US-DESRON-004,Destroyer Squadron 4,US,naval,naval_squadron,1939-09-01,1941-12-07,neutral,4,10043000001210000000,NF99,Navy Task Organization
+US-DESRON-004,Destroyer Squadron 4,US,naval,naval_squadron,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
 US-DESRON-010,Destroyer Squadron 10,US,naval,naval_squadron,1939-09-01,1941-12-07,neutral,4,10043000001210000000,NF99,Navy Task Organization
 US-DESRON-010,Destroyer Squadron 10,US,naval,naval_squadron,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
 US-DESRON-017,Destroyer Squadron 17,US,naval,naval_squadron,1939-09-01,1941-12-07,neutral,4,10043000001210000000,NF99,Navy Task Organization
@@ -3291,6 +3358,142 @@ US-MAW-001,1st Marine Aircraft Wing,US,air,air_wing,1939-09-01,1941-12-07,neutra
 US-MAW-001,1st Marine Aircraft Wing,US,air,air_wing,1941-12-08,,Allied,3,10031000181208000000,AF99,Aviation Fixed Wing
 US-MAW-002,2nd Marine Aircraft Wing,US,air,air_wing,1939-09-01,1941-12-07,neutral,4,10041000181208000000,AF99,Aviation Fixed Wing
 US-MAW-002,2nd Marine Aircraft Wing,US,air,air_wing,1941-12-08,,Allied,3,10031000181208000000,AF99,Aviation Fixed Wing
+US-NAV-BB-055,USS North Carolina (BB-55),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202010000,SH-BB,Battleship
+US-NAV-BB-055,USS North Carolina (BB-55),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202010000,SH-BB,Battleship
+US-NAV-BB-056,USS Washington (BB-56),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202010000,SH-BB,Battleship
+US-NAV-BB-056,USS Washington (BB-56),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202010000,SH-BB,Battleship
+US-NAV-BB-057,USS South Dakota (BB-57),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202010000,SH-BB,Battleship
+US-NAV-BB-057,USS South Dakota (BB-57),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202010000,SH-BB,Battleship
+US-NAV-CA-024,USS Pensacola (CA-24),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-024,USS Pensacola (CA-24),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-025,USS Salt Lake City (CA-25),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-025,USS Salt Lake City (CA-25),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-026,USS Northampton (CA-26),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-026,USS Northampton (CA-26),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-028,USS Louisville (CA-28),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-028,USS Louisville (CA-28),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-029,USS Chicago (CA-29),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-029,USS Chicago (CA-29),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-032,USS New Orleans (CA-32),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-032,USS New Orleans (CA-32),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-033,USS Portland (CA-33),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-033,USS Portland (CA-33),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-034,USS Astoria (CA-34),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-034,USS Astoria (CA-34),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-036,USS Minneapolis (CA-36),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-036,USS Minneapolis (CA-36),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-038,USS San Francisco (CA-38),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-038,USS San Francisco (CA-38),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-039,USS Quincy (CA-39),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-039,USS Quincy (CA-39),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CA-044,USS Vincennes (CA-44),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
+US-NAV-CA-044,USS Vincennes (CA-44),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-NAV-CL-047,USS Boise (CL-47),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020003,SH-CL,Cruiser
+US-NAV-CL-047,USS Boise (CL-47),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020003,SH-CL,Cruiser
+US-NAV-CL-048,USS Honolulu (CL-48),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020003,SH-CL,Cruiser
+US-NAV-CL-048,USS Honolulu (CL-48),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020003,SH-CL,Cruiser
+US-NAV-CL-050,USS Helena (CL-50),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020003,SH-CL,Cruiser
+US-NAV-CL-050,USS Helena (CL-50),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020003,SH-CL,Cruiser
+US-NAV-CL-051,USS Atlanta (CL-51),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020003,SH-CL,Cruiser
+US-NAV-CL-051,USS Atlanta (CL-51),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020003,SH-CL,Cruiser
+US-NAV-CL-052,USS Juneau (CL-52),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020003,SH-CL,Cruiser
+US-NAV-CL-052,USS Juneau (CL-52),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020003,SH-CL,Cruiser
+US-NAV-CL-053,USS San Diego (CL-53),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020003,SH-CL,Cruiser
+US-NAV-CL-053,USS San Diego (CL-53),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020003,SH-CL,Cruiser
+US-NAV-CL-054,USS San Juan (CL-54),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020003,SH-CL,Cruiser
+US-NAV-CL-054,USS San Juan (CL-54),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020003,SH-CL,Cruiser
+US-NAV-CV-003,USS Saratoga (CV-3),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001201000000,SH-CV,Carrier
+US-NAV-CV-003,USS Saratoga (CV-3),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001201000000,SH-CV,Carrier
+US-NAV-CV-006,USS Enterprise (CV-6),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001201000000,SH-CV,Carrier
+US-NAV-CV-006,USS Enterprise (CV-6),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001201000000,SH-CV,Carrier
+US-NAV-CV-007,USS Wasp (CV-7),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001201000000,SH-CV,Carrier
+US-NAV-CV-007,USS Wasp (CV-7),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001201000000,SH-CV,Carrier
+US-NAV-CV-008,USS Hornet (CV-8),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001201000000,SH-CV,Carrier
+US-NAV-CV-008,USS Hornet (CV-8),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001201000000,SH-CV,Carrier
+US-NAV-DD-356,USS Porter (DD-356),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-356,USS Porter (DD-356),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-357,USS Selfridge (DD-357),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-357,USS Selfridge (DD-357),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-364,USS Mahan (DD-364),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-364,USS Mahan (DD-364),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-366,USS Drayton (DD-366),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-366,USS Drayton (DD-366),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-367,USS Lamson (DD-367),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-367,USS Lamson (DD-367),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-373,USS Shaw (DD-373),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-373,USS Shaw (DD-373),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-376,USS Cushing (DD-376),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-376,USS Cushing (DD-376),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-377,USS Perkins (DD-377),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-377,USS Perkins (DD-377),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-378,USS Smith (DD-378),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-378,USS Smith (DD-378),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-379,USS Preston (DD-379),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-379,USS Preston (DD-379),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-386,USS Bagley (DD-386),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-386,USS Bagley (DD-386),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-387,USS Blue (DD-387),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-387,USS Blue (DD-387),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-388,USS Helm (DD-388),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-388,USS Helm (DD-388),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-389,USS Mugford (DD-389),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-389,USS Mugford (DD-389),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-390,USS Ralph Talbot (DD-390),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-390,USS Ralph Talbot (DD-390),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-392,USS Patterson (DD-392),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-392,USS Patterson (DD-392),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-393,USS Jarvis (DD-393),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-393,USS Jarvis (DD-393),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-397,USS Benham (DD-397),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-397,USS Benham (DD-397),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-401,USS Maury (DD-401),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-401,USS Maury (DD-401),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-407,USS Sterett (DD-407),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-407,USS Sterett (DD-407),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-408,USS Wilson (DD-408),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-408,USS Wilson (DD-408),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-410,USS Hughes (DD-410),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-410,USS Hughes (DD-410),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-411,USS Anderson (DD-411),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-411,USS Anderson (DD-411),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-413,USS Mustin (DD-413),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-413,USS Mustin (DD-413),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-415,USS O'Brien (DD-415),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-415,USS O'Brien (DD-415),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-416,USS Walke (DD-416),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-416,USS Walke (DD-416),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-433,USS Gwin (DD-433),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-433,USS Gwin (DD-433),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-435,USS Grayson (DD-435),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-435,USS Grayson (DD-435),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-436,USS Monssen (DD-436),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-436,USS Monssen (DD-436),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-445,USS Fletcher (DD-445),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-445,USS Fletcher (DD-445),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-448,USS LaVallette (DD-448),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-448,USS LaVallette (DD-448),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-450,USS O'Bannon (DD-450),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-450,USS O'Bannon (DD-450),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-459,USS Laffey (DD-459),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-459,USS Laffey (DD-459),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-483,USS Aaron Ward (DD-483),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-483,USS Aaron Ward (DD-483),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-484,USS Buchanan (DD-484),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-484,USS Buchanan (DD-484),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-485,USS Duncan (DD-485),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-485,USS Duncan (DD-485),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-486,USS Lansdowne (DD-486),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-486,USS Lansdowne (DD-486),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-487,USS Lardner (DD-487),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-487,USS Lardner (DD-487),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-488,USS McCalla (DD-488),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-488,USS McCalla (DD-488),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-491,USS Farenholt (DD-491),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-491,USS Farenholt (DD-491),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-599,USS Barton (DD-599),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-599,USS Barton (DD-599),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
+US-NAV-DD-602,USS Meade (DD-602),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202030000,SH-DD,Destroyer
+US-NAV-DD-602,USS Meade (DD-602),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202030000,SH-DD,Destroyer
 US-NCB-006,6th Naval Construction Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
 US-NCB-006,6th Naval Construction Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
 US-NCB-018,18th Naval Construction Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
@@ -3489,8 +3692,26 @@ US-TCW-053,53rd Troop Carrier Wing,US,air,air_wing,1939-09-01,1941-12-07,neutral
 US-TCW-053,53rd Troop Carrier Wing,US,air,air_wing,1941-12-08,,Allied,3,10031000181208000000,AF99,Aviation Fixed Wing
 US-TDB-001B,Task Force A (1st Tank Destroyer Brigade),US,ground,brigade,1939-09-01,1941-12-07,neutral,4,10041004181204000000,GT01,Antitank/Antiarmor
 US-TDB-001B,Task Force A (1st Tank Destroyer Brigade),US,ground,brigade,1941-12-08,,Allied,3,10031004181204000000,GT01,Antitank/Antiarmor
+US-TF-016,Task Force 16,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210020000,NF01,Task Force
+US-TF-016,Task Force 16,US,naval,task_group,1941-12-08,,Allied,3,10033000001210020000,NF01,Task Force
+US-TF-017,Task Force 17,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210020000,NF01,Task Force
+US-TF-017,Task Force 17,US,naval,task_group,1941-12-08,,Allied,3,10033000001210020000,NF01,Task Force
+US-TF-018,Task Force 18,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210020000,NF01,Task Force
+US-TF-018,Task Force 18,US,naval,task_group,1941-12-08,,Allied,3,10033000001210020000,NF01,Task Force
+US-TF-061,Task Force 61,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210020000,NF01,Task Force
+US-TF-061,Task Force 61,US,naval,task_group,1941-12-08,,Allied,3,10033000001210020000,NF01,Task Force
+US-TF-064,Task Force 64,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210020000,NF01,Task Force
+US-TF-064,Task Force 64,US,naval,task_group,1941-12-08,,Allied,3,10033000001210020000,NF01,Task Force
+US-TF-067,Task Force 67,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210020000,NF01,Task Force
+US-TF-067,Task Force 67,US,naval,task_group,1941-12-08,,Allied,3,10033000001210020000,NF01,Task Force
 US-TF-BUTLER,Task Force Butler,US,ground,brigade,1939-09-01,1941-12-07,neutral,4,10041004181210000000,GK01,Combined Arms
 US-TF-BUTLER,Task Force Butler,US,ground,brigade,1941-12-08,,Allied,3,10031004181210000000,GK01,Combined Arms
+US-TG-0628,Task Group 62.8,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210030000,NF02,Task Group
+US-TG-0628,Task Group 62.8,US,naval,task_group,1941-12-08,,Allied,3,10033000001210030000,NF02,Task Group
+US-TG-0642,Task Group 64.2,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210030000,NF02,Task Group
+US-TG-0642,Task Group 64.2,US,naval,task_group,1941-12-08,,Allied,3,10033000001210030000,NF02,Task Group
+US-TG-0674,Task Group 67.4,US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210030000,NF02,Task Group
+US-TG-0674,Task Group 67.4,US,naval,task_group,1941-12-08,,Allied,3,10033000001210030000,NF02,Task Group
 US-TG-122,Western Naval Task Force (Task Force 122),US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210020000,NF01,Task Force
 US-TG-122,Western Naval Task Force (Task Force 122),US,naval,task_group,1941-12-08,,Allied,3,10033000001210020000,NF01,Task Force
 US-TG-124,"Assault Force O, Omaha Beach (Task Force 124)",US,naval,task_group,1939-09-01,1941-12-07,neutral,4,10043000001210020000,NF01,Task Force

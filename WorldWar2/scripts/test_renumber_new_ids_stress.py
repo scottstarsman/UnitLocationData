@@ -230,19 +230,83 @@ def pick_other_claim_file(root, not_unit):
     raise RuntimeError('no other claim file')
 
 
+
+def _used_ids(root, pattern, col, prefix):
+    """Numeric ids with this prefix in the working tree (glob relative to WorldWar2/)."""
+    import glob as _glob
+    used = set()
+    for path in _glob.glob(os.path.join(root, pattern), recursive=True):
+        if not path.endswith('.csv'):
+            continue
+        for r in common.read_dicts(path)[1]:
+            i = (r.get(col) or '').strip()
+            if i.startswith(prefix) and i[len(prefix):].isdigit():
+                used.add(i)
+    return used
+
+
+def _next(used, prefix, width):
+    return rn.format_id(prefix, width, rn.next_free(used, prefix, width))
+
+
+def _alloc(used, prefix, width):
+    i = _next(used, prefix, width)
+    used.add(i)
+    return i
+
+
+def next_free_tokens(root):
+    """Next free ids in the cloned working tree, so stay rows do not collide with an in-flight increment."""
+    claims = _used_ids(root, 'data/claims/**/*.csv', 'claim_id', 'C')
+    groups = _used_ids(root, 'data/claims/**/*.csv', 'conflict_group_id', 'G')
+    groups |= _used_ids(root, 'data/missions/**/*.csv', 'conflict_group_id', 'G')
+    groups |= _used_ids(root, 'data/unit_commanders.csv', 'conflict_group_id', 'G')
+    rels = _used_ids(root, 'data/command_relations.csv', 'relation_id', 'CR')
+    refs = _used_ids(root, 'data/references_meta.csv', 'reference_id', 'R')
+    places = _used_ids(root, 'data/places.csv', 'place_id', 'PL')
+    people = _used_ids(root, 'data/people.csv', 'person_id', 'PE')
+    tens = _used_ids(root, 'data/unit_commanders.csv', 'tenure_id', 'UC')
+    tts = _used_ids(root, 'data/toe_templates.csv', 'template_id', 'TT')
+    uts = _used_ids(root, 'data/unit_toe.csv', 'assignment_id', 'UT')
+    ats = _used_ids(root, 'data/aircraft_types.csv', 'type_id', 'AT')
+    scs = _used_ids(root, 'data/ship_classes.csv', 'class_id', 'SC')
+    uls = _used_ids(root, 'data/unit_lineage.csv', 'lineage_id', 'UL')
+    msns = _used_ids(root, 'data/missions/**/*.csv', 'mission_id', 'MSN')
+    toks = {
+        'claim': _alloc(claims, 'C', 4),
+        'claim2': _alloc(claims, 'C', 4),
+        'group': _alloc(groups, 'G', 3),
+        'rel': _alloc(rels, 'CR', 4),
+        'ref': _alloc(refs, 'R', 3),
+        'place': _alloc(places, 'PL', 4),
+        'person': _alloc(people, 'PE', 4),
+        'tenure': _alloc(tens, 'UC', 4),
+        'tt': _alloc(tts, 'TT', 4),
+        'ut': _alloc(uts, 'UT', 4),
+        'at': _alloc(ats, 'AT', 3),
+        'sc': _alloc(scs, 'SC', 3),
+        'ul': _alloc(uls, 'UL', 3),
+        'mission': _alloc(msns, 'MSN', 4),
+        'roadmap': 'roadmap 431',
+        'scenario': 'scenario 400',
+    }
+    return toks
+
+
 def add_full_dataset_collisions(root):
     """Add colliding and non-colliding rows in every family. Returns expected stay-ids."""
     path1234, row1234, _ = find_claim(root, 'C1234')
     other, tmpl, header = pick_other_claim_file(root, row1234['unit_id'])
+    tok = next_free_tokens(root)
     stay = {
-        'C12345', 'C10873', 'C10982', 'C12783', 'G319',
-        'CR3742', 'R2224', 'PL4897', 'PE0608', 'UC0697',
-        'TT0016', 'UT0127', 'AT143', 'SC220', 'UL028', 'MSN0099',
+        'C12345', 'C10873', 'C10982', tok['claim'], tok['group'],
+        tok['rel'], tok['ref'], tok['place'], tok['person'], tok['tenure'],
+        tok['tt'], tok['ut'], tok['at'], tok['sc'], tok['ul'], tok['mission'],
     }
 
     notes = (
         'Stress collision of C1234 vs C12345; range C10873-C10982; '
-        'also C1234-C12345 and G112. Non-colliding later: C12783.'
+        'also C1234-C12345 and G112. Non-colliding later: %s.' % tok['claim']
     )
     append_row(
         other,
@@ -259,7 +323,7 @@ def add_full_dataset_collisions(root):
     # Second new member of the same silent-join group, unique (non-colliding) claim id.
     append_row(
         other,
-        claim_id='C12784',
+        claim_id=tok['claim2'],
         conflict_group_id='G112',
         unit_id=tmpl['unit_id'],
         date='1939-09-03',
@@ -269,18 +333,18 @@ def add_full_dataset_collisions(root):
         notes='joins the colliding group G112; claim id is new',
         source=tmpl.get('source') or 'https://example.com/stress',
     )
-    stay.add('C12784')
+    stay.add(tok['claim2'])
     # Non-colliding new claim and group
     append_row(
         other,
-        claim_id='C12783',
-        conflict_group_id='G319',
+        claim_id=tok['claim'],
+        conflict_group_id=tok['group'],
         unit_id=tmpl['unit_id'],
         date='1939-09-04',
         event_type='located_at',
-        place_id='PL4897',
-        reference_ids='R2224',
-        notes='non-colliding C12783 G319 PL4897 R2224',
+        place_id=tok['place'],
+        reference_ids=tok['ref'],
+        notes='non-colliding %s %s %s %s' % (tok['claim'], tok['group'], tok['place'], tok['ref']),
         source=tmpl.get('source') or 'https://example.com/stress',
     )
 
@@ -294,7 +358,7 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'command_relations.csv'),
-        relation_id='CR3742',
+        relation_id=tok['rel'],
         subject_unit_id=tmpl['unit_id'],
         higher_unit_id=tmpl.get('parent_unit_id') or tmpl['unit_id'],
         relationship='assigned',
@@ -303,7 +367,7 @@ def add_full_dataset_collisions(root):
     crc = os.path.join(root, 'data', 'command_relation_claims.csv')
     ch, crows = common.read_dicts(crc)
     crows.append({'relation_id': 'CR0001', 'claim_id': 'C1234'})
-    crows.append({'relation_id': 'CR3742', 'claim_id': 'C12783'})
+    crows.append({'relation_id': tok['rel'], 'claim_id': tok['claim']})
     write_csv(crc, ch, [[r.get(c, '') for c in ch] for r in crows])
 
     append_row(
@@ -313,8 +377,8 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'references_meta.csv'),
-        reference_id='R2224', url='https://example.com/stress-r2224',
-        short_title='Stress R2224',
+        reference_id=tok['ref'], url='https://example.com/stress-r-stay',
+        short_title='Stress stay reference',
     )
     append_row(
         os.path.join(root, 'data', 'places.csv'),
@@ -323,8 +387,8 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'places.csv'),
-        place_id='PL4897', name='Stress place new',
-        coord_reference_id='R2224',
+        place_id=tok['place'], name='Stress place new',
+        coord_reference_id=tok['ref'],
     )
     append_row(
         os.path.join(root, 'data', 'people.csv'),
@@ -333,7 +397,7 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'people.csv'),
-        person_id='PE0608', canonical_name='Stress Person New',
+        person_id=tok['person'], canonical_name='Stress Person New',
         sort_name='New, Stress', surname='New',
     )
     append_row(
@@ -343,7 +407,7 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'unit_commanders.csv'),
-        tenure_id='UC0697', unit_id=tmpl['unit_id'], person_id='PE0608',
+        tenure_id=tok['tenure'], unit_id=tmpl['unit_id'], person_id=tok['person'],
         valid_from='1939-09-04', role='commander',
     )
     append_row(
@@ -352,7 +416,7 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'toe_templates.csv'),
-        template_id='TT0016', template_name='Stress new template',
+        template_id=tok['tt'], template_name='Stress new template',
     )
     append_row(
         os.path.join(root, 'data', 'unit_toe.csv'),
@@ -361,7 +425,7 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'unit_toe.csv'),
-        assignment_id='UT0127', unit_id=tmpl['unit_id'], template_id='TT0016',
+        assignment_id=tok['ut'], unit_id=tmpl['unit_id'], template_id=tok['tt'],
         valid_from='1939-09-04',
     )
     append_row(
@@ -370,7 +434,7 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'aircraft_types.csv'),
-        type_id='AT143', designation='Stress new aircraft',
+        type_id=tok['at'], designation='Stress new aircraft',
     )
     append_row(
         os.path.join(root, 'data', 'ship_classes.csv'),
@@ -378,7 +442,7 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'ship_classes.csv'),
-        class_id='SC220', class_name='Stress new class',
+        class_id=tok['sc'], class_name='Stress new class',
     )
     append_row(
         os.path.join(root, 'data', 'unit_lineage.csv'),
@@ -390,7 +454,7 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         os.path.join(root, 'data', 'unit_lineage.csv'),
-        lineage_id='UL028',
+        lineage_id=tok['ul'],
         predecessor_unit_id=row1234['unit_id'],
         successor_unit_id=tmpl['unit_id'],
         kind='redesignation',
@@ -414,20 +478,20 @@ def add_full_dataset_collisions(root):
     )
     append_row(
         mpath,
-        mission_id='MSN0099',
+        mission_id=tok['mission'],
         unit_id=tmpl['unit_id'],
         date='1939-09-04',
         mission_type=(common.read_dicts(mpath)[1][0].get('mission_type') or 'bombardment'),
         conflict_group_id='',
-        notes='non-colliding mission MSN0099',
-        reference_ids='R2224',
+        notes='non-colliding mission %s' % tok['mission'],
+        reference_ids=tok['ref'],
     )
 
     with open(os.path.join(root, 'docs', 'changelog.md'), 'a', encoding='utf-8') as f:
         f.write(
             '\n## Stress collision\n\n'
             'Added C1234 vs C12345, range C10873-C10982, G112, CR0001, R001, PL0001. '
-            'Non-colliding C12783, G319, CR3742, R2224, PL4897.\n'
+            'Non-colliding %s, %s, %s, %s, %s.\n' % (tok['claim'], tok['group'], tok['rel'], tok['ref'], tok['place'])
         )
     with open(os.path.join(root, 'docs', 'roadmap.md'), 'a', encoding='utf-8') as f:
         f.write('\n430. **Stress colliding roadmap item** (see also roadmap 430).\n')
@@ -437,14 +501,14 @@ def add_full_dataset_collisions(root):
         f.write("\ndef scenario_368_stress():\n    s = 'scenario 368, stress collision'\n    return s\n")
         f.write("\ndef scenario_400_stress():\n    s = 'scenario 400, non-colliding'\n    return s\n")
     stay.add('scenario 400')
-    return stay, other
+    return stay, other, tok
 
 
 def test_full_dataset_collisions():
     tmp, root, base = clone_real_dataset()
     pre = None
     try:
-        stay, claim_file = add_full_dataset_collisions(root)
+        stay, claim_file, tok = add_full_dataset_collisions(root)
         git(tmp, 'add', '-A')
         git(tmp, 'commit', '-m', 'stress collisions')
         pre = tempfile.mkdtemp(prefix='renumber-pre-')
@@ -481,11 +545,11 @@ def test_full_dataset_collisions():
         text = open(notes_path, encoding='utf-8').read()
         assert 'C12345' in text and 'C10873-C10982' in text
         assert re.search(r'\bC1234\b', text) is None  # remapped on the new row; published C1234 is in another file
-        assert 'C12783' in text and 'G319' in text
+        assert tok['claim'] in text and tok['group'] in text
         # Silent-join group split: new members must not still carry G112
         h, rows = common.read_dicts(notes_path)
         new_rows = [r for r in rows if r.get('date', '').startswith('1939-09')]
-        g_new = {r['conflict_group_id'] for r in new_rows if r.get('claim_id') != 'C12783'}
+        g_new = {r['conflict_group_id'] for r in new_rows if r.get('claim_id') != tok['claim']}
         assert 'G112' not in g_new, g_new
         assert all(g and g != 'G112' for g in g_new)
 

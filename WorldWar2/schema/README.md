@@ -444,6 +444,38 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 - A regiment or battalion that is only an opponent or a component has no echelon letter and the type names the arm: `GER-FJR-006` (6th Fallschirmjäger Regiment, echelon `regiment/battle_group`, the one value for a regiment and a regiment-sized battle group), `GER-SSHPZ-101` (SS Heavy Panzer Battalion 101, echelon `battalion`). Both placeholders keep their letterless ids because that is the convention, not an omission (review item 6).
 - The id is the same on every row of the unit and equals the claim file name.
 
+**US Marine Corps ground ids (Guadalcanal pilot, 25 November 2026, branch `guadalcanal-pilot`).** These are additions to the pattern above, not a renaming of any existing id. The nation prefix is `US`. The type token begins with `MAR` so that Marine formations are not confused with Army formations of the same number: **`US-INF-001D` and `US-INF-002D` are the Army 1st and 2nd Infantry Divisions (Western Front) and must never be reused for the 1st or 2nd Marine Division.** Branch is `Marines`. Domain for units ashore is `ground`.
+
+| Unit | Pattern | Example |
+|---|---|---|
+| Marine division | `US-MAR-<nnn>D` | `US-MAR-001D` (1st Marine Division), `US-MAR-002D` (2nd Marine Division) |
+| Marine infantry or artillery regiment (no echelon letter) | `US-MAR-<nnn>` | `US-MAR-001` (1st Marines), `US-MAR-011` (11th Marines, artillery) |
+| Raider battalion | `US-MARRAID-<nnn>` | `US-MARRAID-001` (1st Raider Battalion) |
+| Parachute battalion | `US-MARPARA-<nnn>` | `US-MARPARA-001` |
+| Defense battalion | `US-MARDEF-<nnn>` | `US-MARDEF-003` |
+| Tank battalion | `US-MARTK-<nnn>` | `US-MARTK-001` |
+| Engineer, pioneer, or aviation-engineer battalion | `US-MARENG-<nnn>`, `US-MARPIO-<nnn>`, `US-MARAEN-<nnn>` | `US-MARENG-001` |
+| Amphibian tractor battalion | `US-MARAMTR-<nnn>` | `US-MARAMTR-001` |
+| Special weapons, service, or medical battalion | `US-MARSW-<nnn>`, `US-MARSVC-<nnn>`, `US-MARMED-<nnn>` | `US-MARMED-001` |
+| Barrage balloon squadron | `US-MARBBS-<nnn>` | `US-MARBBS-003` (echelon `other`) |
+| An organic battalion located apart from its regiment | `US-MARBN-<reg>-<bn>` | `US-MARBN-7-1` (1st Battalion, 7th Marines), only when a source locates that battalion separately |
+
+The Americal Division (not yet numbered 23rd Infantry in this campaign) is `US-AMER-001D`, type `AMER`, not `US-INF-023D`. Army infantry regiments follow the existing letterless pattern: `US-INF-164` (164th Infantry). Independent Army field-artillery, engineer and coast-artillery units use `US-FA-<nnn>`, `US-ENG-<nnn>`, `US-CA-<nnn>`. Naval Construction Battalions (Seabees) ashore are `US-NCB-<nnn>`, domain `ground`, branch `Navy` (the same “ashore even if naval” rule as German coastal artillery).
+
+**Japanese Army and Navy ground ids (same pilot).** The nation prefix is `JPN` (the code already in `data/nationalities.csv`; folder `japan`). Domain for units ashore is `ground`.
+
+| Unit | Pattern | Example |
+|---|---|---|
+| Area army or army | `JPN-ARMY-<nnn>A` | `JPN-ARMY-017A` (17th Army), `JPN-ARMY-008A` (8th Area Army) |
+| Infantry division | `JPN-INF-<nnn>D` | `JPN-INF-002D` (2nd Division), `JPN-INF-038D` (38th Division) |
+| Brigade | `JPN-BDE-<nnn>B` | `JPN-BDE-035B` (35th Infantry Brigade, Kawaguchi) |
+| Infantry regiment (no echelon letter) | `JPN-INF-<nnn>` | `JPN-INF-124` (124th Infantry) |
+| Named detachment or *shitai* | `JPN-DET-<NAME>` | `JPN-DET-ICHIKI` (Ichiki Detachment). Do not invent a division for a detachment. |
+| Special Naval Landing Force ashore | `JPN-SNLF-<NAME>` | Taken from a Japanese official source, not guessed |
+| Naval construction or guard unit ashore | `JPN-NCU-<nnn>`, `JPN-NGU-<nnn>` | e.g. `JPN-NCU-011` (11th Construction Unit), domain `ground`, branch `Navy` |
+
+Coastwatchers of the RAN / Allied Intelligence Bureau (Organisation Ferdinand) use `AUS-CW-000H` (echelon `other`). British Solomon Islands Protectorate district officers and scouts use `UK-BSIP-000H` (nationality `UK`; there is no separate Solomon Islands nationality).
+
 **Naval and air id patterns (approved by Scott 15 November 2026 for the Normandy air and naval pass; `docs/normandy_air_naval_plan.md` section 4; extended 16 November 2026, decisions F1–F21, chunk 3a; extended again 16 November 2026, ND1–ND5, chunk 3b; extended again 16 November 2026, G1–G8, chunk 3c); extended 17 November 2026, decisions H1–H12, chunk 4).** The nation prefix is the `code` of the unit's nationality (so the squadron ids have the form `CAN-SQN-401`, `POL-SQN-302`, `NOR-SQN-331`, `AUS-SQN-453`, `NZ-SQN-485`); the validator requires it. The number is the unit's own number, zero-padded as in the examples; none of these ids has an echelon letter.
 
 | Unit | Pattern | Example |

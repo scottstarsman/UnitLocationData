@@ -3,6 +3,7 @@ ALL-AEAF-000H,Allied Expeditionary Air Force (AEAF),Allied,air,other,1939-09-03,
 ALL-AFHQ-000H,Allied Force Headquarters (AFHQ),Allied,ground,other,1939-09-03,,Allied,3,10031002251100000000,HQ02,Command and Control
 ALL-FAAA-001A,First Allied Airborne Army,Allied,ground,army,1939-09-03,,Allied,3,10031000231211000001,GP01,Infantry
 ALL-SHAEF-000H,Supreme Headquarters Allied Expeditionary Force (SHAEF),Allied,ground,other,1939-09-03,,Allied,3,10031002251100000000,HQ02,Command and Control
+AUS-CW-000H,Coastwatchers (Organisation Ferdinand),Australia,ground,other,1939-09-03,,Allied,3,10031000251213000000,GC01,Reconnaissance/Cavalry/Scout
 AUS-SQN-010,No. 10 Squadron RAAF,Australia,air,air_squadron,1939-09-03,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 AUS-SQN-453,No. 453 Squadron RAAF,Australia,air,air_squadron,1939-09-03,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 AUS-SQN-455,No. 455 Squadron RAAF,Australia,air,air_squadron,1939-09-03,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
@@ -705,6 +706,25 @@ GRE-CORV-KRIEZIS,Kriezis (K32),Greece,naval,naval_unit,1939-09-01,1940-10-27,neu
 GRE-CORV-KRIEZIS,Kriezis (K32),Greece,naval,naval_unit,1940-10-28,,Allied,3,10033000001202050000,SH-CORV,Corvette
 GRE-CORV-TOMBAZIS,Tombazis (K216),Greece,naval,naval_unit,1939-09-01,1940-10-27,neutral,4,10043000001202050000,SH-CORV,Corvette
 GRE-CORV-TOMBAZIS,Tombazis (K216),Greece,naval,naval_unit,1940-10-28,,Allied,3,10033000001202050000,SH-CORV,Corvette
+JPN-ARMY-008A,8th Area Army,Japan,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
+JPN-ARMY-017A,17th Army,Japan,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
+JPN-BDE-035B,35th Infantry Brigade (Kawaguchi Force),Japan,ground,brigade,1939-09-01,,Axis,6,10061000181211000000,GI01,Infantry
+JPN-DET-ICHIKI,Ichiki Detachment,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161211000000,GI01,Infantry
+JPN-DET-YANO,Yano Detachment,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161211000000,GI01,Infantry
+JPN-INF-002D,IJA 2nd Division (Sendai),Japan,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI02,Infantry
+JPN-INF-004,IJA 4th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
+JPN-INF-016,IJA 16th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
+JPN-INF-029,IJA 29th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
+JPN-INF-038D,IJA 38th Division (Nagoya),Japan,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI02,Infantry
+JPN-INF-124,IJA 124th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
+JPN-INF-228,IJA 228th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
+JPN-INF-229,IJA 229th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
+JPN-INF-230,IJA 230th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
+JPN-NCU-011,11th Construction Unit,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161407000000,GE02,Engineer
+JPN-NCU-013,13th Construction Unit,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161407000000,GE02,Engineer
+JPN-SNLF-KURE3,3rd Kure Special Naval Landing Force,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161211000000,GI01,Infantry
+JPN-SNLF-SASEBO5,5th Sasebo Special Naval Landing Force,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161211000000,GI01,Infantry
+JPN-SNLF-YOKOSUKA5,5th Yokosuka Special Naval Landing Force,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161211000000,GI01,Infantry
 NL-BS-000H,Binnenlandse Strijdkrachten,Netherlands,ground,other,1939-09-01,1940-05-09,neutral,4,10041000251211000000,GI01,Infantry
 NL-BS-000H,Binnenlandse Strijdkrachten,Netherlands,ground,other,1940-05-10,,Allied,3,10031000251211000000,GI01,Infantry
 NL-BS-NHN,"Binnenlandse Strijdkrachten, gewest 11 (Noord-Holland Noord)",Netherlands,ground,regiment/battle_group,1939-09-01,1940-05-09,neutral,4,10041000171211000000,GI01,Infantry
@@ -893,6 +913,7 @@ UK-BF-K,Bombarding Force K,UK,naval,task_group,1939-09-03,,Allied,3,100330000012
 UK-BM-EREBUS,HMS Erebus (I02),UK,naval,naval_unit,1939-09-03,,Allied,3,10033000001202000000,SH-BM,"Surface Combatant, Line"
 UK-BM-ROBERTS,HMS Roberts (F40),UK,naval,naval_unit,1939-09-03,,Allied,3,10033000001202000000,SH-BM,"Surface Combatant, Line"
 UK-BOMCMD-000H,RAF Bomber Command,UK,air,air_force,1939-09-03,,Allied,3,10031000231208000000,AF99,Aviation Fixed Wing
+UK-BSIP-000H,British Solomon Islands Protectorate district officers and scouts,UK,ground,other,1939-09-03,,Allied,3,10031002251100000000,HQ03,Command and Control
 UK-CA-FROBISHER,HMS Frobisher (D81),UK,naval,naval_unit,1939-09-03,,Allied,3,10033000001202020002,SH-CA,Cruiser
 UK-CA-HAWKINS,HMS Hawkins (D86),UK,naval,naval_unit,1939-09-03,,Allied,3,10033000001202020002,SH-CA,Cruiser
 UK-CDO-001B,1st Special Service (Commando) Brigade,UK,ground,brigade,1939-09-03,,Allied,3,10031000181211007600,GX01,Infantry
@@ -1964,6 +1985,8 @@ US-AM-124,USS Threat (AM-124),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,
 US-AM-124,USS Threat (AM-124),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001204020000,SH-AM,Mine Sweeper
 US-AM-125,USS Tide (AM-125),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001204020000,SH-AM,Mine Sweeper
 US-AM-125,USS Tide (AM-125),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001204020000,SH-AM,Mine Sweeper
+US-AMER-001D,Americal Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI02,Infantry
+US-AMER-001D,Americal Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI02,Infantry
 US-APA-033,USS Bayfield (APA-33),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001203000000,SH-APA,Amphibious Warfare Ship
 US-APA-033,USS Bayfield (APA-33),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001203000000,SH-APA,Amphibious Warfare Ship
 US-ARM-002D,2nd Armored Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211205000000,GR02,Armor
@@ -2592,6 +2615,8 @@ US-CA-037,USS Tuscaloosa (CA-37),US,naval,naval_unit,1939-09-01,1941-12-07,neutr
 US-CA-037,USS Tuscaloosa (CA-37),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
 US-CA-071,USS Quincy (CA-71),US,naval,naval_unit,1939-09-01,1941-12-07,neutral,4,10043000001202020002,SH-CA,Cruiser
 US-CA-071,USS Quincy (CA-71),US,naval,naval_unit,1941-12-08,,Allied,3,10033000001202020002,SH-CA,Cruiser
+US-CA-214,214th Coast Artillery Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171303004600,GA02,Field Artillery
+US-CA-214,214th Coast Artillery Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171303004600,GA02,Field Artillery
 US-CCA-002D,"Combat Command A, 2nd Armored Division",US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041004171210000000,GK01,Combined Arms
 US-CCA-002D,"Combat Command A, 2nd Armored Division",US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031004171210000000,GK01,Combined Arms
 US-CCR-004D,"Combat Command Reserve, 4th Armored Division",US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041004171210000000,GK01,Combined Arms
@@ -2718,6 +2743,8 @@ US-DESRON-018,Destroyer Squadron 18,US,naval,naval_squadron,1939-09-01,1941-12-0
 US-DESRON-018,Destroyer Squadron 18,US,naval,naval_squadron,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
 US-DESRON-060,Destroyer Squadron 60,US,naval,naval_squadron,1939-09-01,1941-12-07,neutral,4,10043000001210000000,NF99,Navy Task Organization
 US-DESRON-060,Destroyer Squadron 60,US,naval,naval_squadron,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
+US-FA-097,97th Field Artillery Battalion (75-mm Howitzer Pack),US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161303000000,GA03,Field Artillery
+US-FA-097,97th Field Artillery Battalion (75-mm Howitzer Pack),US,ground,battalion,1941-12-08,,Allied,3,10031000161303000000,GA03,Field Artillery
 US-FAW-007,Fleet Air Wing 7,US,air,air_wing,1939-09-01,1941-12-07,neutral,4,10041000181208004600,AN02,Aviation Fixed Wing
 US-FAW-007,Fleet Air Wing 7,US,air,air_wing,1941-12-08,,Allied,3,10031000181208004600,AN02,Aviation Fixed Wing
 US-FG-004,4th Fighter Group,US,air,air_group,1939-09-01,1941-12-07,neutral,4,10041000171208000000,AF99,Aviation Fixed Wing
@@ -3018,14 +3045,20 @@ US-INF-008D,8th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutr
 US-INF-008D,8th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
 US-INF-009D,9th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
 US-INF-009D,9th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
+US-INF-025D,25th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
+US-INF-025D,25th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
 US-INF-026D,26th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
 US-INF-026D,26th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
+US-INF-027,27th Infantry Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-INF-027,27th Infantry Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
 US-INF-028D,28th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
 US-INF-028D,28th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
 US-INF-029D,29th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
 US-INF-029D,29th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
 US-INF-030D,30th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
 US-INF-030D,30th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
+US-INF-035,35th Infantry Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-INF-035,35th Infantry Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
 US-INF-035D,35th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
 US-INF-035D,35th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
 US-INF-036D,36th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
@@ -3088,6 +3121,16 @@ US-INF-104D,104th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neu
 US-INF-104D,104th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
 US-INF-106D,106th Infantry Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
 US-INF-106D,106th Infantry Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
+US-INF-132,132nd Infantry Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-INF-132,132nd Infantry Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-INF-147,147th Infantry Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-INF-147,147th Infantry Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-INF-161,161st Infantry Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-INF-161,161st Infantry Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-INF-164,164th Infantry Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-INF-164,164th Infantry Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-INF-182,182nd Infantry Regiment,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-INF-182,182nd Infantry Regiment,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
 US-LS-014,14th Liaison Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-LS-014,14th Liaison Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-LS-047,47th Liaison Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
@@ -3136,6 +3179,66 @@ US-LSTD-98,98th LST Division,US,naval,naval_division,1939-09-01,1941-12-07,neutr
 US-LSTD-98,98th LST Division,US,naval,naval_division,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
 US-LSTD-99,99th LST Division,US,naval,naval_division,1939-09-01,1941-12-07,neutral,4,10043000001210000000,NF99,Navy Task Organization
 US-LSTD-99,99th LST Division,US,naval,naval_division,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
+US-MAR-001,1st Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-MAR-001,1st Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-MAR-001D,1st Marine Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
+US-MAR-001D,1st Marine Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
+US-MAR-002,2nd Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-MAR-002,2nd Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-MAR-002D,2nd Marine Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
+US-MAR-002D,2nd Marine Division,US,ground,division,1941-12-08,,Allied,3,10031000211211000000,GI01,Infantry
+US-MAR-005,5th Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-MAR-005,5th Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-MAR-006,6th Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-MAR-006,6th Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-MAR-007,7th Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-MAR-007,7th Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-MAR-008,8th Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-MAR-008,8th Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-MAR-010,10th Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-MAR-010,10th Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-MAR-011,11th Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
+US-MAR-011,11th Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
+US-MARAEN-001,1st Aviation Engineer Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161407000000,GE02,Engineer
+US-MARAEN-001,1st Aviation Engineer Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161407000000,GE02,Engineer
+US-MARAMTR-001,1st Amphibian Tractor Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARAMTR-001,1st Amphibian Tractor Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARAMTR-002,2nd Amphibian Tractor Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARAMTR-002,2nd Amphibian Tractor Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARBBS-003,3rd Barrage Balloon Squadron,US,ground,other,1939-09-01,1941-12-07,neutral,4,10041000251301000000,AD02,Air Defense
+US-MARBBS-003,3rd Barrage Balloon Squadron,US,ground,other,1941-12-08,,Allied,3,10031000251301000000,AD02,Air Defense
+US-MARDEF-003,3rd Defense Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARDEF-003,3rd Defense Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARDEF-009,9th Defense Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARDEF-009,9th Defense Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARENG-001,1st Engineer Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161407000000,GE02,Engineer
+US-MARENG-001,1st Engineer Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161407000000,GE02,Engineer
+US-MARMED-001,1st Medical Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARMED-001,1st Medical Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARPARA-001,1st Parachute Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000001,GP01,Infantry
+US-MARPARA-001,1st Parachute Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000001,GP01,Infantry
+US-MARPIO-001,1st Pioneer Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARPIO-001,1st Pioneer Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARRAID-001,1st Raider Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARRAID-001,1st Raider Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARRAID-002,2nd Raider Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARRAID-002,2nd Raider Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARSVC-001,1st Service Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARSVC-001,1st Service Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARSVC-002,2nd Service Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARSVC-002,2nd Service Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARSW-001,1st Special Weapons Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARSW-001,1st Special Weapons Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARSW-002,2nd Special Weapons Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-MARSW-002,2nd Special Weapons Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-MARTK-001,1st Tank Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161205000000,GR02,Armor
+US-MARTK-001,1st Tank Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161205000000,GR02,Armor
+US-MARTK-002,2nd Tank Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161205000000,GR02,Armor
+US-MARTK-002,2nd Tank Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161205000000,GR02,Armor
+US-NCB-006,6th Naval Construction Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-NCB-006,6th Naval Construction Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
+US-NCB-018,18th Naval Construction Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
+US-NCB-018,18th Naval Construction Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
 US-NFS-422,422nd Night Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-NFS-422,422nd Night Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-NFS-425,425th Night Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing

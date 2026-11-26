@@ -33,7 +33,7 @@ NF07,function,naval,,,Torpedo|Schnellboot|MTB|PT Boat|Motor Gun|MGB|Torpedoboot,
 NF08,function,naval,,,Escort|Sicherung|Vorposten|Support Group,30,121000,04,,0,,Navy Task Organization,no-exact,Group symbol with modifier 1 Escort.
 NF99,function,naval,,,,30,121000,,,0,,Navy Task Organization,default,"Any other naval formation (flotilla, squadron, division, fleet, force)."
 AD01,function,,,,Flak-Regiment 155 \(W\),10,130700,,,0,,Missile,no-exact,V-1 launching regiment: Fires/Missile.
-AD02,function,,,,Flak|Anti-Aircraft|Air Defense|Air Defence,10,130100,,,0,,Air Defense,exact,
+AD02,function,,,,Flak|Anti-Aircraft|Air Defense|Air Defence|Barrage Balloon,10,130100,,,0,,Air Defense,exact,
 AS01,function,air,,,Service Command,10,160000,78,,0,,Sustainment,no-exact,Air force service command: sustainment with modifier 1 Aviation.
 AS02,function,air,,,Servicing|Service Echelon|Maintenance|Salvage|Repair|Ground Support Unit|Glider Maintenance|Parachute Servicing,10,161100,78,,0,,Maintenance,no-exact,Ground servicing unit of the air arm: maintenance with modifier 1 Aviation.
 AS03,function,air,,,Marine Craft|Air Sea Rescue|Air-Sea Rescue,10,141800,46,,0,,Search and Rescue,nearest,RAF marine craft unit: SAR with modifier 1 Naval.
@@ -47,7 +47,7 @@ GA01,function,,,,Volks-Artillerie-Korps|Volksartilleriekorps,10,130300,,,0,18,Fi
 GA02,function,,,,Marine-Artillerie|Coast Artillery|Coastal Artillery|Küstenartillerie,10,130300,46,,0,,Field Artillery,nearest,Coastal artillery: field artillery with modifier 1 Naval.
 GA03,function,,,,Artillerie|Artillery|Werfer|Nebelwerfer|Rocket,10,130300,,,0,,Field Artillery,exact,
 GE01,function,,,,Fallschirm-Pionier|Airborne Engineer|Parachute Engineer,10,140700,,01,0,,Engineer,exact,Modifier 2 Airborne.
-GE02,function,,,,Pionier|Engineer|Sapper,10,140700,,,0,,Engineer,exact,
+GE02,function,,,,Pionier|Engineer|Sapper|Construction Unit,10,140700,,,0,,Engineer,exact,"Naval construction units (Japanese NCU, Seabees already match Engineer) are engineer troops."
 GS01,function,,,,Nachrichten|Signal,10,111000,,,0,,Signal,exact,
 GT01,function,,,,Tank Destroyer|Panzerjäger|Anti-Tank|Antitank,10,120400,,,0,,Antitank/Antiarmor,exact,Airborne (Fallschirm-) adds modifier 2 Airborne; a Task Force name adds the TF amplifier (see note in the proposal).
 GT02,function,,,,Sturmgeschütz|Assault Gun|StuG,10,120401,,,0,,"Antitank/Antiarmor, Armored",nearest,Assault-gun brigade.
@@ -56,12 +56,12 @@ GP01,function,,,,Airborne|Parachute|Fallschirm|Luftlande|Glider|Air Landing,10,1
 GK01,function,,,,Kampfgruppe|Combat Command|Task Force|Kampfgruppen,10,121000,,,4,,Combined Arms,no-exact,Task-organized group: combined arms with the Task Force amplifier. Airborne and tank destroyer task forces are matched earlier.
 GR01,function,,,,Heavy Panzer|schwere Panzer|s\.Pz|Heavy Tank,10,120500,,15,0,,Armor,exact,Modifier 2 Heavy.
 GR02,function,,,,Panzer|Armou?red|Tank|Armour|Armor,10,120500,,,0,,Armor,exact,
-GC01,function,,,,Reconnaissance|Aufklärung|Cavalry|Recce,10,121300,,,0,,Reconnaissance/Cavalry/Scout,exact,
+GC01,function,,,,Reconnaissance|Aufklärung|Cavalry|Recce|Coastwatch,10,121300,,,0,,Reconnaissance/Cavalry/Scout,exact,
 GG01,function,,,,Gebirgs|Mountain|Alpine,10,121100,,27,0,,Infantry,exact,Modifier 2 Mountain.
 GX01,function,,,,Commando|Special Service,10,121100,76,,0,,Infantry,nearest,Commando or Special Service unit: infantry with modifier 1 Ranger.
 GL01,function,,,,Polizei|Police,10,141700,,,0,,Security,nearest,Police regiment.
 GU01,function,,,,RAF Regiment,10,121100,,,0,,Infantry,nearest,RAF Regiment airfield-defence squadron: infantry (no source splits field and LAA squadrons).
-GI01,function,,,,Infantry|Infanterie|Grenadier|Volksgrenadier|Rifle|Marine|Landesschützen|Sicherungs|Stoottroepen|Bewakingstroepen|Binnenlandse Strijdkrachten|Feld-Division|Field Division|Jäger,10,121100,,,0,,Infantry,exact,Infantry by name.
+GI01,function,,,,Infantry|Infanterie|Grenadier|Volksgrenadier|Rifle|Marine|Landesschützen|Sicherungs|Stoottroepen|Bewakingstroepen|Binnenlandse Strijdkrachten|Feld-Division|Field Division|Jäger|Special Naval Landing Force|Detachment,10,121100,,,0,,Infantry,exact,Infantry by name. Special Naval Landing Force is naval infantry. Named detachments such as Ichiki and Yano are infantry-sized landing forces in this dataset.
 GI02,function,,,,Division|Regiment|Brigade|Battalion|Bataillon,10,121100,,,0,,Infantry,default-infantry,"Land division, brigade, regiment or battalion whose name names no arm (for example Division Nr. 172, Division z.b.V. 136): infantry, listed in the coverage report."
 GH01,function,,,,Army Group|Heeresgruppe|Army|Armee|Corps|Korps|Group|Détachement d.Armée|Forces of the,10,121000,,,0,,Combined Arms,no-exact,"Higher land formation with no single arm (army group, army, corps, army detachment): combined arms."
 GZ99,function,,,,,10,000000,,,0,,Unspecified,default,Fall-through: unspecified land unit.

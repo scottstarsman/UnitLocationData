@@ -18,5 +18,6 @@ air_force,23,Army,nearest,"Luftflotte, numbered US air force, RAF command, 2nd T
 naval_unit,00,(none),n/a,Sea symbol sets carry no echelon amplifier.
 naval_division,00,(none),n/a,"Surface group symbol, no echelon (Scott, 23 November 2026)."
 naval_squadron,00,(none),n/a,"Surface group symbol, no echelon."
-task_group,00,(none),n/a,"Task force, group or unit entity, no echelon."
+task_group,00,(none),n/a,"Task group or task unit entity, no echelon. Numbered US Task Forces use the task_force row."
+task_force,00,(none),n/a,"Numbered task force entity, no echelon."
 fleet,00,(none),n/a,"Surface group symbol, no echelon."

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Contributor-friction cleanup after the Guadalcanal air, naval and JACAR passes (branch `air-naval-friction-fixes`)
+
+- **Naval ladder.** Added echelon `task_force` at rank 14 and bumped `fleet` from 14 to 15 (`schema/vocabularies.json`, `validate.naval_hierarchy_problem`, `data/sidc_echelon_map.csv`, scenario 252). A Task Group may now sit under a Task Force. A task organisation may be a placeholder that holds relations only, or active with dated claims when a source places the force at a place. Western Front Task Forces still stored as `US-TG-122` and similar ids remain echelon `task_group` until a later pass.
+- **Pacific Task Forces re-echeloned.** `US-TF-016`, `US-TF-017`, `US-TF-018`, `US-TF-061`, `US-TF-064` and `US-TF-067`, and the ten claims on those units: old value `task_group`, new value `task_force`; reason: a numbered US Task Force outranks a Task Group, so the two no longer share one echelon.
+- **CR3900.** TG 67.4 (`US-TG-0674`) is assigned to TF 67 (`US-TF-067`) on 13 November 1942 (`asserts_start_and_end` on C13163). This relation was blocked in the naval pilot because both units then shared echelon `task_group`.
+- **C13295 `current_activity`.** Old value: `Eighth Fleet headquarters at Rabaul; CinC flagship Chokai ordered from Kavieng to Rabaul at 0549, with Tenryu, Yubari and Yunagi to sortie at 1600` (146 characters). New value: `Eighth Fleet headquarters at Rabaul; flagship Chokai ordered from Kavieng to Rabaul at 0549` (91 characters). Reason: keep the field within the 120-character warning; the 1600 sortie of Tenryu, Yubari and Yunagi is retained in the claim notes.
+- **Contributor docs.** `CONTRIBUTING.md`, `schema/README.md` and `docs/methodology.md` now spell out the traps hit in the air, naval and JACAR passes (blank `scope` means in-scope and writing `in_scope` in `data/units.csv` fails the checks; `units.csv` `parent_unit_id` is organic only; `references_meta.csv` URL matching including a trailing slash; no repeated `R###` in one locator; claim-file sort; commander and CRC rules; mission vocabulary; `precision_km`; ONI/Cressman/DANFS as one family; CombinedFleet is a finding aid; `sea_position` cap; JACAR catalog titles; and the Task Force / Task Group convention).
+
+Next free after this increment: `C13342`, `R2248`, `CR3901`, `PL4959`, `PE0645`, `UC0737`, `UL031`.
+
 ## 26 November 2026 — Build refresh after the JACAR 8th Fleet September–February reading (branch `guadalcanal-jacar-8th-fleet-2`)
 
 `review_sample.py` was run before `build.py`, then both were run again after reference citation counts changed. `build.py --check` is clean. Citation counts were recomputed on R2242 (171 to 186 claims), R2247 (units_count 2 to 0; the build count is units that list the reference, not units first entered from it) and R2250 (units_count 17 to 0, same reason). R2248 and R2249 were left unused, so they remain available if C08030022700 or C08030022800 are later cited; the next id after the highest new reference is R2251.

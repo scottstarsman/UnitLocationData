@@ -568,6 +568,9 @@ Ships already published under the Western Front pilot keep those patterns (`US-D
 | Australian warship (new) | `AUS-<ship_type>-<NAME>` in ASCII (`naval_unit`), same nation-prefix-plus-type-plus-name pattern as `UK-CA-FROBISHER` and `UK-CL-AJAX` | `AUS-CA-AUSTRALIA`, `AUS-CA-CANBERRA`, `AUS-CL-HOBART` |
 | US destroyer squadron (new Pacific use) | `US-DESRON-<nnn>` (`naval_squadron`, domain `naval`) | `US-DESRON-004` (Destroyer Squadron 4) |
 
+Contributor traps from the same passes, written out for authors in [CONTRIBUTING.md](../CONTRIBUTING.md) (Pacific worked example): leave `scope` blank in `data/units.csv` (blank means in-scope; do not write `in_scope`); `units.csv` `parent_unit_id` is organic only; every claim URL must already be in `references_meta.csv` exactly, including a trailing slash; do not repeat the same `R###` in one `source_locator`; keep claim files sorted by date then `claim_id`; a named commander needs a person, tenure and commander-claim link (`unknown` is allowed; tenure role is `commander` or `embarked_commander`, not `commanding_officer`); a command relation needs a CRC row; an `active` unit needs a claim file; ONI / Cressman / DANFS are one family; CombinedFleet is a finding aid, not a 0.7 family; `sea_position` stays at 0.5; a claim's `sub_theater` must match its operation; `location_basis` has no `source_text`; `precision_km` is only 1, 3, 5, 10, 25 or 50; mission types have no `interception` (use `fighter_sweep`) and target categories have no `warship` or `transport_shipping` (use `port_or_shipping`). A JACAR parent catalog title can misdescribe a child item.
+
+
 
 
 ## Free-text conventions

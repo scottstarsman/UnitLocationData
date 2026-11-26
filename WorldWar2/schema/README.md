@@ -564,6 +564,8 @@ Ships already published under the Western Front pilot keep those patterns (`US-D
 | Japanese kōkūtai (air group) | `JPN-KOKUTAI-<nnn>` or `JPN-KOKUTAI-<NAME>` for a named group (`air_group`, domain `air`) | `JPN-KOKUTAI-002`, `JPN-KOKUTAI-TAINAN` |
 | Japanese destroyer squadron | `JPN-DESRON-<nnn>` (`naval_squadron`, domain `naval`) | `JPN-DESRON-002` |
 | Japanese named warship | `JPN-<ship_type>-<NAME>` in ASCII (`naval_unit`) | `JPN-BB-HIEI`, `JPN-CV-SHOKAKU`, `JPN-CA-CHOKAI` |
+| Australian warship (new) | `AUS-<ship_type>-<NAME>` in ASCII (`naval_unit`), same nation-prefix-plus-type-plus-name pattern as `UK-CA-FROBISHER` and `UK-CL-AJAX` | `AUS-CA-AUSTRALIA`, `AUS-CA-CANBERRA`, `AUS-CL-HOBART` |
+| US destroyer squadron (new Pacific use) | `US-DESRON-<nnn>` (`naval_squadron`, domain `naval`) | `US-DESRON-004` (Destroyer Squadron 4) |
 
 
 

@@ -716,6 +716,7 @@ JPN-DET-NASU,Nasu Force,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10
 JPN-DET-SUMIYOSHI,Sumiyoshi Artillery Group,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171303000000,GA03,Field Artillery
 JPN-DET-YANO,Yano Detachment,Japan,ground,battalion,1939-09-01,,Axis,6,10061000161211000000,GI01,Infantry
 JPN-ENG-038,38th Engineer Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171407000000,GE02,Engineer
+JPN-FLT-011,11th Air Fleet,Japan,air,air_force,1939-09-01,,Axis,6,10061000231208000000,AF99,Aviation Fixed Wing
 JPN-INF-002D,IJA 2nd Division (Sendai),Japan,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI02,Infantry
 JPN-INF-004,IJA 4th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
 JPN-INF-016,IJA 16th Infantry Regiment,Japan,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
@@ -1958,6 +1959,8 @@ US-AF-008,Eighth Air Force,US,air,air_force,1939-09-01,1941-12-07,neutral,4,1004
 US-AF-008,Eighth Air Force,US,air,air_force,1941-12-08,,Allied,3,10031000231208000000,AF99,Aviation Fixed Wing
 US-AF-009,Ninth Air Force,US,air,air_force,1939-09-01,1941-12-07,neutral,4,10041000231208000000,AF99,Aviation Fixed Wing
 US-AF-009,Ninth Air Force,US,air,air_force,1941-12-08,,Allied,3,10031000231208000000,AF99,Aviation Fixed Wing
+US-AF-013,Thirteenth Air Force,US,air,air_force,1939-09-01,1941-12-07,neutral,4,10041000231208000000,AF99,Aviation Fixed Wing
+US-AF-013,Thirteenth Air Force,US,air,air_force,1941-12-08,,Allied,3,10031000231208000000,AF99,Aviation Fixed Wing
 US-AFCC-008,VIII Air Force Composite Command,US,air,air_division,1939-09-01,1941-12-07,neutral,4,10041000211208000000,AF99,Aviation Fixed Wing
 US-AFCC-008,VIII Air Force Composite Command,US,air,air_division,1941-12-08,,Allied,3,10031000211208000000,AF99,Aviation Fixed Wing
 US-AFSC-008,VIII Air Force Service Command,US,air,air_division,1939-09-01,1941-12-07,neutral,4,10041000211600007800,AS01,Sustainment
@@ -2046,6 +2049,8 @@ US-BD-2,2nd Bombardment Division,US,air,air_division,1939-09-01,1941-12-07,neutr
 US-BD-2,2nd Bombardment Division,US,air,air_division,1941-12-08,,Allied,3,10031000211208000000,AF99,Aviation Fixed Wing
 US-BD-3,3rd Bombardment Division,US,air,air_division,1939-09-01,1941-12-07,neutral,4,10041000211208000000,AF99,Aviation Fixed Wing
 US-BD-3,3rd Bombardment Division,US,air,air_division,1941-12-08,,Allied,3,10031000211208000000,AF99,Aviation Fixed Wing
+US-BG-011,11th Bombardment Group,US,air,air_group,1939-09-01,1941-12-07,neutral,4,10041000171208000000,AF99,Aviation Fixed Wing
+US-BG-011,11th Bombardment Group,US,air,air_group,1941-12-08,,Allied,3,10031000171208000000,AF99,Aviation Fixed Wing
 US-BG-025,25th Bombardment Group (Reconnaissance),US,air,air_group,1939-09-01,1941-12-07,neutral,4,10041000171208010000,AR01,"Aviation Fixed Wing, Reconnaissance"
 US-BG-025,25th Bombardment Group (Reconnaissance),US,air,air_group,1941-12-08,,Allied,3,10031000171208010000,AR01,"Aviation Fixed Wing, Reconnaissance"
 US-BG-034,34th Bombardment Group,US,air,air_group,1939-09-01,1941-12-07,neutral,4,10041000171208000000,AF99,Aviation Fixed Wing
@@ -2170,6 +2175,8 @@ US-BS-067,67th Bombardment Squadron,US,air,air_squadron,1939-09-01,1941-12-07,ne
 US-BS-067,67th Bombardment Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-BS-068,68th Bombardment Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-BS-068,68th Bombardment Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-BS-070,70th Bombardment Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-BS-070,70th Bombardment Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-BS-322,322nd Bombardment Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-BS-322,322nd Bombardment Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-BS-323,323rd Bombardment Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
@@ -2848,6 +2855,8 @@ US-FS-023,23rd Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutra
 US-FS-023,23rd Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-038,38th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-FS-038,38th Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-FS-039,39th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-FS-039,39th Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-053,53rd Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-FS-053,53rd Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-055,55th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
@@ -2858,6 +2867,10 @@ US-FS-062,62nd Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutra
 US-FS-062,62nd Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-063,63rd Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-FS-063,63rd Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-FS-067,67th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-FS-067,67th Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-FS-068,68th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-FS-068,68th Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-077,77th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-FS-077,77th Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-079,79th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
@@ -2882,6 +2895,8 @@ US-FS-336,336th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutr
 US-FS-336,336th Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-338,338th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-FS-338,338th Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-FS-339,339th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-FS-339,339th Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-343,343rd Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
 US-FS-343,343rd Fighter Squadron,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-FS-350,350th Fighter Squadron,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
@@ -3206,6 +3221,10 @@ US-LSTD-98,98th LST Division,US,naval,naval_division,1939-09-01,1941-12-07,neutr
 US-LSTD-98,98th LST Division,US,naval,naval_division,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
 US-LSTD-99,99th LST Division,US,naval,naval_division,1939-09-01,1941-12-07,neutral,4,10043000001210000000,NF99,Navy Task Organization
 US-LSTD-99,99th LST Division,US,naval,naval_division,1941-12-08,,Allied,3,10033000001210000000,NF99,Navy Task Organization
+US-MAG-014,Marine Aircraft Group 14,US,air,air_group,1939-09-01,1941-12-07,neutral,4,10041000171208000000,AF99,Aviation Fixed Wing
+US-MAG-014,Marine Aircraft Group 14,US,air,air_group,1941-12-08,,Allied,3,10031000171208000000,AF99,Aviation Fixed Wing
+US-MAG-023,Marine Aircraft Group 23,US,air,air_group,1939-09-01,1941-12-07,neutral,4,10041000171208000000,AF99,Aviation Fixed Wing
+US-MAG-023,Marine Aircraft Group 23,US,air,air_group,1941-12-08,,Allied,3,10031000171208000000,AF99,Aviation Fixed Wing
 US-MAR-001,1st Marines,US,ground,regiment/battle_group,1939-09-01,1941-12-07,neutral,4,10041000171211000000,GI01,Infantry
 US-MAR-001,1st Marines,US,ground,regiment/battle_group,1941-12-08,,Allied,3,10031000171211000000,GI01,Infantry
 US-MAR-001D,1st Marine Division,US,ground,division,1939-09-01,1941-12-07,neutral,4,10041000211211000000,GI01,Infantry
@@ -3268,6 +3287,10 @@ US-MARTK-001,1st Tank Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutra
 US-MARTK-001,1st Tank Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161205000000,GR02,Armor
 US-MARTK-002,2nd Tank Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161205000000,GR02,Armor
 US-MARTK-002,2nd Tank Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161205000000,GR02,Armor
+US-MAW-001,1st Marine Aircraft Wing,US,air,air_wing,1939-09-01,1941-12-07,neutral,4,10041000181208000000,AF99,Aviation Fixed Wing
+US-MAW-001,1st Marine Aircraft Wing,US,air,air_wing,1941-12-08,,Allied,3,10031000181208000000,AF99,Aviation Fixed Wing
+US-MAW-002,2nd Marine Aircraft Wing,US,air,air_wing,1939-09-01,1941-12-07,neutral,4,10041000181208000000,AF99,Aviation Fixed Wing
+US-MAW-002,2nd Marine Aircraft Wing,US,air,air_wing,1941-12-08,,Allied,3,10031000181208000000,AF99,Aviation Fixed Wing
 US-NCB-006,6th Naval Construction Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
 US-NCB-006,6th Naval Construction Battalion,US,ground,battalion,1941-12-08,,Allied,3,10031000161211000000,GI02,Infantry
 US-NCB-018,18th Naval Construction Battalion,US,ground,battalion,1939-09-01,1941-12-07,neutral,4,10041000161211000000,GI02,Infantry
@@ -3536,6 +3559,38 @@ US-VB-110,Bombing Squadron 110 (VB-110),US,air,air_squadron,1939-09-01,1941-12-0
 US-VB-110,Bombing Squadron 110 (VB-110),US,air,air_squadron,1941-12-08,,Allied,3,10031000161208004600,AN02,Aviation Fixed Wing
 US-VCS-007,"Observation Squadron 7 (VOS-7, also VCS-7)",US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208014600,AN01,"Aviation Fixed Wing, Reconnaissance"
 US-VCS-007,"Observation Squadron 7 (VOS-7, also VCS-7)",US,air,air_squadron,1941-12-08,,Allied,3,10031000161208014600,AN01,"Aviation Fixed Wing, Reconnaissance"
+US-VMF-112,Marine Fighter Squadron 112,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMF-112,Marine Fighter Squadron 112,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMF-121,Marine Fighter Squadron 121,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMF-121,Marine Fighter Squadron 121,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMF-122,Marine Fighter Squadron 122,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMF-122,Marine Fighter Squadron 122,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMF-123,Marine Fighter Squadron 123,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMF-123,Marine Fighter Squadron 123,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMF-124,Marine Fighter Squadron 124,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMF-124,Marine Fighter Squadron 124,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMF-223,Marine Fighter Squadron 223,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMF-223,Marine Fighter Squadron 223,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMF-224,Marine Fighter Squadron 224,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMF-224,Marine Fighter Squadron 224,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-131,Marine Scout-Bomber Squadron 131,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-131,Marine Scout-Bomber Squadron 131,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-132,Marine Scout-Bomber Squadron 132,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-132,Marine Scout-Bomber Squadron 132,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-141,Marine Scout-Bomber Squadron 141,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-141,Marine Scout-Bomber Squadron 141,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-142,Marine Scout-Bomber Squadron 142,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-142,Marine Scout-Bomber Squadron 142,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-144,Marine Scout-Bomber Squadron 144,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-144,Marine Scout-Bomber Squadron 144,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-231,Marine Scout-Bomber Squadron 231,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-231,Marine Scout-Bomber Squadron 231,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-232,Marine Scout-Bomber Squadron 232,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-232,Marine Scout-Bomber Squadron 232,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-233,Marine Scout-Bomber Squadron 233,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-233,Marine Scout-Bomber Squadron 233,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-234,Marine Scout-Bomber Squadron 234,US,air,air_squadron,1939-09-01,1941-12-07,neutral,4,10041000161208000000,AF99,Aviation Fixed Wing
+US-VMSB-234,Marine Scout-Bomber Squadron 234,US,air,air_squadron,1941-12-08,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 US-YMSU-4,"YMS Sweep Unit 4, Assault Force U",US,naval,naval_division,1939-09-01,1941-12-07,neutral,4,10043000001210040000,NF03,Task Unit
 US-YMSU-4,"YMS Sweep Unit 4, Assault Force U",US,naval,naval_division,1941-12-08,,Allied,3,10033000001210040000,NF03,Task Unit
 US-YMSU-5,"YMS Sweep Unit 5, Assault Force U",US,naval,naval_division,1939-09-01,1941-12-07,neutral,4,10043000001210040000,NF03,Task Unit

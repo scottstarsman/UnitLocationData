@@ -112235,9 +112235,9 @@
     "precision_km": 1,
     "country": "SB",
     "region": "Guadalcanal Province",
-    "claims_count": 12,
+    "claims_count": 86,
     "claims_ground": 12,
-    "claims_air": 0,
+    "claims_air": 74,
     "claims_naval": 0
    }
   },
@@ -113134,6 +113134,259 @@
     "region": "East New Britain Province",
     "claims_count": 1,
     "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.01836,
+     -9.43134
+    ]
+   },
+   "properties": {
+    "place_id": "PL4938",
+    "name": "Fighter 1",
+    "alt_names": "Fighter One; Kukum Field; Fighter Strip",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "SB",
+    "region": "Guadalcanal Province",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.11635,
+     -9.41838
+    ]
+   },
+   "properties": {
+    "place_id": "PL4939",
+    "name": "Fighter 2",
+    "alt_names": "Fighter Two; Carney Field",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "SB",
+    "region": "Guadalcanal Province",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     167.21974,
+     -15.50503
+    ]
+   },
+   "properties": {
+    "place_id": "PL4940",
+    "name": "Pekoa Airfield, Espiritu Santo",
+    "alt_names": "Santo-Pekoa; Espiritu Santo bomber field; Bomber Field, Espiritu Santo",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "VU",
+    "region": "Sanma Province",
+    "claims_count": 5,
+    "claims_ground": 0,
+    "claims_air": 5,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     168.31979,
+     -17.69933
+    ]
+   },
+   "properties": {
+    "place_id": "PL4941",
+    "name": "Bauer Field, Efate",
+    "alt_names": "Bauerfield; Port Vila - Bauerfield International Airport",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "VU",
+    "region": "Shefa Province",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     166.44884,
+     -22.27407
+    ]
+   },
+   "properties": {
+    "place_id": "PL4942",
+    "name": "Nouméa",
+    "alt_names": "Noumea",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NC",
+    "region": "South Province",
+    "claims_count": 1,
+    "claims_ground": 0,
+    "claims_air": 1,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     166.21297,
+     -22.01455
+    ]
+   },
+   "properties": {
+    "place_id": "PL4943",
+    "name": "Tontouta Airfield, New Caledonia",
+    "alt_names": "La Tontouta; Nouméa-La Tontouta",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "NC",
+    "region": "South Province",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     159.92055,
+     -9.26812
+    ]
+   },
+   "properties": {
+    "place_id": "PL4944",
+    "name": "Ironbottom Sound",
+    "alt_names": "Savo Sound; Sealark Channel approaches",
+    "kind": "area",
+    "precision_km": 25,
+    "country": "SB",
+    "region": "Central Province",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     155.68333,
+     -6.72917
+    ]
+   },
+   "properties": {
+    "place_id": "PL4945",
+    "name": "Buin Airfield",
+    "alt_names": "Buin Airport",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PG",
+    "region": "Autonomous Region of Bougainville",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     154.673,
+     -5.42232
+    ]
+   },
+   "properties": {
+    "place_id": "PL4946",
+    "name": "Buka Airfield",
+    "alt_names": "Buka Airport",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "PG",
+    "region": "Autonomous Region of Bougainville",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     155.88036,
+     -7.07268
+    ]
+   },
+   "properties": {
+    "place_id": "PL4947",
+    "name": "Shortland Harbour",
+    "alt_names": "Faisi Harbour",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "SB",
+    "region": "Western Province",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     150.8131,
+     -2.5828
+    ]
+   },
+   "properties": {
+    "place_id": "PL4948",
+    "name": "Kavieng Airfield",
+    "alt_names": "Kavieng Airport",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "PG",
+    "region": "New Ireland Province",
+    "claims_count": 0,
+    "claims_ground": 0,
     "claims_air": 0,
     "claims_naval": 0
    }

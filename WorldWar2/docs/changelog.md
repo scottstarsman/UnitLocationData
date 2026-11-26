@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Scope blank on new Pacific air units (branch `guadalcanal-air-pilot`)
+
+The 28 new air units had `scope=in_scope` filled in. In `data/units.csv` a blank scope means in-scope (scenario 248). The column is cleared on those rows.
+
 ## 26 November 2026 — Guadalcanal Japanese shore-based air slice (branch `guadalcanal-air-pilot`)
 
 Thin first Japanese air increment, kept to what JACAR and USSBS actually support in this pass. One unit: Eleventh Air Fleet (`JPN-FLT-011`, domain `air`, echelon `air_force`, theater `pacific`, sub_theater `southwest_pacific`, record_status `placeholder`). No day-level headquarters or kōkūtai claim is entered. The JACAR catalog for the fleet's wartime log (C08030024500 and the September 1942 item C08030024800) confirms that a 1–30 September 1942 war diary exists and that the catalog excerpt of the subordinate-movement table names Rabaul and Shortland and lists the 22nd, 23rd and 24th Air Flotillas; the diary images were not fully read here, so abbreviated unit names in that excerpt are not identified or pinned. USSBS, *The Campaigns of the Pacific War*, ch. 7, as read for this increment, does not by itself date the 11th Air Fleet, the 25th or 26th Air Flotillas, or a named kōkūtai at a field. Those units are therefore not added yet.

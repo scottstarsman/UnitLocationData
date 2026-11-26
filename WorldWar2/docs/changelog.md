@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Guadalcanal Japanese 8th Fleet JACAR diary reading (branch `guadalcanal-jacar-air-naval`)
+
+Second increment on this branch: the handwritten JACAR 8th Fleet wartime-log images were read, beginning with C08030022500 (61 pages, **14 July–31 August 1942**; the parent catalog title C08030022300 starts mid-September and does not describe this child). Items C08030022600–22900 (September 1942–February 1943, through the evacuation) were downloaded and rendered; they were not fully mined for additional ship claims in this increment.
+
+- Added **JPN-FLT-008** (Eighth Fleet / 外南洋部隊), domain `naval`, echelon `fleet`, `formed_date` 14 July 1942, from the 記事 第八艦隊七月十四日編成、第六戦隊加入、外南洋部隊トナル (C08030022500, PDF p. 8). One headquarters claim at Rabaul (C13295, 7 August 1942, PL4937, `southwest_pacific`, `OP-FRONT-PACIFIC`, confidence 0.5).
+- Vice Admiral **Mikawa Gunichi** (三川軍一) is named 司令長官 on the July–August 人員ノ現状 table (PDF p. 23). New tenure UC0736 on JPN-FLT-008, 14 July–31 August 1942 (dated to that monthly diary only). The people note for PE0641 is updated: previous state, 8th Fleet was not entered because USSBS and Cressman did not name the fleet number; current state, JPN-FLT-008 is entered from the diary images.
+- Cruiser Division 6 is assigned to the 8th Fleet from 14 July through 31 August 1942 (CR3906), from the same formation 記事.
+- **Yubari** (C13216) is raised from confidence 0.5 to 0.7. Previous state: 0.5, Cressman only, because USSBS appendix 39 lists Tatsuta, not Yubari, in Cruiser Division 18. Current state: 0.7, because Cressman (`us_navy_nhhc`) and the JACAR 8th Fleet log (`jacar`) agree on Yubari in the 7–9 August night action (Cressman: Ironbottom Sound, 9 August; JACAR: 夕張 in the ツラギ海峡夜戦 after the 1600 7 August sortie). USSBS still lists Tatsuta, not Yubari; that disagreement is kept in the claim note.
+- New reference R2246 (C08030022500).
+- `location_basis` on the new JACAR claims of this branch (C13280–C13295) is `documented_on_date`.
+
 ## 26 November 2026 — Guadalcanal Japanese 11th Air Fleet JACAR diary reading (branch `guadalcanal-jacar-air-naval`)
 
 First increment on this branch: the handwritten JACAR 11th Air Fleet wartime-log images were read (C08030024700, 54 pages, March–May 1942 monthly diaries; C08030024800, 36 pages, September, October and November 1942 monthly diaries). June–August 1942 kōkūtai movement tables are not in those two items.

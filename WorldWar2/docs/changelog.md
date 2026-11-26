@@ -2,6 +2,11 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 26 November 2026 — Build refresh after the JACAR 8th Fleet September–February reading (branch `guadalcanal-jacar-8th-fleet-2`)
+
+`review_sample.py` was run before `build.py`, then both were run again after reference citation counts changed. `build.py --check` is clean. Citation counts were recomputed on R2242 (171 to 186 claims), R2247 (units_count 2 to 0; the build count is units that list the reference, not units first entered from it) and R2250 (units_count 17 to 0, same reason). R2248 and R2249 were left unused, so they remain available if C08030022700 or C08030022800 are later cited; the next id after the highest new reference is R2251.
+
+
 ## 26 November 2026 — Guadalcanal JACAR 8th Fleet Ke-Go (February 1943) reading (branch `guadalcanal-jacar-8th-fleet-2`)
 
 The February 1943 8th Fleet wartime log (C08030022900, 35 pages) was read. The three Ke-Go evacuation runs are in 麾下及友軍ノ行動概要 (イ) ソロモン方面, PDF pp. 21–24, dated 二―一, 二―四 and 二―七, at エスペ (Cape Esperance). January (C08030022800) was opened for 人員 and headquarters claims; no 人員 table naming 三川軍一 and no 司令部位置 were found, so **UC0736 and CR3899 were not extended**, and no new Eighth Fleet HQ claim was added.

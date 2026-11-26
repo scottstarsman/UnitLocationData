@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "data_version": "1.1.0-rc1",
   "generated_at": "2026-11-24T00:00:00Z",
-  "source_tree_sha256": "5e6363566ffb4725c7cdab1e6b56061fd23f847fcfb05cacc503056399a3ccbf",
+  "source_tree_sha256": "1d3227224b8be17ff4b81dd9e09a75c6c66110630cef6e62c0e3d0775cbc431f",
   "license": "CC-BY-SA-4.0",
   "citation": {
     "file": "CITATION.cff",
@@ -14,7 +14,7 @@
     {
       "path": "data/references.csv",
       "bytes": 1397039,
-      "sha256": "40bb125678f85d7941ce927291669846b50f88a26bfdcfc5458eef57da157f68",
+      "sha256": "4fcc0ed8e333e496ed4324ecf31422b8ebc6ad8d5c122006075b4dd0ada17114",
       "rows": 2241
     },
     {
@@ -30,26 +30,26 @@
     },
     {
       "path": "build/all_claims.csv",
-      "bytes": 28373804,
-      "sha256": "02690ce5d69524a181570fe980275c0bacbc73fa6121972bb642f496e7fa8357",
+      "bytes": 28378054,
+      "sha256": "95d992aaa44d54183e6146dcc74f3fd5808000dc3c40da04bcfc7a5516cee28e",
       "rows": 13332
     },
     {
       "path": "build/all_claims.json",
-      "bytes": 43809049,
-      "sha256": "8bd36a13ed0bec7a8c965bcc2119b4ce3d6909ce08dafa6c5b1f1a4161e07446",
+      "bytes": 43813297,
+      "sha256": "294a65ef24465f362fc3aaa5ff6c6e996cf0dde3a282b39e354f7f515d262434",
       "rows": 13332
     },
     {
       "path": "build/claim_references.csv",
-      "bytes": 1472623,
-      "sha256": "e8e60fbb0195fc6f4adad33c7cf46b307d0617cb9da7772e513e2fcfafb7a771",
-      "rows": 30819
+      "bytes": 1473229,
+      "sha256": "6a5d64d1736ffa3467ce8bc5a2f0d439da1fdbebdc4f73008bc2466b8022bfd2",
+      "rows": 30829
     },
     {
       "path": "build/claims.geojson",
-      "bytes": 20848958,
-      "sha256": "6575fa13c1ff8c797fa3c8b7ca86c313fd9089089cb5b5aa1ed7e50b0f53a719",
+      "bytes": 20849493,
+      "sha256": "204ba10810baed1147fa6c236a006ee94942794b7a0f2e94bf8002f4df9d40d6",
       "features": 13332
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "path": "build/coverage_by_unit.csv",
-      "bytes": 455429,
-      "sha256": "d70e3fe7cfc45c21fc191641374ae583e366da847f21d93856c32a6cd6d2011e",
+      "bytes": 455554,
+      "sha256": "13885fc1832f118e090fb3d09715bf99a0374eb39a1ddb2c5a1ba3638873a6f6",
       "rows": 2808
     },
     {
@@ -275,8 +275,8 @@
     },
     {
       "path": "build/review_queue.csv",
-      "bytes": 800372,
-      "sha256": "ae7c0a28f7bf9ee5df58b06d5292460748d9ac3107fed9597627f91504717fca",
+      "bytes": 800352,
+      "sha256": "ae9e22eb5f385bc7a6cc564912aaaa8635d4afffe6ed1b688b63779f5658bd54",
       "rows": 2808
     },
     {

@@ -4396,8 +4396,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2232;R2227;R2224",
-    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2",
+    "reference_ids": "R2232;R2227;R2225;R2224",
+    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2; R2225: ch. 4, Consolidating the Beachhead (p. 85)",
     "sidc": "10031000171208000000"
    }
   },
@@ -4446,8 +4446,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2232;R2227;R2224",
-    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2",
+    "reference_ids": "R2232;R2227;R2225;R2242;R2224",
+    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2; R2225: ch. 4, Consolidating the Beachhead (p. 85); R2242: 20 August 1942",
     "sidc": "10031000161208000000"
    }
   },
@@ -4496,8 +4496,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2232;R2227;R2224",
-    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2",
+    "reference_ids": "R2232;R2227;R2225;R2242;R2224",
+    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2; R2225: ch. 4, Consolidating the Beachhead (p. 85); R2242: 20 August 1942",
     "sidc": "10031000161208000000"
    }
   },
@@ -4846,8 +4846,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2232;R2227;R2224",
-    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2",
+    "reference_ids": "R2232;R2227;R2225;R2242;R2224",
+    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2; R2225: ch. 4, Consolidating the Beachhead (pp. 85-86); R2242: 22 August 1942",
     "sidc": "10031000161208000000"
    }
   },
@@ -5696,8 +5696,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2232;R2227;R2224",
-    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2",
+    "reference_ids": "R2232;R2227;R2225;R2224",
+    "source_locator": "R2227: Part VI, ch. 4; R2232: ch. 2; R2225: ch. 4, Consolidating the Beachhead (pp. 85-86)",
     "sidc": "10031000161208000000"
    }
   },
@@ -18883,9 +18883,9 @@
     "location_name": "Henderson Field",
     "location_represents": "base",
     "precision_km": 1,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
-    "current_activity": "at its base; interval covers this documented operating day",
+    "current_activity": "SBDs from Henderson Field sink Kinugasa northwest of Rendova",
     "operation_id": "OP-CAMP-GUADALCANAL",
     "operation": "Guadalcanal campaign",
     "operation_type": "campaign",
@@ -18896,8 +18896,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2232;R2227;R2224",
-    "source_locator": "R2232: ch. 2",
+    "reference_ids": "R2232;R2227;R2242;R2224",
+    "source_locator": "R2232: ch. 2; R2227: Appendix C (Guadalcanal area 1 Nov 1942–19 Jan 1943); R2242: 14 November 1942",
     "sidc": "10031000161208000000"
    }
   },
@@ -23133,7 +23133,7 @@
     "location_name": "Henderson Field",
     "location_represents": "base",
     "precision_km": 1,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "arrival",
     "current_activity": "forward echelon arriving in the Guadalcanal area",
     "operation_id": "OP-CAMP-GUADALCANAL",
@@ -23146,8 +23146,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R2227;R2224",
-    "source_locator": "R2227: Appendix C",
+    "reference_ids": "R2227;R2232;R2224",
+    "source_locator": "R2227: Appendix C; R2232: ch. 3, The Thirteenth Air Force (pp. 80, 87)",
     "sidc": "10031000181208000000"
    }
   },

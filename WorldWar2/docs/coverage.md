@@ -6,10 +6,10 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 
 | Domain | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---:|---:|---:|---:|---:|---:|
-| ground | 27 | 2 | 565 | 594 | 274 | 9729 |
+| ground | 22 | 2 | 583 | 607 | 274 | 9771 |
 | air | 21 | 0 | 1347 | 1368 | 608 | 2484 |
 | naval | 62 | 0 | 916 | 978 | 343 | 1179 |
-| **All** | **110** | **2** | **2828** | **2940** | **1225** | **13392** |
+| **All** | **105** | **2** | **2846** | **2953** | **1225** | **13434** |
 
 | Domain | Nationality | Echelon | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---|---|---:|---:|---:|---:|---:|---:|
@@ -57,9 +57,9 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | ground | US | division | 0 | 0 | 65 | 65 | 25 | 2250 |
 | ground | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | ground | US | regiment/battle_group | 1 | 0 | 18 | 19 | 0 | 111 |
-| ground | US | battalion | 5 | 0 | 30 | 35 | 0 | 55 |
+| ground | US | battalion | 1 | 0 | 47 | 48 | 0 | 96 |
 | ground | US | company | 0 | 0 | 1 | 1 | 0 | 3 |
-| ground | US | other | 1 | 0 | 0 | 1 | 0 | 0 |
+| ground | US | other | 0 | 0 | 1 | 1 | 0 | 1 |
 | air | Allied | other | 0 | 0 | 1 | 1 | 0 | 1 |
 | air | Australia | air_squadron | 0 | 0 | 10 | 10 | 0 | 14 |
 | air | Belgium | air_squadron | 0 | 0 | 2 | 2 | 0 | 8 |
@@ -119,7 +119,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | US | naval_division | 0 | 0 | 21 | 21 | 0 | 21 |
 | naval | US | task_force | 0 | 0 | 6 | 6 | 0 | 10 |
 | naval | US | task_group | 14 | 0 | 14 | 28 | 0 | 15 |
-| **All** | | | **110** | **2** | **2828** | **2940** | **1225** | **13392** |
+| **All** | | | **105** | **2** | **2846** | **2953** | **1225** | **13434** |
 
 ## Operations
 
@@ -128,23 +128,23 @@ Generated from `data/operations.csv` and every claim's `operation_id` (all domai
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 15 | 8 | 755 |
-| campaign | 10 | 10 | 8601 |
+| campaign | 10 | 10 | 8643 |
 | operation | 34 | 34 | 2935 |
 | battle | 27 | 27 | 778 |
 | phase | 4 | 4 | 323 |
-| **All** | **90** | **83** | **13392** |
+| **All** | **90** | **83** | **13434** |
 
 Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 60, compact 3, broad 17, none 10. A map pin (`primary_place_id`) is a sourced place, not this centroid.
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4941 places and 1462 alias names for 13392 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4941 places and 1462 alias names for 13434 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4744 | 12201 |
-| area | 117 | 1014 |
-| line | 28 | 64 |
+| point | 4744 | 12239 |
+| area | 117 | 1017 |
+| line | 28 | 65 |
 | sea_position | 52 | 113 |
 
 | country | Places | Claims |
@@ -154,7 +154,7 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | United Kingdom (GB) | 435 | 1646 |
 | Netherlands (NL) | 537 | 1570 |
 | Belgium (BE) | 385 | 890 |
-| Solomon Islands (SB) | 53 | 535 |
+| Solomon Islands (SB) | 53 | 577 |
 | Luxembourg (LU) | 90 | 234 |
 | Papua New Guinea (PG) | 4 | 50 |
 | Austria (AT) | 31 | 49 |

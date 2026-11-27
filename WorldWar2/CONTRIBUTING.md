@@ -54,7 +54,9 @@ Confidence is a 0–1 score for how well the sources support the date and the pl
 | 0.7 | An exact place with one authoritative source (for example a US Army official history), or an approximate place with two source families. The preferred claim of a conflict group is at most 0.7. |
 | 0.9 | An exact place, and two independent source families agree. Alternate and disputed claims are at most 0.5, so they never reach 0.9. |
 
-A gazetteer or geocoder (Nominatim, Wikipedia coordinates) does not make a claim independently sourced.
+A gazetteer or geocoder (Nominatim, Wikipedia coordinates) does not make a claim independently sourced. Open-ocean pins at a place of kind `sea_position` are capped at confidence 0.5 even when two source families agree; a named strait or enclosed battleground of kind `area` may reach 0.7.
+
+On `data/units.csv`, the optional boolean `independent` marks a separate, independent or ad-hoc unit that has no standing organic parent in the dataset (for example a Marine Raider battalion or a named detachment). When `independent=true`, the validator does not warn about an attached claim that lacks a standing-parent entry. Leave the column blank (or `false`) when the unit has, or is expected to have, a standing parent. Details are in [schema/README.md](schema/README.md).
 
 If you infer, extrapolate or change a value, say so in `notes`: the old value, the new value, and the reason (and record the same in the pull request or in `docs/changelog.md` when the change is structural). Do not leave an inferred start date or parent looking like a sourced fact.
 

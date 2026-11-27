@@ -1,5 +1,7 @@
 # Symbol codes (SIDC) coverage report (roadmap 410 proposal)
 
+> **Historical snapshot (23 November 2026).** This page reports SIDC coverage from a snapshot on branch `symbol-codes-410` of `data/units.csv` at `main` `62e65fd7` (2,635 units). It is not a live coverage report. Current derived codes are in `build/unit_symbols.csv` and the `sidc` column of the claims outputs.
+
 Generated 23 November 2026 on branch `symbol-codes-410` from `data/units.csv` (main `62e65fd7`), `data/sidc_function_map.csv` and `data/sidc_echelon_map.csv` with a scratch evaluator that is not part of the repository; regenerated after Scott accepted the proposal (23 November 2026), with the question 12 rule for the Führer-Begleit-Brigade. The derived codes themselves are in `build/unit_symbols.csv` and the `sidc` column of the claims outputs (`scripts/sidc.py`). (`build/other_domains/` was folded into the unified `build/` files on 24 November 2026; filter on the `domain` column.)
 
 Rule order: the first `function` rule whose conditions all hold (domain, echelon, ship_type, name pattern; a blank domain in `units.csv` counts as ground) gives the symbol set, entity and modifiers; then the two `addon` rules apply to land units only. In the SIDC patterns below `S` stands for the standard identity, which comes from the allegiance table on the date.

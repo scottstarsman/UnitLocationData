@@ -6310,8 +6310,8 @@ def scenario_308_missions_table():
     expect_in(s + ': a retired id cannot be a mission again', text(run({('us', 'US-BG-387'): [good]}, [['MSN9001', '', 'test']])), 'retired but is also a mission')
     expect_in(s + ': a sea_position target keeps the 0.5 cap', text(one(target_place_id='PL4170', confidence='0.7')), 'sea_position')
     expect_in(s + ': the flying unit cannot support itself', text(one(supported_unit_ids='US-BG-387')), 'flying unit itself')
-    w = one(date='1944-06-02')
-    expect(s + ': a mission before the first base claim (6 June) passes with one warning for the unit', (w[0], len(w[1]), 'no base claim' in (w[1] or [''])[0]), ([], 1, True))
+    w = one(date='1944-05-31')
+    expect(s + ': a mission before the first base claim (1 June 1944, C13447) passes with one warning for the unit', (w[0], len(w[1]), 'no base claim' in (w[1] or [''])[0]), ([], 1, True))
     expect(s + ': a squadron with no claims of its own is read through its organic group (base in force)', run({('us', 'US-BS-556'): [dict(good, unit_id='US-BS-556')]}), ([], []))
     # missions never reach the claims, the relations or the grid
     base = build.outputs()
@@ -6385,7 +6385,7 @@ def scenario_309_missions_387th_bg():
         claims.extend(common.read_dicts(path)[1])
     import command_relations as crel
     gaps = validate.mission_base_gaps(units, claims, ms, crel.load(True).rows)
-    expect(s + ': only the three missions before the first base claim (6 June) have no base in force', sorted(m['mission_id'] for m in gaps.get('US-BG-387', [])), ['MSN0001', 'MSN0002', 'MSN0003'])
+    expect(s + ': pre-D-Day missions have a base in force after C13447 (1 June 1944)', sorted(m['mission_id'] for m in gaps.get('US-BG-387', [])), [])
 
 
 def scenario_310_missions_368th_fg():

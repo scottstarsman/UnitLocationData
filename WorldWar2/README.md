@@ -6,14 +6,14 @@ An open, claim-based dataset of where World War II units were, on a date, with c
 
 ## Coverage and status
 
-The surveyed focus is the **Western Front, 6 June 1944 to 8 May 1945**. The current build has **12,770 claims** in **2,635 units** (91 of them placeholders with no claim file). Claim dates in the files run from 16 September 1939 to 31 May 1945: most pre-6 June rows are Western Front pre-invasion positions under `OP-PRE-INVASION` and keep their real dates; a smaller number are incidental other-front or home-area rows (`eastern_front`, `home_germany`, and a few others). A few claims continue past 8 May 1945 (occupation and post-surrender rows, the latest on 31 May).
+The surveyed focus is the **Western Front, 6 June 1944 to 8 May 1945**. The current build has **13,436 claims** in **2,953 units** (105 of them placeholders with no claim file). A first Pacific increment covers the Guadalcanal campaign and related South Pacific rows (664 claims in 294 units). Claim dates in the files run from 16 September 1939 to 31 May 1945: most pre-6 June Western Front rows are pre-invasion positions under `OP-PRE-INVASION` and keep their real dates; the Pacific rows are dated in 1942–1943; a smaller number are incidental other-front or home-area rows (`eastern_front`, `home_germany`, and a few others). A few claims continue past 8 May 1945 (occupation and post-surrender rows, the latest on 31 May).
 
 | Domain | Units | Claims |
 |---|---:|---:|
-| ground | 513 | 9,507 |
-| air | 1,307 | 2,343 |
-| naval | 815 | 920 |
-| **All** | **2,635** | **12,770** |
+| ground | 607 | 9,771 |
+| air | 1,368 | 2,486 |
+| naval | 978 | 1,179 |
+| **All** | **2,953** | **13,436** |
 
 Coverage is uneven and event-based, not a daily plot: a unit has a row on days when something substantial happened, so its position between rows is unknown. Live counts are in [docs/coverage.md](docs/coverage.md). Known gaps and later work are in [docs/roadmap.md](docs/roadmap.md).
 
@@ -84,14 +84,14 @@ Run the scripts from this folder: `python scripts/validate.py`, `python scripts/
 
 ## How to cite
 
-Starsman, Raymond Scott. 2026. *WWII Unit Locations: a claim-based dataset of unit positions (Western Front, 1944–1945)*. Version 1.1.0-rc1. https://github.com/scottstarsman/UnitLocationData. CC BY-SA 4.0.
+Starsman, Raymond Scott. 2026. *WWII Unit Locations: a claim-based dataset of unit positions*. Version 1.1.0-rc1. https://github.com/scottstarsman/UnitLocationData. CC BY-SA 4.0.
 
 Machine-readable metadata is in `CITATION.cff`. Copyright holder: Raymond Scott Starsman. Attribution guidance by source family and export is in [docs/reuse_and_attribution.md](docs/reuse_and_attribution.md).
 
 ## Limitations and known gaps
 
 - Event-based, not a daily location for every unit.
-- The surveyed focus is the Western Front, June 1944 to May 1945; other fronts and some earlier or later days appear only when a source happened to give them. Those rows are distinguished by `theater` and `operation_id`, not by a filled `out_of_scope` marker (every unit in this release is `in_scope`).
+- The surveyed focus is the Western Front, June 1944 to May 1945; a first Pacific increment covers the Guadalcanal campaign. Other fronts and some earlier or later days appear only when a source happened to give them. Those rows are distinguished by `theater` and `operation_id`, not by a filled `out_of_scope` marker (every unit in this release is `in_scope`).
 - Air and naval command relations are dense in June 1944 and thin later. Many air units have only one or two location claims, often a station or base change.
 - Operation participation in `build/operation_units.csv` lists units whose claims (or descendant roll-ups) already carry that `operation_id`, and whose date falls inside that operation's start and end dates. It is not a complete historical order of battle. A campaign row is often used where a more specific operation was not tagged, and a blank `primary_place_id` means no sourced map pin.
 - `commander` on a claim is the source-stated name on that row and is often `unknown`. The build export adds `commander_on_date` from a preferred covering tenure when the claim does not name one; `commander_on_date_basis` beginning `inferred_` means the tenure's start or end was inferred (often the first sourced claim, not the historical appointment). Many units still have no tenure at all.

@@ -1,5 +1,7 @@
 # Coverage summary (2 November 2026)
 
+> **Historical snapshot (2 November 2026).** This page is a hand-written summary of coverage as of that date (7,055 claims, 319 units with claims). It is not live coverage and should not be used for current headline figures. For current counts see the generated [coverage.md](coverage.md).
+
 Read from `build/coverage_by_unit.csv`, `build/coverage_by_month.csv` and `build/review_queue.csv` as built on 2 November 2026 (7,055 claims, 319 units with claims). Method: [coverage_report.md](coverage_report.md). This page is written by hand; the tables are regenerated on every build, so the figures here date.
 
 ## Top findings

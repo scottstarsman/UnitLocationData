@@ -1,5 +1,7 @@
 # Air and naval pilot (branch `air-naval-pilot`, 13 November 2026)
 
+> **Historical snapshot (13 November 2026).** This note records the air and naval pilot on branch `air-naval-pilot`. The next-free ids it quotes (claim `C9444`, place `PL4179`, reference `R1159`, relation `CR1310`, aircraft type `AT135`, ship class `SC201`, and scenario 259) are historical as of 13 November 2026; they are not the current next-free ids.
+
 Scott asked on 13 November 2026 for a small air and naval pilot before the data is opened up, to find out whether the data structures need changes. This note is the result. It is a proposal for Scott's approval; only the minimum needed to store the pilot rows was changed (section 3).
 
 ## 1. What was entered

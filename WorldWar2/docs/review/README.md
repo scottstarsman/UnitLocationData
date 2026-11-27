@@ -24,11 +24,11 @@ Your findings are checked against the sources before anything changes; they are 
 
 ## 1. What the dataset is
 
-A claim-based dataset of where World War II ground units were, when, and how sure we are. A row (a *claim*) says: this unit was at this place on this date, doing this (an `event_type` and a `current_activity`), with coordinates, a precision radius, a `confidence` score from a four-level rubric, and the sources. Claims are event-based (a row for a landing, an arrival, an attack, a headquarters move, a command change), not a daily position track. Where sources disagree the competing claims are kept as separate rows in a conflict group instead of being averaged or silently resolved.
+A claim-based dataset of where World War II units were, when, and how sure we are, covering ground, air and naval formations (including US Marines). A row (a *claim*) says: this unit was at this place on this date, doing this (an `event_type` and a `current_activity`), with coordinates, a precision radius, a `confidence` score from a four-level rubric, and the sources. Claims are event-based (a row for a landing, an arrival, an attack, a headquarters move, a command change, a base or station, or a ship's position), not a daily position track. Flying-unit sorties are recorded as missions, not as location claims. Where sources disagree the competing claims are kept as separate rows in a conflict group instead of being averaged or silently resolved.
 
-**Scope as it stands.** The Western Front, 6 June 1944 to 31 December 1944 (the latest claim is dated 27 December 1944). The planned scope is US Army ground units on the Western Front to 8 May 1945 at army group, army, corps and division level; Marines are out of scope (`Marines` is a reserved value of the `branch` vocabulary and no claim uses it). US Army coverage for July to December 1944 is a set of milestones, not complete day-by-day coverage. British, Canadian and German units are covered for June 1944 only (the Normandy landings to the fall of Cherbourg and Operation Epsom, including some battle groups and one combat command), plus the German, British and Canadian units that appear as parents or opponents. January to May 1945 has not been started. Air and naval units are not covered (their `echelon` and `branch` values are reserved). The unit table has many placeholder units (a unit that exists in the table, without claims yet): see the counts.
+**Scope as it stands.** The surveyed focus is the Western Front, 6 June 1944 to 8 May 1945, at army group, army, corps and division level and, where sources trace them, smaller formations, together with air and naval units in that theater. That window includes 1945 (through late May: occupation and post-surrender rows). A first Pacific increment covers the Guadalcanal campaign (August 1942–February 1943) and related South Pacific rows. Claim dates in the files run from 16 September 1939 to 31 May 1945: earlier Western Front rows are mostly pre-invasion positions under `OP-PRE-INVASION`; a smaller number are incidental other-front or home-area rows. Coverage is uneven and event-based, not a daily plot. The unit table still has placeholder units (identity but no claim file): see the counts in section 4.
 
-**Method in one paragraph.** Rows are written by hand from published sources (the US Army Center of Military History "Green Book" volumes and order-of-battle tables, Wikipedia, the Lexikon der Wehrmacht, and others; see `docs/sources.md` and `data/references.csv`), with coordinates from Wikipedia or OpenStreetMap place coordinates, so a point is usually the place's centre, not the unit's measured position. Confidence follows a rule (see section 3). Everything in `build/` is generated from `data/` by `scripts/build.py`.
+**Method in one paragraph.** Rows are written by hand from published sources (the US Army Center of Military History "Green Book" volumes and order-of-battle tables, official British, Canadian, Navy and Marine histories, Wikipedia, the Lexikon der Wehrmacht, and others; see `docs/sources.md` and `data/references.csv`), with coordinates from Wikipedia, official lists or OpenStreetMap place coordinates, so a point is usually the place's centre, not the unit's measured position. Confidence follows a rule (see section 3). Everything in `build/` is generated from `data/` by `scripts/build.py`.
 
 ## 2. Table map
 
@@ -40,7 +40,7 @@ All tables are CSV files under `data/` (UTF-8, comma separated). Column definiti
 | units | `data/units.csv` | one unit (active or placeholder): name, nationality, `echelon`, `branch`, operational parent | `unit_id` (nationality prefix, type, number, echelon letter) |
 | nationalities | `data/nationalities.csv` | one nationality (code, name, adjective, kind; the sides are in `nation_allegiance.csv`) | `code` |
 | nation_allegiance | `data/nation_allegiance.csv` | one period in which a nation was Allied, Axis, neutral or co-belligerent in WW2 | `(nation, valid_from)` |
-| unit_allegiance_overrides | `data/unit_allegiance_overrides.csv` | one period in which a unit stood on another side from its nation (wins over the nation table; empty) | `(unit_id, valid_from)` |
+| unit_allegiance_overrides | `data/unit_allegiance_overrides.csv` | one period in which a unit stood on another side from its nation (wins over the nation table; currently the four combined Allied headquarters whose nationality code `ALL` has no nation-allegiance row) | `(unit_id, valid_from)` |
 | places | `data/places.csv` | one named place: canonical name, aliases, kind (point / area / line), coordinates, country, region, coordinate source | `place_id` (`PL0001`...) |
 | place_merges | `data/place_merges.csv` | one place id that was retired by a merge into a surviving place | `retired_place_id` |
 | operations | `data/operations.csv` (+ `operation_relations.csv`, `operation_exceptions.csv`) | one operation, battle, phase, campaign or umbrella with a parent chain and dates | `operation_id` (`OP-...`) |
@@ -52,8 +52,16 @@ All tables are CSV files under `data/` (UTF-8, comma separated). Column definiti
 | retired_claims | `data/retired_claims.csv` | a claim id that was removed and must never be reused | `claim_id` |
 | claim_key_exceptions | `data/claim_key_exceptions.csv` | a pair of claims that legitimately share `(unit_id, date, event_type)` | `(claim_id, other_claim_id)` |
 | coordinate_exceptions | `data/coordinate_exceptions.csv` | an explained exception to a coordinate check | `(check, claim_id, other_claim_id)` |
+| missions | `data/missions/<nationality>/<unit_id>.csv` | one sourced sortie or mission of a flying unit | `mission_id` (`MSN####`) |
+| retired_missions | `data/retired_missions.csv` | a mission id that was removed and must never be reused | `mission_id` |
+| people | `data/people.csv` | one person who held a sourced command | `person_id` (`PE####`) |
+| unit_commanders | `data/unit_commanders.csv` | one dated tenure of a person in command of a unit | `tenure_id` (`UC####`) |
+| unit_commander_claims | `data/unit_commander_claims.csv` | the evidence link: a claim that supports a tenure | `(tenure_id, claim_id)` |
+| unit_lineage | `data/unit_lineage.csv` | one succession between two unit records (redesignation, absorption, reconstitution) | `lineage_id` (`UL###`) |
+| toe_templates / unit_toe | `data/toe_templates.csv`, `data/unit_toe.csv` | an official table of organization, and a unit's assignment to one | `template_id` (`TT####`) / `(unit_id, template_id, valid_from)` |
+| ship_classes / aircraft_types | `data/ship_classes.csv`, `data/aircraft_types.csv` | one ship class or aircraft type | `ship_class_id` (`SC###`) / `aircraft_type_id` (`AT###`) |
 
-The claim-to-source links themselves are the `reference_ids` (and `source_locator`) columns of the claim files. A claim does not store its command relationships: they are in `command_relations` with `command_relation_claims` as evidence and are put back into `build/all_claims.csv` as text for convenience. Deferred relations (formations below division that are not yet units) are kept in `docs/deferred_relations.md`, ids D01 to D11. There is no commanders table and no claim-evidence table: a commander is a text column of the claim and the evidence of a claim is its `reference_ids` plus `claim_reference_roles` (both are among the questions in [questions.md](questions.md)).
+The claim-to-source links themselves are the `reference_ids` (and `source_locator`) columns of the claim files. A claim does not store its command relationships: they are in `command_relations` with `command_relation_claims` as evidence and are put back into `build/all_claims.csv` as text for convenience. Commanders are stored in `people.csv` and `unit_commanders.csv`, with `unit_commander_claims` as evidence; the claim's `commander` field is the name the source gave on that row, and derived `commander_on_date` columns appear on the build claims export. Flying-unit sorties are in `data/missions/`, not location claims. Deferred relations (formations below division that are not yet units) are kept in `docs/deferred_relations.md`. The evidence of a claim is its `reference_ids` plus `claim_reference_roles`.
 
 ## 3. Rules and vocabularies
 
@@ -76,7 +84,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 13434, dated 1939-09-16 to 1945-05-31 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 13436, dated 1939-09-16 to 1945-05-31 |
 | units in `data/units.csv` | 2953: 2846 active (have claims), 105 placeholders |
 | claim files (one per active unit) | 2838 |
 | conflict groups / claims in a group | 299 / 636 |
@@ -91,15 +99,15 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | nationalities / retired claim ids / claim-key exceptions | 43 / 7 / 13 |
 | controlled vocabularies in `schema/vocabularies.json` | 64 |
 
-Claims by nationality: Germany 4786, US 4478, UK 2577, Canada 716, France 356, Japan 242, Poland 129, Netherlands 51, Czechoslovakia 27, Belgium 24, Norway 19, Australia 17, New Zealand 9, Greece 2, Allied 1.
+Claims by nationality: Germany 4786, US 4480, UK 2577, Canada 716, France 356, Japan 242, Poland 129, Netherlands 51, Czechoslovakia 27, Belgium 24, Norway 19, Australia 17, New Zealand 9, Greece 2, Allied 1.
 
-Claims by echelon: division 6434, corps 1754, air_squadron 1351, naval_unit 738, army 687, air_group 626, naval_division 340, air_flight 301, brigade 296, regiment/battle_group 244, air_wing 152, battalion 140, army_group 132, naval_squadron 52, company 45, other 42, task_group 36, air_division 28, air_corps 12, air_force 12, task_force 10, fleet 2.
+Claims by echelon: division 6434, corps 1754, air_squadron 1351, naval_unit 738, army 687, air_group 628, naval_division 340, air_flight 301, brigade 296, regiment/battle_group 244, air_wing 152, battalion 140, army_group 132, naval_squadron 52, company 45, other 42, task_group 36, air_division 28, air_corps 12, air_force 12, task_force 10, fleet 2.
 
-Claims by branch: Army 6681, Air Force 1942, Navy 1298, Armoured 1297, Luftwaffe 933, Armored 525, Waffen-SS 368, Airborne 238, Marines 152.
+Claims by branch: Army 6681, Air Force 1944, Navy 1298, Armoured 1297, Luftwaffe 933, Armored 525, Waffen-SS 368, Airborne 238, Marines 152.
 
-Claims by event type: other 6337, hq_observation 1816, attack 1095, relocation 920, defense 779, hq_move 447, capture 390, arrival 340, command_change 235, withdrawal 222, subordinate_assignment 209, regroup 193, landing 138, counterattack 87, surrender 71, activation 68, destruction 46, redesignation 31, sortie 9, commissioning 1.
+Claims by event type: other 6339, hq_observation 1816, attack 1095, relocation 920, defense 779, hq_move 447, capture 390, arrival 340, command_change 235, withdrawal 222, subordinate_assignment 209, regroup 193, landing 138, counterattack 87, surrender 71, activation 68, destruction 46, redesignation 31, sortie 9, commissioning 1.
 
-Claims by status: preferred 13090, alternate 328, disputed 16. Claims by confidence: 0.3 4128, 0.5 7680, 0.7 1548, 0.9 78.
+Claims by status: preferred 13092, alternate 328, disputed 16. Claims by confidence: 0.3 4128, 0.5 7682, 0.7 1548, 0.9 78.
 
 Placeholder units by nationality: UK 37, US 28, Germany 23, Japan 11, Allied 3, Australia 1, Canada 1, Netherlands 1.
 

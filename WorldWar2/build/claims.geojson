@@ -66456,6 +66456,106 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.28861,
+     51.725
+    ]
+   },
+   "properties": {
+    "claim_id": "C13447",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-BG-387",
+    "unit_name": "387th Bombardment Group",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "western_europe",
+    "sub_theater": null,
+    "echelon": "air_group",
+    "branch": "Air Force",
+    "date": "1944-06-01",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4256",
+    "location_name": "RAF Chipping Ongar, Essex",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "at its base, chipping ongar",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1564;R001",
+    "source_locator": "R1564: pp. 274 (387th Bombardment Group, Stations: Chipping Ongar, England, 25 Jun 1943 / Stony Cross, England, 18 Jul 1944)",
+    "sidc": "10031000171208000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.43972,
+     51.14333
+    ]
+   },
+   "properties": {
+    "claim_id": "C13448",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-FG-368",
+    "unit_name": "368th Fighter Group",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "western_europe",
+    "sub_theater": null,
+    "echelon": "air_group",
+    "branch": "Air Force",
+    "date": "1944-06-01",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4311",
+    "location_name": "RAF Chilbolton, Hampshire",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "at its base, chilbolton",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1564;R001",
+    "source_locator": "R1564: pp. 254-255 (368th Fighter Group, Stations: Chilbolton 15 Mar 1944 / Cardonville 20 Jun 1944 / Chartres 23 Aug 1944 / Laon 11 Sep 1944)",
+    "sidc": "10031000171208000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.2268,
      51.2086
     ]

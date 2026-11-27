@@ -83,11 +83,11 @@
     {
       "name": "theater",
       "type": "string",
-      "description": "Primary theater of the unit (single value; claim rows carry their own theater).",
+      "description": "Primary theater(s) of the unit. A single theater code from the theater vocabulary, or pipe-separated codes when the unit served in more than one theater (for example western_europe|pacific). Tokens must be non-empty, unique, and unspaced around the pipe. Claim rows still carry a single theater each, which may differ from the unit's list.",
       "constraints": {
         "required": true
       },
-      "vocabulary": "theater"
+      "vocabulary_pipe": "theater"
     },
     {
       "name": "sub_theater",
@@ -105,6 +105,20 @@
       "constraints": {
         "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
       }
+    },
+    {
+      "name": "independent",
+      "type": "boolean",
+      "description": "true when the unit is a separate, independent or ad-hoc formation with no standing organic parent in the dataset (for example a Marine Raider or Defense battalion, an Army pack-artillery battalion used as corps artillery, a named Japanese detachment, or a separate parachute battalion). Blank or false means the unit has, or is expected to have, a standing parent (organic, assigned, unspecified_subordination or unknown). When true, the validator does not warn about an attached claim that has no standing-parent entry.",
+      "constraints": {
+        "required": false
+      },
+      "trueValues": [
+        "true"
+      ],
+      "falseValues": [
+        "false"
+      ]
     },
     {
       "name": "record_status",

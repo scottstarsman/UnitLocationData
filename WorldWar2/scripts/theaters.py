@@ -62,6 +62,40 @@ def theater_codes():
     return [t['code'] for t in entries() if t.get('allowed_as_theater')]
 
 
+def split_theater_codes(value):
+    """Split a theater cell into codes. A single code is a one-item list; pipes separate multiple codes.
+
+    This does not validate tokens (see theater_list_error). Empty input yields an empty list.
+    """
+    if not value:
+        return []
+    return value.split('|')
+
+
+def theater_list_error(value):
+    """Error message if a units.csv theater cell is not one or more valid pipe-separated theater codes, else None.
+
+    Empty is left to the required-field check. Tokens must be non-empty, unique, free of surrounding
+    whitespace, and in the theater vocabulary. A single allowed code remains valid.
+    """
+    if not value:
+        return None
+    parts = value.split('|')
+    if any(p == '' for p in parts):
+        return 'theater has an empty token (do not write a leading, trailing or doubled pipe)'
+    if any(p != p.strip() for p in parts):
+        return 'theater tokens must not have spaces around the pipe'
+    allowed = set(theater_codes())
+    seen = set()
+    for p in parts:
+        if p not in allowed:
+            return 'theater token %r not in the theater vocabulary' % p
+        if p in seen:
+            return 'theater lists %r more than once' % p
+        seen.add(p)
+    return None
+
+
 def sub_theater_codes():
     """Codes allowed in the optional `sub_theater` column, in file order."""
     return [t['code'] for t in entries() if t['level'] == 'sub_theater']
@@ -99,7 +133,11 @@ def date_floor(code):
     """Earliest YYYY-MM-DD accepted for a row in this theater or sub-theater.
 
     Unknown or blank codes fall back to the global floor (7 July 1937).
+    A pipe-separated units.csv theater list uses the earliest (most permissive) floor among its codes.
     """
+    if code and '|' in code:
+        floors = [date_floor(c) for c in code.split('|') if c]
+        return min(floors) if floors else global_date_floor()
     t = get(code)
     if t and t.get('date_floor'):
         return t['date_floor']
@@ -119,8 +157,14 @@ def bboxes(code):
 
     A sub-theater uses its own boxes. A top-level theater uses its own boxes
     (which may already be a union, including both sides of the antimeridian).
+    A pipe-separated units.csv theater list is the union of its codes' boxes.
     Unknown codes return an empty list (the caller skips the bbox check).
     """
+    if code and '|' in code:
+        boxes = []
+        for c in code.split('|'):
+            boxes.extend(bboxes(c))
+        return boxes
     t = get(code)
     if not t:
         return []
@@ -138,6 +182,8 @@ def is_open_water_theater(code):
     """True if a mid-ocean point is expected (skip the Atlantic typo check)."""
     if not code:
         return False
+    if '|' in code:
+        return any(is_open_water_theater(c) for c in code.split('|') if c)
     return is_under(code, 'atlantic') or is_under(code, 'arctic')
 
 
@@ -148,6 +194,8 @@ def sub_theater_error(theater, sub):
     sub-theater. If theater is a top-level code, sub must be a child of it. If
     theater is itself a legacy sub-theater code (north_africa, balkans,
     scandinavia, home_germany), sub must be blank or equal to theater.
+    A pipe-separated units.csv theater list is valid when the sub-theater is
+    consistent with at least one listed theater code.
     """
     if not sub:
         return None
@@ -156,6 +204,12 @@ def sub_theater_error(theater, sub):
         return 'sub_theater %r is not in the sub-theater vocabulary' % sub
     if not theater:
         return 'sub_theater %s is set but theater is blank' % sub
+    if '|' in theater:
+        codes = [c for c in theater.split('|') if c]
+        if any(sub_theater_error(c, sub) is None for c in codes):
+            return None
+        return ('sub_theater %s is not a sub-theater of any theater in %s'
+                % (sub, theater))
     th = get(theater)
     if th is None:
         return 'theater %r is not in the theater vocabulary' % theater

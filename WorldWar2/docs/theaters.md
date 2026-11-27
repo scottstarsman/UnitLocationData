@@ -6,10 +6,10 @@ The list follows official Allied and Axis theater divisions: the US European, Me
 
 ## How a row uses the list
 
-- Every claim, unit and operation has a required `theater`. The allowed values are the top-level theaters plus four legacy codes that were already in the data as if they were theaters: `north_africa`, `balkans`, `scandinavia` and `home_germany`. Those four are now classified as sub-theaters, but existing rows may keep them in the `theater` column. There is no breaking rename.
+- Every claim, unit and operation has a required `theater`. The allowed values are the top-level theaters plus four legacy codes that were already in the data as if they were theaters: `north_africa`, `balkans`, `scandinavia` and `home_germany`. Those four are now classified as sub-theaters, but existing rows may keep them in the `theater` column. There is no breaking rename. On `data/units.csv` only, `theater` may list more than one of those codes, separated by a pipe (`western_europe|pacific`), when the unit served in more than one theater. Claim and operation `theater` stay a single code.
 - An optional `sub_theater` names a child of that theater. Existing rows may leave it blank. If `theater` itself is one of the four legacy codes, leave `sub_theater` blank (or set it equal to the same code).
 - A claim's `theater` must equal its operation's `theater`. If both the claim and the operation have a `sub_theater`, they must be equal; a claim may fill in a sub-theater when the holding umbrella does not have one.
-- The unit's `theater` and `sub_theater` are only the unit's primary front; a claim may differ.
+- The unit's `theater` and `sub_theater` are only the unit's primary front (or fronts); a claim may differ. If the unit lists more than one theater and sets `sub_theater`, the sub-theater must be a child of at least one of those theaters.
 
 ## Top-level theaters and their sub-theaters
 

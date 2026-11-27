@@ -21,7 +21,7 @@ and composing_text are free text that never repeats the name of a unit that has 
 composing_text entry that starts with a unit id must be `<unit_id> (<qualifier>)` for an id listed in composing_units; engaged_note must hold no unit id; the lists are
 written canonically (entries joined by "; ").
 Command relations: a link of role listed_by_higher_unit belongs to the HIGHER unit's claim, which lists the subject in composing_units, keeps the wording in stated_note and states the start if it
-lists the relation before it starts (see schema/README.md, "Command relations"). docs/deferred_relations.md: the relationships whose subordinate formation is not a unit of the table;
+lists the relation before it starts (see schema/README.md, "Command relations"). Exception for embarked carrier air (option b, 26 November 2026): a CV/CVL/CVE claim that lists the squadron in composing_units may also evidence a squadron-to-air-group relation when the group has a preferred subordination to that carrier in force on the claim date. docs/deferred_relations.md: the relationships whose subordinate formation is not a unit of the table;
 every row names an existing claim of its unit, a higher unit of the table, a vocabulary relationship and an entry that is still in the claim's composing_text.
 Note labels: a sentence of `notes` that starts with `Label: ` uses a label of the vocabulary note_label (closed set, exact spelling); source and batch lead-ins are prose.
 Claim ids: unique, C plus four digits or more; data/retired_claims.csv records removed claims (a retired id is never a claim again); unrecorded gaps in the numbering are
@@ -34,7 +34,7 @@ Foreign keys: every foreignKeys entry declared in schema/claims.schema.json, uni
 declared separator), and the declared primary keys of the side tables are unique.
 Unit table (placeholders, see docs/methodology.md "Placeholder units"): record_status agrees with the
 existence of a claim file (a placeholder must not have claim rows: run scripts/promote_placeholders.py once a claim file is
-added), formed_date is a real YYYY, YYYY-MM or YYYY-MM-DD with a source URL, initial_parent_* columns are all set or all blank
+added; an active embarked carrier air unit may have no claim file when a preferred relation to a CV/CVL/CVE is recorded), formed_date is a real YYYY, YYYY-MM or YYYY-MM-DD with a source URL, initial_parent_* columns are all set or all blank
 and resolve, listing_source tokens are in the source_token vocabulary, and unit_name is unique within a nationality.
 
 Operations (scripts/operations.py): every claim has an operation_id that exists in data/operations.csv; the operations table has valid ids, types, dates,
@@ -1305,7 +1305,9 @@ def check_command_relation_tables(units, vocabs, claims):
             c = cinfo.get(l['claim_id'])
             if c is None:
                 continue
-            if c['unit_id'] != r['higher_unit_id']:
+            listed_ok = (c['unit_id'] == r['higher_unit_id']
+                         or listed_claim_is_embarked_carrier_evidence(c, r, units, rel.rows))
+            if not listed_ok:
                 err(where, 'link to %s has role listed_by_higher_unit but the claim belongs to %s, not to the higher unit %s' % (c['claim_id'], c['unit_id'], r['higher_unit_id']))
             elif r['subject_unit_id'] not in unit_refs.split_ids(c.get('composing_units', '')) and r['subject_unit_id'] not in unit_refs.embedded_ids(c.get('composing_text', '')):
                 err(where, 'link to %s has role listed_by_higher_unit but the claim does not list %s in composing_units' % (c['claim_id'], r['subject_unit_id']))
@@ -1619,10 +1621,111 @@ MISSION_START = '1939-09-01'   # European default; per-theater floors are in sch
 TIME_RE = re.compile(r'([01][0-9]|2[0-3]):[0-5][0-9]')
 
 
+
+CARRIER_SHIP_TYPES = frozenset({'CV', 'CVL', 'CVE'})
+# Subordination used to treat an air unit as embarked on a carrier (or under an air group that is).
+EMBARKED_RELS = frozenset({'organic', 'assigned', 'attached', 'unspecified_subordination', 'operational_control'})
+
+
+def is_carrier_unit(u):
+    """True when the unit is a fleet, light, or escort carrier (domain naval, ship_type CV/CVL/CVE)."""
+    return bool(u) and u.get('domain') == 'naval' and u.get('ship_type') in CARRIER_SHIP_TYPES
+
+
+def relation_covers(r, d):
+    """True when a non-alternate relation with a higher unit is in force on date d (YYYY-MM-DD)."""
+    if not r or r.get('status') == 'alternate' or not r.get('higher_unit_id'):
+        return False
+    if r.get('valid_from') and r['valid_from'] > d:
+        return False
+    if r.get('valid_to') and d > r['valid_to']:
+        return False
+    return True
+
+
+def _preferred_highers(relations, subject_id, d, rel_types=None):
+    out = []
+    for r in relations or []:
+        if r.get('subject_unit_id') != subject_id:
+            continue
+        if rel_types is not None and r.get('relationship') not in rel_types:
+            continue
+        if relation_covers(r, d):
+            out.append(r)
+    return out
+
+
+def _carrier_has_claim_on_or_before(carrier_id, by_unit, d):
+    return any(c['date'] <= d for c in by_unit.get(carrier_id, []))
+
+
+def embarked_carrier_id(uid, units, relations, by_unit, d):
+    """Carrier unit_id if this air unit is embarked, directly or via an air-group parent, on a CV/CVL/CVE
+    that has a non-alternate location claim on or before date d; otherwise ''."""
+    u = (units or {}).get(uid)
+    if not u or u.get('domain') != 'air':
+        return ''
+    for r in _preferred_highers(relations, uid, d, EMBARKED_RELS):
+        hu = (units or {}).get(r['higher_unit_id'])
+        if is_carrier_unit(hu) and _carrier_has_claim_on_or_before(r['higher_unit_id'], by_unit, d):
+            return r['higher_unit_id']
+        if hu and hu.get('domain') == 'air':
+            for r2 in _preferred_highers(relations, r['higher_unit_id'], d, EMBARKED_RELS):
+                hu2 = (units or {}).get(r2['higher_unit_id'])
+                if is_carrier_unit(hu2) and _carrier_has_claim_on_or_before(r2['higher_unit_id'], by_unit, d):
+                    return r2['higher_unit_id']
+    return ''
+
+
+def air_unit_is_embarked_without_claims(uid, units, relations):
+    """True when an air unit has a preferred subordination to a CV/CVL/CVE, directly or via an air parent.
+    Used so an embarked carrier air group or squadron may be record_status=active with no land base-claim file."""
+    u = (units or {}).get(uid)
+    if not u or u.get('domain') != 'air':
+        return False
+    for r in relations or []:
+        if r.get('status') == 'alternate' or r.get('relationship') not in EMBARKED_RELS:
+            continue
+        if r.get('subject_unit_id') != uid:
+            continue
+        hu = (units or {}).get(r.get('higher_unit_id'))
+        if is_carrier_unit(hu):
+            return True
+        if hu and hu.get('domain') == 'air':
+            for r2 in relations or []:
+                if (r2.get('status') != 'alternate' and r2.get('relationship') in EMBARKED_RELS
+                        and r2.get('subject_unit_id') == r['higher_unit_id']
+                        and is_carrier_unit((units or {}).get(r2.get('higher_unit_id')))):
+                    return True
+    return False
+
+
+def listed_claim_is_embarked_carrier_evidence(c, r, units, relations):
+    """A carrier claim may evidence a squadron-to-air-group relation (listed_by_higher_unit) when the claim
+    belongs to a CV/CVL/CVE, lists the squadron in composing_units or composing_text, and the air group has a
+    preferred subordination to that carrier in force on the claim date. Option b (embarked carrier air): the
+    group itself has no sea claims, so the ship's claim is the evidence for both group-to-carrier and
+    squadron-to-group."""
+    cu = (units or {}).get(c.get('unit_id'))
+    hu = (units or {}).get(r.get('higher_unit_id'))
+    su = (units or {}).get(r.get('subject_unit_id'))
+    if not (is_carrier_unit(cu) and su and su.get('domain') == 'air' and hu and hu.get('domain') == 'air'):
+        return False
+    d = c.get('date') or ''
+    for rel in relations or []:
+        if (rel.get('subject_unit_id') == r.get('higher_unit_id') and rel.get('higher_unit_id') == c.get('unit_id')
+                and rel.get('relationship') in EMBARKED_RELS and relation_covers(rel, d)):
+            return True
+    return False
+
+
 def mission_base_gaps(units, claims, missions, relations):
-    """{unit_id: [mission rows]} of missions whose unit (or, when the unit has no claims, its organic parent on the day) has no base claim in force on
-    the mission date: the latest non-alternate claim on or before the date must have location_represents base. A month-only date is read as the last
-    day of the month. Used by check_missions (warning) and the semantic tests."""
+    """{unit_id: [mission rows]} of missions whose flying unit has neither (a) a base claim in force on the mission
+    date (the latest non-alternate claim on or before the date must have location_represents base; when the unit has
+    no claims, its organic parent on the day is read instead) nor (b) a preferred command relation, in force that day,
+    to a carrier (domain naval, ship_type CV, CVL or CVE), directly or via an air-group parent, whose carrier itself
+    has a non-alternate location claim on or before the mission date (option b, embarked carrier air, 26 November 2026).
+    A month-only date is read as the last day of the month. Used by check_missions (warning) and the semantic tests."""
     by_unit = {}
     for c in claims:
         if c['claim_status'] != 'alternate':
@@ -1637,14 +1740,18 @@ def mission_base_gaps(units, claims, missions, relations):
     for m in missions:
         d = m['date'] if len(m['date']) == 10 else m['date'] + '-31'
         uid = m['unit_id']
-        if uid not in by_unit:
-            for r in organic.get(uid, []):
+        lookup = uid
+        if lookup not in by_unit:
+            for r in organic.get(lookup, []):
                 if (not r['valid_from'] or r['valid_from'] <= d) and (not r['valid_to'] or d <= r['valid_to']):
-                    uid = r['higher_unit_id']
+                    lookup = r['higher_unit_id']
                     break
-        before = [c for c in by_unit.get(uid, []) if c['date'] <= d]
-        if not before or before[-1]['location_represents'] != 'base':
-            out.setdefault(m['unit_id'], []).append(m)
+        before = [c for c in by_unit.get(lookup, []) if c['date'] <= d]
+        if before and before[-1]['location_represents'] == 'base':
+            continue
+        if embarked_carrier_id(m['unit_id'], units, relations, by_unit, d):
+            continue
+        out.setdefault(m['unit_id'], []).append(m)
     return out
 
 
@@ -1656,7 +1763,7 @@ def check_missions(units, claims, place_rows, aircraft, vocabs, relset):
     conflict group paired (an alternate needs a G id; a group has two or more rows of one unit and one preferred row; a G id is not also a claim group);
     supported and attacked units exist, are not the flying unit and are not repeated; a target at a sea_position place is at most 0.5; every source URL
     is the url of one of the row's reference_ids and every reference id exists; source_locator names only the row's references; note labels; hedge
-    words in notes (warning); an operation whose dates do not cover the mission (warning); a mission with no base claim of its unit in force that day
+    words in notes (warning); an operation whose dates do not cover the mission (warning); a mission with no base claim of its unit (or organic parent) in force that day and no in-force embarked-carrier relation
     (warning, one per unit); the foreignKeys of the schema (unit, target place, aircraft type, supported and attacked units, operation, references); a
     place used only by missions has its coord_reference_id among those missions' references. Returns the mission rows (dicts with _where)."""
     import missions as msmod
@@ -1836,7 +1943,7 @@ def check_missions(units, claims, place_rows, aircraft, vocabs, relset):
                 if tok not in allowed:
                     err(m['_where'], 'foreign key missions.%s = %r is not a %s.%s' % (fk['fields'], tok, fk['reference']['resource'], fk['reference']['fields']))
     for uid, ms in sorted(mission_base_gaps(units, claims, out, relset.rows).items()):
-        warn('data/missions unit %s' % uid, '%d mission(s) fall on a date with no base claim of the unit (or of its organic parent) in force: %s; '
+        warn('data/missions unit %s' % uid, '%d mission(s) fall on a date with no base claim of the unit (or of its organic parent) in force and no in-force command relation to a carrier (CV/CVL/CVE) that has a location claim on or before the mission date: %s; '
              'the base of the day is not recorded' % (len(ms), ', '.join('%s (%s)' % (m['mission_id'], m['date']) for m in ms)))
     return out
 
@@ -2050,7 +2157,10 @@ def main():
 
     for uid, u in units.items():
         if u['record_status'] in ('partial', 'active') and uid not in unit_with_file:
-            err('data/units.csv', '%s has record_status %s but no claim file (only a placeholder has none)' % (uid, u['record_status']))
+            if air_unit_is_embarked_without_claims(uid, units, relset.rows):
+                pass  # embarked carrier air (option b): the unit is located through its carrier relation, not a land base-claim file
+            else:
+                err('data/units.csv', '%s has record_status %s but no claim file (only a placeholder has none; an embarked carrier air unit may also have none when a preferred relation to a CV/CVL/CVE is recorded)' % (uid, u['record_status']))
         # a placeholder that has a claim file is reported at the claim file
 
     # ---- conflict groups ----

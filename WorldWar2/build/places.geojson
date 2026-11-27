@@ -112235,9 +112235,9 @@
     "precision_km": 1,
     "country": "SB",
     "region": "Guadalcanal Province",
-    "claims_count": 88,
+    "claims_count": 96,
     "claims_ground": 14,
-    "claims_air": 74,
+    "claims_air": 82,
     "claims_naval": 0
    }
   },
@@ -113615,6 +113615,29 @@
     "precision_km": 25,
     "country": "SB",
     "region": "Western Province",
+    "claims_count": 1,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     164.3,
+     -10.56667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4959",
+    "name": "Saratoga torpedo position, 31 August 1942",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 25,
+    "country": "SB",
+    "region": "Solomon Islands",
     "claims_count": 1,
     "claims_ground": 0,
     "claims_air": 0,

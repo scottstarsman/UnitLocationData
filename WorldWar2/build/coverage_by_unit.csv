@@ -2621,7 +2621,7 @@ US-NAV-CL-051,USS Atlanta (CL-51),US,naval,naval_unit,Navy,1942-08-24,1942-11-13
 US-NAV-CL-052,USS Juneau (CL-52),US,naval,naval_unit,Navy,1942-10-26,1942-11-13,18,3,0,1,2,0,0,0.000,2,us_navy_nhhc;ussbs,18,1942-10-26,1942-11-13,0,
 US-NAV-CL-053,USS San Diego (CL-53),US,naval,naval_unit,Navy,1942-10-26,1942-10-26,0,1,0,0,1,0,0,0.000,1,us_navy_nhhc,0,,,0,
 US-NAV-CL-054,USS San Juan (CL-54),US,naval,naval_unit,Navy,1942-08-09,1942-10-26,78,2,0,0,2,0,0,0.000,1,us_navy_nhhc,78,1942-08-09,1942-10-26,1,1942-09
-US-NAV-CV-003,USS Saratoga (CV-3),US,naval,naval_unit,Navy,1942-08-24,1942-08-24,0,1,0,0,1,0,0,0.000,1,us_navy_nhhc,0,,,0,
+US-NAV-CV-003,USS Saratoga (CV-3),US,naval,naval_unit,Navy,1942-08-24,1942-08-31,7,2,0,0,2,0,0,0.000,1,us_navy_nhhc,7,1942-08-24,1942-08-31,0,
 US-NAV-CV-006,USS Enterprise (CV-6),US,naval,naval_unit,Navy,1942-08-24,1942-10-26,63,2,0,0,2,0,0,0.000,1,us_navy_nhhc,63,1942-08-24,1942-10-26,1,1942-09
 US-NAV-CV-007,USS Wasp (CV-7),US,naval,naval_unit,Navy,1942-09-15,1942-09-15,0,1,0,0,1,0,0,0.000,1,us_navy_nhhc,0,,,0,
 US-NAV-CV-008,USS Hornet (CV-8),US,naval,naval_unit,Navy,1942-10-26,1942-10-27,1,2,0,0,2,0,0,0.000,1,us_navy_nhhc,1,1942-10-26,1942-10-27,0,
@@ -2791,10 +2791,12 @@ US-TRS-015,15th Tactical Reconnaissance Squadron,US,air,air_squadron,Air Force,1
 US-TRS-107,107th Tactical Reconnaissance Squadron,US,air,air_squadron,Air Force,1944-06-06,1944-08-29,84,4,0,0,4,0,0,0.000,1,usaf_historical_division,55,1944-07-05,1944-08-29,0,
 US-TRS-109,109th Tactical Reconnaissance Squadron,US,air,air_squadron,Air Force,1944-06-06,1944-08-31,86,4,0,0,3,1,0,0.000,1,usaf_historical_division,56,1944-07-04,1944-08-29,0,
 US-USSTAF-000H,United States Strategic Air Forces in Europe (USSTAF),US,air,other,Air Force,1944-06-06,1944-06-06,0,1,0,0,1,0,0,0.000,1,usaf_historical_division,0,,,0,
+US-VB-006,Bombing Squadron 6,US,air,air_squadron,Navy,1942-10-15,1942-10-15,0,1,0,0,1,0,0,0.000,1,us_navy_nhhc,0,,,0,
 US-VB-103,Bombing Squadron 103 (VB-103),US,air,air_squadron,Navy,1944-06-01,1944-06-01,0,1,0,0,1,0,0,0.000,1,wikipedia,0,,,0,
 US-VB-105,Bombing Squadron 105 (VB-105),US,air,air_squadron,Navy,1944-06-01,1944-06-01,0,1,0,0,1,0,0,0.000,1,wikipedia,0,,,0,
 US-VB-110,Bombing Squadron 110 (VB-110),US,air,air_squadron,Navy,1944-06-01,1944-06-01,0,1,0,0,1,0,0,0.000,1,wikipedia,0,,,0,
 US-VCS-007,"Observation Squadron 7 (VOS-7, also VCS-7)",US,air,air_squadron,Navy,1944-06-01,1944-06-26,25,3,0,2,0,1,0,0.000,2,projectoverlord_co_uk;wikipedia,20,1944-06-06,1944-06-26,0,
+US-VF-005,Fighting Squadron 5,US,air,air_squadron,Navy,1942-10-15,1942-10-15,0,1,0,0,1,0,0,0.000,1,us_navy_nhhc,0,,,0,
 US-VMF-112,Marine Fighter Squadron 112,US,air,air_squadron,Marines,1942-11-02,1942-11-14,12,2,0,0,2,0,0,0.000,2,usaf_historical_division;usmc_history,12,1942-11-02,1942-11-14,0,
 US-VMF-121,Marine Fighter Squadron 121,US,air,air_squadron,Marines,1942-10-02,1943-01-28,118,4,0,0,4,0,0,0.000,2,usaf_historical_division;usmc_history,75,1942-11-14,1943-01-28,1,1942-12
 US-VMF-122,Marine Fighter Squadron 122,US,air,air_squadron,Marines,1942-11-12,1942-11-14,2,2,0,0,2,0,0,0.000,2,usaf_historical_division;usmc_history,2,1942-11-12,1942-11-14,0,
@@ -2811,5 +2813,8 @@ US-VMSB-231,Marine Scout-Bomber Squadron 231,US,air,air_squadron,Marines,1942-08
 US-VMSB-232,Marine Scout-Bomber Squadron 232,US,air,air_squadron,Marines,1942-08-20,1942-11-02,74,7,0,1,6,0,0,0.000,4,us_army_cmh;us_navy_nhhc;usaf_historical_division;usmc_history,36,1942-09-08,1942-10-14,0,
 US-VMSB-233,Marine Scout-Bomber Squadron 233,US,air,air_squadron,Marines,1942-12-25,1942-12-25,0,1,0,0,1,0,0,0.000,1,usmc_history,0,,,0,
 US-VMSB-234,Marine Scout-Bomber Squadron 234,US,air,air_squadron,Marines,1943-01-28,1943-01-28,0,1,0,0,1,0,0,0.000,1,usmc_history,0,,,0,
+US-VS-003,Scouting Squadron 3,US,air,air_squadron,Navy,1942-09-24,1942-10-12,18,2,0,0,2,0,0,0.000,1,us_navy_nhhc,18,1942-09-24,1942-10-12,0,
+US-VS-071,Scouting Squadron 71,US,air,air_squadron,Navy,1942-10-03,1942-10-12,9,2,0,0,2,0,0,0.000,1,us_navy_nhhc,9,1942-10-03,1942-10-12,0,
+US-VT-008,Torpedo Squadron 8,US,air,air_squadron,Navy,1942-10-03,1942-11-07,35,2,0,0,2,0,0,0.000,1,us_navy_nhhc,35,1942-10-03,1942-11-07,0,
 US-YMSU-4,"YMS Sweep Unit 4, Assault Force U",US,naval,naval_division,Navy,1944-06-06,1944-06-06,0,1,0,0,1,0,0,0.000,2,morison_us_naval_operations;us_navy_nhhc,0,,,0,
 US-YMSU-5,"YMS Sweep Unit 5, Assault Force U",US,naval,naval_division,Navy,1944-06-06,1944-06-06,0,1,0,0,1,0,0,0.000,2,morison_us_naval_operations;us_navy_nhhc,0,,,0,

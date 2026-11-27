@@ -1,4 +1,4 @@
-Thank you. Please run the checks from `WorldWar2/` and fill this in. The [contributor guide](../WorldWar2/CONTRIBUTING.md) has the rules, a worked example, and what to do when a check fails.
+Thank you. Work on a conflict should follow that conflict's contributor guide and be checked from that folder. For **World War II** (`WorldWar2/`), the [contributor guide](../WorldWar2/CONTRIBUTING.md) has the rules, a worked example, and what to do when a check fails. Run the checks from `WorldWar2/` and fill this in. If this pull request only changes repository-level files (the root README, licence, or `.github/`), the data-row checks below do not apply.
 
 - [ ] I ran `bash scripts/run_checks.sh` (or the CI equivalent) and the errors are resolved.
 - [ ] Every new or changed row has a source URL, and a page, chapter or section in `source_locator` or `notes` when the source has one.

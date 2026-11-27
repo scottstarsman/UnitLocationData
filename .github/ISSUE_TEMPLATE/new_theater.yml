@@ -1,11 +1,11 @@
 name: New theater proposal
-description: Propose work on a front other than the surveyed Western Front, or a gap in the theater list.
+description: Propose work on a front in the World War II dataset other than the surveyed Western Front, or a gap in that dataset's theater list.
 title: "[theater] "
 body:
   - type: markdown
     attributes:
       value: |
-        The dataset has a two-level list of theaters and sub-theaters in [schema/theaters.json](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/schema/theaters.json) ([docs/theaters.md](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/docs/theaters.md)). Please read [How to add a new theater](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/CONTRIBUTING.md#how-to-add-a-new-theater) before proposing a new code. Prefer an existing code.
+        The World War II dataset has a two-level list of theaters and sub-theaters in [schema/theaters.json](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/schema/theaters.json) ([docs/theaters.md](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/docs/theaters.md)). Please read [How to add a new theater](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/CONTRIBUTING.md#how-to-add-a-new-theater) before proposing a new code. Prefer an existing code.
   - type: input
     id: theater
     attributes:

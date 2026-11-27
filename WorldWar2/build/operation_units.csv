@@ -696,7 +696,7 @@ OP-CAMP-GUADALCANAL,JPN-CA-CHOKAI,Chokai,naval,Japan,Axis,,naval_unit,Navy,activ
 OP-CAMP-GUADALCANAL,JPN-CA-FURUTAKA,Furutaka,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,3,3,0,0,1942-08-09,1942-10-12,,,
 OP-CAMP-GUADALCANAL,JPN-CA-KAKO,Kako,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-09,1942-08-09,,,
 OP-CAMP-GUADALCANAL,JPN-CA-KINUGASA,Kinugasa,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,3,3,0,0,1942-08-09,1942-11-14,,,
-OP-CAMP-GUADALCANAL,JPN-CA-SUZUYA,Suzuya,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-11,1942-11-11,,,
+OP-CAMP-GUADALCANAL,JPN-CA-SUZUYA,Suzuya,naval,Japan,Axis,,naval_unit,Navy,active,direct,campaign,1,1,1,1,0,0,1942-11-11,1942-11-11,,,
 OP-CAMP-GUADALCANAL,JPN-CA-TAKAO,Takao,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-15,1942-11-15,,,
 OP-CAMP-GUADALCANAL,JPN-CL-ISUZU,Isuzu,naval,Japan,Axis,,naval_unit,Navy,active,direct,campaign,1,1,1,1,0,0,1942-10-14,1942-10-14,,,
 OP-CAMP-GUADALCANAL,JPN-CL-NAGARA,Nagara,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-11-13,1942-11-15,,,
@@ -705,7 +705,7 @@ OP-CAMP-GUADALCANAL,JPN-CL-TENRYU,Tenryu,naval,Japan,Axis,,naval_unit,Navy,activ
 OP-CAMP-GUADALCANAL,JPN-CL-YUBARI,Yubari,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-09,1942-08-09,,,
 OP-CAMP-GUADALCANAL,JPN-CRUDIV-004,Cruiser Division 4,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-15,1942-11-15,UC0735,PE0644,Kondo Nobutake
 OP-CAMP-GUADALCANAL,JPN-CRUDIV-006,Cruiser Division 6,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-08-09,1942-10-11,UC0733,PE0642,Goto Aritomo
-OP-CAMP-GUADALCANAL,JPN-CRUDIV-007,Cruiser Division 7,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-11,1942-11-11,UC0739,PE0647,Nishimura Shoji
+OP-CAMP-GUADALCANAL,JPN-CRUDIV-007,Cruiser Division 7,naval,Japan,Axis,,naval_division,Navy,active,direct,campaign,1,1,1,1,0,0,1942-11-11,1942-11-11,UC0739,PE0647,Nishimura Shoji
 OP-CAMP-GUADALCANAL,JPN-CRUDIV-018,Cruiser Division 18,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-09,1942-08-09,,,
 OP-CAMP-GUADALCANAL,JPN-CVL-RYUJO,Ryujo,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-24,1942-08-24,,,
 OP-CAMP-GUADALCANAL,JPN-DD-AKATSUKI,Akatsuki,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-13,1942-11-13,,,
@@ -3811,7 +3811,7 @@ OP-FRONT-PACIFIC,JPN-CA-KINUGASA,Kinugasa,naval,Japan,Axis,,naval_unit,Navy,acti
 OP-FRONT-PACIFIC,JPN-CA-KUMANO,Kumano,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,operation,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
 OP-FRONT-PACIFIC,JPN-CA-MAYA,Maya,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,operation,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
 OP-FRONT-PACIFIC,JPN-CA-MYOKO,Myoko,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,operation,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
-OP-FRONT-PACIFIC,JPN-CA-SUZUYA,Suzuya,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-10-11,1942-11-11,,,
+OP-FRONT-PACIFIC,JPN-CA-SUZUYA,Suzuya,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,operation,0,0,2,2,0,0,1942-10-11,1942-11-11,,,
 OP-FRONT-PACIFIC,JPN-CA-TAKAO,Takao,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-11-15,1942-11-15,,,
 OP-FRONT-PACIFIC,JPN-CA-TONE,Tone,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,operation,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
 OP-FRONT-PACIFIC,JPN-CARDIV-001,Carrier Division 1,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,operation,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
@@ -3824,7 +3824,7 @@ OP-FRONT-PACIFIC,JPN-CL-YUBARI,Yubari,naval,Japan,Axis,,naval_unit,Navy,active,r
 OP-FRONT-PACIFIC,JPN-CRUDIV-004,Cruiser Division 4,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-10-11,1942-11-15,UC0735,PE0644,Kondo Nobutake
 OP-FRONT-PACIFIC,JPN-CRUDIV-005,Cruiser Division 5,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,operation,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
 OP-FRONT-PACIFIC,JPN-CRUDIV-006,Cruiser Division 6,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-08-09,1942-10-11,UC0733,PE0642,Goto Aritomo
-OP-FRONT-PACIFIC,JPN-CRUDIV-007,Cruiser Division 7,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,battle,0,0,2,2,0,0,1942-10-11,1942-11-11,UC0739,PE0647,Nishimura Shoji
+OP-FRONT-PACIFIC,JPN-CRUDIV-007,Cruiser Division 7,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,operation,0,0,2,2,0,0,1942-10-11,1942-11-11,UC0739,PE0647,Nishimura Shoji
 OP-FRONT-PACIFIC,JPN-CRUDIV-008,Cruiser Division 8,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,operation,0,0,1,1,0,0,1942-10-11,1942-10-11,,,
 OP-FRONT-PACIFIC,JPN-CRUDIV-018,Cruiser Division 18,naval,Japan,Axis,,naval_division,Navy,active,rolled_only,battle,0,0,1,1,0,0,1942-08-09,1942-08-09,,,
 OP-FRONT-PACIFIC,JPN-CV-JUNYO,Junyo,naval,Japan,Axis,,naval_unit,Navy,active,rolled_only,operation,0,0,1,1,0,0,1942-10-11,1942-10-11,,,

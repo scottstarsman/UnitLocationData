@@ -42,7 +42,7 @@ sources (or a note), an acyclic parent chain and resolving relation endpoints; s
 Warning-only checks (printed as WARNING, never change the exit code; a claim dated outside its operation's dates without a row in
 data/operation_exceptions.csv, or an operation outside its parent's dates without an explanation, are among them; see docs/methodology.md, "Review guardrails"):
 an attached relationship whose unit is not the parent_unit_id or with no
-standing entry (organic, assigned, unspecified_subordination or unknown), 'organic' used for a division, corps or army under a
+standing entry (organic, assigned, unspecified_subordination or unknown; suppressed when the unit has independent=true), 'organic' used for a division, corps or army under a
 higher headquarters, a named higher headquarters without a unit id, a command relationship that takes effect after the row's date or
 ended before it, a location_date that differs from date without a temporal location_basis, a corps/army/army-group headquarters that is
 only a town centroid (precision under 5 km), a corps or army sector recorded as an exact front_line_point, a conflict group whose rows
@@ -151,6 +151,27 @@ def check_vocab(where, f, value, vocabs):
         allowed = vocabs[name]['values']
         if value not in allowed:
             err(where, '%s: %r not in vocabulary %s %s' % (f['name'], value, name, sorted(allowed)))
+    pname = f.get('vocabulary_pipe')
+    if pname:
+        allowed = vocabs[pname]['values']
+        parts = value.split('|')
+        msg = None
+        if any(part == '' for part in parts):
+            msg = '%s has an empty token (do not write a leading, trailing or doubled pipe)' % f['name']
+        elif any(part != part.strip() for part in parts):
+            msg = '%s tokens must not have spaces around the pipe' % f['name']
+        else:
+            seen = set()
+            for tok in parts:
+                if tok not in allowed:
+                    msg = '%s: token %r not in vocabulary %s %s' % (f['name'], tok, pname, sorted(allowed))
+                    break
+                if tok in seen:
+                    msg = '%s lists %r more than once' % (f['name'], tok)
+                    break
+                seen.add(tok)
+        if msg:
+            err(where, msg)
     lname = f.get('vocabulary_list')
     if lname:
         allowed = vocabs[lname]['values']
@@ -491,10 +512,11 @@ def check_command_relationships(where, row, units, vocabs):
     ops = [e for e in ops if ECH_RANK.get((units.get(e.get('unit_id')) or {}).get('echelon'), 0) <= pech or e.get('unit_id') not in units]
     if ops and pid and pid not in [e.get('unit_id') for e in ops]:
         warn(where, 'an attached/operational_control entry exists but parent_unit_id %s is not one of them (parent_unit_id is the operational parent)' % pid)
+    u = units.get(row['unit_id'])
     if any(e.get('relationship') == 'attached' for e in entries) and not any(
             e.get('relationship') in STANDING_RELS for e in entries):
-        warn(where, 'attached entry without a standing parent entry (organic, assigned, unspecified_subordination or unknown)')
-    u = units.get(row['unit_id'])
+        if not (u and u.get('independent') == 'true'):
+            warn(where, 'attached entry without a standing parent entry (organic, assigned, unspecified_subordination or unknown)')
     if u and u['parent_unit_id'] and not any(
             isinstance(e, dict) and e.get('unit_id') == u['parent_unit_id'] and e.get('relationship') == 'organic' for e in d):
         err(where, 'units.csv parent_unit_id %s must appear as an organic entry in command_relationships' % u['parent_unit_id'])

@@ -8,8 +8,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 |---|---:|---:|---:|---:|---:|---:|
 | ground | 27 | 2 | 565 | 594 | 274 | 9729 |
 | air | 21 | 0 | 1347 | 1368 | 608 | 2484 |
-| naval | 63 | 0 | 915 | 978 | 343 | 1166 |
-| **All** | **111** | **2** | **2827** | **2940** | **1225** | **13379** |
+| naval | 62 | 0 | 916 | 978 | 343 | 1179 |
+| **All** | **110** | **2** | **2828** | **2940** | **1225** | **13392** |
 
 | Domain | Nationality | Echelon | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---|---|---:|---:|---:|---:|---:|---:|
@@ -103,9 +103,9 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | Germany | naval_squadron | 0 | 0 | 12 | 12 | 0 | 12 |
 | naval | Germany | fleet | 0 | 0 | 1 | 1 | 0 | 1 |
 | naval | Greece | naval_unit | 0 | 0 | 2 | 2 | 2 | 2 |
-| naval | Japan | naval_unit | 3 | 0 | 63 | 66 | 0 | 98 |
-| naval | Japan | naval_division | 0 | 0 | 10 | 10 | 0 | 14 |
-| naval | Japan | naval_squadron | 0 | 0 | 4 | 4 | 0 | 6 |
+| naval | Japan | naval_unit | 2 | 0 | 64 | 66 | 0 | 106 |
+| naval | Japan | naval_division | 0 | 0 | 10 | 10 | 0 | 18 |
+| naval | Japan | naval_squadron | 0 | 0 | 4 | 4 | 0 | 7 |
 | naval | Japan | fleet | 1 | 0 | 1 | 2 | 1 | 1 |
 | naval | Netherlands | naval_unit | 0 | 0 | 2 | 2 | 2 | 2 |
 | naval | Norway | naval_unit | 0 | 0 | 3 | 3 | 3 | 5 |
@@ -119,7 +119,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | US | naval_division | 0 | 0 | 21 | 21 | 0 | 21 |
 | naval | US | task_force | 0 | 0 | 6 | 6 | 0 | 10 |
 | naval | US | task_group | 14 | 0 | 14 | 28 | 0 | 15 |
-| **All** | | | **111** | **2** | **2827** | **2940** | **1225** | **13379** |
+| **All** | | | **110** | **2** | **2828** | **2940** | **1225** | **13392** |
 
 ## Operations
 
@@ -127,23 +127,23 @@ Generated from `data/operations.csv` and every claim's `operation_id` (all domai
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 15 | 8 | 749 |
-| campaign | 10 | 10 | 8596 |
+| umbrella | 15 | 8 | 755 |
+| campaign | 10 | 10 | 8601 |
 | operation | 34 | 34 | 2935 |
-| battle | 27 | 27 | 776 |
+| battle | 27 | 27 | 778 |
 | phase | 4 | 4 | 323 |
-| **All** | **90** | **83** | **13379** |
+| **All** | **90** | **83** | **13392** |
 
 Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 60, compact 3, broad 17, none 10. A map pin (`primary_place_id`) is a sourced place, not this centroid.
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4941 places and 1462 alias names for 13379 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4941 places and 1462 alias names for 13392 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4744 | 12199 |
-| area | 117 | 1003 |
+| point | 4744 | 12201 |
+| area | 117 | 1014 |
 | line | 28 | 64 |
 | sea_position | 52 | 113 |
 
@@ -154,11 +154,11 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | United Kingdom (GB) | 435 | 1646 |
 | Netherlands (NL) | 537 | 1570 |
 | Belgium (BE) | 385 | 890 |
-| Solomon Islands (SB) | 53 | 528 |
+| Solomon Islands (SB) | 53 | 535 |
 | Luxembourg (LU) | 90 | 234 |
 | Papua New Guinea (PG) | 4 | 50 |
 | Austria (AT) | 31 | 49 |
-| Micronesia (Federated States of) (FM) | 1 | 23 |
+| Micronesia (Federated States of) (FM) | 1 | 29 |
 | Czechia (CZ) | 14 | 22 |
 | Poland (PL) | 10 | 12 |
 | Russia (RU) | 11 | 12 |

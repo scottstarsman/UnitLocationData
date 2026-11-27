@@ -7,9 +7,9 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Domain | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---:|---:|---:|---:|---:|---:|
 | ground | 27 | 2 | 565 | 594 | 274 | 9729 |
-| air | 21 | 0 | 1332 | 1353 | 608 | 2476 |
-| naval | 63 | 0 | 915 | 978 | 343 | 1165 |
-| **All** | **111** | **2** | **2812** | **2925** | **1225** | **13370** |
+| air | 21 | 0 | 1347 | 1368 | 608 | 2484 |
+| naval | 63 | 0 | 915 | 978 | 343 | 1166 |
+| **All** | **111** | **2** | **2827** | **2940** | **1225** | **13379** |
 
 | Domain | Nationality | Echelon | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---|---|---:|---:|---:|---:|---:|---:|
@@ -89,8 +89,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | air | US | other | 0 | 0 | 1 | 1 | 1 | 1 |
 | air | US | air_division | 2 | 0 | 11 | 13 | 10 | 20 |
 | air | US | air_force | 0 | 0 | 3 | 3 | 3 | 3 |
-| air | US | air_group | 0 | 0 | 107 | 107 | 103 | 201 |
-| air | US | air_squadron | 0 | 0 | 412 | 412 | 390 | 650 |
+| air | US | air_group | 0 | 0 | 111 | 111 | 103 | 201 |
+| air | US | air_squadron | 0 | 0 | 423 | 423 | 390 | 658 |
 | air | US | air_wing | 0 | 0 | 32 | 32 | 30 | 59 |
 | naval | Australia | naval_unit | 0 | 0 | 3 | 3 | 0 | 3 |
 | naval | Canada | naval_unit | 0 | 0 | 17 | 17 | 17 | 18 |
@@ -114,12 +114,12 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | naval | UK | naval_unit | 0 | 0 | 205 | 205 | 179 | 248 |
 | naval | UK | naval_division | 27 | 0 | 240 | 267 | 0 | 241 |
 | naval | UK | naval_squadron | 0 | 0 | 32 | 32 | 0 | 32 |
-| naval | US | naval_unit | 5 | 0 | 123 | 128 | 59 | 193 |
+| naval | US | naval_unit | 5 | 0 | 123 | 128 | 59 | 194 |
 | naval | US | naval_squadron | 4 | 0 | 1 | 5 | 0 | 1 |
 | naval | US | naval_division | 0 | 0 | 21 | 21 | 0 | 21 |
 | naval | US | task_force | 0 | 0 | 6 | 6 | 0 | 10 |
 | naval | US | task_group | 14 | 0 | 14 | 28 | 0 | 15 |
-| **All** | | | **111** | **2** | **2812** | **2925** | **1225** | **13370** |
+| **All** | | | **111** | **2** | **2827** | **2940** | **1225** | **13379** |
 
 ## Operations
 
@@ -128,24 +128,24 @@ Generated from `data/operations.csv` and every claim's `operation_id` (all domai
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 15 | 8 | 749 |
-| campaign | 10 | 10 | 8587 |
+| campaign | 10 | 10 | 8596 |
 | operation | 34 | 34 | 2935 |
 | battle | 27 | 27 | 776 |
 | phase | 4 | 4 | 323 |
-| **All** | **90** | **83** | **13370** |
+| **All** | **90** | **83** | **13379** |
 
 Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 60, compact 3, broad 17, none 10. A map pin (`primary_place_id`) is a sourced place, not this centroid.
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4940 places and 1462 alias names for 13370 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4941 places and 1462 alias names for 13379 claims (all domains; claims_ground / claims_air / claims_naval are on each place row).
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4744 | 12191 |
+| point | 4744 | 12199 |
 | area | 117 | 1003 |
 | line | 28 | 64 |
-| sea_position | 51 | 112 |
+| sea_position | 52 | 113 |
 
 | country | Places | Claims |
 |---|---:|---:|
@@ -154,7 +154,7 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | United Kingdom (GB) | 435 | 1646 |
 | Netherlands (NL) | 537 | 1570 |
 | Belgium (BE) | 385 | 890 |
-| Solomon Islands (SB) | 52 | 519 |
+| Solomon Islands (SB) | 53 | 528 |
 | Luxembourg (LU) | 90 | 234 |
 | Papua New Guinea (PG) | 4 | 50 |
 | Austria (AT) | 31 | 49 |

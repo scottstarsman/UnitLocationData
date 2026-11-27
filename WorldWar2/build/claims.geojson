@@ -5906,6 +5906,56 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     164.3,
+     -10.56667
+    ]
+   },
+   "properties": {
+    "claim_id": "C13383",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-NAV-CV-003",
+    "unit_name": "USS Saratoga (CV-3)",
+    "nationality": "US",
+    "domain": "naval",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "naval_unit",
+    "branch": "Navy",
+    "date": "1942-08-31",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4959",
+    "location_name": "Saratoga torpedo position, 31 August 1942",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "torpedoed by I-26, 260 miles southeast of Guadalcanal",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-08-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242",
+    "source_locator": "R2242: 31 August 1942",
+    "sidc": "10033000001201000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      160.02861,
      -9.40538
     ]
@@ -8106,6 +8156,56 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13384",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-VS-003",
+    "unit_name": "Scouting Squadron 3",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "air_squadron",
+    "branch": "Navy",
+    "date": "1942-09-24",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "sortie",
+    "current_activity": "SBDs from Henderson Field damage destroyer Umikaze on a resupply run",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-09-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242;R2224",
+    "source_locator": "R2242: 24 September 1942",
+    "sidc": "10031000161208000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      159.96684,
      -9.43502
     ]
@@ -8698,6 +8798,106 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R2227;R2224",
     "source_locator": "R2227: Appendix C",
+    "sidc": "10031000161208000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13386",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-VS-071",
+    "unit_name": "Scouting Squadron 71",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "air_squadron",
+    "branch": "Navy",
+    "date": "1942-10-03",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "sortie",
+    "current_activity": "SBDs from Henderson Field attack a Japanese supply convoy, damaging Nisshin",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-10-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242;R2224",
+    "source_locator": "R2242: 3 October 1942",
+    "sidc": "10031000161208000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13388",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-VT-008",
+    "unit_name": "Torpedo Squadron 8",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "air_squadron",
+    "branch": "Navy",
+    "date": "1942-10-03",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "sortie",
+    "current_activity": "TBFs from Henderson Field attack a Japanese supply convoy, damaging Nisshin",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-10-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242;R2224",
+    "source_locator": "R2242: 3 October 1942",
     "sidc": "10031000161208000000"
    }
   },
@@ -11606,6 +11806,106 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13385",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-VS-003",
+    "unit_name": "Scouting Squadron 3",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "air_squadron",
+    "branch": "Navy",
+    "date": "1942-10-12",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "sortie",
+    "current_activity": "SBDs from Henderson Field join the attack that leaves Murakumo to be scuttled",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-10-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242;R2224",
+    "source_locator": "R2242: 12 October 1942",
+    "sidc": "10031000161208000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13387",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-VS-071",
+    "unit_name": "Scouting Squadron 71",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "air_squadron",
+    "branch": "Navy",
+    "date": "1942-10-12",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "sortie",
+    "current_activity": "SBD from Henderson Field sinks destroyer Natsugumo off Savo Island",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-10-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242;R2224",
+    "source_locator": "R2242: 12 October 1942",
+    "sidc": "10031000161208000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      160.02861,
      -9.40538
     ]
@@ -12349,6 +12649,106 @@
     "reference_ids": "R2225;R2224",
     "source_locator": "R2225: ch. VI",
     "sidc": "10061000211211000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13390",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-VF-005",
+    "unit_name": "Fighting Squadron 5",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "air_squadron",
+    "branch": "Navy",
+    "date": "1942-10-15",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "sortie",
+    "current_activity": "Navy F4Fs from Henderson Field attack a Japanese supply convoy off Tassafaronga",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-10-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242;R2224",
+    "source_locator": "R2242: 15 October 1942",
+    "sidc": "10031000161208000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13391",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-VB-006",
+    "unit_name": "Bombing Squadron 6",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "air_squadron",
+    "branch": "Navy",
+    "date": "1942-10-15",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "sortie",
+    "current_activity": "Navy SBDs from Henderson Field attack a Japanese supply convoy off Tassafaronga",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-10-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242;R2224",
+    "source_locator": "R2242: 15 October 1942",
+    "sidc": "10031000161208004600"
    }
   },
   {
@@ -16749,6 +17149,56 @@
     "reference_ids": "R2225;R2224",
     "source_locator": "R2225: ch. VIII, Koli Point",
     "sidc": "10031000171211000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     160.05479,
+     -9.428
+    ]
+   },
+   "properties": {
+    "claim_id": "C13389",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-VT-008",
+    "unit_name": "Torpedo Squadron 8",
+    "nationality": "US",
+    "domain": "air",
+    "theater": "pacific",
+    "sub_theater": "south_pacific",
+    "echelon": "air_squadron",
+    "branch": "Navy",
+    "date": "1942-11-07",
+    "commander": "unknown",
+    "commander_person_id": null,
+    "commander_on_date": null,
+    "commander_on_date_person_id": null,
+    "commander_on_date_source": null,
+    "commander_on_date_basis": null,
+    "place_id": "PL4898",
+    "location_name": "Henderson Field",
+    "location_represents": "base",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "sortie",
+    "current_activity": "TBFs from Henderson Field attack a Japanese convoy, damaging Naganami and Takanami",
+    "operation_id": "OP-CAMP-GUADALCANAL",
+    "operation": "Guadalcanal campaign",
+    "operation_type": "campaign",
+    "campaign": null,
+    "operation_name": "Pacific",
+    "sub_operation_name": "Guadalcanal",
+    "strength_status": "unknown",
+    "location_date": "1942-11-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2242;R2224",
+    "source_locator": "R2242: 7 November 1942",
+    "sidc": "10031000161208000000"
    }
   },
   {

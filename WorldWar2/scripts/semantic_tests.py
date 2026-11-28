@@ -3096,7 +3096,7 @@ def scenario_201_placeholders_b2():
     units = {u['unit_id']: u for u in csv.DictReader(open(common.UNITS_CSV, encoding='utf-8'))}
     seven = ['GER-COR-012C', 'GER-COR-013C', 'GER-DIV-172', 'GER-DIV-526', 'GER-INF-JUTLAND', 'GER-SSGR-030D', 'GER-DIV-136ZBV']
     expect(s + ': the seven records are promoted', [units[u]['record_status'] for u in seven], ['active'] * 7)
-    expect(s + ': XIII Corps at Lowicz in 1939 is an Eastern Front row', (claims['C8860']['theater'], claims['C8860']['operation_id']), ('eastern_front', 'OP-FRONT-EASTERN'))
+    expect(s + ': XIII Corps at Lowicz in 1939 is a Fall Weiss Eastern Front row', (claims['C8860']['theater'], claims['C8860']['operation_id']), ('eastern_front', 'OP-CAMP-FALL-WEISS'))
     expect(s + ': XIII Corps at Trier in October 1939 is a home row', claims['C8861']['theater'], 'home_germany')
     expect(s + ': XIII Corps in Belgium in 1940 is western_europe before the invasion', (claims['C8863']['theater'], claims['C8863']['operation_id']), ('western_europe', 'OP-PRE-INVASION'))
     expect(s + ': XIII Corps command post at Wawern, 20 February 1945, two families', (claims['C8875']['place_id'], claims['C8875']['confidence'], claims['C8875']['parent_unit_id']), ('PL1709', '0.7', 'GER-ARMY-007A'))

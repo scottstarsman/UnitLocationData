@@ -89994,8 +89994,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Podlaskie",
-    "claims_count": 1,
-    "claims_ground": 1,
+    "claims_count": 3,
+    "claims_ground": 3,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -90012,13 +90012,13 @@
    "properties": {
     "place_id": "PL3929",
     "name": "Vilnius",
-    "alt_names": null,
+    "alt_names": "Wilno",
     "kind": "point",
     "precision_km": 3,
     "country": "LT",
     "region": "Vilnius",
-    "claims_count": 1,
-    "claims_ground": 1,
+    "claims_count": 4,
+    "claims_ground": 4,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -91346,13 +91346,13 @@
    "properties": {
     "place_id": "PL3987",
     "name": "Brest (Brest-Litovsk), Brest Region",
-    "alt_names": null,
+    "alt_names": "Brześć Litewski; Brześć; Brest-Litovsk",
     "kind": "point",
     "precision_km": 3,
     "country": "BY",
     "region": "Brest Region",
-    "claims_count": 1,
-    "claims_ground": 1,
+    "claims_count": 7,
+    "claims_ground": 7,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -113642,6 +113642,811 @@
     "claims_ground": 0,
     "claims_air": 0,
     "claims_naval": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0111,
+     52.23
+    ]
+   },
+   "properties": {
+    "place_id": "PL4960",
+    "name": "Warszawa, Masovian",
+    "alt_names": "Warsaw; Warszawa",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.9372,
+     50.0614
+    ]
+   },
+   "properties": {
+    "place_id": "PL4961",
+    "name": "Kraków, Lesser Poland",
+    "alt_names": "Kraków; Cracow; Krakau",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lesser Poland",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.4547,
+     51.7769
+    ]
+   },
+   "properties": {
+    "place_id": "PL4962",
+    "name": "Łódź, Łódź",
+    "alt_names": "Łódź; Lodz; Litzmannstadt",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Łódź",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.3667,
+     53.1167
+    ]
+   },
+   "properties": {
+    "place_id": "PL4963",
+    "name": "Mława, Masovian",
+    "alt_names": "Mława; Mlawa",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 12,
+    "claims_ground": 12,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.755,
+     53.4875
+    ]
+   },
+   "properties": {
+    "place_id": "PL4964",
+    "name": "Grudziądz, Kuyavian-Pomeranian",
+    "alt_names": "Grudziądz; Graudenz",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Kuyavian-Pomeranian",
+    "claims_count": 4,
+    "claims_ground": 4,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.6453,
+     54.3475
+    ]
+   },
+   "properties": {
+    "place_id": "PL4965",
+    "name": "Gdańsk (Danzig), Pomeranian",
+    "alt_names": "Gdańsk; Danzig",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Pomeranian",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.54,
+     54.5175
+    ]
+   },
+   "properties": {
+    "place_id": "PL4966",
+    "name": "Gdynia, Pomeranian",
+    "alt_names": "Gdynia; Gdingen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Pomeranian",
+    "claims_count": 4,
+    "claims_ground": 3,
+    "claims_air": 0,
+    "claims_naval": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.6714,
+     54.4075
+    ]
+   },
+   "properties": {
+    "place_id": "PL4967",
+    "name": "Westerplatte, Gdańsk",
+    "alt_names": "Westerplatte",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "PL",
+    "region": "Pomeranian",
+    "claims_count": 2,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.8081,
+     54.6117
+    ]
+   },
+   "properties": {
+    "place_id": "PL4968",
+    "name": "Hel, Pomeranian",
+    "alt_names": "Hel; Hela",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Pomeranian",
+    "claims_count": 6,
+    "claims_ground": 3,
+    "claims_air": 0,
+    "claims_naval": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.7256,
+     53.6494
+    ]
+   },
+   "properties": {
+    "place_id": "PL4969",
+    "name": "Nowe (Neuenburg), Kuyavian-Pomeranian",
+    "alt_names": "Nowe; Neuenburg",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Kuyavian-Pomeranian",
+    "claims_count": 3,
+    "claims_ground": 3,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.0003,
+     53.1219
+    ]
+   },
+   "properties": {
+    "place_id": "PL4970",
+    "name": "Bydgoszcz, Kuyavian-Pomeranian",
+    "alt_names": "Bydgoszcz; Bromberg",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Kuyavian-Pomeranian",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.1167,
+     50.8
+    ]
+   },
+   "properties": {
+    "place_id": "PL4971",
+    "name": "Częstochowa, Silesian",
+    "alt_names": "Częstochowa; Tschenstochau",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Silesian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.0167,
+     49.4667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4974",
+    "name": "Nowy Targ, Lesser Poland",
+    "alt_names": "Nowy Targ; Neumarkt",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lesser Poland",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.75,
+     49.5167
+    ]
+   },
+   "properties": {
+    "place_id": "PL4975",
+    "name": "Przełęcz Jabłonkowska (Jablunkov Pass)",
+    "alt_names": "Jablunkov Pass; Jablunka Pass; Przełęcz Jabłonkowska",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "CZ",
+    "region": "Moravian-Silesian",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.45,
+     51.0667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4976",
+    "name": "Radomsko, Łódź",
+    "alt_names": "Radomsko",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Łódź",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.6833,
+     50.6833
+    ]
+   },
+   "properties": {
+    "place_id": "PL4977",
+    "name": "Lubliniec (Lublinitz), Silesian",
+    "alt_names": "Lubliniec; Lublinitz",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Silesian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.7236,
+     51.31
+    ]
+   },
+   "properties": {
+    "place_id": "PL4978",
+    "name": "Syców (Gross Wartenberg), Lower Silesian",
+    "alt_names": "Syców; Gross Wartenberg",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lower Silesian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.0444,
+     49.8225
+    ]
+   },
+   "properties": {
+    "place_id": "PL4979",
+    "name": "Bielsko-Biała (Bielitz), Silesian",
+    "alt_names": "Bielsko-Biała; Bielitz",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Silesian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.4792,
+     53.7778
+    ]
+   },
+   "properties": {
+    "place_id": "PL4980",
+    "name": "Olsztyn (Allenstein), Warmian-Masurian",
+    "alt_names": "Olsztyn; Allenstein",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Warmian-Masurian",
+    "claims_count": 3,
+    "claims_ground": 3,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.6333,
+     50.8742
+    ]
+   },
+   "properties": {
+    "place_id": "PL4981",
+    "name": "Kielce, Świętokrzyskie",
+    "alt_names": "Kielce",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Świętokrzyskie",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0283,
+     52.2633
+    ]
+   },
+   "properties": {
+    "place_id": "PL4982",
+    "name": "Praga, Warszawa",
+    "alt_names": "Praga; Praga-Północ",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.0731,
+     53.1764
+    ]
+   },
+   "properties": {
+    "place_id": "PL4983",
+    "name": "Łomża, Podlaskie",
+    "alt_names": "Łomża; Lomza",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 3,
+    "claims_ground": 3,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.0322,
+     49.8425
+    ]
+   },
+   "properties": {
+    "place_id": "PL4986",
+    "name": "Lwów (Lviv), Lviv Oblast",
+    "alt_names": "Lwów; Lviv; Lwow; Lemberg",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "UA",
+    "region": "Lviv Oblast",
+    "claims_count": 3,
+    "claims_ground": 3,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.6819,
+     52.4383
+    ]
+   },
+   "properties": {
+    "place_id": "PL4987",
+    "name": "Modlin, Masovian",
+    "alt_names": "Modlin; Modlin Fortress",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 3,
+    "claims_ground": 3,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.45,
+     51.65
+    ]
+   },
+   "properties": {
+    "place_id": "PL4988",
+    "name": "Kock, Lublin",
+    "alt_names": "Kock",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.5446,
+     54.548
+    ]
+   },
+   "properties": {
+    "place_id": "PL4990",
+    "name": "Oksywie, Gdynia",
+    "alt_names": "Oksywie; Oxhöft; Oxhoeft",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "PL",
+    "region": "Pomeranian",
+    "claims_count": 2,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.25,
+     54.6
+    ]
+   },
+   "properties": {
+    "place_id": "PL4991",
+    "name": "Wejherowo, Pomeranian",
+    "alt_names": "Wejherowo; Neustadt",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Pomeranian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.4,
+     54.7
+    ]
+   },
+   "properties": {
+    "place_id": "PL4992",
+    "name": "Puck (Putzig), Pomeranian",
+    "alt_names": "Puck; Putzig",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Pomeranian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1567,
+     51.4036
+    ]
+   },
+   "properties": {
+    "place_id": "PL4993",
+    "name": "Radom, Masovian",
+    "alt_names": "Radom",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.8333,
+     53.6667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4995",
+    "name": "Grodno (Hrodna)",
+    "alt_names": "Grodno; Hrodna",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BY",
+    "region": "Grodno Region",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.3833,
+     53.2
+    ]
+   },
+   "properties": {
+    "place_id": "PL4996",
+    "name": "Wizna, Podlaskie",
+    "alt_names": "Wizna",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.3667,
+     52.2333
+    ]
+   },
+   "properties": {
+    "place_id": "PL4997",
+    "name": "Kutno, Łódź",
+    "alt_names": "Kutno",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Łódź",
+    "claims_count": 19,
+    "claims_ground": 19,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.25,
+     52.9833
+    ]
+   },
+   "properties": {
+    "place_id": "PL4998",
+    "name": "Zambrów, Podlaskie",
+    "alt_names": "Zambrów; Zambrow",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.8794,
+     53.2264
+    ]
+   },
+   "properties": {
+    "place_id": "PL4999",
+    "name": "Nowogród, Podlaskie",
+    "alt_names": "Nowogród; Nowogrod",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.2519,
+     50.6192
+    ]
+   },
+   "properties": {
+    "place_id": "PL5000",
+    "name": "Równe (Rivne), Rivne Oblast",
+    "alt_names": "Równe; Rowno; Rivne; Rovno",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "UA",
+    "region": "Rivne Oblast",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
    }
   }
  ]

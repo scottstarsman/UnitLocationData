@@ -1,7 +1,7 @@
 rule_id,kind,domain,echelon,ship_type,name_pattern,symbol_set,entity,modifier1,modifier2,hq_tf_dummy,amplifier_override,entity_label,case,note
 HQ01,function,,,,Oberkommando der Wehrmacht,10,110000,,,2,26,Command and Control,no-exact,"National high command: C2 with the HQ staff, echelon Command (26)."
 HQ02,function,,,,Supreme Headquarters|Allied Force Headquarters|Oberbefehlshaber|Wehrmachtbefehlshaber|Strategic Air Forces|Allied Expeditionary Air Force,10,110000,,,2,25,Command and Control,no-exact,"Theater headquarters: C2 with the HQ staff, echelon Region/Theater (25)."
-GC00,function,,,,district officers and scouts,10,121300,,,0,,Reconnaissance/Cavalry/Scout,exact,British Solomon Islands Protectorate district officers and scouts (UK-BSIP-000H). Must sit above HQ03 so "district" is not taken as a territorial command.
+GC00,function,,,,district officers and scouts,10,121300,,,0,,Reconnaissance/Cavalry/Scout,exact,"British Solomon Islands Protectorate district officers and scouts (UK-BSIP-000H). Must sit above HQ03 so ""district"" is not taken as a territorial command."
 HQ03,function,,,,Luftgau|Wehrkreis|District,10,110000,,,2,,Command and Control,no-exact,Territorial or administrative command; amplifier from the echelon map (other = 25 Region).
 SH-BB,function,naval,naval_unit,BB,,30,120201,,,0,,Battleship,exact,
 SH-BC,function,naval,naval_unit,BC,,30,120201,,,0,,Battleship,nearest,No battlecruiser entity in 2525D; no unit has this type today.
@@ -62,9 +62,11 @@ GG01,function,,,,Gebirgs|Mountain|Alpine,10,121100,,27,0,,Infantry,exact,Modifie
 GX01,function,,,,Commando|Special Service,10,121100,76,,0,,Infantry,nearest,Commando or Special Service unit: infantry with modifier 1 Ranger.
 GL01,function,,,,Polizei|Police,10,141700,,,0,,Security,nearest,Police regiment.
 GU01,function,,,,RAF Regiment,10,121100,,,0,,Infantry,nearest,RAF Regiment airfield-defence squadron: infantry (no source splits field and LAA squadrons).
-GI01,function,,,,Infantry|Infanterie|Grenadier|Volksgrenadier|Rifle|Marine|Landesschützen|Sicherungs|Stoottroepen|Bewakingstroepen|Binnenlandse Strijdkrachten|Feld-Division|Field Division|Jäger|Special Naval Landing Force|Detachment|Nasu Force,10,121100,,,0,,Infantry,exact,Infantry by name. Special Naval Landing Force is naval infantry. Named detachments such as Ichiki and Yano, and the Nasu Force (2nd Division infantry wing), are infantry-sized landing or assault forces in this dataset.
+GL02,function,,,,leichte Division|Light Division|le. Division,10,121102,,,0,,Infantry, Armored/Mechanized/Tracked,no-exact
+GI01,function,,,,Infantry|Infanterie|Grenadier|Volksgrenadier|Rifle|Marine|Landesschützen|Sicherungs|Stoottroepen|Bewakingstroepen|Binnenlandse Strijdkrachten|Feld-Division|Field Division|Jäger|Special Naval Landing Force|Detachment|Nasu Force,10,121100,,,0,,Infantry,exact,Infantry by name. Special Naval Landing Force is naval infantry. Named detachments such as Ichiki and Yano
 GI02,function,,,,Division|Regiment|Brigade|Battalion|Bataillon,10,121100,,,0,,Infantry,default-infantry,"Land division, brigade, regiment or battalion whose name names no arm (for example Division Nr. 172, Division z.b.V. 136): infantry, listed in the coverage report."
-GH01,function,,,,Army Group|Heeresgruppe|Army|Armee|Corps|Korps|Group|Détachement d.Armée|Forces of the,10,121000,,,0,,Combined Arms,no-exact,"Higher land formation with no single arm (army group, army, corps, army detachment): combined arms."
+GH01,function,,,,Army Group|Heeresgruppe|Army|Armee|Corps|Korps|Group|Front|Détachement d.Armée|Forces of the,10,121000,,,0,,Combined Arms,no-exact,"Higher land formation with no single arm (army group, army, corps, army detachment, Soviet front): combined arms. Front added 27 November 2026 for the Poland 1939 pilot."
+GB01,function,,,,Gruppe Brand,10,121000,,,0,,Combined Arms,exact,"Corps-level Gruppe Brand (Kennedy Chart 4, Poland 1939). Combined arms, same family as GH01 (Group/Corps). Added 27 November 2026, branch poland-1939."
 GZ99,function,,,,,10,000000,,,0,,Unspecified,default,Fall-through: unspecified land unit.
 ADD-ABN,addon,,,,Airborne|Parachute|Fallschirm|Luftlande|Glider|Air Landing,,,,01,,,(modifier 2 Airborne),addon,"Land units only: sets modifier 2 Airborne when the function rule left it blank (for example Fallschirm-Panzerjäger, Fallschirm-Flak)."
 ADD-TF,addon,,,,Kampfgruppe|Combat Command|Task Force,,,,,4,,(Task Force amplifier),addon,Land units only: sets the HQ/TF/Dummy digit to 4 Task Force (6 when the unit already has the HQ digit 2).

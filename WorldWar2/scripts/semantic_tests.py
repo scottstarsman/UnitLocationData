@@ -3096,7 +3096,7 @@ def scenario_201_placeholders_b2():
     units = {u['unit_id']: u for u in csv.DictReader(open(common.UNITS_CSV, encoding='utf-8'))}
     seven = ['GER-COR-012C', 'GER-COR-013C', 'GER-DIV-172', 'GER-DIV-526', 'GER-INF-JUTLAND', 'GER-SSGR-030D', 'GER-DIV-136ZBV']
     expect(s + ': the seven records are promoted', [units[u]['record_status'] for u in seven], ['active'] * 7)
-    expect(s + ': XIII Corps at Lowicz in 1939 is an Eastern Front row', (claims['C8860']['theater'], claims['C8860']['operation_id']), ('eastern_front', 'OP-FRONT-EASTERN'))
+    expect(s + ': XIII Corps at Lowicz in 1939 is a Fall Weiss Eastern Front row', (claims['C8860']['theater'], claims['C8860']['operation_id']), ('eastern_front', 'OP-CAMP-FALL-WEISS'))
     expect(s + ': XIII Corps at Trier in October 1939 is a home row', claims['C8861']['theater'], 'home_germany')
     expect(s + ': XIII Corps in Belgium in 1940 is western_europe before the invasion', (claims['C8863']['theater'], claims['C8863']['operation_id']), ('western_europe', 'OP-PRE-INVASION'))
     expect(s + ': XIII Corps command post at Wawern, 20 February 1945, two families', (claims['C8875']['place_id'], claims['C8875']['confidence'], claims['C8875']['parent_unit_id']), ('PL1709', '0.7', 'GER-ARMY-007A'))
@@ -5028,8 +5028,8 @@ def scenario_275_relations_157_and_16():
     expect(s + ': the evidence claims carry the higher unit as parent and 0.3', [(claims[c]['unit_id'], claims[c]['parent_unit_id'], claims[c]['confidence']) for c in ('C9459', 'C9460', 'C9461', 'C9462')],
            [('GER-INF-016D', 'GER-AG-00GG', '0.3'), ('GER-INF-016D', 'GER-COR-066C', '0.3'), ('GER-GEB-157D', 'GER-ARMY-LIGUR', '0.3'), ('GER-GEB-157D', 'GER-PZ-014C', '0.3')])
     expect(s + ': C9462 is an out-of-theater row (mediterranean, Bologna PL4181); C9461 stays western_europe', (claims['C9462']['theater'], claims['C9462']['place_id'], claims['C9461']['theater']), ('mediterranean', 'PL4181', 'western_europe'))
-    expect(s + ': the three new units are placeholders', [(u, units[u]['record_status']) for u in ('GER-ARMY-LIGUR', 'GER-PZ-014C', 'GER-GEB-008D')],
-           [('GER-ARMY-LIGUR', 'placeholder'), ('GER-PZ-014C', 'placeholder'), ('GER-GEB-008D', 'placeholder')])
+    expect(s + ': Armee Ligurien and the 8th Mountain Division remain placeholders; XIV Corps is now active (Poland 1939, same formation as XIV Army Corps (mot.))', [(u, units[u]['record_status']) for u in ('GER-ARMY-LIGUR', 'GER-PZ-014C', 'GER-GEB-008D')],
+           [('GER-ARMY-LIGUR', 'placeholder'), ('GER-PZ-014C', 'active'), ('GER-GEB-008D', 'placeholder')])
     import lineage
     row = {r['lineage_id']: r for r in lineage.load()[1]}['UL025']
     expect(s + ': UL025 157th Mountain Division -> 8th Mountain Division, redesignation, 1945-02-27 (the successor formed 1945-02-27)',
@@ -6817,9 +6817,9 @@ def scenario_318_normandy_chunk7b():
            'GER-KG-030', 'GER-KGGR-030-1', 'GER-KGGR-030-2', 'GER-KG-054', 'GER-KGGR-054-1', 'GER-KGGR-054-3', 'GER-KG-076',
            'GER-KGGR-076-2', 'GER-LG-001', 'GER-LGGR-001-1', 'GER-LGGR-001-2', 'GER-KG-053', 'GER-KGGR-053-1', 'GER-KGGR-053-2',
            'GER-KGGR-053-3')
-    expect(s + ': 36 new units, the four placeholders have no claims (L4)',
+    expect(s + ': 36 new units, three placeholders still have no claims (L4); KG 76 is now active (Poland 1939, same formation)',
            (len(new), all(u in units for u in new), [u for u in new if u not in claims]),
-           (36, True, ['GER-KG-051', 'GER-KG-066', 'GER-SKG-010', 'GER-KG-076']))
+           (36, True, ['GER-KG-051', 'GER-KG-066', 'GER-SKG-010']))
     expect(s + ': no unit for 3./SKG 10, 5./KG 66, 3./KG 51, Einsatzkommando Schenck or III./KG 3 (L5, L13, C17)',
            [u for u in ('GER-SKGST-010-3', 'GER-KGST-066-5', 'GER-KGST-051-3', 'GER-KGGR-003-3') if u in units]
            + [u for u in units if 'SCHENCK' in u], [])

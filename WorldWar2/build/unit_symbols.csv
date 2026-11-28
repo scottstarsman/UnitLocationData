@@ -142,13 +142,20 @@ GER-AA-STRAUB,Armee-Abteilung Straube,Germany,ground,army,1939-09-01,,Axis,6,100
 GER-AG-00BG,Army Group B,Germany,ground,army_group,1939-09-01,,Axis,6,10061000241210000000,GH01,Combined Arms
 GER-AG-00GG,Army Group G (Heeresgruppe G; Armeegruppe G until late 1944),Germany,ground,army_group,1939-09-01,,Axis,6,10061000241210000000,GH01,Combined Arms
 GER-AG-00HG,Army Group H (Heeresgruppe H),Germany,ground,army_group,1939-09-01,,Axis,6,10061000241210000000,GH01,Combined Arms
+GER-AG-NORDG,Army Group North,Germany,ground,army_group,1939-09-01,,Axis,6,10061000241210000000,GH01,Combined Arms
 GER-AG-OBRHG,Army Group Upper Rhine (Heeresgruppe Oberrhein),Germany,ground,army_group,1939-09-01,,Axis,6,10061000241210000000,GH01,Combined Arms
 GER-AG-STUDT,Armeegruppe Student (Army Group Student),Germany,ground,army_group,1939-09-01,,Axis,6,10061000241210000000,GH01,Combined Arms
+GER-AG-SUDG,Army Group South,Germany,ground,army_group,1939-09-01,,Axis,6,10061000241210000000,GH01,Combined Arms
 GER-AGR-123,Aufklärungsgruppe 123 (Aufkl.Gr. 123),Germany,air,air_group,1939-09-01,,Axis,6,10061000171208010000,AR01,"Aviation Fixed Wing, Reconnaissance"
 GER-ARMY-001A,First Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
+GER-ARMY-003A,Third Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
+GER-ARMY-004A,Fourth Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
 GER-ARMY-007A,Seventh Army,Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
+GER-ARMY-008A,Eighth Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
+GER-ARMY-010A,Tenth Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
 GER-ARMY-011A,Eleventh Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
 GER-ARMY-012A,Twelfth Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
+GER-ARMY-014A,Fourteenth Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
 GER-ARMY-015A,Fifteenth Army,Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
 GER-ARMY-019A,Nineteenth Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
 GER-ARMY-024A,Twenty-fourth Army (Germany),Germany,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
@@ -158,10 +165,30 @@ GER-ARMY-LIGUR,Armee Ligurien (Army Liguria),Germany,ground,army,1939-09-01,,Axi
 GER-ARMY-LUETT,"Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944)",Germany,ground,army,1939-09-01,,Axis,6,10061000231205000000,GR02,Armor
 GER-ATF-002,2. Artillerieträgerflottille,Germany,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
 GER-ATF-006,6. Artillerieträgerflottille,Germany,naval,naval_division,1939-09-01,,Axis,6,10063000001210000000,NF99,Navy Task Organization
+GER-BB-SCHLESIEN,Schlesien,Germany,naval,naval_unit,1939-09-01,,Axis,6,10063000001202010000,SH-BB,Battleship
+GER-BB-SCHLESWIG,Schleswig-Holstein,Germany,naval,naval_unit,1939-09-01,,Axis,6,10063000001202010000,SH-BB,Battleship
+GER-BDE-EBERH,Brigade Eberhardt,Germany,ground,brigade,1939-09-01,,Axis,6,10061000181211000000,GI02,Infantry
+GER-BDE-LOETZEN,Fortress Brigade Lötzen,Germany,ground,brigade,1939-09-01,,Axis,6,10061000001211000000,GF01,Infantry
 GER-BDSN-000H,Befehlshaber der Sicherung der Nordsee,Germany,naval,task_group,1939-09-01,,Axis,6,10063002001210000000,NF04,Navy Task Organization
 GER-BDSW-000H,Befehlshaber der Sicherung West,Germany,naval,task_group,1939-09-01,,Axis,6,10063002001210000000,NF04,Navy Task Organization
+GER-CAV-001B,1st Cavalry Brigade,Germany,ground,brigade,1939-09-01,,Axis,6,10061000181213000000,GC01,Reconnaissance/Cavalry/Scout
+GER-COR-001C,I Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-002C,II Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-003C,III Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-004C,IV Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-007C,VII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-008C,VIII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-010C,X Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-011C,XI Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-012C,XII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-013C,XIII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-015C,XV Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-016C,XVI Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-017C,XVII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-018C,XVIII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-019C,XIX Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-021C,XXI Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-022C,XXII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-025C,XXV Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-030C,XXX Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-053C,LIII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
@@ -180,9 +207,12 @@ GER-COR-086C,LXXXVI Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210
 GER-COR-088C,LXXXVIII Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-089C,LXXXIX Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-090C,LXXXX Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-BRAND,Gruppe Brand,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GB01,Combined Arms
 GER-COR-EMS,Korps Ems (General Rasp),Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-FELDT,Korps Feldt (Generalkommando Feldt),Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-KAUPISCH,Corps Kaupisch (I Frontier Guard Corps),Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-COR-KVOSG,"Corps Command Vosges (Korpskommando Vosges, provisional corps headquarters)",Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
+GER-COR-WODRIG,Corps Wodrig,Germany,ground,corps,1939-09-01,,Axis,6,10061000221210000000,GH01,Combined Arms
 GER-DD-Z023,Z 23,Germany,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
 GER-DD-Z024,Z 24,Germany,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
 GER-DD-Z032,Z 32,Germany,naval,naval_unit,1939-09-01,,Axis,6,10063000001202030000,SH-DD,Destroyer
@@ -259,22 +289,60 @@ GER-FLAKSR-001,Flak-Sturm-Regiment 1 (Stab Flak-Regiment 431),Germany,ground,reg
 GER-FLAKSR-002,Flak-Sturm-Regiment 2 (Stab Flak-Regiment 653),Germany,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171301000000,AD02,Air Defense
 GER-FLAKSR-003,Flak-Sturm-Regiment 3 (Stab Flak-Regiment 37),Germany,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171301000000,AD02,Air Defense
 GER-FLAKSR-004,Flak-Sturm-Regiment 4 (Stab Flak-Regiment 79),Germany,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171301000000,AD02,Air Defense
+GER-FLD-001D,1. Flieger-Division (1st Air Division),Germany,air,air_division,1939-09-01,,Axis,6,10061000211208000000,AF99,Aviation Fixed Wing
 GER-FLD-002D,2. Fliegerdivision (2nd Air Division),Germany,air,air_division,1939-09-01,,Axis,6,10061000211208000000,AF99,Aviation Fixed Wing
+GER-FLD-002D39,"2. Flieger-Division (2nd Air Division, 1938–39)",Germany,air,air_division,1939-09-01,,Axis,6,10061000211208000000,AF99,Aviation Fixed Wing
+GER-FLD-LEHR,Luftwaffen-Lehr-Division (Luftwaffe Instruction Division),Germany,air,air_division,1939-09-01,,Axis,6,10061000211208000000,AF99,Aviation Fixed Wing
 GER-FLF-WEST,Fliegerführer West (Air Commander West),Germany,air,air_division,1939-09-01,,Axis,6,10061000211208000000,AF99,Aviation Fixed Wing
 GER-FLK-002C,II Fliegerkorps,Germany,air,air_corps,1939-09-01,,Axis,6,10061000221208000000,AF99,Aviation Fixed Wing
 GER-FLK-009C,IX Fliegerkorps (9th Air Corps),Germany,air,air_corps,1939-09-01,,Axis,6,10061000221208000000,AF99,Aviation Fixed Wing
 GER-FLK-010C,X Fliegerkorps (10th Air Corps),Germany,air,air_corps,1939-09-01,,Axis,6,10061000221208000000,AF99,Aviation Fixed Wing
+GER-GEB-001D,1st Mountain Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000027,GG01,Infantry
 GER-GEB-002D,2nd Mountain Division (2. Gebirgs-Division),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000027,GG01,Infantry
+GER-GEB-003D,3rd Mountain Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000027,GG01,Infantry
 GER-GEB-008D,8th Mountain Division (8. Gebirgs-Division),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000027,GG01,Infantry
 GER-GEB-157D,157th Mountain Division (157. Gebirgs-Division),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000027,GG01,Infantry
 GER-GR-078,Grenadier-Regiment 78 (26th Volksgrenadier Division),Germany,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI01,Infantry
+GER-INF-001D,1st Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-002D,2nd Infantry Division (mot.),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-003D,3rd Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-004D,4th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-005D,5th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-007D,7th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-008D,8th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-010D,10th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-011D,11th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-012D,12th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-013D,13th Infantry Division (mot.),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-014D,14th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-016D,"16th Infantry Division (16. Infanterie-Division, 1944)",Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-017D,17th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-018D,18th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-019D,19th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-020D,20th Infantry Division (mot.),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-021D,21st Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-023D,23rd Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-024D,24th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-027D,27th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-028D,28th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-029D,29th Infantry Division (mot.),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-030D,30th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-031D,31st Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-032D,32nd Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-044D,44th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-045D,45th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-046D,46th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-047D,47th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-048D,48th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-049D,49th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-050D,50th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-059D,59th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-061D,61st Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-062D,62nd Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-064D,64th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-068D,68th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-070D,70th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-073D,73rd Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-077D,77th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-084D,84th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-085D,85th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
@@ -286,7 +354,16 @@ GER-INF-180D,180th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,
 GER-INF-189D,189th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-190D,190th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-198D,198th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-206D,206th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-207D,207th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-208D,208th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-213D,213th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-217D,217th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-218D,218th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-221D,221st Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-226D,226th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-228D,228th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-INF-239D,239th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-242D,242nd Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-243D,243rd Static Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-INF-244D,244th Infantry Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
@@ -376,8 +453,11 @@ GER-JGST-011-10,"10. Staffel, Jagdgeschwader 11 (10./JG 11)",Germany,air,air_squ
 GER-KAA-000H,Kommandierender Admiral Atlantikküste,Germany,naval,task_group,1939-09-01,,Axis,6,10063002001210000000,NF04,Navy Task Organization
 GER-KAK-000H,Kommandierender Admiral Kanalküste,Germany,naval,task_group,1939-09-01,,Axis,6,10063002001210000000,NF04,Navy Task Organization
 GER-KDK-000H,Kommando der Kleinkampfverbände,Germany,naval,task_group,1939-09-01,,Axis,6,10063002001210000000,NF04,Navy Task Organization
+GER-KG-001,Kampfgeschwader 1 (KG 1),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
 GER-KG-002,Kampfgeschwader 2 (KG 2),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
 GER-KG-002PZ,Kampfgruppe (tank battalion) 2nd Panzer Division,Germany,ground,regiment/battle_group,1939-09-01,,Axis,6,10061004171210000000,GK01,Combined Arms
+GER-KG-003,Kampfgeschwader 3 (KG 3),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
+GER-KG-004,Kampfgeschwader 4 (KG 4),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
 GER-KG-006,Kampfgeschwader 6 (KG 6),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
 GER-KG-026,Kampfgeschwader 26 (KG 26),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
 GER-KG-030,Kampfgeschwader 30 (KG 30),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
@@ -465,13 +545,21 @@ GER-LFD-016D,16th Luftwaffe Field Division,Germany,ground,division,1939-09-01,,A
 GER-LFD-017D,17th Luftwaffe Field Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-LFD-018D,18th Luftwaffe Field Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-LFD-019D,19th Luftwaffe Field Division (19. Luftwaffen-Sturm-Division),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+GER-LFL-001A,Luftflotte 1 (Air Fleet 1),Germany,air,air_force,1939-09-01,,Axis,6,10061000231208000000,AF99,Aviation Fixed Wing
 GER-LFL-003A,Luftflotte 3 (Air Fleet 3),Germany,air,air_force,1939-09-01,,Axis,6,10061000231208000000,AF99,Aviation Fixed Wing
+GER-LFL-004A,Luftflotte 4 (Air Fleet 4),Germany,air,air_force,1939-09-01,,Axis,6,10061000231208000000,AF99,Aviation Fixed Wing
 GER-LG-001,Lehrgeschwader 1 (LG 1),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
+GER-LG-002,Lehrgeschwader 2 (LG 2),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
 GER-LGGR-001-1,"I. Gruppe, Lehrgeschwader 1 (I./LG 1)",Germany,air,air_group,1939-09-01,,Axis,6,10061000171208000000,AF99,Aviation Fixed Wing
 GER-LGGR-001-2,"II. Gruppe, Lehrgeschwader 1 (II./LG 1)",Germany,air,air_group,1939-09-01,,Axis,6,10061000171208000000,AF99,Aviation Fixed Wing
 GER-LGK-BNF,Luftgau-Kommando Belgien-Nordfrankreich (Air District Command Belgium and Northern France),Germany,ground,corps,1939-09-01,,Axis,6,10061002221100000000,HQ03,Command and Control
 GER-LGK-WFR,Luftgau-Kommando Westfrankreich (Air District Command Western France),Germany,ground,corps,1939-09-01,,Axis,6,10061002221100000000,HQ03,Command and Control
 GER-LL-091D,91st Luftlande Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211000001,GP01,Infantry
+GER-LT-001D,1st Light Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211020000,GL02,Infantry
+GER-LT-002D,2nd Light Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211020000,GL02,Infantry
+GER-LT-003D,3rd Light Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211020000,GL02,Infantry
+GER-LT-004D,4th Light Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211211020000,GL02,Infantry
+GER-LWK-OSTPR,Luftwaffenkommando Ostpreussen (Air Command East Prussia),Germany,air,air_corps,1939-09-01,,Axis,6,10061000221208000000,AF99,Aviation Fixed Wing
 GER-MAA-260,Marine-Artillerie-Abteilung 260 (260th Naval Coastal Artillery Battalion),Germany,ground,battalion,1939-09-01,,Axis,6,10061000161303004600,GA02,Field Artillery
 GER-MARI-002D,2nd Marine Infantry Division (2. Marine-Infanterie-Division),Germany,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
 GER-MGW-000H,Naval Group Command West (Marinegruppenkommando West),Germany,naval,fleet,1939-09-01,,Axis,6,10063002001210000000,NF04,Navy Task Organization
@@ -509,8 +597,12 @@ GER-PG-025D,25th Panzergrenadier Division,Germany,ground,division,1939-09-01,,Ax
 GER-PG-FUEBE,Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945),Germany,ground,brigade,1939-09-01,,Axis,6,10061000181211020000,GM01,"Infantry, Armored/Mechanized/Tracked"
 GER-PG-FUEGR,Führer-Grenadier-Brigade (Führer-Grenadier-Division from 26 January 1945),Germany,ground,brigade,1939-09-01,,Axis,6,10061000181211000000,GI01,Infantry
 GER-POLR-MGLAD,Polizei-Regiment Mönchengladbach,Germany,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171417000000,GL01,Security
+GER-PZ-001D,1st Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-PZ-002D,2nd Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
+GER-PZ-003D,3rd Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
+GER-PZ-004D,4th Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-PZ-009D,9th Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
+GER-PZ-010D,10th Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-PZ-011D,11th Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-PZ-014C,XIV Panzer Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221205000000,GR02,Armor
 GER-PZ-021D,21st Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
@@ -519,6 +611,7 @@ GER-PZ-047C,XLVII Panzer Corps,Germany,ground,corps,1939-09-01,,Axis,6,100610002
 GER-PZ-058C,LVIII Panzer Corps,Germany,ground,corps,1939-09-01,,Axis,6,10061000221205000000,GR02,Armor
 GER-PZ-116D,116th Panzer Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-PZ-CLAUS,Panzer Division von Clausewitz,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
+GER-PZ-KEMPFD,Panzer Division Kempf,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-PZ-LEHRD,Panzer Lehr Division,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-PZA-005A,Fifth Panzer Army,Germany,ground,army,1939-09-01,,Axis,6,10061000231205000000,GR02,Armor
 GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,ground,army,1939-09-01,,Axis,6,10061000231205000000,GR02,Armor
@@ -637,6 +730,9 @@ GER-SSPZ-009D,9th SS Panzer Division Hohenstaufen,Germany,ground,division,1939-0
 GER-SSPZ-010D,10th SS Panzer Division Frundsberg,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-SSPZ-012D,12th SS Panzer Division Hitlerjugend,Germany,ground,division,1939-09-01,,Axis,6,10061000211205000000,GR02,Armor
 GER-SSPZB-WESTF,SS-Panzer-Brigade Westfalen (SS Ersatzbrigade Westfalen),Germany,ground,brigade,1939-09-01,,Axis,6,10061000181205000000,GR02,Armor
+GER-SSST-GERM,SS Regiment Germania,Germany,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI02,Infantry
+GER-SSST-LSSAH,SS Regiment Leibstandarte Adolf Hitler,Germany,ground,regiment/battle_group,1939-09-01,,Axis,6,10061000171211000000,GI02,Infantry
+GER-STG-077,Sturzkampfgeschwader 77 (StG 77),Germany,air,air_wing,1939-09-01,,Axis,6,10061000181208000000,AF99,Aviation Fixed Wing
 GER-STUG-011B,Sturmgeschütz-Brigade 11,Germany,ground,brigade,1939-09-01,,Axis,6,10061000181204010000,GT02,"Antitank/Antiarmor, Armored"
 GER-TB-FALKE,Falke,Germany,naval,naval_unit,1939-09-01,,Axis,6,10063000001202031700,SH-TB,Destroyer
 GER-TB-JAGUAR,Jaguar,Germany,naval,naval_unit,1939-09-01,,Axis,6,10063000001202031700,SH-TB,Destroyer
@@ -882,12 +978,71 @@ NZ-SQN-487,No. 487 Squadron RNZAF,New Zealand,air,air_squadron,1939-09-03,,Allie
 NZ-SQN-488,No. 488 Squadron RNZAF,New Zealand,air,air_squadron,1939-09-03,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 NZ-SQN-489,No. 489 Squadron RNZAF,New Zealand,air,air_squadron,1939-09-03,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 POL-ABN-001B,1st Polish Independent Parachute Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181211000001,GP01,Infantry
+POL-AIR-BOMBER,Bomber Brigade (Brygada Bombowa),Poland,air,air_wing,1939-09-01,,Allied,3,10031000181208000000,AF99,Aviation Fixed Wing
+POL-AIR-PURSUIT,Pursuit Brigade (Brygada Pościgowa),Poland,air,air_wing,1939-09-01,,Allied,3,10031000181208000000,AF99,Aviation Fixed Wing
 POL-ARM-001D,1st Polish Armoured Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211205000000,GR02,Armor
+POL-ARM-WARB,Warsaw Armoured Motorized Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181205000000,GR02,Armor
+POL-ARMY-KARPATY,Karpaty Army,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-ARMY-KRAKOW,Kraków Army,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-ARMY-LODZ,Łódź Army,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-ARMY-LUBLIN,Lublin Army (Armia „Lublin”),Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-ARMY-MODLIN,Modlin Army,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-ARMY-POMORZE,Pomorze Army,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-ARMY-POZNAN,Poznań Army,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-ARMY-PRUSY,Prusy Army (Armia Prusy),Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-ARMY-WARSZAWA,Warsaw Army,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-CAV-KRAKB,Krakowska Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-KREB,Kresowa Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-MAZB,Mazowiecka Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-NOWB,Nowogródzka Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-PDOB,Podolska Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-PODLB,Podlaska Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-POMB,Pomeranian Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-SUWB,Suwalska Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-WILB,Wileńska Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-WKPB,Wielkopolska Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-CAV-WOLB,Wołyńska Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
 POL-CL-DRAGON,ORP Dragon (D46),Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001202020003,SH-CL,Cruiser
+POL-CM-GRYF,ORP Gryf,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001204010000,SH-CM,Mine Layer
 POL-DD-BLYSKAWICA,ORP Błyskawica,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001202030000,SH-DD,Destroyer
+POL-DD-BURZA,ORP Burza,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001202030000,SH-DD,Destroyer
+POL-DD-GROM,ORP Grom,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001202030000,SH-DD,Destroyer
 POL-DD-L26,ORP Ślązak (L26),Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001202030400,SH-DE,Destroyer
 POL-DD-PIORUN,ORP Piorun (G65),Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001202030000,SH-DD,Destroyer
+POL-DD-WICHER,ORP Wicher,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001202030000,SH-DD,Destroyer
 POL-DE-KRAKOWIAK,ORP Krakowiak (L115),Poland,naval,naval_unit,1939-09-01,,Allied,3,10033000001202030400,SH-DE,Destroyer
+POL-INF-002D,2nd Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-004D,4th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-005D,5th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-006D,6th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-007D,7th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-008D,8th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-009D,9th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-010D,10th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-011D,11th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-013D,13th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-014D,14th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-015D,15th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-016D,16th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-017D,17th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-018D,18th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-020D,20th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-021D,21st Mountain Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000027,GG01,Infantry
+POL-INF-022D,22nd Mountain Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000027,GG01,Infantry
+POL-INF-023D,23rd Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-024D,24th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-025D,25th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-026D,26th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-027D,27th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-028D,28th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-030D,30th Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-INF-033D,33rd Reserve Infantry Division,Poland,ground,division,1939-09-01,,Allied,3,10031000211211000000,GI01,Infantry
+POL-MOT-010B,10th Motorized Cavalry Brigade,Poland,ground,brigade,1939-09-01,,Allied,3,10031000181213000000,GC01,Reconnaissance/Cavalry/Scout
+POL-NW-HEL,Hel Fortified Area,Poland,naval,other,1939-09-01,,Allied,3,10033000001210000000,NF99,Navy Task Organization
+POL-NW-WESTER,Westerplatte Garrison,Poland,ground,other,1939-09-01,,Allied,3,10031000001211000000,GF01,Infantry
+POL-OG-NAREW,Narew Operational Group,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-OG-POLESIE,Polesie Operational Group,Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
+POL-OG-WYSZKOW,Wyszków Operational Group (Odwód NW „Wyszków”),Poland,ground,army,1939-09-01,,Allied,3,10031000231210000000,GH01,Combined Arms
 POL-SQN-300,No. 300 (Polish) Squadron,Poland,air,air_squadron,1939-09-01,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 POL-SQN-302,No. 302 (Polish) Squadron,Poland,air,air_squadron,1939-09-01,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 POL-SQN-303,No. 303 (Polish) Squadron,Poland,air,air_squadron,1939-09-01,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
@@ -900,6 +1055,66 @@ POL-SQN-309,No. 309 (Polish) Squadron,Poland,air,air_squadron,1939-09-01,,Allied
 POL-SQN-315,No. 315 (Polish) Squadron,Poland,air,air_squadron,1939-09-01,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 POL-SQN-316,No. 316 (Polish) Squadron,Poland,air,air_squadron,1939-09-01,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
 POL-SQN-317,No. 317 (Polish) Squadron,Poland,air,air_squadron,1939-09-01,,Allied,3,10031000161208000000,AF99,Aviation Fixed Wing
+POL-SS-ORZEL,ORP Orzeł,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033500001101000002,SH-SS,Submarine
+POL-SS-RYS,ORP Ryś,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033500001101000002,SH-SS,Submarine
+POL-SS-SEP,ORP Sęp,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033500001101000002,SH-SS,Submarine
+POL-SS-WILK,ORP Wilk,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033500001101000002,SH-SS,Submarine
+POL-SS-ZBIK,ORP Żbik,Poland,naval,naval_unit,1939-09-01,,Allied,3,10033500001101000002,SH-SS,Submarine
+SOV-ARMY-003A,Third Army (Soviet Union),Soviet Union,ground,army,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-003A,Third Army (Soviet Union),Soviet Union,ground,army,1939-10-07,1939-11-29,neutral,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-003A,Third Army (Soviet Union),Soviet Union,ground,army,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-003A,Third Army (Soviet Union),Soviet Union,ground,army,1940-03-14,1941-06-21,neutral,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-003A,Third Army (Soviet Union),Soviet Union,ground,army,1941-06-22,,Allied,3,10031000231210000000,GH01,Combined Arms
+SOV-ARMY-004A,Fourth Army (Soviet Union),Soviet Union,ground,army,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-004A,Fourth Army (Soviet Union),Soviet Union,ground,army,1939-10-07,1939-11-29,neutral,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-004A,Fourth Army (Soviet Union),Soviet Union,ground,army,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-004A,Fourth Army (Soviet Union),Soviet Union,ground,army,1940-03-14,1941-06-21,neutral,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-004A,Fourth Army (Soviet Union),Soviet Union,ground,army,1941-06-22,,Allied,3,10031000231210000000,GH01,Combined Arms
+SOV-ARMY-006A,Sixth Army (Soviet Union),Soviet Union,ground,army,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-006A,Sixth Army (Soviet Union),Soviet Union,ground,army,1939-10-07,1939-11-29,neutral,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-006A,Sixth Army (Soviet Union),Soviet Union,ground,army,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-006A,Sixth Army (Soviet Union),Soviet Union,ground,army,1940-03-14,1941-06-21,neutral,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-006A,Sixth Army (Soviet Union),Soviet Union,ground,army,1941-06-22,,Allied,3,10031000231210000000,GH01,Combined Arms
+SOV-ARMY-011A,Eleventh Army (Soviet Union),Soviet Union,ground,army,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-011A,Eleventh Army (Soviet Union),Soviet Union,ground,army,1939-10-07,1939-11-29,neutral,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-011A,Eleventh Army (Soviet Union),Soviet Union,ground,army,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-011A,Eleventh Army (Soviet Union),Soviet Union,ground,army,1940-03-14,1941-06-21,neutral,4,10041000231210000000,GH01,Combined Arms
+SOV-ARMY-011A,Eleventh Army (Soviet Union),Soviet Union,ground,army,1941-06-22,,Allied,3,10031000231210000000,GH01,Combined Arms
+SOV-FR-BELG,Belorussian Front,Soviet Union,ground,army_group,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000241210000000,GH01,Combined Arms
+SOV-FR-BELG,Belorussian Front,Soviet Union,ground,army_group,1939-10-07,1939-11-29,neutral,4,10041000241210000000,GH01,Combined Arms
+SOV-FR-BELG,Belorussian Front,Soviet Union,ground,army_group,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000241210000000,GH01,Combined Arms
+SOV-FR-BELG,Belorussian Front,Soviet Union,ground,army_group,1940-03-14,1941-06-21,neutral,4,10041000241210000000,GH01,Combined Arms
+SOV-FR-BELG,Belorussian Front,Soviet Union,ground,army_group,1941-06-22,,Allied,3,10031000241210000000,GH01,Combined Arms
+SOV-FR-UKRG,Ukrainian Front,Soviet Union,ground,army_group,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000241210000000,GH01,Combined Arms
+SOV-FR-UKRG,Ukrainian Front,Soviet Union,ground,army_group,1939-10-07,1939-11-29,neutral,4,10041000241210000000,GH01,Combined Arms
+SOV-FR-UKRG,Ukrainian Front,Soviet Union,ground,army_group,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000241210000000,GH01,Combined Arms
+SOV-FR-UKRG,Ukrainian Front,Soviet Union,ground,army_group,1940-03-14,1941-06-21,neutral,4,10041000241210000000,GH01,Combined Arms
+SOV-FR-UKRG,Ukrainian Front,Soviet Union,ground,army_group,1941-06-22,,Allied,3,10031000241210000000,GH01,Combined Arms
+SOV-RIF-045D,45th Rifle Division,Soviet Union,ground,division,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000211211000000,GI01,Infantry
+SOV-RIF-045D,45th Rifle Division,Soviet Union,ground,division,1939-10-07,1939-11-29,neutral,4,10041000211211000000,GI01,Infantry
+SOV-RIF-045D,45th Rifle Division,Soviet Union,ground,division,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000211211000000,GI01,Infantry
+SOV-RIF-045D,45th Rifle Division,Soviet Union,ground,division,1940-03-14,1941-06-21,neutral,4,10041000211211000000,GI01,Infantry
+SOV-RIF-045D,45th Rifle Division,Soviet Union,ground,division,1941-06-22,,Allied,3,10031000211211000000,GI01,Infantry
+SOV-TNK-006B,6th Tank Brigade,Soviet Union,ground,brigade,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000181205000000,GR02,Armor
+SOV-TNK-006B,6th Tank Brigade,Soviet Union,ground,brigade,1939-10-07,1939-11-29,neutral,4,10041000181205000000,GR02,Armor
+SOV-TNK-006B,6th Tank Brigade,Soviet Union,ground,brigade,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000181205000000,GR02,Armor
+SOV-TNK-006B,6th Tank Brigade,Soviet Union,ground,brigade,1940-03-14,1941-06-21,neutral,4,10041000181205000000,GR02,Armor
+SOV-TNK-006B,6th Tank Brigade,Soviet Union,ground,brigade,1941-06-22,,Allied,3,10031000181205000000,GR02,Armor
+SOV-TNK-024B,24th Tank Brigade,Soviet Union,ground,brigade,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000181205000000,GR02,Armor
+SOV-TNK-024B,24th Tank Brigade,Soviet Union,ground,brigade,1939-10-07,1939-11-29,neutral,4,10041000181205000000,GR02,Armor
+SOV-TNK-024B,24th Tank Brigade,Soviet Union,ground,brigade,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000181205000000,GR02,Armor
+SOV-TNK-024B,24th Tank Brigade,Soviet Union,ground,brigade,1940-03-14,1941-06-21,neutral,4,10041000181205000000,GR02,Armor
+SOV-TNK-024B,24th Tank Brigade,Soviet Union,ground,brigade,1941-06-22,,Allied,3,10031000181205000000,GR02,Armor
+SOV-TNK-029B,29th Tank Brigade,Soviet Union,ground,brigade,1939-09-01,1939-10-06,non-aligned-belligerent,4,10041000181205000000,GR02,Armor
+SOV-TNK-029B,29th Tank Brigade,Soviet Union,ground,brigade,1939-10-07,1939-11-29,neutral,4,10041000181205000000,GR02,Armor
+SOV-TNK-029B,29th Tank Brigade,Soviet Union,ground,brigade,1939-11-30,1940-03-13,non-aligned-belligerent,4,10041000181205000000,GR02,Armor
+SOV-TNK-029B,29th Tank Brigade,Soviet Union,ground,brigade,1940-03-14,1941-06-21,neutral,4,10041000181205000000,GR02,Armor
+SOV-TNK-029B,29th Tank Brigade,Soviet Union,ground,brigade,1941-06-22,,Allied,3,10031000181205000000,GR02,Armor
+SVK-ARMY-BERNOLAK,Field Army Bernolák (Poľná armáda Bernolák),Slovakia,ground,army,1939-09-01,,Axis,6,10061000231210000000,GH01,Combined Arms
+SVK-INF-001D,1st Infantry Division (Jánošík),Slovakia,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+SVK-INF-002D,2nd Infantry Division (Škultéty),Slovakia,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+SVK-INF-003D,3rd Infantry Division (Rázus),Slovakia,ground,division,1939-09-01,,Axis,6,10061000211211000000,GI01,Infantry
+SVK-RG-KALIN,Mobile Group Kalinčiak (Rýchla skupina Kalinčiak),Slovakia,ground,brigade,1939-09-01,,Axis,6,10061000181210000000,GH01,Combined Arms
 UK-ABN-001C,I Airborne Corps,UK,ground,corps,1939-09-03,,Allied,3,10031000221211000001,GP01,Infantry
 UK-ABN-001D,1st Airborne Division,UK,ground,division,1939-09-03,,Allied,3,10031000211211000001,GP01,Infantry
 UK-ABN-006D,6th Airborne Division,UK,ground,division,1939-09-03,,Allied,3,10031000211211000001,GP01,Infantry

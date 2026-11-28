@@ -6817,9 +6817,9 @@ def scenario_318_normandy_chunk7b():
            'GER-KG-030', 'GER-KGGR-030-1', 'GER-KGGR-030-2', 'GER-KG-054', 'GER-KGGR-054-1', 'GER-KGGR-054-3', 'GER-KG-076',
            'GER-KGGR-076-2', 'GER-LG-001', 'GER-LGGR-001-1', 'GER-LGGR-001-2', 'GER-KG-053', 'GER-KGGR-053-1', 'GER-KGGR-053-2',
            'GER-KGGR-053-3')
-    expect(s + ': 36 new units, the four placeholders have no claims (L4)',
+    expect(s + ': 36 new units, three placeholders still have no claims (L4); KG 76 is now active (Poland 1939, same formation)',
            (len(new), all(u in units for u in new), [u for u in new if u not in claims]),
-           (36, True, ['GER-KG-051', 'GER-KG-066', 'GER-SKG-010', 'GER-KG-076']))
+           (36, True, ['GER-KG-051', 'GER-KG-066', 'GER-SKG-010']))
     expect(s + ': no unit for 3./SKG 10, 5./KG 66, 3./KG 51, Einsatzkommando Schenck or III./KG 3 (L5, L13, C17)',
            [u for u in ('GER-SKGST-010-3', 'GER-KGST-066-5', 'GER-KGST-051-3', 'GER-KGGR-003-3') if u in units]
            + [u for u in units if 'SCHENCK' in u], [])

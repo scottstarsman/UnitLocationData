@@ -30,7 +30,8 @@ The earliest date the checks will accept depends on the row's theater. The globa
 Typical floors (see `schema/theaters.json` for the full list, including sub-theaters):
 
 - `cbi` and `china`: 1937-07-07
-- `western_europe`, `eastern_front`, `mediterranean`, `arctic`, `scandinavia`, `home_germany`: 1939-09-01
+- `western_europe`, `mediterranean`, `arctic`, `scandinavia`, `home_germany`: 1939-09-01
+- `eastern_front` and its sub-theater `poland`: 1939-08-01 (old value 1939-09-01, changed 28 November 2026 on branch poland1939-oneplus-august, so that the German assembly on the Polish border in August 1939 can be filed under the phase `OP-PHASE-FALL-WEISS-ASSEMBLY`; hostilities open on 1 September 1939)
 - `atlantic`: 1939-09-03
 - `north_africa`: 1940-06-10
 - `balkans`: 1940-10-28

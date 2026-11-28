@@ -5028,8 +5028,8 @@ def scenario_275_relations_157_and_16():
     expect(s + ': the evidence claims carry the higher unit as parent and 0.3', [(claims[c]['unit_id'], claims[c]['parent_unit_id'], claims[c]['confidence']) for c in ('C9459', 'C9460', 'C9461', 'C9462')],
            [('GER-INF-016D', 'GER-AG-00GG', '0.3'), ('GER-INF-016D', 'GER-COR-066C', '0.3'), ('GER-GEB-157D', 'GER-ARMY-LIGUR', '0.3'), ('GER-GEB-157D', 'GER-PZ-014C', '0.3')])
     expect(s + ': C9462 is an out-of-theater row (mediterranean, Bologna PL4181); C9461 stays western_europe', (claims['C9462']['theater'], claims['C9462']['place_id'], claims['C9461']['theater']), ('mediterranean', 'PL4181', 'western_europe'))
-    expect(s + ': the three new units are placeholders', [(u, units[u]['record_status']) for u in ('GER-ARMY-LIGUR', 'GER-PZ-014C', 'GER-GEB-008D')],
-           [('GER-ARMY-LIGUR', 'placeholder'), ('GER-PZ-014C', 'placeholder'), ('GER-GEB-008D', 'placeholder')])
+    expect(s + ': Armee Ligurien and the 8th Mountain Division remain placeholders; XIV Corps is now active (Poland 1939, same formation as XIV Army Corps (mot.))', [(u, units[u]['record_status']) for u in ('GER-ARMY-LIGUR', 'GER-PZ-014C', 'GER-GEB-008D')],
+           [('GER-ARMY-LIGUR', 'placeholder'), ('GER-PZ-014C', 'active'), ('GER-GEB-008D', 'placeholder')])
     import lineage
     row = {r['lineage_id']: r for r in lineage.load()[1]}['UL025']
     expect(s + ': UL025 157th Mountain Division -> 8th Mountain Division, redesignation, 1945-02-27 (the successor formed 1945-02-27)',

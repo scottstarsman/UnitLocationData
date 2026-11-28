@@ -113822,8 +113822,8 @@
     "precision_km": 1,
     "country": "PL",
     "region": "Pomeranian",
-    "claims_count": 2,
-    "claims_ground": 1,
+    "claims_count": 3,
+    "claims_ground": 2,
     "claims_air": 0,
     "claims_naval": 1
    }
@@ -114397,8 +114397,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Podlaskie",
-    "claims_count": 1,
-    "claims_ground": 1,
+    "claims_count": 2,
+    "claims_ground": 2,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -115639,6 +115639,121 @@
     "precision_km": 3,
     "country": "SK",
     "region": "Prešov",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.92861111,
+     54.09888889
+    ]
+   },
+   "properties": {
+    "place_id": "PL5053",
+    "name": "Suwałki",
+    "alt_names": "Suwalki",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.8,
+     51.75
+    ]
+   },
+   "properties": {
+    "place_id": "PL5054",
+    "name": "Koluszki",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Łódź",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.56666667,
+     51.25
+    ]
+   },
+   "properties": {
+    "place_id": "PL5055",
+    "name": "Lublin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 0,
+    "claims_ground": 0,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.41666667,
+     50.45
+    ]
+   },
+   "properties": {
+    "place_id": "PL5056",
+    "name": "Tomaszów Lubelski",
+    "alt_names": "Tomaszow Lubelski",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.4584,
+     52.59278
+    ]
+   },
+   "properties": {
+    "place_id": "PL5057",
+    "name": "Wyszków",
+    "alt_names": "Wyszkow",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
     "claims_count": 1,
     "claims_ground": 1,
     "claims_air": 0,

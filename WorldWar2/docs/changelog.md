@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 27 November 2026 — Poland 1939 campaign: Polish air and naval increment (branch `poland-1939`)
+
+Ninth increment of the Poland 1939 campaign. Locations are from English Wikipedia articles (R2268–R2271), confidence 0.5, one encyclopedia family. Coordinates from the English Wikipedia API (R001), queried 27 November 2026, or reused places (Oksywie PL4990, Hel PL4968, Warsaw PL4960).
+
+- **Units added (5), plus 1939 claims on the existing `POL-DD-BLYSKAWICA`.** New ships: `POL-DD-GROM` (Grom class, SC188), `POL-DD-BURZA` (dataset class SC190), `POL-SS-ORZEL` (Orzeł class, SC191), `POL-CM-GRYF` (Gryf class, SC193). New air unit: `POL-AIR-PURSUIT` Pursuit Brigade (Brygada Pościgowa), domain air, echelon `air_wing` (the air-ladder value for this brigade-sized fighter command). The Polish Bomber Brigade is not added: no dated airfield was read on the pages used. Other submarines (Wilk, Sęp, Ryś, Żbik) are not added: no dated port pin was read.
+- **Places added (1).** `PL5032` Rosyth Dockyard (GB).
+- **Claims added, C13669–C13674 (6).** Peking Plan: Burza, Błyskawica and Grom arrived at Rosyth on the night of 1 September 1939, under `OP-PRE-INVASION` (the 30 August departure from Gdynia is before the date floor and is not entered). The Burza and Gryf articles were already in the table as R1085 and R1088 and are reused; new refs are R2269 (Orzeł) and R2271 (Pursuit Brigade). `PL5032` is Rosyth Dockyard, without the alias Rosyth, because that alias already identifies Pitreavie Castle (PL4892). ORP Orzeł was docked at Oksywie at the beginning of the invasion (1 September). ORP Gryf was sunk in Hel harbour on 3 September. The Pursuit Brigade was defending Warsaw on 1 September (airfield not named; the pin is the city being defended).
+
 ## 27 November 2026 — Poland 1939 campaign: German air increment (branch `poland-1939`)
 
 Eighth increment of the Poland 1939 campaign. Headquarters locations are from Michael Holm, *The Luftwaffe, 1933-45* (ww2.dk) headquarters tables that cover 1 September 1939, confidence 0.5 except one representative pin at 0.3 (1. Flieger-Division at Schönfeld/Crössinsee, plotted at Złocieniec). Coordinates from the English Wikipedia API (R001), queried 27 November 2026. Copyrighted Holm pages were used for facts only.

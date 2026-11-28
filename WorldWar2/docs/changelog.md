@@ -29,6 +29,8 @@
 
 **Part B, Polish Wikipedia "239 Dywizja Piechoty (III Rzesza)" (R2306, tertiary, capped at 0.5).** One new claim C13935 for the 239th Infantry Division (old value none): Katowice taken on 4 September (0.5, 10 km, existing place PL5010); new reference R2306.
 
+**Part B, German Wikipedia "3. Gebirgs-Division (Wehrmacht)" (R2307, tertiary, capped at 0.5).** Three new claims C13936-C13938 for the 3rd Mountain Division (old value none for each): Myślenice area, 5 September (0.3, 25 km, because the article dates only Mountain Rifle Regiment 139 rejoining the division there); the San crossed at Sanok, 12 September (0.5, 25 km); Prešov assembly area and start of the move west, 18 September (0.5, 25 km). New places PL5183 Myślenice, PL5184 Sanok, PL5185 Prešov (Eperies; country SK); new reference R2307.
+
 ## 28 November 2026 — Poland 1939: Army Lublin, Wyszków Operational Group, and Wileńska Cavalry Brigade (branch poland-1939)
 
 Adds Army Lublin (`POL-ARMY-LUBLIN`) with its 20 September surrender at Tomaszów Lubelski (Wikipedia R2287; 1939.pl R2288), and Wyszków Operational Group (`POL-OG-WYSZKOW`) as a 1 September CinC reserve with a representative pin at Wyszków (Wikipedia R2290, confidence 0.3). Activates Wileńska Cavalry Brigade (`POL-CAV-WILB`) from a placeholder: unloaded at Koluszki and Rogów on 1 September (Wikipedia R2289, tertiary, confidence 0.5), under Prusy Army. Formation of Army Lublin is left without a formed_date because sources disagree (3 or 4 September). No opening headquarters at Lublin city was invented. PISM A.II finding aids (R2291) corroborate the existence of both commands but are not used as location sources. Local branch only.

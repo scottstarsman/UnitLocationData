@@ -84,30 +84,30 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 13722, dated 1939-09-01 to 1945-05-31 |
-| units in `data/units.csv` | 3127: 3018 active (have claims), 107 placeholders |
-| claim files (one per active unit) | 3010 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 13794, dated 1939-09-01 to 1945-05-31 |
+| units in `data/units.csv` | 3128: 3019 active (have claims), 107 placeholders |
+| claim files (one per active unit) | 3011 |
 | conflict groups / claims in a group | 299 / 636 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 5056 / 9 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 5072 / 9 |
 | operations / operation relations | 92 / 15 |
 | command relations (`data/command_relations.csv`) | 4074 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 7251 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 35 |
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 10 |
-| references (`data/references.csv`, generated) | 2280, of which 1757 cited by at least one claim (the others are cited by units or operations) |
+| references (`data/references.csv`, generated) | 2281, of which 1758 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 82 |
 | nationalities / retired claim ids / claim-key exceptions | 43 / 7 / 15 |
 | controlled vocabularies in `schema/vocabularies.json` | 64 |
 
-Claims by nationality: Germany 4940, US 4480, UK 2577, Canada 716, France 356, Poland 248, Japan 242, Netherlands 51, Czechoslovakia 27, Belgium 24, Norway 19, Australia 17, New Zealand 9, Soviet Union 8, Slovakia 5, Greece 2, Allied 1.
+Claims by nationality: Germany 5001, US 4480, UK 2577, Canada 716, France 356, Poland 259, Japan 242, Netherlands 51, Czechoslovakia 27, Belgium 24, Norway 19, Australia 17, New Zealand 9, Soviet Union 8, Slovakia 5, Greece 2, Allied 1.
 
-Claims by echelon: division 6544, corps 1788, air_squadron 1351, naval_unit 752, army 746, air_group 628, naval_division 340, brigade 335, air_flight 301, regiment/battle_group 246, air_wing 165, battalion 140, army_group 138, naval_squadron 52, company 45, other 45, task_group 36, air_division 31, air_force 14, air_corps 13, task_force 10, fleet 2.
+Claims by echelon: division 6598, corps 1801, air_squadron 1351, naval_unit 752, army 749, air_group 628, naval_division 340, brigade 336, air_flight 301, regiment/battle_group 247, air_wing 165, battalion 140, army_group 138, naval_squadron 52, company 45, other 45, task_group 36, air_division 31, air_force 14, air_corps 13, task_force 10, fleet 2.
 
-Claims by branch: Army 6912, Air Force 1947, Armoured 1316, Navy 1313, Luftwaffe 949, Armored 525, Waffen-SS 370, Airborne 238, Marines 152.
+Claims by branch: Army 6976, Air Force 1947, Armoured 1323, Navy 1313, Luftwaffe 949, Armored 525, Waffen-SS 371, Airborne 238, Marines 152.
 
-Claims by event type: other 6374, hq_observation 1854, attack 1178, relocation 925, defense 845, hq_move 459, capture 406, arrival 353, command_change 235, withdrawal 224, subordinate_assignment 209, regroup 193, landing 138, counterattack 87, surrender 84, activation 68, destruction 49, redesignation 31, sortie 9, commissioning 1.
+Claims by event type: other 6420, hq_observation 1856, attack 1187, relocation 926, defense 847, hq_move 461, capture 407, arrival 359, command_change 235, withdrawal 226, subordinate_assignment 209, regroup 193, landing 138, counterattack 87, surrender 85, activation 68, destruction 49, redesignation 31, sortie 9, commissioning 1.
 
-Claims by status: preferred 13378, alternate 328, disputed 16. Claims by confidence: 0.3 4160, 0.5 7936, 0.7 1548, 0.9 78.
+Claims by status: preferred 13450, alternate 328, disputed 16. Claims by confidence: 0.3 4160, 0.5 8008, 0.7 1548, 0.9 78.
 
 Placeholder units by nationality: UK 37, US 28, Germany 21, Japan 11, Allied 3, Soviet Union 2, Australia 1, Canada 1, Netherlands 1, Poland 1, Slovakia 1.
 
@@ -117,9 +117,9 @@ Command relations: start basis claim_date 2519, narrative 1013, assignment_table
 
 Evidence roles of relation links: observed_during 4238, asserts_start 2079, asserts_start_and_end 534, asserts_end 237, listed_by_higher_unit 163.
 
-References by source family: wikipedia 1045, historyofwar_org 281, us_army_cmh 245, lexikon_wehrmacht_de 216, ww2_dk 92, fms_german_manuscript 77, rafweb_org 64, ww2byday_com 33, us_navy_nhhc 21, nara_captured_german_records 20, us_dept_state_frus 20, avalon_law_yale_edu 13, canada_dhh_reports 13, jacar 11, pism_org_uk 9, geonames 6, niehorster_org 6, uk_official_history 6, nafziger_naf 5, secondary_history 5, netherlands_defence 3, thesecondwar_pl 3, usaf_historical_division 3, bg387_association 2, dday_overlord_com 2, erenow_org 2, niod_dejong_koninkrijk 2, ownv_nl 2, pegasusarchive_org 2, trailblazersww2_org 2, uk_hansard 2, us_army_unit_history 2, usmc_history 2, uswarmemorials_org 2, wwiiaircraftperformance_org 2, 1939_pl 1, 69th_infantry_division_org 1, 6juin1944_com 1, actu_fr 1, afhra_unit_records 1, airborneinnormandy_com 1, anciens_aerodromes_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, bevrijdingsmuseumzeeland_nl 1, bigpigeon_us 1, britishmilitaryhistory_co_uk 1, bundesarchiv_de 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, dehavillandmuseum_co_uk 1, delattre_french_first_army 1, delefosse_v1 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, fleetairarmarchive_net 1, francearchives_gouv_fr 1, globalsecurity_org 1, historynet 1, ibiblio_pha 1, jacar_go_jp 1, junobeach_org 1, konfliktlandschaften 1, loc_12ag_situation_maps 1, mexico_diputados 1, militaire_spectator 1, militera_lib_ru 1, morison_us_naval_operations 1, muzeummw_pl 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, oocities_sturmvogel 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, projectoverlord_co_uk 1, przystanekhistoria_pl 1, tracesofwar_com 1, un_treaty_collection 1, unithistories_com 1, us_war_department 1, usaf_historical_research_center 1, usaf_station_list_anderson 1, ussbs 1, valka_cz 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wartimes_ca 1, wikimanche_fr 1; by type: encyclopedia 1045, reference_compilation 665, official_history 226, archive_document 180, assignment_table 80, unit_history 36, news_or_web_article 30, gazetteer_geocoder 8, monument_or_memorial 6, other 4.
+References by source family: wikipedia 1045, historyofwar_org 281, us_army_cmh 245, lexikon_wehrmacht_de 216, ww2_dk 92, fms_german_manuscript 77, rafweb_org 64, ww2byday_com 33, us_navy_nhhc 21, nara_captured_german_records 20, us_dept_state_frus 20, avalon_law_yale_edu 13, canada_dhh_reports 13, jacar 11, pism_org_uk 10, geonames 6, niehorster_org 6, uk_official_history 6, nafziger_naf 5, secondary_history 5, netherlands_defence 3, thesecondwar_pl 3, usaf_historical_division 3, bg387_association 2, dday_overlord_com 2, erenow_org 2, niod_dejong_koninkrijk 2, ownv_nl 2, pegasusarchive_org 2, trailblazersww2_org 2, uk_hansard 2, us_army_unit_history 2, usmc_history 2, uswarmemorials_org 2, wwiiaircraftperformance_org 2, 1939_pl 1, 69th_infantry_division_org 1, 6juin1944_com 1, actu_fr 1, afhra_unit_records 1, airborneinnormandy_com 1, anciens_aerodromes_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, bevrijdingsmuseumzeeland_nl 1, bigpigeon_us 1, britishmilitaryhistory_co_uk 1, bundesarchiv_de 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, dehavillandmuseum_co_uk 1, delattre_french_first_army 1, delefosse_v1 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, fleetairarmarchive_net 1, francearchives_gouv_fr 1, globalsecurity_org 1, historynet 1, ibiblio_pha 1, jacar_go_jp 1, junobeach_org 1, konfliktlandschaften 1, loc_12ag_situation_maps 1, mexico_diputados 1, militaire_spectator 1, militera_lib_ru 1, morison_us_naval_operations 1, muzeummw_pl 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, oocities_sturmvogel 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, projectoverlord_co_uk 1, przystanekhistoria_pl 1, tracesofwar_com 1, un_treaty_collection 1, unithistories_com 1, us_war_department 1, usaf_historical_research_center 1, usaf_station_list_anderson 1, ussbs 1, valka_cz 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wartimes_ca 1, wikimanche_fr 1; by type: encyclopedia 1045, reference_compilation 665, official_history 226, archive_document 181, assignment_table 80, unit_history 36, news_or_web_article 30, gazetteer_geocoder 8, monument_or_memorial 6, other 4.
 
-Places by kind: point 4859, area 117, sea_position 52, line 28.
+Places by kind: point 4875, area 117, sea_position 52, line 28.
 
 <!-- counts:end -->
 

@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 27 November 2026 — Poland 1939 campaign: Polish ground increment (branch `poland-1939`)
+
+Third increment of the Poland 1939 campaign. Location claims are German identifications of Polish units in Kennedy, *The German Campaign in Poland (1939)* (R2256, HyperWar), confidence 0.5 (one official-history family). Coordinates from the English Wikipedia API (R001), queried 27 November 2026, except reused places already in the table. PISM relacje texts were not in hand; R2258 remains a catalogue reference. *Polskie Siły Zbrojne* t.1 remains unavailable.
+
+- **Units added (including placeholders).** Armies and operational groups: Modlin, Pomorze, Lodz, Poznan, Krakow, Warsaw, Narew, and the Kock force as `POL-OG-POLESIE` (Kennedy does not print that name; the id follows the campaign pattern for the last stand at Kock, 6 October). `POL-ARMY-KARPATY` is a placeholder (named, but no dated headquarters town). Divisions and brigades Kennedy names at a place or in the 11 September Kutno list. `POL-CAV-KRAKB`, `POL-MOT-010B` and `POL-ARM-WARB` are placeholders. `POL-MOT-010B` is not given the 1942 id `POL-ARM-001D`. A formal lineage row was not added (no dated source page for the 1942 formation was read); both unit notes record the intended formed-from-remnants relationship. Prusy Army, Lublin Army and Wyszkow Group are not added.
+- **Places added (7).** `PL4962` Lodz; `PL4993` Radom; `PL4995` Grodno (Hrodna), BY; `PL4996` Wizna; `PL4997` Kutno; `PL4998` Zambrow; `PL4999` Nowogrod. Next free place id `PL5000`.
+- **Claims added, C13498-C13535.** Opening identifications at Mlawa and the Jablonkow Pass (1 September); Grudziadz, Mlawa and north of Bydgoszcz (3 September); Radom and Lodz (6 September); Narew Group and Podlaska Cavalry about Grodno and Bialystok (9 September); 18th Infantry Division at Zambrow (10 September); the Kutno encirclement list of 11 September and the 17 September collapse; Warsaw (27 September), Modlin (29 September) and Kock (6 October).
+- **Commanders.** New people `PE0661` Juliusz Rommel (Kennedy: General Rommel), `PE0662` Wiktor Thommee (Kennedy: General Thommee), `PE0663` Wladyslaw Bortnowski. Tenures start on the date Kennedy names them in a location claim. Kennedy's identification of Bortnowski as of the Poznan Army is recorded as he states it.
+- **Relations.** Assigned children only where Kennedy names the army or group. Relations end on the unit's last claim in this increment.
+
+
 ## 27 November 2026 — Poland 1939 campaign: German army-group, army and corps increment (branch `poland-1939`)
 
 Second increment of the Poland 1939 campaign. Location claims are from Kennedy, *The German Campaign in Poland (1939)* (DA Pam 20-255, HyperWar, R2256), confidence 0.5 (one official-history family). Coordinates from the English Wikipedia API (R001), queried 27 November 2026. Invenio Kriegstagebücher were not downloaded in this increment (page images may need Scott's Bundesarchiv sign-in on the box browser). Named army commanders whom Kennedy does not name (Küchler, Kluge, Reichenau, List) are left unknown. A premature German report of 8 September that XVI Corps had taken Warsaw is not entered as a capture.

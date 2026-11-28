@@ -14,6 +14,11 @@ PATH = os.path.join(common.ROOT, 'data', 'nation_allegiance.csv')
 WHERE = 'data/nation_allegiance.csv'
 CONFLICT_SPAN = {'WW2': (datetime.date(1939, 9, 1), datetime.date(1945, 9, 2)),
                  'SJW2': (datetime.date(1937, 7, 7), datetime.date(1945, 9, 2))}
+# Pre-war assembly rows (branch poland1939-oneplus-august, 28 November 2026): a WW2 row may start before the conflict,
+# but not before this floor, when it also ends before the conflict starts. It gives a side to units assembling for the
+# first campaign (German assembly for Fall Weiss, August 1939) so their symbols are not Unknown. Same floor as the
+# eastern_front and poland date_floor in schema/theaters.json.
+PRE_CONFLICT_FLOOR = {'WW2': datetime.date(1939, 8, 1)}
 
 
 def header():
@@ -66,7 +71,9 @@ def check(h, rows, nationalities, vocabs, ref_ids):
             out.append((w, 'valid_to %s is before valid_from %s' % (r['valid_to'], r['valid_from'])))
         span = CONFLICT_SPAN.get(r['conflict'])
         if span:
-            if f and f < span[0]:
+            pre = PRE_CONFLICT_FLOOR.get(r['conflict'])
+            pre_ok = bool(pre and f and t and pre <= f and t < span[0])   # a pre-war assembly row that ends before the conflict
+            if f and f < span[0] and not pre_ok:
                 out.append((w, 'valid_from %s is before the start of %s (%s)' % (r['valid_from'], r['conflict'], span[0])))
             if (t or f) and (t or f) > span[1]:
                 out.append((w, 'the row runs past the end of %s (%s)' % (r['conflict'], span[1])))

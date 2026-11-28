@@ -279,11 +279,11 @@
           70.0
         ]
       ],
-      "date_floor": "1939-09-01",
+      "date_floor": "1939-08-01",
       "start_date": "1939-09-01",
       "end_date": "1945-05-11",
       "official_equivalents": "German OKH Ostfront; the Soviet-German war and the 1939 Polish campaign as filed in this dataset",
-      "description": "Germany and other Axis powers versus the USSR, and the 1939 Polish campaign: the Soviet Union, Poland, the Baltic, Romania, Hungary, Slovakia and Finland, including German territory once the Red Army reached it."
+      "description": "Germany and other Axis powers versus the USSR, and the 1939 Polish campaign: the Soviet Union, Poland, the Baltic, Romania, Hungary, Slovakia and Finland, including German territory once the Red Army reached it. The date floor is 1 August 1939 (old value 1939-09-01, new value 1939-08-01; branch poland1939-oneplus-august, 28 November 2026) so that the German assembly for the Polish campaign (operation OP-PHASE-FALL-WEISS-ASSEMBLY) can be filed; the opening of hostilities is 1 September 1939."
     },
     {
       "code": "poland",
@@ -300,11 +300,11 @@
           30.0
         ]
       ],
-      "date_floor": "1939-09-01",
+      "date_floor": "1939-08-01",
       "start_date": "1939-09-01",
       "end_date": "1945-05-11",
       "official_equivalents": "The 1939 Polish campaign and later fighting on Polish territory between Germany and the USSR",
-      "description": "Poland, including the September 1939 campaign and later Eastern Front fighting on Polish territory. The bounding box extends east to 30°E so 1939 places in the Kresy (Wilno, Pińsk, Równe, Tarnopol and others now in Lithuania, Belarus or Ukraine) pass the typo check. Forming and training inside the 1937 German border is home_germany."
+      "description": "Poland, including the September 1939 campaign and later Eastern Front fighting on Polish territory. The bounding box extends east to 30°E so 1939 places in the Kresy (Wilno, Pińsk, Równe, Tarnopol and others now in Lithuania, Belarus or Ukraine) pass the typo check. Forming and training inside the 1937 German border is home_germany. The date floor is 1 August 1939 (old value 1939-09-01, new value 1939-08-01; branch poland1939-oneplus-august, 28 November 2026) for the German assembly on the Polish border before the attack of 1 September 1939 (OP-PHASE-FALL-WEISS-ASSEMBLY)."
     },
     {
       "code": "soviet_union",

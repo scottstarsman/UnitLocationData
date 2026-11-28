@@ -90937,8 +90937,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Łódź",
-    "claims_count": 4,
-    "claims_ground": 4,
+    "claims_count": 6,
+    "claims_ground": 6,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -113661,8 +113661,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Masovian",
-    "claims_count": 14,
-    "claims_ground": 12,
+    "claims_count": 15,
+    "claims_ground": 13,
     "claims_air": 2,
     "claims_naval": 0
    }
@@ -114190,8 +114190,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Masovian",
-    "claims_count": 5,
-    "claims_ground": 5,
+    "claims_count": 8,
+    "claims_ground": 8,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -116168,8 +116168,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Masovian",
-    "claims_count": 2,
-    "claims_ground": 2,
+    "claims_count": 3,
+    "claims_ground": 3,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -116191,8 +116191,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Masovian",
-    "claims_count": 1,
-    "claims_ground": 1,
+    "claims_count": 2,
+    "claims_ground": 2,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -116214,8 +116214,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Masovian",
-    "claims_count": 1,
-    "claims_ground": 1,
+    "claims_count": 2,
+    "claims_ground": 2,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -116651,6 +116651,282 @@
     "precision_km": 3,
     "country": "UA",
     "region": "Lviv Oblast",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.68333333,
+     52.41666667
+    ]
+   },
+   "properties": {
+    "place_id": "PL5097",
+    "name": "Mchówek",
+    "alt_names": "Mchowek",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Kuyavian-Pomeranian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.98333333,
+     52.31666667
+    ]
+   },
+   "properties": {
+    "place_id": "PL5098",
+    "name": "Załusków",
+    "alt_names": "Zaluskow",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.02944444,
+     52.34194444
+    ]
+   },
+   "properties": {
+    "place_id": "PL5099",
+    "name": "Iłów",
+    "alt_names": "Ilow",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.23333333,
+     52.33333333
+    ]
+   },
+   "properties": {
+    "place_id": "PL5100",
+    "name": "Witkowice",
+    "alt_names": "Witkowice, Masovian Voivodeship; Witkowice, Sochaczew County",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.87,
+     52.26861111
+    ]
+   },
+   "properties": {
+    "place_id": "PL5101",
+    "name": "Kiernozia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Łódź",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.06666667,
+     52.18333333
+    ]
+   },
+   "properties": {
+    "place_id": "PL5102",
+    "name": "Gągolin Północny",
+    "alt_names": "Gogolina; Gągolin; Gagolin Polnocny; Gągolin Południowy; Gągolin Zachodni",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "PL",
+    "region": "Łódź",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.96666667,
+     52.25
+    ]
+   },
+   "properties": {
+    "place_id": "PL5103",
+    "name": "Osiek, Łowicz County",
+    "alt_names": "Osiek; Osów",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Łódź",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.14277778,
+     52.31527778
+    ]
+   },
+   "properties": {
+    "place_id": "PL5104",
+    "name": "Stare Budy, Sochaczew County",
+    "alt_names": "Stare Budy",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.93388889,
+     52.28888889
+    ]
+   },
+   "properties": {
+    "place_id": "PL5105",
+    "name": "Bielany, Warsaw",
+    "alt_names": "Bielany; Warsaw-Bielany",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.60444444,
+     52.96166667
+    ]
+   },
+   "properties": {
+    "place_id": "PL5106",
+    "name": "Włosty",
+    "alt_names": "Wlosty; folwark Włosty",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.71666667,
+     52.9
+    ]
+   },
+   "properties": {
+    "place_id": "PL5107",
+    "name": "Opinogóra Górna",
+    "alt_names": "Opinogora Gorna; Opinogóra",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.62277778,
+     52.26138889
+    ]
+   },
+   "properties": {
+    "place_id": "PL5108",
+    "name": "Zaborówek, Warsaw West County",
+    "alt_names": "Zaborowek; Zaborów",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "PL",
+    "region": "Masovian",
     "claims_count": 1,
     "claims_ground": 1,
     "claims_air": 0,

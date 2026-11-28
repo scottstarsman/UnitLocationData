@@ -482,7 +482,7 @@ Coastwatchers of the RAN / Allied Intelligence Bureau (Organisation Ferdinand) u
 
 **Split-unit detachments (27 November 2026, branch `pacific-schema-cleanup`).** When only part of a unit is at a place — a named company, battery, platoon, or a shore detachment of a carrier squadron — do not add a column for that element. Create a child unit id only for a named, sustained detachment that operates independently for an extended period (the same rule as an Army or Marine battalion located apart from its regiment: `US-INFBN-<reg>-<bn>`, `US-MARBN-<reg>-<bn>`). Otherwise pin the parent unit and name the detached element in `location_qualifier` and `notes` (for example A Company of the 2nd Amphibian Tractor Battalion on Tulagi, or a dated shore detachment of a carrier squadron). The claim then locates the parent by that named element; it does not imply that the rest of the parent was at the same place.
 
-**Poland 1939 campaign ids (27 November 2026, branch `poland-1939`; Scott t671u).** These are additions to the pattern above, not a renaming of any existing id. The Polish nation prefix is `POL` (folder `poland`). The Soviet prefix is `SOV` (Scott confirmed the code on 27 November 2026; folder `soviet union`, the lower-case nationality name). German units keep the existing `GER-` patterns, with one addition for the 1939 light divisions. **Do not reuse `POL-ARM-001D` (1st Polish Armoured Division, formed 1942) or `POL-ABN-001B` (1st Polish Independent Parachute Brigade, formed 1941) for 1939 formations.** The 10th Motorized Cavalry Brigade of 1939 has its own id and a lineage row pointing to `POL-ARM-001D`.
+**Poland 1939 campaign ids (27 November 2026, branch `poland-1939`; Scott t671u).** These are additions to the pattern above, not a renaming of any existing id. The Polish nation prefix is `POL` (folder `poland`). The Soviet prefix is `SOV` (Scott confirmed the code on 27 November 2026; folder `soviet union`, the lower-case nationality name). The Slovak prefix is `SVK` (the code already stood in `nationalities.csv` from 15 November 2026; Scott confirmed its use for Field Army Bernolák on 28 November 2026, t677u; folder `slovakia`). German units keep the existing `GER-` patterns, with one addition for the 1939 light divisions. **Do not reuse `POL-ARM-001D` (1st Polish Armoured Division, formed 1942) or `POL-ABN-001B` (1st Polish Independent Parachute Brigade, formed 1941) for 1939 formations.** The 10th Motorized Cavalry Brigade of 1939 has its own id and a lineage row pointing to `POL-ARM-001D`.
 
 | Unit | Pattern | Example |
 |---|---|---|
@@ -497,7 +497,9 @@ Coastwatchers of the RAN / Allied Intelligence Bureau (Organisation Ferdinand) u
 | Soviet rifle or cavalry division | `SOV-RIF-<nnn>D`, `SOV-CAV-<nnn>D` | |
 | Soviet independent tank brigade | `SOV-TNK-<nnn>B` | type `TNK` already means a tank brigade |
 | German light (leichte) division | `GER-LT-<nnn>D` | `GER-LT-001D` (1st Light Division). Do not put 1939 claims on the later panzer id of the same formation; record the redesignation in `data/unit_lineage.csv`. |
-| Slovak field army (if sourced) | `SVK-ARMY-BERNOLAK` | Field Army Bernolák |
+| Slovak field army | `SVK-ARMY-BERNOLAK` | Field Army Bernolák (Scott confirmed use of the existing `SVK` code on 28 November 2026, t677u; folder `slovakia`) |
+| Slovak infantry division | `SVK-INF-<nnn>D` | `SVK-INF-001D` (1st Infantry Division Jánošík) |
+| Slovak mobile group | `SVK-RG-KALIN` | Mobile Group Kalinčiak (named group, no echelon letter) |
 
 Polish 1939 air and naval units follow the existing air and naval patterns (`POL-SQN-`, `POL-DD-` and so on). The destroyers already in the table under the Peking Plan keep those ids; new 1939 home-waters ships (for example ORP *Wicher* and ORP *Gryf*) get new ids. Luftwaffe and Kriegsmarine units follow the existing German air and naval patterns.
 

@@ -1,3 +1,7 @@
+## 27 November 2026 — Poland 1939 campaign: German Geschwader increment (branch `poland-1939`)
+
+Tenth increment of the Poland 1939 campaign. Stab airfield claims are from Michael Holm, *The Luftwaffe, 1933-45* (ww2.dk) Stab Bases tables that cover 1 September 1939, confidence 0.5. Coordinates from Wikipedia (R001), queried 27 November 2026 (English pages except Fliegerhorst Jesau, German Wikipedia, and Lotnisko Opole-Polska Nowa Wieś, Polish Wikipedia). Copyrighted Holm pages were used for facts only. Existing wing records GER-KG-002, GER-KG-026, GER-KG-076, GER-KG-077 and GER-LG-001 were reused (GER-KG-076 promoted from placeholder). New records: GER-KG-001, GER-KG-003, GER-KG-004, GER-STG-077, GER-LG-002. Later reincarnations were not reused for 1939 (GER-JG-001, GER-JG-076, GER-ZG-001, GER-FLD-002D / StG 1–2 Stab formed after the campaign). Only KG 2 has a dated Holm parent (Luftwaffen-Lehr-Division, CR4070, to 21 September 1939). Kommodore names were left as unknown pending tenures.
+
 # Changelog of the data structures
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.

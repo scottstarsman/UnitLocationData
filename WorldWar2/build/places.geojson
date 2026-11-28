@@ -113661,8 +113661,8 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Masovian",
-    "claims_count": 4,
-    "claims_ground": 2,
+    "claims_count": 6,
+    "claims_ground": 4,
     "claims_air": 2,
     "claims_naval": 0
    }
@@ -114167,8 +114167,8 @@
     "precision_km": 3,
     "country": "UA",
     "region": "Lviv Oblast",
-    "claims_count": 3,
-    "claims_ground": 3,
+    "claims_count": 5,
+    "claims_ground": 5,
     "claims_air": 0,
     "claims_naval": 0
    }
@@ -115754,6 +115754,535 @@
     "precision_km": 3,
     "country": "PL",
     "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.899722,
+     51.640556
+    ]
+   },
+   "properties": {
+    "place_id": "PL5058",
+    "name": "Parczew",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.548056,
+     51.544722
+    ]
+   },
+   "properties": {
+    "place_id": "PL5059",
+    "name": "Włodawa",
+    "alt_names": "Wlodawa",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.535556,
+     51.335278
+    ]
+   },
+   "properties": {
+    "place_id": "PL5060",
+    "name": "Mszanna",
+    "alt_names": "Mszanna, Lublin Voivodeship; Kolonia Mszanna; Mszanna-Kolonia",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.3425,
+     51.136667
+    ]
+   },
+   "properties": {
+    "place_id": "PL5061",
+    "name": "Wereszcze Duże",
+    "alt_names": "Wereszcze Wielkie; Wereszcze Duze",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.648056,
+     50.908333
+    ]
+   },
+   "properties": {
+    "place_id": "PL5062",
+    "name": "Uchanie",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.7675,
+     50.750833
+    ]
+   },
+   "properties": {
+    "place_id": "PL5063",
+    "name": "Werbkowice",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.71,
+     50.618056
+    ]
+   },
+   "properties": {
+    "place_id": "PL5064",
+    "name": "Dębina",
+    "alt_names": "Debina; Dębina (Tyszowce)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.573611,
+     50.565278
+    ]
+   },
+   "properties": {
+    "place_id": "PL5065",
+    "name": "Wożuczyn",
+    "alt_names": "Wozuczyn",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.252778,
+     50.589722
+    ]
+   },
+   "properties": {
+    "place_id": "PL5066",
+    "name": "Suchowola",
+    "alt_names": "Suchowola (Zamość County); Suchowola (powiat zamojski)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.165833,
+     50.623611
+    ]
+   },
+   "properties": {
+    "place_id": "PL5067",
+    "name": "Szewnia Dolna",
+    "alt_names": "Szewnia",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.973056,
+     50.500556
+    ]
+   },
+   "properties": {
+    "place_id": "PL5068",
+    "name": "Górecko Kościelne",
+    "alt_names": "Gorecko Koscielne; Górecko",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.919722,
+     53.312778
+    ]
+   },
+   "properties": {
+    "place_id": "PL5069",
+    "name": "Knyszyn",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.370278,
+     52.951111
+    ]
+   },
+   "properties": {
+    "place_id": "PL5070",
+    "name": "Jabłonka Kościelna",
+    "alt_names": "Jablonka Koscielna",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.113056,
+     52.899444
+    ]
+   },
+   "properties": {
+    "place_id": "PL5071",
+    "name": "Strabla",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.867778,
+     52.700556
+    ]
+   },
+   "properties": {
+    "place_id": "PL5072",
+    "name": "Białowieża",
+    "alt_names": "Bialowieza",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Podlaskie",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.991389,
+     51.924444
+    ]
+   },
+   "properties": {
+    "place_id": "PL5073",
+    "name": "Witoroż",
+    "alt_names": "Witoraz; Witeraz",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.208611,
+     51.700556
+    ]
+   },
+   "properties": {
+    "place_id": "PL5074",
+    "name": "Wola Gułowska",
+    "alt_names": "Wola Gulowska",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.261667,
+     52.322222
+    ]
+   },
+   "properties": {
+    "place_id": "PL5075",
+    "name": "Brochów",
+    "alt_names": "Brochow",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 2,
+    "claims_ground": 2,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.920556,
+     52.309167
+    ]
+   },
+   "properties": {
+    "place_id": "PL5076",
+    "name": "Młociny",
+    "alt_names": "Mlociny",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.686667,
+     52.546389
+    ]
+   },
+   "properties": {
+    "place_id": "PL5077",
+    "name": "Płock",
+    "alt_names": "Plock",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.190833,
+     52.39
+    ]
+   },
+   "properties": {
+    "place_id": "PL5078",
+    "name": "Wyszogród",
+    "alt_names": "Wyszogrod",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Masovian",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.514444,
+     50.794722
+    ]
+   },
+   "properties": {
+    "place_id": "PL5079",
+    "name": "Świdniki",
+    "alt_names": "Swidniki",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
+    "claims_count": 1,
+    "claims_ground": 1,
+    "claims_air": 0,
+    "claims_naval": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.226667,
+     50.923056
+    ]
+   },
+   "properties": {
+    "place_id": "PL5080",
+    "name": "Kraśnik",
+    "alt_names": "Krasnik",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Lublin",
     "claims_count": 1,
     "claims_ground": 1,
     "claims_air": 0,

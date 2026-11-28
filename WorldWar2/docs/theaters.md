@@ -15,7 +15,7 @@ The list follows official Allied and Axis theater divisions: the US European, Me
 
 - **western_europe** — Western Europe (US ETO; German Westfront / OB West). Sub-theaters: `britain`, `france_low_countries`, `southern_france`, `germany_west`.
 - **mediterranean** — Mediterranean (US MTO; British Mediterranean and Middle East Command; German OB Süd). Sub-theaters: `north_africa` (legacy theater code), `italy`, `balkans` (legacy theater code), `middle_east`.
-- **eastern_front** — Eastern Front (OKH Ostfront), including the 1939 Polish campaign as filed in this dataset. Sub-theaters: `poland`, `soviet_union`, `finland`, `germany_east`.
+- **eastern_front** — Eastern Front (OKH Ostfront), including the 1939 Polish campaign as filed in this dataset. Sub-theaters: `poland`, `soviet_union`, `finland`, `germany_east`. The `poland` bounding box was widened east to 30°E on 27 November 2026 (branch `poland-1939`) so 1939 places in the Kresy now in Lithuania, Belarus or Ukraine (Wilno, Pińsk, Równe, Tarnopol) pass the typo check; it remains a loose box, not a political border.
 - **pacific** — Pacific (US POA, with North, Central and South Pacific Areas, and SWPA). Bounding boxes cover both sides of the antimeridian, including Hawaii and the eastern Pacific. Sub-theaters: `central_pacific`, `south_pacific`, `southwest_pacific`, `north_pacific`, `aleutians`, `japan_home`.
 - **cbi** — China-Burma-India (US CBI, later China Theater and India-Burma Theater; British SEAC and India Command). Sub-theaters: `china`, `burma`, `india`, `indochina`.
 - **atlantic** — Atlantic (the Battle of the Atlantic). A mid-ocean point here is expected and is not treated as a coordinate typo. Sub-theaters: `north_atlantic`, `mid_atlantic`, `caribbean`.

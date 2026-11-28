@@ -4,6 +4,13 @@ Status: Western Front, 6 June 1944 to 8 May 1945 for US Army army-group, army, c
 
 For a new maintainer: [maintainers.md](maintainers.md) (checks, release rules) and [CONTRIBUTING.md](../CONTRIBUTING.md).
 
+## Poland 1939 campaign (branch `poland-1939`)
+
+Owner-approved 27 November 2026 (t667u–t676u). Scope: theater `eastern_front`, sub-theater `poland`, 1 September–6 October 1939; unit cutoff army / operational group, corps, division, plus independent brigades (Polish cavalry and motorized brigades, Soviet tank brigades, LSSAH and similar); air and naval included; event-based claims. Two operations under `OP-FRONT-EASTERN`: `OP-CAMP-FALL-WEISS` (German invasion, from 1 September) and `OP-CAMP-SOVIET-POLAND-1939` (Soviet invasion, from 17 September). Full campaign, not a thin slice. Schema, operations and source records were added first; unit and claim rows follow in later commits on this branch, by side and source (German, Polish, Soviet, air, naval).
+
+Open source option, not used in this increment: *Polskie Siły Zbrojne w drugiej wojnie światowej*, tom 1, *Kampania wrześniowa*, cz. 1–3 (Instytut Historyczny im. gen. Sikorskiego, London, 1951–59). No electronic copy was found on 27 November 2026. If a print or later scan is obtained, a correction pass should be read against it. Pamyat Naroda was tested the same day and is not a source for 1939 (its operational documents begin in 1941). Soviet dated locations may use Meltyukhov (R2257) at confidence 0.5 or below, raised where a German or Polish document agrees.
+
+
 ## US Army fill-in: progress and plan
 
 Scope (owner-approved): US Army ground units on the Western Front, 6 June 1944 to 8 May 1945, at army group, army, corps and division level; no Marines. Work goes by period with a spot-check gate between batches ([`review/spot_check_batch1.md`](review/spot_check_batch1.md) for Batch 1).

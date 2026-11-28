@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "data_version": "1.1.0-rc1",
   "generated_at": "2026-11-24T00:00:00Z",
-  "source_tree_sha256": "04177231d87796e651a0779ce4656648590f36c7ef55beb3d8681f9e7e262b24",
+  "source_tree_sha256": "082e0d9e50ed490f9113860c72c8c509f344862779a8ff49487816c48a6b278c",
   "license": "CC-BY-SA-4.0",
   "citation": {
     "file": "CITATION.cff",
@@ -13,14 +13,14 @@
   "files": [
     {
       "path": "data/references.csv",
-      "bytes": 1403208,
-      "sha256": "7ce400d57c23ef2c27c5e361ad569db00ee8210493a38dbd000023c63e8a80e4",
-      "rows": 2245
+      "bytes": 1407807,
+      "sha256": "a9ccadc60c47d434f088d07172d857ed635f4f03efe75ce7b5680c25f16041d8",
+      "rows": 2249
     },
     {
       "path": "docs/coverage.md",
       "bytes": 9552,
-      "sha256": "6976b61d1e262312f4889b2ef422044f9d7d9e745d2153db84c910bb29b3dd87"
+      "sha256": "27b87352a5a9752523c940b5390fcc773476a0401b474d6c5328f3c91ff8b18d"
     },
     {
       "path": "build/aircraft_types.csv",
@@ -227,9 +227,9 @@
     },
     {
       "path": "build/operation_references.csv",
-      "bytes": 2235,
-      "sha256": "acc6ac31f986ecfe3dbbe8f127c843070a691302648a993898b01f64ecb820b7",
-      "rows": 115
+      "bytes": 2326,
+      "sha256": "7c4bd93cb0d5986932b2369031b4f206aae78fe83625060f61cc42d72887cbaa",
+      "rows": 118
     },
     {
       "path": "build/operation_units.csv",
@@ -239,15 +239,15 @@
     },
     {
       "path": "build/operations.csv",
-      "bytes": 29483,
-      "sha256": "3896e5d93da2e65cee45e579799ed5045b57f263b2b4634469553d53e2ef7c69",
-      "rows": 90
+      "bytes": 30140,
+      "sha256": "e5a63172f1e99e7fa9e515a082196919ac1ccdb325de6efd83b026617bac58e9",
+      "rows": 92
     },
     {
       "path": "build/operations.geojson",
-      "bytes": 135780,
-      "sha256": "64d1368c4921e734da341fc2da631284cc9cb433e6956aed4819cb81e00eda02",
-      "features": 90
+      "bytes": 138765,
+      "sha256": "25dcf393835cc3ec69c41e112d16ffd3f940f7c8165fce71c4cb92a8b5723b25",
+      "features": 92
     },
     {
       "path": "build/organic_relations.csv",

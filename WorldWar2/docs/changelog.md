@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 27 November 2026 — Poland 1939 campaign: Soviet ground increment (branch `poland-1939`)
+
+Fourth increment of the Poland 1939 campaign. Location claims are from Meltyukhov, *Sovetsko-polskie voiny* (2001, militera.lib.ru part 3, R2257), confidence 0.5 (secondary monograph, cap approved by Scott t676u). Coordinates from the English Wikipedia API (R001) or reused places (Wilno PL3929, Brzesc PL3987, Lwow PL4986). No Pamyat Naroda documents were used. Confidence was not raised: Kennedy mentions the Red Army's entry on 17 September and later contact near Lwow, but does not independently date the same named Soviet units at these towns.
+
+- **Units added (10).** Placeholder fronts `SOV-FR-BELG` and `SOV-FR-UKRG` (no dated front headquarters town). Active: Third, Fourth, Sixth and Eleventh Armies; 6th, 24th and 29th Tank Brigades; 45th Rifle Division.
+- **Places added (1).** `PL5000` Rowne (Rivne), UA. Next free place id `PL5001`.
+- **Claims added, C13536-C13543.** 6th Tank Brigade at the southern edge of Wilno (18 September); Third and Eleventh Armies at Wilno (19 September); 45th Rifle Division at Rowne (17 September, 1800); 24th Tank Brigade and Sixth Army at Lwow (19 September); 29th Tank Brigade and Fourth Army at Brzesc (22 September, 1500).
+- **Commanders.** New person `PE0664` Semyon Krivoshein (Kombrig), 29th Tank Brigade at Brzesc on 22 September.
+- **Relations.** Third, Eleventh and Fourth Armies assigned to the Belorussian Front; Sixth Army to the Ukrainian Front; 24th Tank Brigade to Sixth Army; 29th Tank Brigade to Fourth Army. Only where Meltyukhov states or clearly frames the parent.
+
 ## 27 November 2026 — Poland 1939 campaign: Polish ground increment (branch `poland-1939`)
 
 Third increment of the Poland 1939 campaign. Location claims are German identifications of Polish units in Kennedy, *The German Campaign in Poland (1939)* (R2256, HyperWar), confidence 0.5 (one official-history family). Coordinates from the English Wikipedia API (R001), queried 27 November 2026, except reused places already in the table. PISM relacje texts were not in hand; R2258 remains a catalogue reference. *Polskie Siły Zbrojne* t.1 remains unavailable.
